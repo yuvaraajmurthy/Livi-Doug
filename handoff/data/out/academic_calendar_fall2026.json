@@ -1,0 +1,23 @@
+{
+  "source": "https://scheduling.rutgers.edu/academic-calendar/ (fall 2026 column, checked 2026-10-10)",
+  "fall_begins": "2026-09-01",
+  "thanksgiving_recess": [
+    "2026-11-26",
+    "2026-11-29"
+  ],
+  "classes_end": "2026-12-10",
+  "reading_days": [
+    "2026-12-11",
+    "2026-12-14"
+  ],
+  "final_exams": [
+    "2026-12-15",
+    "2026-12-22"
+  ],
+  "spring_begins": "2027-01-19",
+  "midterm_window_APPROXIMATE": [
+    "2026-10-05",
+    "2026-10-30"
+  ],
+  "note": "Midterms are not on the registrar calendar; the window above is an assumption for the demo."
+}

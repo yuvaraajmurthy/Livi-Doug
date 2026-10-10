@@ -1,0 +1,22 @@
+[
+ {"win_id": "w01", "campus": "new_brunswick", "dimension": "intellectual", "text": "Went to tutoring for the first time. Calc feels less impossible.", "same_here": 41},
+ {"win_id": "w02", "campus": "new_brunswick", "dimension": "social", "text": "Brought my lab partner to game night. We stayed two hours.", "same_here": 27},
+ {"win_id": "w03", "campus": "newark", "dimension": "social", "text": "Ate lunch on campus instead of in my car. Small thing, felt good.", "same_here": 33},
+ {"win_id": "w04", "campus": "camden", "dimension": "financial", "text": "Finally made a budget. It's ugly but it's mine.", "same_here": 19},
+ {"win_id": "w05", "campus": "newark", "dimension": "physical", "text": "Did chair yoga between classes. My shoulders forgot they were stressed.", "same_here": 12},
+ {"win_id": "w06", "campus": "new_brunswick", "dimension": "intellectual", "text": "Asked a question in office hours. Nobody laughed.", "same_here": 38},
+ {"win_id": "w07", "campus": "newark", "dimension": "occupational", "text": "Went to the resume drop-in. Left with an actual resume.", "same_here": 15},
+ {"win_id": "w08", "campus": "new_brunswick", "dimension": "physical", "text": "Slept before midnight three nights in a row for Sleep Week.", "same_here": 22},
+ {"win_id": "w09", "campus": "camden", "dimension": "spiritual", "text": "Went to the interfaith lunch alone. Left with two names in my phone.", "same_here": 17},
+ {"win_id": "w10", "campus": "newark", "dimension": "financial", "text": "Used the food pantry for the first time. Wish I'd gone sooner.", "same_here": 29},
+ {"win_id": "w11", "campus": "new_brunswick", "dimension": "social", "text": "Joined pickup basketball. I'm bad. It was great.", "same_here": 24},
+ {"win_id": "w12", "campus": "new_brunswick", "dimension": "environmental", "text": "Volunteered at the campus garden. Turns out dirt is calming.", "same_here": 9},
+ {"win_id": "w13", "campus": "new_brunswick", "dimension": "emotional", "text": "Talked to someone at CAPS. Glad I did.", "same_here": 31},
+ {"win_id": "w14", "campus": "camden", "dimension": "intellectual", "text": "Studied in the library with free coffee instead of my room. Got way more done.", "same_here": 14},
+ {"win_id": "w15", "campus": "new_brunswick", "dimension": "social", "text": "Told my roommate I was having a rough week. So was she.", "same_here": 36},
+ {"win_id": "w16", "campus": "newark", "dimension": "social", "text": "Went to my first club meeting. Already in the group chat.", "same_here": 20},
+ {"win_id": "w17", "campus": "camden", "dimension": "physical", "text": "Walked to class instead of driving around for parking. Twice.", "same_here": 8},
+ {"win_id": "w18", "campus": "new_brunswick", "dimension": "emotional", "text": "Did the two-minute breathing thing before my exam. Helped more than I expected.", "same_here": 18},
+ {"win_id": "w19", "campus": "new_brunswick", "dimension": "financial", "text": "Cooked a real dinner with my suite. Four dollars each.", "same_here": 21},
+ {"win_id": "w20", "campus": "newark", "dimension": "social", "text": "Retook the inventory. My social score went up. Didn't expect that.", "same_here": 26}
+]

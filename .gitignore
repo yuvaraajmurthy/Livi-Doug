@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+cdk.out/
+node_modules/
+.pytest_cache/
+.ruff_cache/
+/secrets/

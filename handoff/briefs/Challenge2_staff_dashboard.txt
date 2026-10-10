@@ -1,0 +1,89 @@
+Challenge 2
+
+Rutgers University Counselor Health and Wellness Dashboard
+
+Theme: Student Health and Wellness • Artificial Intelligence • Large
+Language Models
+
+Key Mentors:
+
+  Margaret Swarbrick, PhD, ScarletWell Director;
+
+  Leslie Lenert, MD, MS, FACMI, FACP, BMIHAI Director;
+
+  Antonina Mitrofanova, PhD, BMIHAI Deputy Director
+
+Product Advisors and Volunteers:
+
+Amy B. Spagnolo, PhD, ScarletWell Senior Program Coordinator;
+
+  Jack Katina, Graduate Student, Rutgers University;
+
+  Vivian Glenn, Undergraduate Student, Rutgers University
+
+■ Challenge Summary
+
+ScarletWell can already describe its own program's data, but has no way
+to see how that connects to what other units, such as Recreation or
+Student Health, are doing, or whether any of it is closing the gaps
+students report. This challenge asks teams to build a real-time,
+university-wide dashboard that gives counseling staff, wellness program
+leads, and administrators a single view of student wellness trends, so
+they can see where students are struggling, where current resources are
+and aren't reaching them, and where to prioritize outreach and staffing
+next.
+
+■ Dataset
+
+De-identified Wellness Inventory results and related demographic and
+behavioral health data across New Brunswick, Newark, and Camden; the
+Rutgers academic calendar (midterms, finals, add/drop periods) to test
+for correlation with wellness dips; publicly available local, national,
+and public health event data (e.g., seasonal illness spikes) for the
+same purpose; existing ScarletWell dashboard examples as a starting
+reference point for visualization style and scope.
+
+■ Your Challenge
+
+Design an AI tool that can:
+
+• Aggregate de-identified wellness data across campuses into a single,
+real-time view for staff.
+• Visualize wellness trends by dimension, campus/location, and
+population (e.g., undergraduate vs. graduate, by school or program) over
+time.
+• Overlay wellness trends against known stressor periods, such as
+academic calendar events and relevant local, national, or public health
+events, to help identify when and where dips occur and whether they
+correlate with an identifiable cause.
+• Help staff spot disconnects between where resources exist and where
+student wellness data suggests they are needed, to inform outreach and
+resource allocation decisions.
+
+■ Suggested Approaches
+
+• Standard time-series and comparative visualizations (trend lines, heat
+maps by campus/dimension) paired with simple anomaly or dip detection.
+• An LLM-assisted natural-language query layer that lets staff ask
+questions of the dashboard directly (e.g., "where did financial wellness
+scores drop last month?").
+• A modular data model that can later incorporate additional sources,
+such as Recreation or Student Health program data, without a redesign.
+• A clear, non-clinical presentation style suited to program leads and
+administrators rather than a research audience.
+
+■ Deliverables
+
+A working prototype dashboard that demonstrates: at least one
+interactive visualization built on sample de-identified wellness data; a
+trend or dip identified in that data that the team ties to a plausible
+calendar event or stressor period; and a short team walkthrough
+explaining how a counselor or administrator would use the dashboard to
+make a real decision about outreach or resources.
+
+For more Scarletwell resources:
+
+-   ScarletWell_Rutgers_Resources_Locations.docx (check discord Channel)
+
+-   https://youtu.be/Axvfw53mFZo (Video Resource from the ScarletWell
+    team)

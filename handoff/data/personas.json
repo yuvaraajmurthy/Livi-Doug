@@ -1,0 +1,47 @@
+[
+  {"student_id": "DEMO-ANDRE", "name": "Andre", "role_in_demo": "main persona: engagement and belonging",
+   "campus": "newark", "level": "undergrad", "class_year": "junior", "housing": "commuter", "first_gen": true,
+   "works_20plus_hours": true, "school": "School of Arts and Sciences-Newark", "home_area": "commutes", "preferred_language": "en",
+   "story": "Commutes about 50 minutes, works afternoons and evenings, first in his family at college. Classes end 12:20 on Tuesdays and Thursdays; work starts at 3. Knows almost nobody on campus.",
+   "free_windows": ["Tue 12:20-14:30", "Thu 12:20-14:30"],
+   "barriers_tapped": ["no_time", "dont_know_anyone"],
+   "takes": [
+     {"taken_on": "2026-09-14", "emotional": 2.6, "environmental": 2.9, "financial": 2.1, "intellectual": 3.2, "occupational": 3.0, "physical": 2.7, "social": 1.9, "spiritual": 3.4},
+     {"taken_on": "2026-10-26", "emotional": 2.5, "environmental": 2.9, "financial": 2.2, "intellectual": 3.1, "occupational": 3.0, "physical": 2.5, "social": 2.4, "spiritual": 3.4}],
+   "demo_steps": [
+     {"week_of": "2026-10-12", "pick": "Commuter lunch and board games (sample), Paul Robeson Campus Center, Tue 12:30", "social_rung": 2, "invited_friend": true, "went": true, "helped": 4},
+     {"week_of": "2026-10-19", "pick": "Open gym pickup basketball (sample), Golden Dome, Thu 12:30", "social_rung": 2, "invited_friend": false, "went": true, "helped": 4}],
+   "synthetic": true},
+  {"student_id": "DEMO-JORDAN", "name": "Jordan", "role_in_demo": "first-year loneliness; residence-hall challenge",
+   "campus": "new_brunswick", "level": "undergrad", "class_year": "first_year", "housing": "resident", "first_gen": false,
+   "works_20plus_hours": false, "school": "School of Arts and Sciences", "home_area": "Livingston", "preferred_language": "en",
+   "story": "Moved two states away; roommate is never there; plays basketball but hasn't found a group.",
+   "barriers_tapped": ["dont_know_anyone", "not_my_scene"],
+   "takes": [
+     {"taken_on": "2026-09-09", "emotional": 2.4, "environmental": 3.0, "financial": 2.8, "intellectual": 2.9, "occupational": 2.7, "physical": 3.4, "social": 1.8, "spiritual": 2.6}],
+   "synthetic": true},
+  {"student_id": "DEMO-PRIYA", "name": "Priya", "role_in_demo": "the judge's example: sleep low because of Calc II",
+   "campus": "new_brunswick", "level": "undergrad", "class_year": "sophomore", "housing": "resident", "first_gen": false,
+   "works_20plus_hours": false, "school": "School of Engineering", "home_area": "Busch", "preferred_language": "en",
+   "story": "Up past 2 a.m. on Calc II problem sets most nights.",
+   "barriers_tapped": ["coursework"],
+   "takes": [
+     {"taken_on": "2026-10-06", "emotional": 2.5, "environmental": 3.1, "financial": 2.9, "intellectual": 2.3, "occupational": 3.0, "physical": 2.0, "social": 3.1, "spiritual": 2.7}],
+   "synthetic": true},
+  {"student_id": "DEMO-SOFIA", "name": "Sofia", "role_in_demo": "Camden, Spanish, where supply is thin",
+   "campus": "camden", "level": "grad", "class_year": "grad", "housing": "commuter", "first_gen": true,
+   "works_20plus_hours": true, "school": "School of Nursing-Camden", "home_area": "commutes", "preferred_language": "es",
+   "story": "Works full time, takes evening classes, supports family; money is the constant worry.",
+   "barriers_tapped": ["no_time", "money"],
+   "takes": [
+     {"taken_on": "2026-09-21", "emotional": 2.6, "environmental": 2.8, "financial": 1.9, "intellectual": 3.0, "occupational": 3.5, "physical": 2.6, "social": 2.5, "spiritual": 2.2}],
+   "synthetic": true},
+  {"student_id": "DEMO-TAYLOR", "name": "Taylor", "role_in_demo": "care-first: a person first, events later",
+   "campus": "new_brunswick", "level": "undergrad", "class_year": "junior", "housing": "resident", "first_gen": false,
+   "works_20plus_hours": false, "school": "School of Arts and Sciences", "home_area": "College Avenue", "preferred_language": "en",
+   "story": "Very low emotional score; several other dimensions low.",
+   "barriers_tapped": [],
+   "takes": [
+     {"taken_on": "2026-10-08", "emotional": 1.3, "environmental": 2.5, "financial": 2.4, "intellectual": 2.2, "occupational": 2.4, "physical": 1.9, "social": 1.6, "spiritual": 2.3}],
+   "synthetic": true}
+]

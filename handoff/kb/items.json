@@ -1,0 +1,2671 @@
+{
+  "generated": "2026-10-10",
+  "count": 116,
+  "items": [
+    {
+      "id": "evt-10003490-2026-10-10",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-10 09:00:00",
+      "end": "2026-10-10 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-10-10/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003673-2026-10-12",
+      "type": "event",
+      "title": "Exercise is Medicine Month",
+      "campus": "New Brunswick",
+      "venue": "Multiple Rec Centers",
+      "address": "various, New Brunswick",
+      "start": "2026-10-12 00:00:00",
+      "end": "2026-10-12 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [
+        "inactivity"
+      ],
+      "summary": "Exercise is Medicine Month is an inclusive, low-pressure invitation to get active in whatever way feels right for you – a first strength-training session, a new fitness class, or a fitness assessment that helps you understand your body better. No experience necessary. No judgment",
+      "url": "https://wellnesscalendar.rutgers.edu/event/exercise-is-medicine-month-2-2/2026-10-12/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003455-2026-10-13",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Tuesdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-13 09:00:00",
+      "end": "2026-10-13 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-tuesdays/2026-10-13/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4457-2026-10-13",
+      "type": "event",
+      "title": "LSM Pumpkin Decorating Event",
+      "campus": "New Brunswick",
+      "venue": "Library of Science and Medicine",
+      "address": "165 Bevier Rd, Piscataway",
+      "start": "2026-10-13 14:00:00",
+      "end": "2026-10-13 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [],
+      "summary": "It’s that time of year again! The Library of Science and Medicine (LSM) is thrilled to host another year of our popular Pumpkin Decorating Event. Unleash your spooky creativity, enjoy some very sugary snacks, and transform ordinary pumpkins into your own extraordinary works of ar",
+      "url": "https://wellnesscalendar.rutgers.edu/event/lsm-pumpkin-decorating-event-2/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003690-2026-10-15",
+      "type": "event",
+      "title": "Turn the Campus Purple (October is National Domestic Violence Awareness Month)",
+      "campus": "New Brunswick",
+      "venue": "Multiple campuses",
+      "address": null,
+      "start": "2026-10-15 00:00:00",
+      "end": "2026-10-15 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "Rutgers stands with all survivors of domestic and relationship violence. Showing up is how we build a campus where survivors feel supported. The Office of Violence Prevention and Victim Assistance is marking 35 years of this work with events open to the entire Rutgers community. ",
+      "url": "https://wellnesscalendar.rutgers.edu/event/turn-the-campus-purple-october-is-national-domestic-violence-awareness-month-2/2026-10-15/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003706-2026-10-15",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-10-15 10:00:00",
+      "end": "2026-10-15 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-10-15/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003624-2026-10-15",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – College Ave. (Thursdays)",
+      "campus": "New Brunswick",
+      "venue": "College Ave Student Center (CASC)",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-10-15 11:00:00",
+      "end": "2026-10-15 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market team is excited to invite YOU to our on-campus farmers market! Managed by Rutgers students and staff, we partner with local growers and vendors who sell fresh fruits & vegetables, and artisanal products. ALL of our market locations accept food",
+      "url": "https://wellnesscalendar.rutgers.edu/event/__trashed-3/2026-10-15/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4348-2026-10-15",
+      "type": "event",
+      "title": "Planting a Healthy Mindset: Create your Own Kokedama",
+      "campus": "New Brunswick",
+      "venue": "Cook Campus – Floriculture Greenhouse",
+      "address": "64 Nichol Ave, New Brunswick",
+      "start": "2026-10-15 17:00:00",
+      "end": "2026-10-15 19:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Environment/Nature"
+      ],
+      "dimensions": [
+        "environmental",
+        "intellectual",
+        "social"
+      ],
+      "causes": [],
+      "summary": "Come join us at the Floriculture Greenhouse to create your own Kokedama! Kokedama is a Japanese horticultural art form in which a plant is grown in a soil ball wrapped in moss. Connect with nature and learn more about plants! Follow us @plantingahealthymindset on Instagram for up",
+      "url": "https://wellnesscalendar.rutgers.edu/event/planting-a-healthy-mindset-create-your-own-kokedama/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003543-2026-10-16",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Cooks Market @ Rutgers Gardens (Fridays)",
+      "campus": "New Brunswick",
+      "venue": "Cooks Market",
+      "address": "112 Log Cabin Rd, New Brunswick",
+      "start": "2026-10-16 11:00:00",
+      "end": "2026-10-16 15:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-cooks-market-rutgers-gardens-fridays/2026-10-16/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003491-2026-10-17",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-17 09:00:00",
+      "end": "2026-10-17 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-10-17/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003674-2026-10-19",
+      "type": "event",
+      "title": "Exercise is Medicine Month",
+      "campus": "New Brunswick",
+      "venue": "Multiple Rec Centers",
+      "address": "various, New Brunswick",
+      "start": "2026-10-19 00:00:00",
+      "end": "2026-10-19 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [
+        "inactivity"
+      ],
+      "summary": "Exercise is Medicine Month is an inclusive, low-pressure invitation to get active in whatever way feels right for you – a first strength-training session, a new fitness class, or a fitness assessment that helps you understand your body better. No experience necessary. No judgment",
+      "url": "https://wellnesscalendar.rutgers.edu/event/exercise-is-medicine-month-2-2/2026-10-19/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003456-2026-10-20",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Tuesdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-20 09:00:00",
+      "end": "2026-10-20 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-tuesdays/2026-10-20/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4426-2026-10-20",
+      "type": "event",
+      "title": "Self Defense and Personal Safety Workshop",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-10-20 17:30:00",
+      "end": "2026-10-20 18:45:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health",
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "physical",
+        "spiritual"
+      ],
+      "causes": [
+        "inactivity",
+        "purpose"
+      ],
+      "summary": "Join Rutgers University Police Department (RUPD) and Rutgers Recreation for free self-defense and personal safety workshops. Learn situational awareness, de-escalation techniques, and practical tools to help protect yourself. No previous martial arts experience is required. This ",
+      "url": "https://wellnesscalendar.rutgers.edu/event/self-defense-and-personal-safety-workshop-2/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003691-2026-10-22",
+      "type": "event",
+      "title": "Turn the Campus Purple (October is National Domestic Violence Awareness Month)",
+      "campus": "New Brunswick",
+      "venue": "Multiple campuses",
+      "address": null,
+      "start": "2026-10-22 00:00:00",
+      "end": "2026-10-22 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "Rutgers stands with all survivors of domestic and relationship violence. Showing up is how we build a campus where survivors feel supported. The Office of Violence Prevention and Victim Assistance is marking 35 years of this work with events open to the entire Rutgers community. ",
+      "url": "https://wellnesscalendar.rutgers.edu/event/turn-the-campus-purple-october-is-national-domestic-violence-awareness-month-2/2026-10-22/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003707-2026-10-22",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-10-22 10:00:00",
+      "end": "2026-10-22 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-10-22/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003625-2026-10-22",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – College Ave. (Thursdays)",
+      "campus": "New Brunswick",
+      "venue": "College Ave Student Center (CASC)",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-10-22 11:00:00",
+      "end": "2026-10-22 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market team is excited to invite YOU to our on-campus farmers market! Managed by Rutgers students and staff, we partner with local growers and vendors who sell fresh fruits & vegetables, and artisanal products. ALL of our market locations accept food",
+      "url": "https://wellnesscalendar.rutgers.edu/event/__trashed-3/2026-10-22/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4088-2026-10-22",
+      "type": "event",
+      "title": "Fall Creativity Lunch Series: Session 3 Zine Workshop",
+      "campus": "New Brunswick",
+      "venue": "Douglass Library",
+      "address": "8 Chapel Drive, New Brunswick",
+      "start": "2026-10-22 12:00:00",
+      "end": "2026-10-22 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [],
+      "summary": "Take a creative break and discover the art of zine-making through simple folding, collage, and storytelling. No experience is needed, just bring your curiosity and leave with your own handmade mini-zine. Bring your lunch! Registration required. Please register here: https://rutge",
+      "url": "https://wellnesscalendar.rutgers.edu/event/fall-creativity-lunch-series-session-3-zine-workshop/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4359-2026-10-22",
+      "type": "event",
+      "title": "Money Matters Series for Grad Students (Session 2 of 3)",
+      "campus": "New Brunswick",
+      "venue": "Virtual Event",
+      "address": null,
+      "start": "2026-10-22 12:00:00",
+      "end": "2026-10-22 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "intellectual"
+      ],
+      "causes": [
+        "money"
+      ],
+      "summary": "Join us for this three-part series designed to help students manage their money: Session 1: Thursday, October 1 | Psychology of Money: Understanding Your Money Mindset What influences the financial decisions you make? Explore the psychology behind your relationship with money and",
+      "url": "https://wellnesscalendar.rutgers.edu/event/money-matters-series-for-grad-students-session-2-of-3/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003544-2026-10-23",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Cooks Market @ Rutgers Gardens (Fridays)",
+      "campus": "New Brunswick",
+      "venue": "Cooks Market",
+      "address": "112 Log Cabin Rd, New Brunswick",
+      "start": "2026-10-23 11:00:00",
+      "end": "2026-10-23 15:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-cooks-market-rutgers-gardens-fridays/2026-10-23/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003492-2026-10-24",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-24 09:00:00",
+      "end": "2026-10-24 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-10-24/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003675-2026-10-26",
+      "type": "event",
+      "title": "Exercise is Medicine Month",
+      "campus": "New Brunswick",
+      "venue": "Multiple Rec Centers",
+      "address": "various, New Brunswick",
+      "start": "2026-10-26 00:00:00",
+      "end": "2026-10-26 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [
+        "inactivity"
+      ],
+      "summary": "Exercise is Medicine Month is an inclusive, low-pressure invitation to get active in whatever way feels right for you – a first strength-training session, a new fitness class, or a fitness assessment that helps you understand your body better. No experience necessary. No judgment",
+      "url": "https://wellnesscalendar.rutgers.edu/event/exercise-is-medicine-month-2-2/2026-10-26/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003457-2026-10-27",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Tuesdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-27 09:00:00",
+      "end": "2026-10-27 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-tuesdays/2026-10-27/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003692-2026-10-29",
+      "type": "event",
+      "title": "Turn the Campus Purple (October is National Domestic Violence Awareness Month)",
+      "campus": "New Brunswick",
+      "venue": "Multiple campuses",
+      "address": null,
+      "start": "2026-10-29 00:00:00",
+      "end": "2026-10-29 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "Rutgers stands with all survivors of domestic and relationship violence. Showing up is how we build a campus where survivors feel supported. The Office of Violence Prevention and Victim Assistance is marking 35 years of this work with events open to the entire Rutgers community. ",
+      "url": "https://wellnesscalendar.rutgers.edu/event/turn-the-campus-purple-october-is-national-domestic-violence-awareness-month-2/2026-10-29/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003708-2026-10-29",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-10-29 10:00:00",
+      "end": "2026-10-29 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-10-29/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003626-2026-10-29",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – College Ave. (Thursdays)",
+      "campus": "New Brunswick",
+      "venue": "College Ave Student Center (CASC)",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-10-29 11:00:00",
+      "end": "2026-10-29 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market team is excited to invite YOU to our on-campus farmers market! Managed by Rutgers students and staff, we partner with local growers and vendors who sell fresh fruits & vegetables, and artisanal products. ALL of our market locations accept food",
+      "url": "https://wellnesscalendar.rutgers.edu/event/__trashed-3/2026-10-29/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4463-2026-10-29",
+      "type": "event",
+      "title": "Scarlet Strides: Walk. Connect. Thrive.",
+      "campus": "New Brunswick",
+      "venue": "College Avenue Campus, The Yard",
+      "address": "40 College Ave, New Brunswick",
+      "start": "2026-10-29 12:00:00",
+      "end": "2026-10-29 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health",
+        "Environment/Nature",
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "emotional",
+        "environmental",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity"
+      ],
+      "summary": "Pleas join us for a wellness experience designed to help us pause, connect and move together. We’ll start with a short, engaging activity, followed by a wellness walk. Wellness giveaways for participants! Light snacks provided (not lunch). Registration link or event website https",
+      "url": "https://wellnesscalendar.rutgers.edu/event/scarlet-strides-walk-connect-thrive/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003545-2026-10-30",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Cooks Market @ Rutgers Gardens (Fridays)",
+      "campus": "New Brunswick",
+      "venue": "Cooks Market",
+      "address": "112 Log Cabin Rd, New Brunswick",
+      "start": "2026-10-30 11:00:00",
+      "end": "2026-10-30 15:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-cooks-market-rutgers-gardens-fridays/2026-10-30/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003723-2026-10-30",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2026-10-30 12:30:00",
+      "end": "2026-10-30 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-2/2026-10-30/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003493-2026-10-31",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-10-31 09:00:00",
+      "end": "2026-10-31 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-10-31/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003676-2026-11-02",
+      "type": "event",
+      "title": "Exercise is Medicine Month",
+      "campus": "New Brunswick",
+      "venue": "Multiple Rec Centers",
+      "address": "various, New Brunswick",
+      "start": "2026-11-02 00:00:00",
+      "end": "2026-11-02 23:59:59",
+      "all_day": true,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [
+        "inactivity"
+      ],
+      "summary": "Exercise is Medicine Month is an inclusive, low-pressure invitation to get active in whatever way feels right for you – a first strength-training session, a new fitness class, or a fitness assessment that helps you understand your body better. No experience necessary. No judgment",
+      "url": "https://wellnesscalendar.rutgers.edu/event/exercise-is-medicine-month-2-2/2026-11-02/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4342-2026-11-02",
+      "type": "event",
+      "title": "Brew & Connect: A First-Gen Grad Networking Breakfast",
+      "campus": "New Brunswick",
+      "venue": "Graduate Student Lounge",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-11-02 09:00:00",
+      "end": "2026-11-02 11:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "social"
+      ],
+      "causes": [],
+      "summary": "In recognition of National First-Generation College Celebration Week (November 2-8), join the Office of Graduate Student Life in the Graduate Student Lounge for a low-pressure drop-in event for first-generation graduate students. Whether you’re just starting grad school or deep i",
+      "url": "https://wellnesscalendar.rutgers.edu/event/brew-connect-a-first-gen-grad-networking-breakfast/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4428-2026-11-03",
+      "type": "event",
+      "title": "Self Defense and Personal Safety Workshop",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-11-03 17:30:00",
+      "end": "2026-11-03 18:45:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health",
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "physical",
+        "spiritual"
+      ],
+      "causes": [
+        "inactivity",
+        "purpose"
+      ],
+      "summary": "Join Rutgers University Police Department (RUPD) and Rutgers Recreation for free self-defense and personal safety workshops. Learn situational awareness, de-escalation techniques, and practical tools to help protect yourself. No previous martial arts experience is required. One a",
+      "url": "https://wellnesscalendar.rutgers.edu/event/self-defense-and-personal-safety-workshop-3/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003709-2026-11-05",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-11-05 10:00:00",
+      "end": "2026-11-05 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-11-05/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003627-2026-11-05",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – College Ave. (Thursdays)",
+      "campus": "New Brunswick",
+      "venue": "College Ave Student Center (CASC)",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-11-05 11:00:00",
+      "end": "2026-11-05 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market team is excited to invite YOU to our on-campus farmers market! Managed by Rutgers students and staff, we partner with local growers and vendors who sell fresh fruits & vegetables, and artisanal products. ALL of our market locations accept food",
+      "url": "https://wellnesscalendar.rutgers.edu/event/__trashed-3/2026-11-05/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4344-2026-11-05",
+      "type": "event",
+      "title": "Recognizing Your Strengths as a Grad Student: Moving Beyond Imposter Syndrome",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2026-11-05 17:00:00",
+      "end": "2026-11-05 18:30:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual"
+      ],
+      "causes": [],
+      "summary": "Graduate school is a time of growth, learning, and discovering what you’re capable of. This workshop invites graduate students to explore imposter syndrome through a strengths-based lens. We’ll consider how self-doubt can sometimes overshadow our accomplishments and identify stra",
+      "url": "https://wellnesscalendar.rutgers.edu/event/recognizing-your-strengths-as-a-grad-student-moving-beyond-imposter-syndrome/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003546-2026-11-06",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Cooks Market @ Rutgers Gardens (Fridays)",
+      "campus": "New Brunswick",
+      "venue": "Cooks Market",
+      "address": "112 Log Cabin Rd, New Brunswick",
+      "start": "2026-11-06 11:00:00",
+      "end": "2026-11-06 15:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-cooks-market-rutgers-gardens-fridays/2026-11-06/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003494-2026-11-07",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-11-07 09:00:00",
+      "end": "2026-11-07 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-11-07/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003710-2026-11-12",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-11-12 10:00:00",
+      "end": "2026-11-12 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-11-12/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003628-2026-11-12",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – College Ave. (Thursdays)",
+      "campus": "New Brunswick",
+      "venue": "College Ave Student Center (CASC)",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-11-12 11:00:00",
+      "end": "2026-11-12 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market team is excited to invite YOU to our on-campus farmers market! Managed by Rutgers students and staff, we partner with local growers and vendors who sell fresh fruits & vegetables, and artisanal products. ALL of our market locations accept food",
+      "url": "https://wellnesscalendar.rutgers.edu/event/__trashed-3/2026-11-12/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003547-2026-11-13",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Cooks Market @ Rutgers Gardens (Fridays)",
+      "campus": "New Brunswick",
+      "venue": "Cooks Market",
+      "address": "112 Log Cabin Rd, New Brunswick",
+      "start": "2026-11-13 11:00:00",
+      "end": "2026-11-13 15:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-cooks-market-rutgers-gardens-fridays/2026-11-13/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4399-2026-11-13",
+      "type": "event",
+      "title": "Creative Wellness for Future Teachers",
+      "campus": "New Brunswick",
+      "venue": "Livingston Student Center",
+      "address": "84 Kilmer Ave, New Brunswick",
+      "start": "2026-11-13 13:00:00",
+      "end": "2026-11-13 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "occupational",
+        "social"
+      ],
+      "causes": [],
+      "summary": "Rutgers Future Teachers Association (FTA), in collaboration with the Graduate School of Education (GSE), proposes a wellness series for future teachers. During phase three of the GSE program, students participate in full-time student teaching, taking on responsibilities such as l",
+      "url": "https://wellnesscalendar.rutgers.edu/event/creative-wellness-for-future-teachers/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003495-2026-11-14",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-11-14 09:00:00",
+      "end": "2026-11-14 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-11-14/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4430-2026-11-17",
+      "type": "event",
+      "title": "Self Defense and Personal Safety Workshop",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-11-17 17:30:00",
+      "end": "2026-11-17 18:45:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Emotional/Mental Health",
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "physical",
+        "spiritual"
+      ],
+      "causes": [
+        "inactivity",
+        "purpose"
+      ],
+      "summary": "Join Rutgers University Police Department (RUPD) and Rutgers Recreation for free self-defense and personal safety workshops. Learn situational awareness, de-escalation techniques, and practical tools to help protect yourself. No previous martial arts experience is required. Locat",
+      "url": "https://wellnesscalendar.rutgers.edu/event/self-defense-and-personal-safety-workshop-4/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003711-2026-11-19",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-11-19 10:00:00",
+      "end": "2026-11-19 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-11-19/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003629-2026-11-19",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – College Ave. (Thursdays)",
+      "campus": "New Brunswick",
+      "venue": "College Ave Student Center (CASC)",
+      "address": "126 College Avenue, New Brunswick",
+      "start": "2026-11-19 11:00:00",
+      "end": "2026-11-19 16:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market team is excited to invite YOU to our on-campus farmers market! Managed by Rutgers students and staff, we partner with local growers and vendors who sell fresh fruits & vegetables, and artisanal products. ALL of our market locations accept food",
+      "url": "https://wellnesscalendar.rutgers.edu/event/__trashed-3/2026-11-19/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4361-2026-11-19",
+      "type": "event",
+      "title": "Money Matters Series for Grad Students (Session 3 of 3)",
+      "campus": "New Brunswick",
+      "venue": "Virtual Event",
+      "address": null,
+      "start": "2026-11-19 12:00:00",
+      "end": "2026-11-19 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "intellectual"
+      ],
+      "causes": [
+        "money"
+      ],
+      "summary": "Join us for this three-part series designed to help students manage their money: Session 1: Thursday, October 1 | Psychology of Money: Understanding Your Money Mindset What influences the financial decisions you make? Explore the psychology behind your relationship with money and",
+      "url": "https://wellnesscalendar.rutgers.edu/event/money-matters-series-for-grad-students-session-3-of-3/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003548-2026-11-20",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Cooks Market @ Rutgers Gardens (Fridays)",
+      "campus": "New Brunswick",
+      "venue": "Cooks Market",
+      "address": "112 Log Cabin Rd, New Brunswick",
+      "start": "2026-11-20 11:00:00",
+      "end": "2026-11-20 15:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-cooks-market-rutgers-gardens-fridays/2026-11-20/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4483-2026-11-20",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2026-11-20 12:30:00",
+      "end": "2026-11-20 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-3/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003496-2026-11-21",
+      "type": "event",
+      "title": "Rutgers Community Farmers Market – Jones Ave. (Saturdays)",
+      "campus": "New Brunswick",
+      "venue": "New Brunswick Community Farmers Market (NBCFM)",
+      "address": "178 Jones Ave, New Brunswick",
+      "start": "2026-11-21 09:00:00",
+      "end": "2026-11-21 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Other"
+      ],
+      "dimensions": [
+        "financial",
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "money"
+      ],
+      "summary": "The Rutgers Community Farmers Market partners with local vendors and growers to sell fresh, nutritious, and affordable produce. All market locations accept SNAP, WIC, FMNP (Farmers Market Nutrition Program) and other nutrition assistance benefits. PLUS, HALF OFF all fruits and ve",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-community-farmers-market-jones-ave-saturdays-2/2026-11-21/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003712-2026-11-26",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-11-26 10:00:00",
+      "end": "2026-11-26 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-11-26/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003713-2026-12-03",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-12-03 10:00:00",
+      "end": "2026-12-03 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-12-03/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4097-2026-12-03",
+      "type": "event",
+      "title": "Fall Creativity Lunch Series: Session 4 Painting Workshop",
+      "campus": "New Brunswick",
+      "venue": "Alexander Library, College Ave Campus",
+      "address": "169 College Ave, New Brunswick",
+      "start": "2026-12-03 12:00:00",
+      "end": "2026-12-03 13:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [],
+      "summary": "Take a creative break at our painting workshop and transform rocks and other objects into colorful works of art. No experience is needed, just bring your curiosity and enjoy the benefits of creativity, play, and self-expression. Bring your lunch and register here: https://rutgers",
+      "url": "https://wellnesscalendar.rutgers.edu/event/fall-creativity-lunch-series-session-4-painting-workshop/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003714-2026-12-10",
+      "type": "event",
+      "title": "Rutgers Big Chill 5K – Register Now!",
+      "campus": "New Brunswick",
+      "venue": "College Ave Gym",
+      "address": "130 College Ave, New Brunswick",
+      "start": "2026-12-10 10:00:00",
+      "end": "2026-12-10 12:00:00",
+      "all_day": false,
+      "cost": "$10 – $30",
+      "calendar_categories": [
+        "Physical/Movement"
+      ],
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "inactivity",
+        "loneliness"
+      ],
+      "summary": "Join us for the Rutgers Big Chill 5K on December 12 at 10 a.m. at College Avenue Gym! This holiday-themed 5K brings the Rutgers community together to support local children and spread holiday joy. Registration is required. Spaces are limited, so sign up today! Register before Nov",
+      "url": "https://wellnesscalendar.rutgers.edu/event/rutgers-big-chill-5k-register-now-2/2026-12-10/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-4485-2026-12-18",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2026-12-18 12:30:00",
+      "end": "2026-12-18 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-4/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003731-2027-01-29",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2027-01-29 12:30:00",
+      "end": "2027-01-29 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-2/2027-01-29/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003732-2027-02-26",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2027-02-26 12:30:00",
+      "end": "2027-02-26 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-2/2027-02-26/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003733-2027-03-26",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2027-03-26 12:30:00",
+      "end": "2027-03-26 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-2/2027-03-26/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "evt-10003728-2027-04-30",
+      "type": "event",
+      "title": "Black Like Me Wellness Series",
+      "campus": "New Brunswick",
+      "venue": "Paul Robeson Cultural Center",
+      "address": "600 Bartholomew Road, Piscataway",
+      "start": "2027-04-30 12:30:00",
+      "end": "2027-04-30 14:00:00",
+      "all_day": false,
+      "cost": "free (no cost listed)",
+      "calendar_categories": [
+        "Art/Music",
+        "Emotional/Mental Health",
+        "Other"
+      ],
+      "dimensions": [
+        "emotional",
+        "intellectual",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "summary": "This monthly workshop series led by CAPS Community Based Counselors Shan Reeves and Kia Alexander, discusses a variety of topics centered around Blackness at Rutgers, throughout the US, and around the world. Engage in meaningful conversations that explore topics such as Black mus",
+      "url": "https://wellnesscalendar.rutgers.edu/event/black-like-me-wellness-series-2/2027-04-30/",
+      "source": "ScarletWell Wellness Calendar API",
+      "last_checked": "2026-10-10",
+      "tags_method": "keyword placeholder: replace with Claude Haiku tagging"
+    },
+    {
+      "id": "res-nb-001",
+      "type": "resource",
+      "title": "Sonny Werblin Recreation Center",
+      "program": "Rutgers Recreation",
+      "campus": "New Brunswick",
+      "address": "656 Bartholomew Road, Piscataway, NJ 08854",
+      "phone": "848-445-0460",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-002",
+      "type": "resource",
+      "title": "Livingston Recreation Center",
+      "program": "Rutgers Recreation",
+      "campus": "New Brunswick",
+      "address": "62 Road 3 Piscataway, NJ 08854",
+      "phone": "848-445-2398",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-003",
+      "type": "resource",
+      "title": "Cook/Douglass Recreation Center",
+      "program": "Rutgers Recreation",
+      "campus": "New Brunswick",
+      "address": "50 Biel Rd New Brunswick, NJ 08901",
+      "phone": "848-932-8600",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-004",
+      "type": "resource",
+      "title": "Rutgers Fitness Center @ Easton Avenue",
+      "program": "Rutgers Recreation",
+      "campus": "New Brunswick",
+      "address": "30 Easton Ave New Brunswick, NJ",
+      "phone": "848-932-6890",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [
+        "inactivity"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-005",
+      "type": "resource",
+      "title": "College Avenue Gym",
+      "program": "Rutgers Recreation",
+      "campus": "New Brunswick",
+      "address": "130 College Ave New Brunswick, NJ 08901",
+      "phone": "848-932-7171",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-006",
+      "type": "resource",
+      "title": "Busch Livingstone Health Center",
+      "program": "Rutgers Student Health",
+      "campus": "New Brunswick",
+      "address": "110 Hospital Road, Piscataway, NJ 08854",
+      "phone": "848-932-7402",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-007",
+      "type": "resource",
+      "title": "Hurtado Health Center",
+      "program": "Rutgers Student Health",
+      "campus": "New Brunswick",
+      "address": "11 Bishop Place, New Brunswick, NJ 08901",
+      "phone": "848-932-7402",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-008",
+      "type": "resource",
+      "title": "CAPS Main Office",
+      "program": "Rutgers Student Health",
+      "campus": "New Brunswick",
+      "address": "17 Senior Street, New Brunswick, NJ 08901",
+      "phone": "848-932-7884",
+      "dimensions": [
+        "emotional",
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-009",
+      "type": "resource",
+      "title": "CAPS Next Step",
+      "program": "Rutgers Student Health",
+      "campus": "New Brunswick",
+      "address": "185 Bevier Road, Busch Campus, Piscataway, NJ 08854",
+      "phone": "848-932-7884",
+      "dimensions": [
+        "emotional",
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-010",
+      "type": "resource",
+      "title": "Wood’s Café",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "675 Hoes Ln W, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-011",
+      "type": "resource",
+      "title": "Henry’s Diner",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "55 Rockefeller Rd #80, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-012",
+      "type": "resource",
+      "title": "Kilmer’s Market",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "55 Rockefeller Rd Unit #30, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-013",
+      "type": "resource",
+      "title": "Livingston Dining Commons",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "85 Avenue E, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-014",
+      "type": "resource",
+      "title": "The Rutgers Club",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "85 Avenue E, 2nd Floor, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "causes": [
+        "loneliness"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-015",
+      "type": "resource",
+      "title": "The Atrium",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "Rutgers Student Center, 126 College Ave, New Brunswick, NJ",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-016",
+      "type": "resource",
+      "title": "Café West",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "15 Seminary Pl, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-017",
+      "type": "resource",
+      "title": "Panera Bread",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "126 College Ave, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-018",
+      "type": "resource",
+      "title": "Harvest IFNH",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "61 Dudley Rd, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-019",
+      "type": "resource",
+      "title": "Neilson Dining Hall",
+      "program": "Rutgers Dining",
+      "campus": "New Brunswick",
+      "address": "177 Ryders Ln, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-020",
+      "type": "resource",
+      "title": "College Ave Student Center, Room 112",
+      "program": "Student Basic Needs",
+      "campus": "New Brunswick",
+      "address": "126 College Ave, New Brunswick, NJ",
+      "phone": null,
+      "dimensions": [
+        "financial",
+        "physical"
+      ],
+      "causes": [
+        "money"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-021",
+      "type": "resource",
+      "title": "Alcohol and Other Drug Awareness",
+      "program": "Rutgers Student Affairs, Alcohol and Other Drug Awareness",
+      "campus": "New Brunswick",
+      "address": "126 College Ave, New Brunswick, NJ",
+      "phone": "848-932-8576",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-022",
+      "type": "resource",
+      "title": "Busch Career Counseling Office",
+      "program": "Career Exploration and Success",
+      "campus": "New Brunswick",
+      "address": "604 Bartholomew Road, Piscataway, NJ",
+      "phone": "848-445-6127",
+      "dimensions": [
+        "intellectual",
+        "occupational"
+      ],
+      "causes": [
+        "purpose"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-023",
+      "type": "resource",
+      "title": "Busch Learning Center",
+      "program": "Rutgers Learning Centers",
+      "campus": "New Brunswick",
+      "address": "118 Frelinghuysen Road, Piscataway, NJ 08854,",
+      "phone": "848-445-4322",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [
+        "academic_workload"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-024",
+      "type": "resource",
+      "title": "College Avenue Learning Center",
+      "program": "Rutgers Learning Centers",
+      "campus": "New Brunswick",
+      "address": "15 Seminary Place, New Brunswick, NJ",
+      "phone": "848-932-0561",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [
+        "academic_workload"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-025",
+      "type": "resource",
+      "title": "Cook/Douglass Learning Center",
+      "program": "Rutgers Learning Centers",
+      "campus": "New Brunswick",
+      "address": "72 Lipman Drive, New Brunswick, NJ 08901,",
+      "phone": "848-932-1660",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [
+        "academic_workload"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-026",
+      "type": "resource",
+      "title": "Livingston Learning Center",
+      "program": "Rutgers Learning Centers",
+      "campus": "New Brunswick",
+      "address": "53 Avenue E, Piscataway, NJ 08854, Room 111",
+      "phone": "848-445-0986",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [
+        "academic_workload"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-027",
+      "type": "resource",
+      "title": "Alexander Library",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "169 College Ave, New Brunswick, NJ 08901",
+      "phone": "848-932-7851",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-028",
+      "type": "resource",
+      "title": "Art Library",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "71 Hamilton Street, New Brunswick, NJ 08901",
+      "phone": "848-932-7739",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-029",
+      "type": "resource",
+      "title": "Carr Library",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "75 Avenue E, Piscataway, NJ 08854",
+      "phone": "848-445-3614",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-030",
+      "type": "resource",
+      "title": "Chang Library",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "59 Dudley Road, New Brunswick, NJ 08901",
+      "phone": "848-932-0305",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-031",
+      "type": "resource",
+      "title": "Douglass Library",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "8 Chapel Drive, New Brunswick, NJ 08901",
+      "phone": "848-932-9411",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-032",
+      "type": "resource",
+      "title": "Library of Science and Medicine",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "165 Bevier Road, Piscataway, NJ 08854",
+      "phone": "848-445-3854",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-033",
+      "type": "resource",
+      "title": "James B. Carey Library",
+      "program": "Rutgers Libraries",
+      "campus": "New Brunswick",
+      "address": "50 Center Way, New Brunswick, NJ 08901",
+      "phone": "848-932-9608",
+      "dimensions": [
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-034",
+      "type": "resource",
+      "title": "CAPS Main Office",
+      "program": "Counseling, Alcohol and Other Drug Assistance and Psychiatric",
+      "campus": "New Brunswick",
+      "address": "17 Senior Street, New Brunswick, NJ 08901",
+      "phone": "848-932-7884",
+      "dimensions": [
+        "emotional"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-035",
+      "type": "resource",
+      "title": "Caps Next Step",
+      "program": "Counseling, Alcohol and Other Drug Assistance and Psychiatric",
+      "campus": "New Brunswick",
+      "address": "185 Bevier Road, Piscataway, NJ 08854, Busch Campus",
+      "phone": "848-932-7884",
+      "dimensions": [
+        "emotional"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-036",
+      "type": "resource",
+      "title": "Office of Student Conduct",
+      "program": "Rutgers Offices of the Deans of Students",
+      "campus": "New Brunswick",
+      "address": "115 College Avenue, New Brunswick, NJ 08901,",
+      "phone": "848-932-9414",
+      "dimensions": [
+        "emotional"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-037",
+      "type": "resource",
+      "title": "Student Health Services Office",
+      "program": "Health Outreach, Promotion and Education (HOPE)",
+      "campus": "New Brunswick",
+      "address": "11 Bishop Place, New Brunswick, NJ",
+      "phone": "848-932-7402",
+      "dimensions": [
+        "social"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-038",
+      "type": "resource",
+      "title": "Busch Student Center 177",
+      "program": "Faith and Spirituality Initiatives Office",
+      "campus": "New Brunswick",
+      "address": "604 Bartholomew Rd Ste 152, Piscataway, NJ",
+      "phone": null,
+      "dimensions": [
+        "spiritual"
+      ],
+      "causes": [
+        "purpose"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-039",
+      "type": "resource",
+      "title": "Douglass Student Center, Room 108E",
+      "program": "Faith and Spirituality Initiatives Office",
+      "campus": "New Brunswick",
+      "address": "100 George St, New Brunswick, NJ",
+      "phone": null,
+      "dimensions": [
+        "spiritual"
+      ],
+      "causes": [
+        "purpose"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-040",
+      "type": "resource",
+      "title": "James Dickson Carr Library, Room 011",
+      "program": "Faith and Spirituality Initiatives Office",
+      "campus": "New Brunswick",
+      "address": "75 Avenue E, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "intellectual",
+        "spiritual"
+      ],
+      "causes": [
+        "purpose"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-041",
+      "type": "resource",
+      "title": "Livingston Student Center",
+      "program": "Faith and Spirituality Initiatives Office",
+      "campus": "New Brunswick",
+      "address": "84 Joyce Kilmer Ave, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "spiritual"
+      ],
+      "causes": [
+        "purpose"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-042",
+      "type": "resource",
+      "title": "Busch Career Counseling Office",
+      "program": "Rutgers Career Exploration and Success",
+      "campus": "New Brunswick",
+      "address": "604 Bartholomew Road, Piscataway, NJ",
+      "phone": "848-445-6127",
+      "dimensions": [
+        "occupational"
+      ],
+      "causes": [
+        "purpose"
+      ],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-043",
+      "type": "resource",
+      "title": "Rutgers Floriculture Greenhouse",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "64 Nichol Ave, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-044",
+      "type": "resource",
+      "title": "Vorhees Mall",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "71 Hamilton St, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-045",
+      "type": "resource",
+      "title": "Passion Puddle",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "71 Lipman Dr, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-046",
+      "type": "resource",
+      "title": "Round House/Rutgers Farm Tours",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "Round House, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-047",
+      "type": "resource",
+      "title": "Deiner Park",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "619 George St, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-048",
+      "type": "resource",
+      "title": "Johnson Park",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "River Rd, Piscataway, NJ 08854",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-049",
+      "type": "resource",
+      "title": "Buccleuch Park",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "321 Easton Ave, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-050",
+      "type": "resource",
+      "title": "Zimmerli Art Museum",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "71 Hamilton St, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental",
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "id": "res-nb-051",
+      "type": "resource",
+      "title": "Rutgers Geology Museum",
+      "program": "Rutgers Gardens and Woods",
+      "campus": "New Brunswick",
+      "address": "85 Somerset St, New Brunswick, NJ 08901",
+      "phone": null,
+      "dimensions": [
+        "environmental",
+        "intellectual"
+      ],
+      "causes": [],
+      "cost": "free for students (verify)",
+      "source": "ScarletWell resource list (challenge file)",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "res-nwk-001",
+      "type": "resource",
+      "title": "Rutgers–Newark Counseling Center",
+      "campus": "Newark",
+      "address": "Blumenthal Hall, 249 University Ave, Room 101, Newark, NJ 07102",
+      "phone": "(973) 353-5805",
+      "dimensions": [
+        "emotional"
+      ],
+      "causes": [
+        "stress",
+        "loneliness"
+      ],
+      "access": "appointment or telehealth; group therapy; workshops",
+      "url": "https://studentaffairs.newark.rutgers.edu/health-wellness/counseling-center",
+      "source": "Rutgers–Newark Student Affairs"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "res-nwk-002",
+      "type": "resource",
+      "title": "pantry+ at RU-N (food pantry)",
+      "campus": "Newark",
+      "dimensions": [
+        "financial",
+        "physical"
+      ],
+      "causes": [
+        "money"
+      ],
+      "access": "online ordering available",
+      "url": "https://studentaffairs.newark.rutgers.edu/health-wellness",
+      "source": "Rutgers–Newark Student Affairs (address to confirm)"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "res-cmd-001",
+      "type": "resource",
+      "title": "Rutgers–Camden Student Wellness Center",
+      "campus": "Camden",
+      "address": "326 Penn Street, Campus Center 2nd floor, Camden, NJ",
+      "phone": "856-225-6005",
+      "hours": "Mon–Fri 8:30 am–4:30 pm; some evening hours (confirm)",
+      "dimensions": [
+        "emotional",
+        "physical"
+      ],
+      "causes": [
+        "stress",
+        "sleep_habits"
+      ],
+      "url": "https://wellnesscenter.camden.rutgers.edu/",
+      "source": "Rutgers–Camden Student Wellness Center"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "res-cmd-002",
+      "type": "resource",
+      "title": "Uwill free teletherapy (Camden students)",
+      "campus": "Online",
+      "dimensions": [
+        "emotional"
+      ],
+      "causes": [
+        "stress"
+      ],
+      "access": "online, evenings and weekends",
+      "url": "https://app.uwill.com",
+      "source": "Rutgers–Camden Student Wellness Center"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "res-cmd-003",
+      "type": "resource",
+      "title": "Togetherall 24/7 peer support community",
+      "campus": "Online",
+      "dimensions": [
+        "emotional",
+        "social"
+      ],
+      "causes": [
+        "loneliness",
+        "stress"
+      ],
+      "access": "online, 24/7, moderated by licensed practitioners",
+      "url": "https://togetherall.com",
+      "source": "Rutgers–Camden Student Wellness Center"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "res-cmd-004",
+      "type": "resource",
+      "title": "Rutgers–Camden Food Pantry",
+      "campus": "Camden",
+      "dimensions": [
+        "financial",
+        "physical"
+      ],
+      "causes": [
+        "money"
+      ],
+      "source": "Rutgers–Camden Student Wellness Center (address to confirm)"
+    },
+    {
+      "last_checked": "2026-10-10",
+      "cost": "free for students",
+      "id": "study-001",
+      "type": "study",
+      "title": "Rutgers Sleep Lab: current research studies",
+      "campus": "New Brunswick",
+      "phone": "(848) 932-7037",
+      "email": "sleep-lab@kines.rutgers.edu",
+      "dimensions": [
+        "physical"
+      ],
+      "causes": [
+        "sleep_habits"
+      ],
+      "access": "opt-in research; check eligibility (some studies are for teens 14–17)",
+      "url": "https://kines.rutgers.edu/sleep-lab-participate-in-a-study",
+      "source": "Rutgers Kinesiology Sleep Lab"
+    }
+  ],
+  "crisis_lines_verify_before_demo": [
+    {
+      "name": "988 Suicide & Crisis Lifeline",
+      "contact": "call or text 988",
+      "campus": "all"
+    },
+    {
+      "name": "Crisis Text Line",
+      "contact": "text TALK to 741741",
+      "campus": "all"
+    },
+    {
+      "name": "CAPS (New Brunswick)",
+      "contact": "848-932-7884",
+      "campus": "New Brunswick"
+    },
+    {
+      "name": "Rutgers–Newark Counseling Center",
+      "contact": "(973) 353-5805",
+      "campus": "Newark"
+    },
+    {
+      "name": "Rutgers–Camden Student Wellness Center",
+      "contact": "856-225-6005",
+      "campus": "Camden"
+    },
+    {
+      "name": "Camden County Crisis Screening",
+      "contact": "1-856-428-4357",
+      "campus": "Camden"
+    },
+    {
+      "name": "Emergency",
+      "contact": "911",
+      "campus": "all"
+    }
+  ]
+}

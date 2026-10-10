@@ -1,0 +1,38 @@
+[
+  {
+    "challenge_id": "ch-campus-cup-oct",
+    "title": "Scarlet Wellness Cup: steps this week",
+    "scope": "campus",
+    "week_of": "2026-10-05",
+    "goal_per_campus": {
+      "new_brunswick": 400,
+      "newark": 110,
+      "camden": 70
+    },
+    "progress": {
+      "new_brunswick": 102,
+      "newark": 26,
+      "camden": 19
+    },
+    "rule": "Cooperative: each campus races its own goal, sized to enrollment. No individual leaderboard.",
+    "synthetic": true
+  },
+  {
+    "challenge_id": "ch-sleep-week",
+    "title": "Sleep Week: three wind-down nights",
+    "scope": "all",
+    "week_of": "2026-10-19",
+    "dimension": "physical",
+    "rule": "Timed for midterms. Counts check-ins, not hours slept.",
+    "synthetic": true
+  },
+  {
+    "challenge_id": "ch-busch-halls",
+    "title": "Busch residence halls: bring-a-friend week",
+    "scope": "hall",
+    "week_of": "2026-11-02",
+    "dimension": "social",
+    "rule": "Steps taken with a friend count double.",
+    "synthetic": true
+  }
+]

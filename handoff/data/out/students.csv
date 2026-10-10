@@ -1,0 +1,1506 @@
+student_id,campus,level,class_year,housing,first_gen,works_20plus_hours,school,home_area,preferred_language,synthetic
+S00001,newark,undergrad,senior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00002,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00003,new_brunswick,undergrad,first_year,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00004,camden,undergrad,first_year,commuter,True,True,Rutgers School of Business-Camden,commutes,en,True
+S00005,newark,undergrad,sophomore,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S00006,new_brunswick,undergrad,sophomore,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00007,newark,undergrad,sophomore,commuter,True,True,School of Criminal Justice,commutes,en,True
+S00008,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00009,new_brunswick,undergrad,senior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00010,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Busch,en,True
+S00011,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00012,new_brunswick,grad,grad,commuter,False,True,School of Nursing,commutes,en,True
+S00013,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00014,new_brunswick,undergrad,senior,commuter,True,False,School of Engineering,commutes,en,True
+S00015,new_brunswick,undergrad,first_year,commuter,False,True,School of Nursing,commutes,en,True
+S00016,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00017,new_brunswick,undergrad,first_year,resident,True,False,School of Environmental and Biological Sciences,Busch,en,True
+S00018,new_brunswick,undergrad,first_year,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00019,new_brunswick,undergrad,sophomore,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S00020,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00021,camden,grad,grad,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00022,new_brunswick,undergrad,senior,resident,False,False,School of Engineering,Busch,en,True
+S00023,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00024,camden,grad,grad,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00025,camden,undergrad,sophomore,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00026,new_brunswick,undergrad,first_year,commuter,True,True,School of Arts and Sciences,commutes,en,True
+S00027,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,College Avenue,en,True
+S00028,new_brunswick,grad,grad,commuter,True,False,School of Communication and Information,commutes,en,True
+S00029,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S00030,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00031,camden,grad,grad,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S00032,camden,undergrad,senior,commuter,False,False,Camden College of Arts and Sciences,commutes,es,True
+S00033,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S00034,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00035,newark,undergrad,first_year,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00036,new_brunswick,grad,grad,commuter,True,True,Mason Gross School of the Arts,commutes,en,True
+S00037,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S00038,new_brunswick,undergrad,sophomore,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00039,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00040,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00041,newark,undergrad,senior,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00042,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,Livingston,en,True
+S00043,new_brunswick,undergrad,sophomore,commuter,True,False,School of Engineering,commutes,en,True
+S00044,new_brunswick,undergrad,junior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00045,new_brunswick,undergrad,first_year,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00046,new_brunswick,undergrad,first_year,commuter,True,False,School of Engineering,commutes,en,True
+S00047,newark,undergrad,senior,commuter,False,True,School of Criminal Justice,commutes,en,True
+S00048,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S00049,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,College Avenue,en,True
+S00050,new_brunswick,undergrad,senior,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00051,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00052,new_brunswick,undergrad,senior,commuter,False,True,School of Communication and Information,commutes,en,True
+S00053,new_brunswick,grad,grad,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00054,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00055,newark,undergrad,senior,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00056,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Busch,en,True
+S00057,new_brunswick,grad,grad,resident,True,False,School of Communication and Information,Cook/Douglass,en,True
+S00058,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00059,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00060,newark,undergrad,sophomore,commuter,False,False,School of Criminal Justice,commutes,es,True
+S00061,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00062,camden,undergrad,senior,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S00063,new_brunswick,undergrad,junior,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00064,new_brunswick,grad,grad,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00065,new_brunswick,undergrad,sophomore,resident,True,False,Mason Gross School of the Arts,College Avenue,es,True
+S00066,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00067,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00068,camden,undergrad,sophomore,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S00069,new_brunswick,grad,grad,resident,False,True,School of Arts and Sciences,College Avenue,en,True
+S00070,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00071,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00072,new_brunswick,undergrad,sophomore,commuter,True,True,School of Nursing,commutes,en,True
+S00073,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00074,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,College Avenue,en,True
+S00075,new_brunswick,undergrad,first_year,resident,True,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00076,new_brunswick,undergrad,senior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00077,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00078,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00079,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00080,new_brunswick,undergrad,junior,resident,True,False,School of Arts and Sciences,Livingston,en,True
+S00081,new_brunswick,undergrad,senior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00082,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00083,camden,undergrad,junior,commuter,True,True,Rutgers School of Business-Camden,commutes,es,True
+S00084,newark,undergrad,senior,commuter,False,False,School of Arts and Sciences-Newark,commutes,es,True
+S00085,new_brunswick,undergrad,senior,commuter,True,False,School of Nursing,commutes,es,True
+S00086,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,es,True
+S00087,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Livingston,en,True
+S00088,camden,undergrad,first_year,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00089,new_brunswick,undergrad,sophomore,commuter,True,True,Mason Gross School of the Arts,commutes,en,True
+S00090,newark,undergrad,sophomore,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S00091,newark,undergrad,sophomore,commuter,False,True,School of Arts and Sciences-Newark,commutes,es,True
+S00092,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00093,camden,undergrad,junior,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S00094,new_brunswick,undergrad,junior,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00095,new_brunswick,undergrad,sophomore,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00096,camden,undergrad,senior,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S00097,new_brunswick,undergrad,senior,resident,False,True,School of Communication and Information,Cook/Douglass,en,True
+S00098,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00099,new_brunswick,grad,grad,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00100,new_brunswick,grad,grad,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00101,new_brunswick,undergrad,senior,commuter,True,True,Mason Gross School of the Arts,commutes,en,True
+S00102,new_brunswick,undergrad,sophomore,commuter,True,False,School of Engineering,commutes,en,True
+S00103,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,es,True
+S00104,new_brunswick,undergrad,first_year,commuter,False,False,School of Engineering,commutes,es,True
+S00105,newark,undergrad,first_year,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00106,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S00107,new_brunswick,undergrad,sophomore,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S00108,newark,undergrad,junior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00109,new_brunswick,grad,grad,commuter,False,True,School of Arts and Sciences,commutes,es,True
+S00110,camden,undergrad,first_year,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00111,new_brunswick,undergrad,sophomore,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00112,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00113,new_brunswick,undergrad,senior,resident,False,True,Mason Gross School of the Arts,Busch,en,True
+S00114,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S00115,camden,grad,grad,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00116,newark,undergrad,sophomore,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00117,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00118,newark,grad,grad,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00119,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00120,new_brunswick,undergrad,sophomore,resident,True,False,School of Communication and Information,Busch,en,True
+S00121,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00122,new_brunswick,undergrad,sophomore,resident,True,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00123,new_brunswick,grad,grad,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00124,camden,undergrad,senior,resident,True,False,School of Nursing-Camden,Camden waterfront,en,True
+S00125,new_brunswick,undergrad,junior,resident,True,False,School of Environmental and Biological Sciences,Busch,en,True
+S00126,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00127,camden,grad,grad,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S00128,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00129,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00130,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,Cook/Douglass,en,True
+S00131,camden,grad,grad,commuter,True,True,School of Nursing-Camden,commutes,en,True
+S00132,camden,undergrad,junior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00133,camden,undergrad,junior,commuter,True,False,School of Nursing-Camden,commutes,es,True
+S00134,new_brunswick,undergrad,junior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00135,new_brunswick,undergrad,first_year,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00136,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00137,new_brunswick,undergrad,sophomore,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00138,new_brunswick,undergrad,senior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00139,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S00140,camden,undergrad,junior,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00141,new_brunswick,undergrad,junior,commuter,True,True,School of Nursing,commutes,en,True
+S00142,newark,undergrad,junior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00143,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00144,new_brunswick,undergrad,senior,resident,False,True,School of Environmental and Biological Sciences,College Avenue,en,True
+S00145,new_brunswick,undergrad,senior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00146,new_brunswick,undergrad,senior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00147,newark,undergrad,sophomore,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00148,new_brunswick,undergrad,first_year,commuter,False,True,Rutgers Business School-NB,commutes,es,True
+S00149,new_brunswick,undergrad,senior,resident,False,True,School of Arts and Sciences,College Avenue,en,True
+S00150,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00151,new_brunswick,undergrad,sophomore,commuter,False,True,School of Communication and Information,commutes,en,True
+S00152,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00153,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00154,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00155,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00156,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Cook/Douglass,es,True
+S00157,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00158,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00159,new_brunswick,undergrad,first_year,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00160,newark,undergrad,senior,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00161,newark,undergrad,senior,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00162,new_brunswick,undergrad,senior,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00163,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S00164,new_brunswick,undergrad,junior,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00165,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,es,True
+S00166,new_brunswick,undergrad,first_year,commuter,True,True,School of Communication and Information,commutes,en,True
+S00167,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00168,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00169,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00170,camden,grad,grad,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00171,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00172,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00173,new_brunswick,undergrad,senior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00174,new_brunswick,undergrad,junior,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00175,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00176,camden,undergrad,junior,resident,False,False,Camden College of Arts and Sciences,Camden waterfront,en,True
+S00177,new_brunswick,grad,grad,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00178,newark,undergrad,sophomore,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00179,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S00180,camden,undergrad,first_year,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00181,new_brunswick,undergrad,senior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00182,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00183,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00184,new_brunswick,undergrad,first_year,resident,False,True,School of Arts and Sciences,Livingston,en,True
+S00185,newark,undergrad,first_year,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00186,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00187,new_brunswick,undergrad,first_year,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00188,newark,grad,grad,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00189,new_brunswick,undergrad,sophomore,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S00190,newark,undergrad,senior,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00191,new_brunswick,undergrad,senior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00192,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00193,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S00194,camden,undergrad,first_year,resident,True,True,Camden College of Arts and Sciences,Camden waterfront,en,True
+S00195,camden,undergrad,junior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00196,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00197,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00198,newark,grad,grad,commuter,True,True,School of Public Affairs and Administration,commutes,en,True
+S00199,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00200,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00201,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,en,True
+S00202,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00203,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00204,newark,undergrad,sophomore,resident,False,False,Rutgers Business School-Newark,University Heights,en,True
+S00205,new_brunswick,undergrad,senior,commuter,True,False,School of Engineering,commutes,en,True
+S00206,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+S00207,newark,undergrad,senior,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S00208,new_brunswick,undergrad,first_year,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00209,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00210,newark,undergrad,junior,commuter,False,False,Rutgers Business School-Newark,commutes,es,True
+S00211,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00212,new_brunswick,undergrad,senior,commuter,False,False,School of Nursing,commutes,en,True
+S00213,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00214,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00215,new_brunswick,grad,grad,commuter,True,False,School of Nursing,commutes,en,True
+S00216,newark,undergrad,sophomore,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00217,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00218,camden,grad,grad,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00219,newark,undergrad,first_year,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00220,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00221,newark,grad,grad,commuter,True,True,Rutgers Business School-Newark,commutes,en,True
+S00222,newark,undergrad,senior,commuter,True,True,Rutgers Business School-Newark,commutes,en,True
+S00223,camden,undergrad,first_year,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S00224,newark,undergrad,senior,commuter,False,True,School of Arts and Sciences-Newark,commutes,es,True
+S00225,newark,undergrad,junior,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00226,new_brunswick,undergrad,junior,commuter,False,False,School of Communication and Information,commutes,en,True
+S00227,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00228,new_brunswick,undergrad,junior,resident,True,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00229,camden,undergrad,sophomore,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00230,newark,undergrad,senior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00231,newark,undergrad,junior,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S00232,new_brunswick,undergrad,first_year,resident,False,True,School of Engineering,Cook/Douglass,en,True
+S00233,new_brunswick,undergrad,first_year,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00234,new_brunswick,undergrad,first_year,resident,True,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00235,newark,undergrad,sophomore,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00236,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S00237,new_brunswick,undergrad,first_year,resident,True,False,School of Arts and Sciences,Busch,en,True
+S00238,newark,undergrad,senior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00239,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00240,newark,undergrad,junior,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00241,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00242,new_brunswick,undergrad,first_year,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00243,new_brunswick,grad,grad,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00244,newark,undergrad,senior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00245,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Livingston,en,True
+S00246,new_brunswick,undergrad,sophomore,resident,True,True,School of Communication and Information,Livingston,en,True
+S00247,newark,undergrad,first_year,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00248,new_brunswick,undergrad,junior,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00249,newark,undergrad,senior,commuter,True,True,School of Public Affairs and Administration,commutes,en,True
+S00250,camden,undergrad,junior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00251,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S00252,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00253,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00254,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S00255,new_brunswick,grad,grad,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00256,new_brunswick,undergrad,first_year,commuter,False,True,School of Engineering,commutes,en,True
+S00257,camden,undergrad,first_year,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00258,new_brunswick,undergrad,sophomore,resident,True,True,Mason Gross School of the Arts,Busch,en,True
+S00259,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00260,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,College Avenue,en,True
+S00261,new_brunswick,undergrad,senior,resident,False,True,Rutgers Business School-NB,Cook/Douglass,en,True
+S00262,new_brunswick,undergrad,senior,commuter,False,False,School of Nursing,commutes,en,True
+S00263,new_brunswick,undergrad,sophomore,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00264,newark,undergrad,sophomore,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00265,new_brunswick,undergrad,sophomore,commuter,False,True,School of Nursing,commutes,en,True
+S00266,new_brunswick,undergrad,first_year,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00267,new_brunswick,grad,grad,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00268,newark,undergrad,sophomore,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00269,new_brunswick,grad,grad,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00270,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S00271,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00272,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Livingston,en,True
+S00273,new_brunswick,undergrad,sophomore,resident,True,False,School of Nursing,Cook/Douglass,es,True
+S00274,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,es,True
+S00275,new_brunswick,undergrad,first_year,resident,False,True,School of Communication and Information,Busch,en,True
+S00276,new_brunswick,undergrad,senior,resident,True,True,School of Environmental and Biological Sciences,Livingston,en,True
+S00277,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S00278,new_brunswick,undergrad,senior,resident,True,False,School of Communication and Information,College Avenue,en,True
+S00279,camden,undergrad,sophomore,resident,True,False,School of Nursing-Camden,Camden waterfront,en,True
+S00280,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00281,new_brunswick,undergrad,senior,resident,True,False,Rutgers Business School-NB,Livingston,en,True
+S00282,newark,grad,grad,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00283,newark,undergrad,sophomore,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00284,new_brunswick,undergrad,first_year,resident,True,False,School of Engineering,College Avenue,es,True
+S00285,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,College Avenue,es,True
+S00286,new_brunswick,undergrad,senior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00287,newark,undergrad,senior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00288,camden,grad,grad,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S00289,new_brunswick,undergrad,senior,commuter,False,True,School of Nursing,commutes,en,True
+S00290,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Busch,en,True
+S00291,new_brunswick,undergrad,sophomore,resident,True,False,School of Engineering,Busch,en,True
+S00292,new_brunswick,undergrad,senior,resident,False,False,School of Engineering,College Avenue,en,True
+S00293,new_brunswick,undergrad,first_year,commuter,False,True,School of Communication and Information,commutes,en,True
+S00294,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00295,new_brunswick,undergrad,first_year,commuter,False,True,School of Engineering,commutes,en,True
+S00296,newark,undergrad,first_year,resident,False,False,Rutgers Business School-Newark,University Heights,en,True
+S00297,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00298,new_brunswick,undergrad,first_year,commuter,True,False,Mason Gross School of the Arts,commutes,es,True
+S00299,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00300,new_brunswick,undergrad,junior,resident,True,False,School of Communication and Information,Livingston,en,True
+S00301,new_brunswick,undergrad,junior,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00302,new_brunswick,undergrad,junior,commuter,False,True,School of Nursing,commutes,en,True
+S00303,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00304,newark,undergrad,junior,commuter,False,False,School of Public Affairs and Administration,commutes,es,True
+S00305,new_brunswick,undergrad,senior,commuter,False,True,School of Communication and Information,commutes,en,True
+S00306,newark,undergrad,first_year,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S00307,newark,undergrad,sophomore,commuter,True,False,Rutgers Business School-Newark,commutes,es,True
+S00308,new_brunswick,undergrad,senior,commuter,False,False,School of Communication and Information,commutes,en,True
+S00309,new_brunswick,undergrad,junior,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00310,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,es,True
+S00311,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00312,new_brunswick,undergrad,sophomore,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00313,new_brunswick,undergrad,first_year,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00314,new_brunswick,undergrad,senior,resident,True,True,Rutgers Business School-NB,Livingston,en,True
+S00315,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,College Avenue,en,True
+S00316,new_brunswick,undergrad,senior,commuter,False,True,School of Engineering,commutes,en,True
+S00317,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,College Avenue,en,True
+S00318,newark,undergrad,first_year,commuter,False,True,Rutgers Business School-Newark,commutes,es,True
+S00319,new_brunswick,undergrad,senior,resident,False,True,School of Engineering,Cook/Douglass,en,True
+S00320,new_brunswick,grad,grad,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00321,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00322,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00323,new_brunswick,undergrad,first_year,resident,False,True,School of Nursing,Cook/Douglass,en,True
+S00324,new_brunswick,undergrad,first_year,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00325,newark,undergrad,junior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00326,new_brunswick,undergrad,sophomore,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00327,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,College Avenue,en,True
+S00328,new_brunswick,undergrad,junior,resident,False,True,Mason Gross School of the Arts,Busch,en,True
+S00329,newark,undergrad,first_year,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S00330,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00331,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00332,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00333,camden,undergrad,first_year,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00334,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00335,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00336,new_brunswick,undergrad,senior,resident,True,False,School of Communication and Information,Busch,en,True
+S00337,new_brunswick,undergrad,junior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00338,new_brunswick,undergrad,junior,commuter,True,False,School of Communication and Information,commutes,en,True
+S00339,newark,undergrad,first_year,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00340,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00341,new_brunswick,undergrad,sophomore,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00342,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,es,True
+S00343,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00344,new_brunswick,undergrad,senior,resident,False,True,School of Nursing,College Avenue,en,True
+S00345,new_brunswick,grad,grad,commuter,False,True,School of Nursing,commutes,en,True
+S00346,new_brunswick,undergrad,senior,commuter,True,True,School of Nursing,commutes,en,True
+S00347,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,Livingston,es,True
+S00348,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00349,new_brunswick,undergrad,sophomore,resident,True,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00350,newark,undergrad,first_year,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00351,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00352,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00353,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00354,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00355,new_brunswick,undergrad,sophomore,resident,True,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00356,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00357,new_brunswick,undergrad,senior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00358,new_brunswick,undergrad,sophomore,commuter,True,False,School of Engineering,commutes,en,True
+S00359,camden,undergrad,senior,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S00360,new_brunswick,undergrad,senior,commuter,False,False,School of Nursing,commutes,en,True
+S00361,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Busch,en,True
+S00362,new_brunswick,undergrad,first_year,resident,False,True,School of Engineering,College Avenue,en,True
+S00363,newark,undergrad,sophomore,resident,False,False,School of Public Affairs and Administration,University Heights,en,True
+S00364,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00365,new_brunswick,undergrad,junior,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00366,new_brunswick,undergrad,first_year,resident,False,True,School of Engineering,Cook/Douglass,en,True
+S00367,newark,grad,grad,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00368,new_brunswick,undergrad,junior,commuter,True,True,School of Arts and Sciences,commutes,en,True
+S00369,new_brunswick,undergrad,senior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00370,new_brunswick,undergrad,sophomore,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00371,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S00372,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00373,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00374,new_brunswick,undergrad,sophomore,commuter,True,True,School of Arts and Sciences,commutes,es,True
+S00375,newark,undergrad,first_year,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00376,camden,undergrad,junior,resident,False,False,Rutgers School of Business-Camden,Camden waterfront,en,True
+S00377,new_brunswick,undergrad,senior,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00378,new_brunswick,undergrad,junior,resident,False,True,School of Environmental and Biological Sciences,Busch,en,True
+S00379,new_brunswick,undergrad,first_year,commuter,True,True,School of Nursing,commutes,en,True
+S00380,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S00381,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Livingston,en,True
+S00382,new_brunswick,undergrad,junior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00383,new_brunswick,undergrad,first_year,resident,True,False,Rutgers Business School-NB,Livingston,es,True
+S00384,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,es,True
+S00385,camden,grad,grad,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00386,new_brunswick,undergrad,first_year,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00387,camden,grad,grad,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S00388,new_brunswick,undergrad,junior,commuter,True,False,School of Engineering,commutes,en,True
+S00389,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00390,new_brunswick,grad,grad,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00391,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00392,new_brunswick,undergrad,first_year,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00393,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S00394,new_brunswick,undergrad,sophomore,resident,True,True,School of Engineering,College Avenue,en,True
+S00395,newark,undergrad,first_year,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00396,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00397,newark,undergrad,junior,commuter,False,False,School of Criminal Justice,commutes,es,True
+S00398,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S00399,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00400,new_brunswick,undergrad,first_year,commuter,False,True,School of Engineering,commutes,en,True
+S00401,newark,undergrad,first_year,resident,False,False,School of Public Affairs and Administration,University Heights,en,True
+S00402,newark,undergrad,sophomore,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00403,new_brunswick,undergrad,sophomore,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00404,newark,undergrad,sophomore,commuter,True,True,Rutgers Business School-Newark,commutes,en,True
+S00405,newark,undergrad,first_year,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00406,newark,undergrad,junior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00407,camden,grad,grad,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00408,new_brunswick,grad,grad,commuter,True,False,School of Nursing,commutes,en,True
+S00409,camden,undergrad,sophomore,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S00410,new_brunswick,undergrad,senior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00411,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00412,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00413,camden,undergrad,first_year,resident,True,False,Camden College of Arts and Sciences,Camden waterfront,en,True
+S00414,new_brunswick,undergrad,senior,commuter,False,True,School of Engineering,commutes,en,True
+S00415,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00416,new_brunswick,undergrad,sophomore,resident,True,False,School of Nursing,College Avenue,en,True
+S00417,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00418,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00419,new_brunswick,undergrad,first_year,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00420,newark,undergrad,senior,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S00421,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00422,new_brunswick,undergrad,junior,commuter,True,True,School of Communication and Information,commutes,en,True
+S00423,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00424,new_brunswick,grad,grad,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00425,new_brunswick,grad,grad,resident,False,False,School of Engineering,Busch,en,True
+S00426,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S00427,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00428,new_brunswick,undergrad,sophomore,resident,True,True,School of Communication and Information,Busch,en,True
+S00429,newark,undergrad,junior,resident,False,False,School of Public Affairs and Administration,University Heights,en,True
+S00430,new_brunswick,undergrad,senior,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00431,new_brunswick,undergrad,junior,resident,False,True,School of Arts and Sciences,Livingston,en,True
+S00432,new_brunswick,grad,grad,commuter,True,False,School of Nursing,commutes,en,True
+S00433,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00434,new_brunswick,undergrad,junior,resident,False,True,School of Nursing,College Avenue,en,True
+S00435,new_brunswick,undergrad,first_year,resident,False,True,School of Nursing,Busch,en,True
+S00436,new_brunswick,undergrad,senior,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00437,new_brunswick,undergrad,junior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00438,new_brunswick,grad,grad,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00439,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Livingston,en,True
+S00440,new_brunswick,undergrad,junior,resident,False,True,School of Arts and Sciences,Cook/Douglass,en,True
+S00441,new_brunswick,undergrad,junior,resident,True,True,School of Environmental and Biological Sciences,Livingston,en,True
+S00442,camden,undergrad,junior,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S00443,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Livingston,en,True
+S00444,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00445,new_brunswick,undergrad,junior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00446,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00447,newark,undergrad,first_year,resident,True,False,School of Criminal Justice,University Heights,en,True
+S00448,new_brunswick,undergrad,sophomore,commuter,False,True,School of Engineering,commutes,en,True
+S00449,new_brunswick,undergrad,sophomore,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00450,camden,grad,grad,commuter,True,False,School of Nursing-Camden,commutes,es,True
+S00451,camden,undergrad,senior,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00452,new_brunswick,undergrad,junior,commuter,False,True,School of Communication and Information,commutes,en,True
+S00453,camden,grad,grad,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S00454,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00455,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Livingston,en,True
+S00456,new_brunswick,undergrad,junior,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00457,new_brunswick,undergrad,sophomore,resident,False,True,School of Communication and Information,Cook/Douglass,en,True
+S00458,newark,undergrad,junior,commuter,True,True,School of Arts and Sciences-Newark,commutes,en,True
+S00459,new_brunswick,grad,grad,commuter,True,True,School of Environmental and Biological Sciences,commutes,es,True
+S00460,new_brunswick,undergrad,sophomore,commuter,False,True,School of Communication and Information,commutes,en,True
+S00461,new_brunswick,grad,grad,resident,False,False,School of Nursing,College Avenue,en,True
+S00462,new_brunswick,undergrad,sophomore,commuter,True,True,School of Communication and Information,commutes,en,True
+S00463,newark,undergrad,sophomore,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00464,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00465,new_brunswick,undergrad,senior,commuter,False,False,School of Engineering,commutes,en,True
+S00466,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00467,newark,undergrad,sophomore,commuter,False,False,School of Arts and Sciences-Newark,commutes,es,True
+S00468,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00469,newark,undergrad,senior,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00470,newark,undergrad,senior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00471,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S00472,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00473,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00474,newark,undergrad,junior,commuter,False,True,School of Criminal Justice,commutes,en,True
+S00475,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00476,camden,undergrad,senior,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S00477,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Livingston,en,True
+S00478,newark,undergrad,sophomore,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00479,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,es,True
+S00480,camden,undergrad,senior,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S00481,new_brunswick,undergrad,senior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S00482,new_brunswick,undergrad,junior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00483,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00484,camden,undergrad,junior,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00485,new_brunswick,undergrad,first_year,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00486,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00487,newark,undergrad,first_year,commuter,True,True,Rutgers Business School-Newark,commutes,es,True
+S00488,new_brunswick,undergrad,senior,resident,True,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00489,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,College Avenue,en,True
+S00490,new_brunswick,undergrad,senior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00491,newark,grad,grad,commuter,False,True,Rutgers Business School-Newark,commutes,es,True
+S00492,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S00493,newark,undergrad,sophomore,resident,True,False,School of Public Affairs and Administration,University Heights,en,True
+S00494,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S00495,newark,undergrad,senior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00496,newark,undergrad,sophomore,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00497,newark,undergrad,first_year,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00498,new_brunswick,undergrad,first_year,commuter,True,False,School of Communication and Information,commutes,en,True
+S00499,new_brunswick,undergrad,senior,resident,True,False,School of Nursing,Busch,en,True
+S00500,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Livingston,en,True
+S00501,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00502,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S00503,new_brunswick,undergrad,senior,resident,False,True,School of Communication and Information,Cook/Douglass,en,True
+S00504,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Busch,en,True
+S00505,new_brunswick,undergrad,first_year,resident,True,False,School of Communication and Information,Busch,en,True
+S00506,new_brunswick,undergrad,sophomore,resident,True,False,School of Environmental and Biological Sciences,Busch,en,True
+S00507,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00508,new_brunswick,grad,grad,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00509,new_brunswick,undergrad,senior,commuter,False,False,Rutgers Business School-NB,commutes,es,True
+S00510,newark,undergrad,sophomore,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00511,new_brunswick,undergrad,sophomore,resident,False,True,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00512,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00513,newark,undergrad,sophomore,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00514,new_brunswick,undergrad,sophomore,commuter,True,False,Rutgers Business School-NB,commutes,es,True
+S00515,new_brunswick,undergrad,senior,resident,False,False,School of Engineering,Livingston,en,True
+S00516,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Busch,en,True
+S00517,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,es,True
+S00518,camden,undergrad,senior,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00519,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00520,newark,undergrad,junior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00521,newark,undergrad,sophomore,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00522,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,College Avenue,en,True
+S00523,new_brunswick,undergrad,junior,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S00524,new_brunswick,grad,grad,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00525,new_brunswick,grad,grad,resident,True,False,Rutgers Business School-NB,Livingston,en,True
+S00526,camden,undergrad,first_year,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S00527,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00528,new_brunswick,undergrad,first_year,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S00529,new_brunswick,undergrad,first_year,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00530,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00531,new_brunswick,undergrad,sophomore,resident,True,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00532,camden,undergrad,first_year,commuter,True,True,School of Nursing-Camden,commutes,en,True
+S00533,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00534,new_brunswick,grad,grad,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00535,camden,grad,grad,commuter,False,True,School of Nursing-Camden,commutes,es,True
+S00536,newark,undergrad,first_year,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00537,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00538,new_brunswick,undergrad,sophomore,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00539,newark,grad,grad,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00540,new_brunswick,undergrad,senior,commuter,False,False,School of Engineering,commutes,en,True
+S00541,newark,undergrad,senior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00542,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S00543,new_brunswick,undergrad,junior,resident,True,True,School of Nursing,College Avenue,en,True
+S00544,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00545,new_brunswick,undergrad,junior,commuter,True,True,School of Nursing,commutes,en,True
+S00546,newark,undergrad,first_year,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00547,camden,undergrad,junior,commuter,True,False,Rutgers School of Business-Camden,commutes,es,True
+S00548,newark,undergrad,senior,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00549,newark,undergrad,junior,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00550,newark,undergrad,sophomore,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00551,camden,undergrad,junior,commuter,False,False,Rutgers School of Business-Camden,commutes,es,True
+S00552,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00553,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00554,new_brunswick,undergrad,sophomore,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00555,new_brunswick,undergrad,sophomore,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00556,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00557,newark,undergrad,junior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00558,new_brunswick,undergrad,senior,commuter,True,True,School of Nursing,commutes,en,True
+S00559,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S00560,new_brunswick,undergrad,first_year,resident,True,False,School of Engineering,Cook/Douglass,en,True
+S00561,newark,undergrad,first_year,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00562,new_brunswick,undergrad,first_year,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00563,new_brunswick,undergrad,first_year,resident,True,False,School of Arts and Sciences,Livingston,en,True
+S00564,new_brunswick,undergrad,first_year,commuter,True,False,School of Communication and Information,commutes,en,True
+S00565,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00566,newark,undergrad,sophomore,commuter,True,False,School of Public Affairs and Administration,commutes,es,True
+S00567,new_brunswick,undergrad,sophomore,resident,True,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00568,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00569,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00570,newark,undergrad,first_year,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00571,newark,grad,grad,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00572,camden,undergrad,senior,commuter,True,True,School of Nursing-Camden,commutes,es,True
+S00573,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00574,newark,undergrad,sophomore,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00575,new_brunswick,undergrad,senior,resident,False,True,Rutgers Business School-NB,College Avenue,en,True
+S00576,newark,undergrad,sophomore,commuter,False,False,School of Public Affairs and Administration,commutes,es,True
+S00577,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S00578,new_brunswick,undergrad,senior,resident,True,True,School of Arts and Sciences,Cook/Douglass,en,True
+S00579,new_brunswick,grad,grad,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00580,newark,undergrad,sophomore,commuter,True,True,School of Public Affairs and Administration,commutes,es,True
+S00581,camden,undergrad,senior,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00582,new_brunswick,undergrad,senior,commuter,True,False,School of Nursing,commutes,en,True
+S00583,new_brunswick,undergrad,first_year,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S00584,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Busch,en,True
+S00585,camden,undergrad,first_year,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S00586,new_brunswick,undergrad,sophomore,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S00587,newark,undergrad,first_year,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00588,newark,grad,grad,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00589,new_brunswick,undergrad,junior,resident,True,False,Rutgers Business School-NB,College Avenue,en,True
+S00590,new_brunswick,undergrad,junior,resident,True,False,School of Arts and Sciences,Busch,es,True
+S00591,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00592,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00593,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00594,new_brunswick,undergrad,first_year,commuter,True,False,School of Nursing,commutes,en,True
+S00595,new_brunswick,undergrad,first_year,resident,True,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00596,camden,undergrad,junior,resident,False,False,School of Nursing-Camden,Camden waterfront,en,True
+S00597,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00598,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S00599,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Cook/Douglass,es,True
+S00600,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Busch,en,True
+S00601,new_brunswick,undergrad,sophomore,commuter,True,True,School of Engineering,commutes,en,True
+S00602,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00603,new_brunswick,undergrad,junior,resident,False,False,School of Nursing,Livingston,en,True
+S00604,new_brunswick,undergrad,first_year,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00605,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00606,new_brunswick,undergrad,sophomore,resident,False,True,School of Engineering,College Avenue,en,True
+S00607,newark,undergrad,junior,resident,False,False,School of Public Affairs and Administration,University Heights,en,True
+S00608,new_brunswick,undergrad,first_year,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00609,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00610,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S00611,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00612,newark,undergrad,first_year,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00613,new_brunswick,undergrad,senior,commuter,False,False,School of Nursing,commutes,en,True
+S00614,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00615,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00616,camden,undergrad,senior,resident,False,False,School of Nursing-Camden,Camden waterfront,en,True
+S00617,new_brunswick,undergrad,sophomore,resident,True,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00618,new_brunswick,grad,grad,commuter,True,True,School of Arts and Sciences,commutes,en,True
+S00619,new_brunswick,undergrad,senior,commuter,True,True,School of Nursing,commutes,en,True
+S00620,newark,grad,grad,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00621,new_brunswick,undergrad,first_year,commuter,False,False,School of Engineering,commutes,en,True
+S00622,new_brunswick,undergrad,sophomore,commuter,True,True,School of Arts and Sciences,commutes,en,True
+S00623,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S00624,camden,grad,grad,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00625,new_brunswick,undergrad,junior,resident,True,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00626,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00627,new_brunswick,grad,grad,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00628,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00629,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00630,new_brunswick,undergrad,first_year,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00631,new_brunswick,undergrad,senior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00632,new_brunswick,undergrad,senior,resident,True,True,School of Arts and Sciences,Livingston,en,True
+S00633,newark,grad,grad,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00634,camden,undergrad,sophomore,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00635,camden,undergrad,sophomore,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00636,newark,undergrad,sophomore,resident,False,True,School of Criminal Justice,University Heights,en,True
+S00637,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00638,newark,undergrad,junior,resident,False,False,School of Public Affairs and Administration,University Heights,es,True
+S00639,new_brunswick,undergrad,sophomore,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00640,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00641,new_brunswick,undergrad,sophomore,commuter,False,False,Mason Gross School of the Arts,commutes,es,True
+S00642,new_brunswick,undergrad,junior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00643,newark,undergrad,sophomore,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00644,new_brunswick,undergrad,junior,resident,False,True,School of Communication and Information,College Avenue,en,True
+S00645,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00646,new_brunswick,grad,grad,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00647,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00648,new_brunswick,undergrad,sophomore,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00649,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,Livingston,en,True
+S00650,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Livingston,en,True
+S00651,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00652,new_brunswick,undergrad,first_year,commuter,False,True,School of Communication and Information,commutes,en,True
+S00653,newark,undergrad,sophomore,resident,False,False,School of Public Affairs and Administration,University Heights,en,True
+S00654,newark,grad,grad,commuter,True,True,School of Arts and Sciences-Newark,commutes,en,True
+S00655,camden,undergrad,senior,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00656,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00657,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00658,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00659,new_brunswick,undergrad,senior,resident,False,False,School of Engineering,College Avenue,en,True
+S00660,new_brunswick,undergrad,junior,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00661,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,Livingston,en,True
+S00662,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00663,newark,undergrad,sophomore,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00664,camden,undergrad,sophomore,commuter,True,True,Rutgers School of Business-Camden,commutes,en,True
+S00665,camden,grad,grad,resident,False,False,Rutgers School of Business-Camden,Camden waterfront,en,True
+S00666,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00667,newark,grad,grad,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00668,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00669,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00670,new_brunswick,undergrad,sophomore,resident,False,True,School of Arts and Sciences,Busch,en,True
+S00671,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00672,new_brunswick,grad,grad,commuter,False,True,School of Engineering,commutes,en,True
+S00673,newark,grad,grad,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00674,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00675,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00676,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S00677,new_brunswick,undergrad,junior,resident,False,False,School of Engineering,College Avenue,en,True
+S00678,new_brunswick,undergrad,sophomore,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00679,new_brunswick,undergrad,senior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00680,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00681,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00682,camden,undergrad,senior,resident,False,False,Rutgers School of Business-Camden,Camden waterfront,en,True
+S00683,new_brunswick,undergrad,first_year,resident,True,False,Rutgers Business School-NB,Livingston,en,True
+S00684,new_brunswick,undergrad,sophomore,commuter,False,True,School of Communication and Information,commutes,es,True
+S00685,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,en,True
+S00686,camden,undergrad,senior,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S00687,new_brunswick,grad,grad,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00688,camden,undergrad,first_year,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00689,new_brunswick,undergrad,junior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00690,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,es,True
+S00691,new_brunswick,grad,grad,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00692,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S00693,new_brunswick,undergrad,junior,resident,True,False,Rutgers Business School-NB,College Avenue,en,True
+S00694,new_brunswick,grad,grad,commuter,True,True,School of Communication and Information,commutes,en,True
+S00695,camden,undergrad,sophomore,commuter,True,True,Rutgers School of Business-Camden,commutes,en,True
+S00696,new_brunswick,grad,grad,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00697,new_brunswick,grad,grad,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00698,new_brunswick,undergrad,junior,commuter,True,True,Mason Gross School of the Arts,commutes,en,True
+S00699,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00700,new_brunswick,undergrad,sophomore,resident,True,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00701,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,College Avenue,en,True
+S00702,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00703,camden,undergrad,senior,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00704,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00705,newark,undergrad,sophomore,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00706,new_brunswick,undergrad,junior,commuter,True,True,School of Nursing,commutes,en,True
+S00707,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S00708,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Busch,es,True
+S00709,camden,undergrad,sophomore,resident,False,False,Rutgers School of Business-Camden,Camden waterfront,es,True
+S00710,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00711,newark,undergrad,first_year,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00712,newark,undergrad,sophomore,resident,False,False,School of Criminal Justice,University Heights,es,True
+S00713,newark,undergrad,junior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00714,new_brunswick,undergrad,senior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00715,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S00716,newark,undergrad,sophomore,resident,False,True,School of Public Affairs and Administration,University Heights,en,True
+S00717,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00718,new_brunswick,undergrad,senior,resident,True,False,Mason Gross School of the Arts,College Avenue,en,True
+S00719,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,College Avenue,en,True
+S00720,new_brunswick,undergrad,first_year,resident,True,False,Rutgers Business School-NB,College Avenue,en,True
+S00721,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Livingston,en,True
+S00722,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S00723,new_brunswick,undergrad,first_year,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00724,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00725,newark,undergrad,senior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00726,camden,undergrad,senior,commuter,False,False,School of Nursing-Camden,commutes,es,True
+S00727,new_brunswick,undergrad,first_year,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00728,new_brunswick,undergrad,first_year,resident,False,True,Mason Gross School of the Arts,College Avenue,en,True
+S00729,new_brunswick,undergrad,first_year,commuter,True,False,School of Nursing,commutes,en,True
+S00730,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,es,True
+S00731,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S00732,new_brunswick,undergrad,sophomore,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00733,camden,undergrad,first_year,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00734,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Livingston,en,True
+S00735,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00736,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00737,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,College Avenue,en,True
+S00738,newark,undergrad,junior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00739,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00740,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S00741,new_brunswick,undergrad,first_year,commuter,False,True,School of Communication and Information,commutes,en,True
+S00742,camden,undergrad,junior,commuter,True,False,Camden College of Arts and Sciences,commutes,es,True
+S00743,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+S00744,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00745,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00746,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00747,camden,undergrad,junior,resident,False,False,Camden College of Arts and Sciences,Camden waterfront,en,True
+S00748,new_brunswick,undergrad,sophomore,commuter,False,True,School of Engineering,commutes,en,True
+S00749,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00750,new_brunswick,undergrad,junior,commuter,True,True,School of Engineering,commutes,en,True
+S00751,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00752,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S00753,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S00754,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+S00755,new_brunswick,grad,grad,commuter,True,True,School of Communication and Information,commutes,en,True
+S00756,camden,undergrad,senior,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00757,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00758,new_brunswick,undergrad,sophomore,resident,True,False,School of Communication and Information,Cook/Douglass,en,True
+S00759,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S00760,new_brunswick,undergrad,senior,resident,False,True,School of Nursing,Busch,en,True
+S00761,new_brunswick,undergrad,senior,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00762,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,es,True
+S00763,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00764,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00765,camden,undergrad,junior,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00766,camden,undergrad,first_year,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00767,new_brunswick,undergrad,junior,commuter,True,False,School of Engineering,commutes,en,True
+S00768,new_brunswick,grad,grad,resident,False,False,School of Engineering,College Avenue,en,True
+S00769,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Busch,en,True
+S00770,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S00771,camden,undergrad,sophomore,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00772,newark,undergrad,senior,commuter,True,True,School of Criminal Justice,commutes,en,True
+S00773,new_brunswick,undergrad,senior,commuter,False,False,School of Nursing,commutes,en,True
+S00774,new_brunswick,undergrad,junior,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00775,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00776,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00777,new_brunswick,grad,grad,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S00778,new_brunswick,undergrad,junior,resident,True,False,School of Nursing,Cook/Douglass,en,True
+S00779,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00780,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,es,True
+S00781,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00782,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00783,newark,undergrad,first_year,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00784,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Busch,en,True
+S00785,newark,undergrad,sophomore,resident,True,False,Rutgers Business School-Newark,University Heights,en,True
+S00786,new_brunswick,undergrad,junior,resident,False,True,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00787,newark,undergrad,first_year,commuter,True,True,School of Criminal Justice,commutes,en,True
+S00788,camden,undergrad,junior,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00789,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00790,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S00791,newark,undergrad,senior,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00792,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00793,new_brunswick,undergrad,first_year,resident,True,False,Mason Gross School of the Arts,Livingston,en,True
+S00794,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00795,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00796,newark,undergrad,junior,commuter,True,True,School of Public Affairs and Administration,commutes,en,True
+S00797,camden,undergrad,first_year,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S00798,new_brunswick,undergrad,sophomore,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00799,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00800,new_brunswick,undergrad,senior,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00801,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00802,newark,undergrad,first_year,commuter,True,True,School of Criminal Justice,commutes,en,True
+S00803,newark,undergrad,senior,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00804,newark,grad,grad,commuter,False,True,School of Criminal Justice,commutes,en,True
+S00805,new_brunswick,grad,grad,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00806,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Livingston,en,True
+S00807,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00808,new_brunswick,grad,grad,resident,True,False,School of Environmental and Biological Sciences,Busch,en,True
+S00809,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,College Avenue,en,True
+S00810,new_brunswick,grad,grad,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S00811,newark,undergrad,junior,commuter,True,False,School of Arts and Sciences-Newark,commutes,es,True
+S00812,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00813,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00814,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S00815,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00816,new_brunswick,undergrad,sophomore,commuter,False,True,School of Environmental and Biological Sciences,commutes,es,True
+S00817,new_brunswick,undergrad,junior,resident,True,False,School of Communication and Information,Livingston,es,True
+S00818,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00819,new_brunswick,undergrad,senior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S00820,new_brunswick,undergrad,junior,commuter,False,True,School of Nursing,commutes,en,True
+S00821,newark,undergrad,sophomore,commuter,False,True,School of Criminal Justice,commutes,en,True
+S00822,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S00823,camden,undergrad,junior,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S00824,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00825,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00826,newark,undergrad,junior,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00827,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S00828,new_brunswick,undergrad,junior,resident,True,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00829,new_brunswick,undergrad,first_year,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00830,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Busch,en,True
+S00831,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00832,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Livingston,en,True
+S00833,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00834,camden,undergrad,sophomore,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00835,camden,undergrad,first_year,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S00836,new_brunswick,undergrad,sophomore,commuter,True,False,School of Environmental and Biological Sciences,commutes,es,True
+S00837,new_brunswick,undergrad,junior,resident,True,False,School of Arts and Sciences,Livingston,en,True
+S00838,newark,grad,grad,commuter,True,False,School of Arts and Sciences-Newark,commutes,es,True
+S00839,newark,undergrad,sophomore,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00840,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S00841,camden,undergrad,sophomore,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00842,newark,undergrad,junior,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00843,new_brunswick,undergrad,junior,commuter,False,False,School of Communication and Information,commutes,en,True
+S00844,newark,grad,grad,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00845,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00846,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S00847,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00848,camden,undergrad,sophomore,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S00849,new_brunswick,undergrad,sophomore,commuter,False,True,School of Communication and Information,commutes,en,True
+S00850,new_brunswick,undergrad,junior,commuter,False,True,School of Communication and Information,commutes,en,True
+S00851,newark,undergrad,first_year,commuter,False,True,School of Criminal Justice,commutes,en,True
+S00852,newark,undergrad,junior,resident,False,False,Rutgers Business School-Newark,University Heights,en,True
+S00853,camden,undergrad,first_year,commuter,True,True,Rutgers School of Business-Camden,commutes,en,True
+S00854,newark,grad,grad,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00855,new_brunswick,undergrad,first_year,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00856,new_brunswick,undergrad,sophomore,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00857,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00858,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S00859,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S00860,new_brunswick,undergrad,senior,commuter,True,True,School of Nursing,commutes,en,True
+S00861,new_brunswick,undergrad,senior,resident,True,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00862,newark,undergrad,junior,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S00863,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00864,new_brunswick,undergrad,junior,resident,True,False,School of Communication and Information,College Avenue,en,True
+S00865,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00866,new_brunswick,undergrad,first_year,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00867,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00868,camden,undergrad,junior,commuter,False,True,School of Nursing-Camden,commutes,es,True
+S00869,new_brunswick,undergrad,senior,resident,True,False,School of Communication and Information,Busch,en,True
+S00870,newark,undergrad,first_year,commuter,False,False,School of Arts and Sciences-Newark,commutes,es,True
+S00871,new_brunswick,undergrad,senior,resident,True,False,School of Engineering,Busch,en,True
+S00872,camden,undergrad,first_year,commuter,True,True,School of Nursing-Camden,commutes,en,True
+S00873,newark,undergrad,first_year,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00874,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S00875,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00876,new_brunswick,undergrad,sophomore,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00877,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S00878,newark,undergrad,senior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00879,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S00880,new_brunswick,undergrad,senior,commuter,False,True,School of Communication and Information,commutes,en,True
+S00881,new_brunswick,grad,grad,commuter,True,True,School of Engineering,commutes,en,True
+S00882,new_brunswick,undergrad,first_year,resident,True,False,Rutgers Business School-NB,College Avenue,en,True
+S00883,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S00884,new_brunswick,grad,grad,commuter,True,False,School of Communication and Information,commutes,en,True
+S00885,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S00886,new_brunswick,undergrad,senior,resident,True,False,School of Nursing,Livingston,en,True
+S00887,new_brunswick,grad,grad,resident,True,False,School of Engineering,Busch,en,True
+S00888,camden,undergrad,junior,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00889,newark,undergrad,sophomore,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00890,newark,undergrad,first_year,commuter,True,True,Rutgers Business School-Newark,commutes,en,True
+S00891,new_brunswick,undergrad,first_year,resident,False,True,School of Arts and Sciences,College Avenue,en,True
+S00892,camden,undergrad,senior,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S00893,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S00894,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00895,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00896,newark,undergrad,junior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00897,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00898,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00899,new_brunswick,undergrad,first_year,commuter,False,True,School of Nursing,commutes,en,True
+S00900,new_brunswick,grad,grad,resident,True,True,Rutgers Business School-NB,Livingston,en,True
+S00901,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00902,newark,undergrad,sophomore,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00903,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,Busch,en,True
+S00904,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00905,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00906,newark,undergrad,sophomore,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00907,new_brunswick,undergrad,first_year,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S00908,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S00909,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Livingston,en,True
+S00910,camden,undergrad,senior,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S00911,new_brunswick,undergrad,junior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S00912,new_brunswick,grad,grad,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00913,camden,undergrad,sophomore,commuter,True,True,School of Nursing-Camden,commutes,en,True
+S00914,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00915,new_brunswick,undergrad,first_year,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S00916,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S00917,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Livingston,en,True
+S00918,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S00919,new_brunswick,undergrad,junior,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S00920,camden,grad,grad,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S00921,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S00922,newark,undergrad,junior,commuter,False,False,School of Criminal Justice,commutes,en,True
+S00923,new_brunswick,undergrad,junior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00924,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00925,new_brunswick,undergrad,junior,commuter,False,True,School of Nursing,commutes,en,True
+S00926,newark,undergrad,junior,commuter,True,False,School of Criminal Justice,commutes,en,True
+S00927,newark,undergrad,junior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S00928,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S00929,new_brunswick,grad,grad,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00930,newark,undergrad,first_year,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00931,new_brunswick,undergrad,junior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00932,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Busch,en,True
+S00933,new_brunswick,undergrad,senior,commuter,False,False,School of Engineering,commutes,en,True
+S00934,newark,undergrad,junior,commuter,False,False,School of Criminal Justice,commutes,es,True
+S00935,new_brunswick,undergrad,first_year,commuter,True,False,School of Nursing,commutes,en,True
+S00936,camden,undergrad,first_year,resident,False,False,Rutgers School of Business-Camden,Camden waterfront,en,True
+S00937,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S00938,camden,grad,grad,commuter,True,True,Rutgers School of Business-Camden,commutes,en,True
+S00939,new_brunswick,undergrad,senior,commuter,False,True,School of Engineering,commutes,en,True
+S00940,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S00941,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Busch,en,True
+S00942,new_brunswick,grad,grad,resident,True,True,Rutgers Business School-NB,College Avenue,en,True
+S00943,newark,undergrad,sophomore,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00944,newark,undergrad,first_year,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S00945,newark,undergrad,first_year,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00946,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,en,True
+S00947,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Livingston,en,True
+S00948,new_brunswick,grad,grad,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S00949,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,en,True
+S00950,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,College Avenue,en,True
+S00951,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,Busch,en,True
+S00952,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00953,newark,grad,grad,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S00954,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S00955,newark,undergrad,first_year,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S00956,camden,undergrad,junior,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S00957,new_brunswick,undergrad,junior,resident,True,True,School of Communication and Information,Cook/Douglass,en,True
+S00958,new_brunswick,undergrad,sophomore,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S00959,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S00960,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Livingston,en,True
+S00961,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,es,True
+S00962,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00963,new_brunswick,undergrad,junior,resident,True,False,School of Environmental and Biological Sciences,Busch,en,True
+S00964,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00965,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00966,newark,undergrad,sophomore,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S00967,newark,undergrad,senior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S00968,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S00969,camden,undergrad,junior,resident,False,True,School of Nursing-Camden,Camden waterfront,en,True
+S00970,camden,undergrad,senior,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S00971,newark,undergrad,junior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S00972,new_brunswick,undergrad,senior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S00973,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S00974,camden,undergrad,sophomore,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S00975,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S00976,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S00977,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00978,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S00979,camden,undergrad,sophomore,resident,False,False,Rutgers School of Business-Camden,Camden waterfront,en,True
+S00980,newark,grad,grad,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S00981,new_brunswick,grad,grad,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S00982,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S00983,newark,undergrad,first_year,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00984,newark,undergrad,senior,commuter,True,True,School of Criminal Justice,commutes,en,True
+S00985,new_brunswick,undergrad,sophomore,resident,False,True,School of Environmental and Biological Sciences,Busch,en,True
+S00986,new_brunswick,grad,grad,resident,True,False,School of Engineering,Busch,en,True
+S00987,newark,undergrad,senior,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00988,new_brunswick,undergrad,sophomore,resident,True,False,School of Nursing,Livingston,en,True
+S00989,new_brunswick,undergrad,junior,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S00990,newark,undergrad,first_year,resident,True,False,School of Criminal Justice,University Heights,en,True
+S00991,newark,undergrad,senior,resident,False,False,School of Criminal Justice,University Heights,en,True
+S00992,newark,grad,grad,resident,False,True,School of Criminal Justice,University Heights,en,True
+S00993,new_brunswick,undergrad,senior,commuter,False,True,School of Nursing,commutes,en,True
+S00994,new_brunswick,undergrad,sophomore,resident,True,False,School of Arts and Sciences,College Avenue,en,True
+S00995,camden,undergrad,junior,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S00996,new_brunswick,grad,grad,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S00997,newark,undergrad,first_year,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S00998,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Cook/Douglass,en,True
+S00999,newark,undergrad,senior,commuter,True,True,School of Arts and Sciences-Newark,commutes,en,True
+S01000,camden,undergrad,first_year,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S01001,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01002,newark,undergrad,senior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01003,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,College Avenue,es,True
+S01004,new_brunswick,undergrad,sophomore,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01005,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01006,camden,undergrad,senior,resident,True,False,Camden College of Arts and Sciences,Camden waterfront,en,True
+S01007,new_brunswick,undergrad,junior,resident,False,True,School of Engineering,Busch,es,True
+S01008,camden,undergrad,sophomore,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01009,newark,undergrad,senior,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S01010,camden,grad,grad,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01011,new_brunswick,undergrad,first_year,commuter,False,True,Mason Gross School of the Arts,commutes,es,True
+S01012,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,College Avenue,en,True
+S01013,camden,undergrad,sophomore,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01014,camden,undergrad,junior,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01015,new_brunswick,undergrad,senior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01016,newark,undergrad,junior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01017,new_brunswick,undergrad,senior,resident,False,True,Mason Gross School of the Arts,Busch,en,True
+S01018,new_brunswick,undergrad,senior,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S01019,new_brunswick,grad,grad,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S01020,new_brunswick,undergrad,sophomore,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01021,new_brunswick,undergrad,senior,resident,False,True,School of Arts and Sciences,College Avenue,en,True
+S01022,newark,undergrad,first_year,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01023,camden,grad,grad,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S01024,camden,grad,grad,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S01025,new_brunswick,undergrad,senior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01026,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,es,True
+S01027,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01028,new_brunswick,grad,grad,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01029,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01030,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S01031,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01032,new_brunswick,grad,grad,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S01033,newark,undergrad,junior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S01034,newark,undergrad,senior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01035,newark,undergrad,first_year,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01036,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Livingston,en,True
+S01037,new_brunswick,undergrad,sophomore,commuter,False,True,School of Engineering,commutes,en,True
+S01038,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S01039,newark,undergrad,sophomore,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S01040,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01041,new_brunswick,undergrad,sophomore,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01042,new_brunswick,undergrad,senior,resident,False,True,Rutgers Business School-NB,Cook/Douglass,en,True
+S01043,newark,undergrad,junior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01044,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S01045,new_brunswick,undergrad,first_year,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01046,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01047,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S01048,new_brunswick,undergrad,junior,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S01049,newark,undergrad,junior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01050,new_brunswick,undergrad,junior,commuter,True,True,School of Nursing,commutes,en,True
+S01051,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01052,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,College Avenue,en,True
+S01053,new_brunswick,undergrad,senior,resident,True,False,School of Engineering,Cook/Douglass,en,True
+S01054,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S01055,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S01056,newark,undergrad,senior,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S01057,new_brunswick,undergrad,senior,commuter,False,True,School of Engineering,commutes,en,True
+S01058,new_brunswick,undergrad,sophomore,commuter,True,True,School of Engineering,commutes,en,True
+S01059,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,College Avenue,en,True
+S01060,new_brunswick,undergrad,first_year,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01061,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S01062,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S01063,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Livingston,es,True
+S01064,newark,undergrad,senior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01065,camden,undergrad,senior,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S01066,newark,undergrad,senior,resident,False,True,School of Arts and Sciences-Newark,University Heights,en,True
+S01067,new_brunswick,undergrad,senior,commuter,False,True,Rutgers Business School-NB,commutes,es,True
+S01068,newark,undergrad,junior,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01069,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,College Avenue,en,True
+S01070,new_brunswick,undergrad,senior,resident,True,False,Rutgers Business School-NB,Livingston,en,True
+S01071,camden,undergrad,junior,commuter,False,True,Rutgers School of Business-Camden,commutes,es,True
+S01072,newark,undergrad,sophomore,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01073,new_brunswick,undergrad,first_year,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01074,new_brunswick,undergrad,senior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01075,newark,undergrad,junior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01076,new_brunswick,grad,grad,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S01077,new_brunswick,undergrad,senior,resident,True,False,Rutgers Business School-NB,Livingston,en,True
+S01078,new_brunswick,undergrad,first_year,commuter,True,False,School of Communication and Information,commutes,en,True
+S01079,new_brunswick,undergrad,first_year,resident,True,False,School of Communication and Information,Cook/Douglass,es,True
+S01080,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01081,newark,undergrad,junior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01082,new_brunswick,undergrad,first_year,commuter,False,True,School of Nursing,commutes,en,True
+S01083,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S01084,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,en,True
+S01085,newark,undergrad,first_year,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S01086,new_brunswick,undergrad,sophomore,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S01087,newark,grad,grad,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01088,new_brunswick,undergrad,senior,resident,True,False,Mason Gross School of the Arts,College Avenue,en,True
+S01089,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S01090,camden,undergrad,junior,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S01091,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+S01092,camden,undergrad,sophomore,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01093,camden,undergrad,sophomore,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S01094,new_brunswick,undergrad,first_year,commuter,False,False,School of Nursing,commutes,en,True
+S01095,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01096,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S01097,camden,undergrad,first_year,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S01098,new_brunswick,undergrad,junior,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01099,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01100,new_brunswick,grad,grad,commuter,True,False,School of Communication and Information,commutes,en,True
+S01101,newark,undergrad,junior,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S01102,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S01103,camden,undergrad,junior,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S01104,new_brunswick,undergrad,sophomore,commuter,False,True,School of Communication and Information,commutes,en,True
+S01105,new_brunswick,undergrad,sophomore,resident,True,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01106,new_brunswick,undergrad,senior,resident,True,False,School of Nursing,College Avenue,en,True
+S01107,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S01108,newark,grad,grad,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01109,camden,undergrad,first_year,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S01110,new_brunswick,undergrad,first_year,resident,True,False,School of Communication and Information,College Avenue,en,True
+S01111,new_brunswick,undergrad,senior,resident,True,False,School of Communication and Information,Cook/Douglass,en,True
+S01112,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01113,new_brunswick,undergrad,senior,resident,False,False,School of Engineering,Busch,en,True
+S01114,camden,undergrad,senior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01115,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S01116,camden,grad,grad,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S01117,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01118,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S01119,new_brunswick,undergrad,junior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01120,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01121,new_brunswick,undergrad,senior,commuter,True,False,School of Communication and Information,commutes,en,True
+S01122,new_brunswick,undergrad,junior,resident,True,False,School of Communication and Information,Livingston,en,True
+S01123,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S01124,new_brunswick,undergrad,senior,resident,False,False,School of Engineering,Busch,es,True
+S01125,camden,undergrad,senior,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S01126,newark,undergrad,sophomore,commuter,False,True,School of Criminal Justice,commutes,en,True
+S01127,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S01128,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S01129,camden,undergrad,junior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01130,new_brunswick,undergrad,sophomore,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01131,new_brunswick,undergrad,sophomore,resident,False,True,School of Nursing,Busch,en,True
+S01132,new_brunswick,undergrad,senior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S01133,camden,undergrad,senior,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S01134,new_brunswick,grad,grad,resident,False,False,School of Communication and Information,Livingston,en,True
+S01135,new_brunswick,undergrad,first_year,commuter,False,True,School of Engineering,commutes,en,True
+S01136,camden,undergrad,junior,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S01137,new_brunswick,undergrad,senior,resident,True,False,School of Arts and Sciences,Cook/Douglass,en,True
+S01138,newark,undergrad,junior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01139,new_brunswick,undergrad,first_year,resident,True,True,School of Nursing,College Avenue,en,True
+S01140,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01141,new_brunswick,undergrad,junior,commuter,True,False,School of Communication and Information,commutes,en,True
+S01142,newark,undergrad,first_year,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S01143,camden,undergrad,junior,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01144,camden,undergrad,first_year,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S01145,new_brunswick,undergrad,first_year,commuter,False,True,School of Engineering,commutes,en,True
+S01146,new_brunswick,undergrad,first_year,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01147,new_brunswick,undergrad,sophomore,resident,False,True,School of Engineering,College Avenue,en,True
+S01148,new_brunswick,undergrad,first_year,commuter,True,True,School of Engineering,commutes,en,True
+S01149,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S01150,new_brunswick,undergrad,senior,commuter,True,False,Mason Gross School of the Arts,commutes,es,True
+S01151,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,es,True
+S01152,new_brunswick,grad,grad,commuter,True,False,School of Arts and Sciences,commutes,es,True
+S01153,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S01154,new_brunswick,undergrad,sophomore,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S01155,new_brunswick,undergrad,sophomore,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01156,camden,grad,grad,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01157,camden,grad,grad,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S01158,newark,undergrad,senior,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S01159,newark,undergrad,first_year,commuter,True,True,School of Arts and Sciences-Newark,commutes,en,True
+S01160,new_brunswick,grad,grad,resident,False,False,School of Nursing,Busch,en,True
+S01161,new_brunswick,grad,grad,commuter,False,True,School of Engineering,commutes,en,True
+S01162,new_brunswick,undergrad,first_year,resident,True,False,Mason Gross School of the Arts,Livingston,en,True
+S01163,newark,undergrad,first_year,resident,True,True,School of Arts and Sciences-Newark,University Heights,es,True
+S01164,newark,undergrad,junior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01165,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01166,newark,undergrad,junior,commuter,False,False,Rutgers Business School-Newark,commutes,es,True
+S01167,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01168,newark,undergrad,junior,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01169,new_brunswick,undergrad,first_year,resident,True,False,School of Arts and Sciences,Busch,en,True
+S01170,new_brunswick,undergrad,sophomore,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01171,camden,undergrad,junior,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S01172,newark,undergrad,junior,resident,False,False,Rutgers Business School-Newark,University Heights,en,True
+S01173,new_brunswick,undergrad,sophomore,commuter,False,False,School of Nursing,commutes,en,True
+S01174,newark,undergrad,junior,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S01175,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,es,True
+S01176,newark,undergrad,senior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01177,new_brunswick,undergrad,senior,commuter,False,False,School of Communication and Information,commutes,en,True
+S01178,new_brunswick,undergrad,senior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01179,new_brunswick,undergrad,first_year,commuter,False,True,School of Engineering,commutes,en,True
+S01180,newark,grad,grad,commuter,True,True,Rutgers Business School-Newark,commutes,en,True
+S01181,newark,undergrad,senior,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01182,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01183,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,Busch,en,True
+S01184,new_brunswick,undergrad,sophomore,commuter,False,False,School of Arts and Sciences,commutes,es,True
+S01185,newark,grad,grad,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01186,newark,undergrad,junior,resident,False,False,School of Arts and Sciences-Newark,University Heights,es,True
+S01187,new_brunswick,undergrad,first_year,commuter,False,False,School of Engineering,commutes,en,True
+S01188,new_brunswick,undergrad,sophomore,resident,True,False,School of Engineering,College Avenue,en,True
+S01189,new_brunswick,undergrad,first_year,resident,False,False,School of Communication and Information,Livingston,en,True
+S01190,new_brunswick,undergrad,sophomore,resident,True,False,School of Engineering,Cook/Douglass,en,True
+S01191,newark,undergrad,junior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01192,newark,undergrad,sophomore,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S01193,newark,undergrad,first_year,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01194,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S01195,new_brunswick,grad,grad,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S01196,new_brunswick,undergrad,junior,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S01197,newark,undergrad,sophomore,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01198,new_brunswick,undergrad,sophomore,commuter,True,True,School of Nursing,commutes,es,True
+S01199,camden,undergrad,junior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01200,new_brunswick,undergrad,sophomore,commuter,True,False,School of Engineering,commutes,en,True
+S01201,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S01202,new_brunswick,undergrad,first_year,resident,True,True,School of Nursing,Livingston,en,True
+S01203,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01204,newark,undergrad,sophomore,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S01205,new_brunswick,undergrad,junior,commuter,False,True,School of Communication and Information,commutes,en,True
+S01206,new_brunswick,undergrad,sophomore,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01207,new_brunswick,grad,grad,commuter,True,False,School of Communication and Information,commutes,en,True
+S01208,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01209,new_brunswick,undergrad,senior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01210,new_brunswick,undergrad,senior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01211,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,Livingston,en,True
+S01212,newark,grad,grad,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S01213,new_brunswick,undergrad,first_year,resident,True,True,School of Environmental and Biological Sciences,College Avenue,en,True
+S01214,new_brunswick,undergrad,junior,resident,True,False,School of Arts and Sciences,Busch,en,True
+S01215,new_brunswick,undergrad,junior,commuter,False,False,School of Engineering,commutes,en,True
+S01216,newark,undergrad,first_year,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01217,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S01218,newark,undergrad,senior,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S01219,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Busch,es,True
+S01220,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S01221,new_brunswick,grad,grad,commuter,True,False,School of Communication and Information,commutes,en,True
+S01222,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S01223,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Livingston,en,True
+S01224,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Livingston,es,True
+S01225,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S01226,new_brunswick,undergrad,senior,commuter,False,False,School of Nursing,commutes,en,True
+S01227,new_brunswick,undergrad,sophomore,resident,True,False,Mason Gross School of the Arts,Busch,en,True
+S01228,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,College Avenue,es,True
+S01229,newark,undergrad,sophomore,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01230,new_brunswick,grad,grad,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S01231,new_brunswick,undergrad,sophomore,resident,False,True,School of Communication and Information,Cook/Douglass,en,True
+S01232,newark,undergrad,sophomore,resident,False,False,School of Criminal Justice,University Heights,en,True
+S01233,new_brunswick,undergrad,junior,commuter,False,True,School of Communication and Information,commutes,en,True
+S01234,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01235,new_brunswick,undergrad,junior,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S01236,camden,undergrad,sophomore,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S01237,newark,undergrad,senior,commuter,False,True,School of Criminal Justice,commutes,en,True
+S01238,camden,undergrad,junior,resident,False,True,Rutgers School of Business-Camden,Camden waterfront,en,True
+S01239,camden,undergrad,sophomore,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S01240,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Busch,en,True
+S01241,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01242,new_brunswick,undergrad,first_year,resident,False,False,School of Nursing,Livingston,en,True
+S01243,new_brunswick,undergrad,first_year,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S01244,new_brunswick,undergrad,first_year,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S01245,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S01246,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S01247,new_brunswick,undergrad,first_year,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01248,new_brunswick,grad,grad,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S01249,new_brunswick,undergrad,junior,commuter,True,True,School of Nursing,commutes,en,True
+S01250,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S01251,camden,grad,grad,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01252,new_brunswick,undergrad,first_year,resident,False,False,School of Engineering,College Avenue,en,True
+S01253,new_brunswick,undergrad,senior,resident,True,False,School of Communication and Information,College Avenue,en,True
+S01254,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S01255,new_brunswick,undergrad,junior,resident,False,False,School of Nursing,College Avenue,en,True
+S01256,newark,undergrad,sophomore,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S01257,new_brunswick,undergrad,junior,commuter,True,True,School of Communication and Information,commutes,en,True
+S01258,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01259,new_brunswick,undergrad,sophomore,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01260,new_brunswick,undergrad,senior,commuter,True,False,School of Nursing,commutes,en,True
+S01261,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01262,new_brunswick,grad,grad,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S01263,new_brunswick,undergrad,first_year,commuter,True,True,School of Communication and Information,commutes,en,True
+S01264,new_brunswick,undergrad,junior,resident,True,True,School of Communication and Information,College Avenue,en,True
+S01265,new_brunswick,undergrad,sophomore,commuter,False,False,School of Communication and Information,commutes,en,True
+S01266,newark,undergrad,junior,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01267,camden,undergrad,junior,resident,True,True,Rutgers School of Business-Camden,Camden waterfront,en,True
+S01268,new_brunswick,undergrad,junior,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S01269,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01270,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Cook/Douglass,en,True
+S01271,new_brunswick,undergrad,first_year,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01272,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,College Avenue,en,True
+S01273,newark,grad,grad,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01274,new_brunswick,undergrad,junior,commuter,False,True,School of Communication and Information,commutes,en,True
+S01275,new_brunswick,grad,grad,commuter,True,False,School of Communication and Information,commutes,en,True
+S01276,new_brunswick,undergrad,junior,resident,True,False,School of Nursing,Livingston,en,True
+S01277,new_brunswick,undergrad,first_year,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S01278,new_brunswick,undergrad,first_year,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S01279,new_brunswick,undergrad,senior,commuter,False,True,School of Engineering,commutes,en,True
+S01280,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01281,new_brunswick,undergrad,junior,resident,False,False,School of Engineering,Livingston,en,True
+S01282,new_brunswick,undergrad,sophomore,resident,False,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01283,new_brunswick,undergrad,first_year,resident,True,True,School of Arts and Sciences,Livingston,en,True
+S01284,new_brunswick,undergrad,senior,commuter,False,False,School of Communication and Information,commutes,en,True
+S01285,camden,undergrad,senior,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S01286,new_brunswick,undergrad,senior,commuter,True,False,School of Engineering,commutes,en,True
+S01287,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+S01288,newark,grad,grad,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01289,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01290,newark,undergrad,senior,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S01291,new_brunswick,undergrad,first_year,commuter,False,False,School of Communication and Information,commutes,en,True
+S01292,new_brunswick,grad,grad,commuter,True,True,School of Communication and Information,commutes,en,True
+S01293,newark,grad,grad,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S01294,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Busch,en,True
+S01295,new_brunswick,undergrad,sophomore,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01296,new_brunswick,undergrad,sophomore,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S01297,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01298,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S01299,camden,grad,grad,commuter,False,True,Rutgers School of Business-Camden,commutes,en,True
+S01300,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S01301,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,College Avenue,es,True
+S01302,new_brunswick,undergrad,junior,resident,True,False,School of Environmental and Biological Sciences,Cook/Douglass,es,True
+S01303,newark,undergrad,sophomore,commuter,True,False,Rutgers Business School-Newark,commutes,es,True
+S01304,new_brunswick,undergrad,junior,resident,False,True,Mason Gross School of the Arts,College Avenue,en,True
+S01305,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Busch,en,True
+S01306,new_brunswick,undergrad,first_year,commuter,True,True,School of Environmental and Biological Sciences,commutes,es,True
+S01307,new_brunswick,undergrad,junior,resident,True,True,School of Engineering,College Avenue,es,True
+S01308,new_brunswick,undergrad,junior,resident,False,False,School of Engineering,Busch,en,True
+S01309,newark,undergrad,sophomore,commuter,True,False,Rutgers Business School-Newark,commutes,es,True
+S01310,new_brunswick,undergrad,senior,commuter,False,False,School of Engineering,commutes,en,True
+S01311,new_brunswick,grad,grad,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01312,new_brunswick,undergrad,junior,commuter,True,True,School of Environmental and Biological Sciences,commutes,en,True
+S01313,newark,undergrad,junior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S01314,newark,undergrad,sophomore,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01315,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01316,new_brunswick,undergrad,first_year,commuter,True,False,School of Environmental and Biological Sciences,commutes,es,True
+S01317,newark,grad,grad,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S01318,new_brunswick,undergrad,senior,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01319,new_brunswick,undergrad,sophomore,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,es,True
+S01320,camden,undergrad,sophomore,resident,False,False,School of Nursing-Camden,Camden waterfront,en,True
+S01321,newark,undergrad,senior,commuter,True,False,School of Criminal Justice,commutes,en,True
+S01322,new_brunswick,undergrad,junior,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01323,camden,undergrad,sophomore,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01324,camden,undergrad,junior,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S01325,new_brunswick,undergrad,sophomore,resident,False,False,School of Communication and Information,Busch,en,True
+S01326,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S01327,newark,undergrad,sophomore,resident,False,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01328,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S01329,new_brunswick,undergrad,sophomore,resident,True,False,School of Nursing,Livingston,es,True
+S01330,new_brunswick,undergrad,first_year,resident,False,True,School of Arts and Sciences,Cook/Douglass,en,True
+S01331,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S01332,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S01333,newark,undergrad,sophomore,commuter,True,False,School of Criminal Justice,commutes,en,True
+S01334,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S01335,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S01336,new_brunswick,undergrad,sophomore,resident,True,False,School of Communication and Information,Cook/Douglass,en,True
+S01337,newark,undergrad,junior,resident,True,False,School of Arts and Sciences-Newark,University Heights,en,True
+S01338,new_brunswick,grad,grad,commuter,True,False,School of Engineering,commutes,en,True
+S01339,newark,undergrad,first_year,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01340,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01341,new_brunswick,undergrad,senior,commuter,True,True,Rutgers Business School-NB,commutes,en,True
+S01342,newark,grad,grad,resident,True,False,School of Public Affairs and Administration,University Heights,en,True
+S01343,camden,undergrad,senior,resident,False,False,Camden College of Arts and Sciences,Camden waterfront,en,True
+S01344,new_brunswick,grad,grad,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01345,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S01346,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S01347,new_brunswick,grad,grad,commuter,False,False,School of Engineering,commutes,en,True
+S01348,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01349,new_brunswick,undergrad,sophomore,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01350,new_brunswick,undergrad,first_year,resident,False,False,Rutgers Business School-NB,College Avenue,en,True
+S01351,new_brunswick,undergrad,first_year,resident,True,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S01352,new_brunswick,undergrad,senior,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01353,newark,undergrad,sophomore,resident,True,False,School of Public Affairs and Administration,University Heights,en,True
+S01354,new_brunswick,undergrad,senior,resident,True,False,School of Nursing,Livingston,en,True
+S01355,camden,grad,grad,commuter,True,True,Camden College of Arts and Sciences,commutes,en,True
+S01356,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01357,camden,undergrad,senior,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S01358,new_brunswick,undergrad,junior,resident,False,False,Rutgers Business School-NB,Livingston,en,True
+S01359,new_brunswick,undergrad,first_year,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01360,new_brunswick,undergrad,first_year,resident,False,True,Rutgers Business School-NB,College Avenue,en,True
+S01361,new_brunswick,undergrad,senior,commuter,False,False,School of Communication and Information,commutes,en,True
+S01362,newark,undergrad,sophomore,commuter,True,False,School of Criminal Justice,commutes,en,True
+S01363,new_brunswick,undergrad,junior,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S01364,new_brunswick,undergrad,junior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01365,new_brunswick,grad,grad,commuter,False,False,School of Nursing,commutes,en,True
+S01366,new_brunswick,undergrad,first_year,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01367,new_brunswick,undergrad,sophomore,resident,False,True,Rutgers Business School-NB,Cook/Douglass,es,True
+S01368,camden,undergrad,senior,commuter,True,False,Rutgers School of Business-Camden,commutes,en,True
+S01369,camden,undergrad,sophomore,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01370,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Livingston,en,True
+S01371,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,College Avenue,en,True
+S01372,new_brunswick,undergrad,sophomore,commuter,True,True,School of Arts and Sciences,commutes,en,True
+S01373,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,es,True
+S01374,new_brunswick,undergrad,sophomore,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01375,new_brunswick,undergrad,senior,commuter,False,True,School of Engineering,commutes,en,True
+S01376,new_brunswick,undergrad,junior,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01377,new_brunswick,undergrad,sophomore,commuter,False,True,School of Nursing,commutes,en,True
+S01378,new_brunswick,undergrad,first_year,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S01379,new_brunswick,undergrad,senior,commuter,False,True,School of Nursing,commutes,en,True
+S01380,newark,undergrad,first_year,commuter,True,False,Rutgers Business School-Newark,commutes,en,True
+S01381,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Busch,en,True
+S01382,new_brunswick,undergrad,junior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01383,new_brunswick,grad,grad,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01384,new_brunswick,grad,grad,commuter,True,False,School of Environmental and Biological Sciences,commutes,en,True
+S01385,new_brunswick,undergrad,junior,resident,False,False,School of Nursing,Busch,en,True
+S01386,newark,undergrad,junior,commuter,True,True,School of Public Affairs and Administration,commutes,en,True
+S01387,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Livingston,en,True
+S01388,camden,grad,grad,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S01389,newark,undergrad,junior,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S01390,new_brunswick,undergrad,sophomore,resident,True,False,School of Arts and Sciences,Cook/Douglass,en,True
+S01391,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,College Avenue,en,True
+S01392,new_brunswick,undergrad,sophomore,resident,True,False,Rutgers Business School-NB,Busch,en,True
+S01393,camden,undergrad,sophomore,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01394,new_brunswick,undergrad,first_year,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01395,new_brunswick,undergrad,senior,resident,True,False,School of Nursing,Livingston,en,True
+S01396,new_brunswick,grad,grad,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S01397,new_brunswick,undergrad,first_year,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01398,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+S01399,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,Livingston,en,True
+S01400,new_brunswick,undergrad,sophomore,commuter,False,True,School of Engineering,commutes,en,True
+S01401,newark,undergrad,first_year,resident,False,False,School of Public Affairs and Administration,University Heights,en,True
+S01402,new_brunswick,grad,grad,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01403,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,Cook/Douglass,en,True
+S01404,newark,grad,grad,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01405,new_brunswick,undergrad,junior,resident,False,False,School of Communication and Information,Busch,en,True
+S01406,new_brunswick,undergrad,sophomore,commuter,False,False,School of Engineering,commutes,en,True
+S01407,newark,undergrad,senior,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S01408,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01409,newark,undergrad,sophomore,commuter,False,True,School of Public Affairs and Administration,commutes,en,True
+S01410,new_brunswick,undergrad,sophomore,commuter,False,False,Mason Gross School of the Arts,commutes,en,True
+S01411,new_brunswick,undergrad,junior,commuter,False,True,School of Nursing,commutes,en,True
+S01412,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,Busch,en,True
+S01413,new_brunswick,grad,grad,commuter,False,False,School of Communication and Information,commutes,en,True
+S01414,new_brunswick,undergrad,sophomore,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01415,newark,undergrad,first_year,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01416,new_brunswick,undergrad,first_year,commuter,False,True,School of Nursing,commutes,en,True
+S01417,camden,undergrad,sophomore,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01418,new_brunswick,grad,grad,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01419,camden,undergrad,junior,resident,False,False,School of Nursing-Camden,Camden waterfront,en,True
+S01420,new_brunswick,undergrad,senior,commuter,False,True,School of Environmental and Biological Sciences,commutes,en,True
+S01421,newark,undergrad,first_year,commuter,False,False,School of Public Affairs and Administration,commutes,en,True
+S01422,new_brunswick,undergrad,junior,resident,False,False,School of Engineering,College Avenue,en,True
+S01423,newark,undergrad,junior,commuter,True,True,School of Public Affairs and Administration,commutes,en,True
+S01424,new_brunswick,undergrad,sophomore,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01425,new_brunswick,undergrad,sophomore,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01426,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Livingston,en,True
+S01427,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Cook/Douglass,en,True
+S01428,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01429,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,College Avenue,en,True
+S01430,new_brunswick,undergrad,first_year,commuter,True,True,Mason Gross School of the Arts,commutes,es,True
+S01431,new_brunswick,undergrad,senior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01432,new_brunswick,undergrad,senior,resident,False,False,School of Communication and Information,Cook/Douglass,en,True
+S01433,new_brunswick,undergrad,senior,resident,False,False,Rutgers Business School-NB,Cook/Douglass,en,True
+S01434,newark,undergrad,first_year,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S01435,new_brunswick,undergrad,senior,resident,False,False,Mason Gross School of the Arts,Busch,en,True
+S01436,new_brunswick,undergrad,junior,resident,True,False,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01437,new_brunswick,undergrad,sophomore,commuter,True,True,School of Nursing,commutes,en,True
+S01438,newark,undergrad,sophomore,commuter,True,True,School of Criminal Justice,commutes,en,True
+S01439,newark,undergrad,first_year,resident,True,False,Rutgers Business School-Newark,University Heights,en,True
+S01440,camden,grad,grad,commuter,True,True,School of Nursing-Camden,commutes,en,True
+S01441,newark,grad,grad,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S01442,new_brunswick,undergrad,first_year,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01443,newark,grad,grad,commuter,False,False,School of Arts and Sciences-Newark,commutes,en,True
+S01444,camden,grad,grad,commuter,False,True,Camden College of Arts and Sciences,commutes,en,True
+S01445,new_brunswick,undergrad,junior,resident,False,True,School of Arts and Sciences,College Avenue,en,True
+S01446,new_brunswick,grad,grad,commuter,False,True,School of Communication and Information,commutes,en,True
+S01447,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,College Avenue,en,True
+S01448,new_brunswick,undergrad,sophomore,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01449,new_brunswick,undergrad,junior,resident,False,False,School of Nursing,College Avenue,en,True
+S01450,new_brunswick,undergrad,first_year,resident,False,False,School of Environmental and Biological Sciences,College Avenue,en,True
+S01451,newark,undergrad,senior,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S01452,new_brunswick,undergrad,senior,commuter,False,True,Rutgers Business School-NB,commutes,en,True
+S01453,newark,undergrad,first_year,commuter,True,False,School of Arts and Sciences-Newark,commutes,en,True
+S01454,camden,undergrad,senior,resident,True,False,Rutgers School of Business-Camden,Camden waterfront,en,True
+S01455,new_brunswick,undergrad,first_year,resident,False,True,School of Nursing,Cook/Douglass,en,True
+S01456,newark,undergrad,junior,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01457,newark,grad,grad,commuter,False,False,Rutgers Business School-Newark,commutes,en,True
+S01458,new_brunswick,undergrad,junior,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01459,newark,undergrad,sophomore,resident,False,False,Rutgers Business School-Newark,University Heights,en,True
+S01460,camden,undergrad,senior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01461,newark,undergrad,first_year,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01462,camden,undergrad,senior,commuter,False,False,Rutgers School of Business-Camden,commutes,en,True
+S01463,camden,undergrad,junior,resident,False,False,Camden College of Arts and Sciences,Camden waterfront,en,True
+S01464,new_brunswick,undergrad,senior,commuter,False,False,School of Environmental and Biological Sciences,commutes,en,True
+S01465,new_brunswick,undergrad,junior,resident,True,False,School of Engineering,Livingston,en,True
+S01466,new_brunswick,grad,grad,commuter,True,False,School of Arts and Sciences,commutes,en,True
+S01467,newark,undergrad,first_year,commuter,False,True,School of Arts and Sciences-Newark,commutes,en,True
+S01468,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01469,newark,undergrad,sophomore,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01470,camden,undergrad,sophomore,commuter,True,False,School of Nursing-Camden,commutes,en,True
+S01471,camden,undergrad,senior,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S01472,camden,undergrad,first_year,commuter,False,False,School of Nursing-Camden,commutes,en,True
+S01473,new_brunswick,undergrad,junior,commuter,False,True,School of Arts and Sciences,commutes,en,True
+S01474,new_brunswick,undergrad,senior,resident,False,False,School of Nursing,Livingston,en,True
+S01475,newark,undergrad,sophomore,commuter,True,True,School of Arts and Sciences-Newark,commutes,en,True
+S01476,new_brunswick,undergrad,junior,resident,True,False,School of Arts and Sciences,College Avenue,en,True
+S01477,new_brunswick,undergrad,sophomore,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S01478,new_brunswick,grad,grad,commuter,True,False,Rutgers Business School-NB,commutes,en,True
+S01479,new_brunswick,undergrad,junior,resident,False,False,School of Environmental and Biological Sciences,Livingston,en,True
+S01480,new_brunswick,undergrad,first_year,commuter,False,True,School of Communication and Information,commutes,en,True
+S01481,new_brunswick,grad,grad,commuter,False,True,School of Nursing,commutes,en,True
+S01482,new_brunswick,undergrad,first_year,commuter,False,False,School of Arts and Sciences,commutes,en,True
+S01483,new_brunswick,grad,grad,commuter,False,False,Rutgers Business School-NB,commutes,en,True
+S01484,new_brunswick,undergrad,junior,commuter,False,False,School of Nursing,commutes,en,True
+S01485,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01486,camden,undergrad,senior,commuter,False,False,Camden College of Arts and Sciences,commutes,en,True
+S01487,new_brunswick,undergrad,junior,resident,True,False,School of Environmental and Biological Sciences,Busch,es,True
+S01488,new_brunswick,undergrad,first_year,resident,True,False,School of Nursing,Busch,es,True
+S01489,camden,undergrad,first_year,commuter,True,False,Camden College of Arts and Sciences,commutes,en,True
+S01490,newark,undergrad,first_year,commuter,False,False,Rutgers Business School-Newark,commutes,es,True
+S01491,newark,undergrad,senior,commuter,False,False,School of Criminal Justice,commutes,en,True
+S01492,new_brunswick,undergrad,first_year,commuter,False,True,Mason Gross School of the Arts,commutes,en,True
+S01493,camden,undergrad,first_year,commuter,False,True,School of Nursing-Camden,commutes,en,True
+S01494,new_brunswick,undergrad,first_year,resident,True,True,Mason Gross School of the Arts,Cook/Douglass,en,True
+S01495,new_brunswick,grad,grad,commuter,True,False,School of Nursing,commutes,en,True
+S01496,newark,grad,grad,commuter,False,True,Rutgers Business School-Newark,commutes,en,True
+S01497,new_brunswick,undergrad,sophomore,resident,False,False,School of Arts and Sciences,College Avenue,en,True
+S01498,new_brunswick,grad,grad,commuter,True,False,Mason Gross School of the Arts,commutes,en,True
+S01499,newark,grad,grad,commuter,True,False,School of Public Affairs and Administration,commutes,en,True
+S01500,new_brunswick,undergrad,junior,resident,False,True,School of Nursing,Livingston,en,True
+DEMO-ANDRE,newark,undergrad,junior,commuter,True,True,School of Arts and Sciences-Newark,commutes,en,True
+DEMO-JORDAN,new_brunswick,undergrad,first_year,resident,False,False,School of Arts and Sciences,Livingston,en,True
+DEMO-PRIYA,new_brunswick,undergrad,sophomore,resident,False,False,School of Engineering,Busch,en,True
+DEMO-SOFIA,camden,grad,grad,commuter,True,True,School of Nursing-Camden,commutes,es,True
+DEMO-TAYLOR,new_brunswick,undergrad,junior,resident,False,False,School of Arts and Sciences,College Avenue,en,True

@@ -1,0 +1,95 @@
+Challenge 1
+
+Student-facing app-based digital solution combining student wellness
+inventories with personalized, geo-located resources
+
+Theme: Student Health and Wellness • Artificial Intelligence •
+Geolocation
+
+Key Mentors:
+
+  Margaret Swarbrick, PhD, ScarletWell Director;
+
+  Leslie Lenert, MD, MS, FACMI, FACP, BMIHAI Director;
+
+  Antonina Mitrofanova, PhD, BMIHAI Deputy Director
+
+Product Advisors and Volunteers:
+
+Amy B. Spagnolo, PhD, ScarletWell Senior Program Coordinator;
+
+  Jack Katina, Graduate Student, Rutgers University;
+
+  Vivian Glenn, Undergraduate Student, Rutgers University
+
+■ Challenge Summary
+
+Rutgers already runs a Wellness Inventory that gives students a snapshot
+of their wellness across eight dimensions, but today that snapshot is
+just a number with nothing behind it. This challenge asks teams to build
+the missing layer: a conversational, peer-like AI experience that turns
+a student's Wellness Inventory results into specific, encouraging next
+steps, and pairs each recommendation with a real, nearby place to act on
+it, including expanded attention to Newark and Camden, which ScarletWell
+has identified as priority areas for growth.
+
+■ Dataset
+
+De-identified Rutgers Wellness Inventory (short form, 18 items, ~5
+minutes) results across the eight wellness dimensions (emotional,
+environmental, financial, intellectual, occupational, physical, social,
+spiritual); related de-identified ScarletWell survey and demographic
+data; existing Rutgers wellness resource listings, including the campus
+Wellness Calendar and student activity system (The Arc, formerly
+GetInvolved); publicly available campus and community location data for
+New Brunswick, Newark, and Camden.
+
+■ Challenge Details
+
+Design an AI tool that can:
+
+• Deliver the Wellness Inventory short form as a quick, low-burden
+check-in and return personalized, dimension-level feedback in plain,
+encouraging language, including both a total score and individual
+dimension scores.
+• Use a conversational, friend-like tone (not clinical or diagnostic) to
+present results and suggest one or two concrete next steps for any
+lower-scoring dimension.
+• Match a student's specific areas of need to relevant, current campus
+resources (counseling, financial aid/wellness, academic support,
+recreation, peer groups) rather than a generic resource list.
+• Surface nearby wellness supports through geolocation, on campus and in
+the surrounding community, with particular attention to Camden and
+Newark, so students can find realistic, close-by options.
+• (Stretch) Support optional repeat check-ins to show a student's
+wellness trends over time, and/or a lightly moderated, anonymous space
+for students to share a wellness win with peers.
+
+■ Suggested Approaches
+
+• A retrieval-augmented generation (RAG) approach for the conversational
+check-in and feedback layer, grounded in Rutgers-specific resource
+content.
+• A rules-based or LLM-driven recommendation engine that maps
+low-scoring dimensions to specific, current resources and events.
+• A mapping or geolocation API layered on top of a campus and community
+resource directory, filterable by dimension, cost, and location.
+• A simple, mobile-first interface that keeps the check-in and feedback
+loop fast and conversational rather than form-like.
+
+■ Deliverables
+
+A working prototype (mobile or web app) that demonstrates: a student
+completing the Wellness Inventory check-in; personalized,
+dimension-level feedback delivered in a conversational tone; at least
+one AI-generated resource recommendation tied to a geolocated, real
+Rutgers or community resource; and a short team walkthrough explaining
+the approach, data handling/privacy considerations, and how the
+prototype could scale across New Brunswick, Newark, and Camden.
+
+Resources:
+
+-   ScarletWell_Rutgers_Resources_Locations.docx (check discord Channel)
+
+-   https://youtu.be/Axvfw53mFZo (Video Resource from the ScarletWell
+    team)
