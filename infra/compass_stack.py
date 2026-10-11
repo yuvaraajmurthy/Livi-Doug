@@ -93,7 +93,8 @@ class AppStack(Stack):
         task_role = iam.Role(self, "TaskRole", assumed_by=iam.ServicePrincipal("ecs-tasks.amazonaws.com"))
         task_role.add_to_policy(iam.PolicyStatement(
             actions=["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream", "bedrock:Converse",
-                     "bedrock:ConverseStream", "bedrock:ApplyGuardrail", "bedrock:GetGuardrail"],
+                     "bedrock:ConverseStream", "bedrock:ApplyGuardrail", "bedrock:GetGuardrail",
+                     "bedrock:InvokeModelWithBidirectionalStream"],
             resources=["*"]))
         task_role.add_to_policy(iam.PolicyStatement(
             actions=["geo:SearchPlaceIndexForText", "geo-places:Geocode", "geo-places:SearchText"], resources=["*"]))
