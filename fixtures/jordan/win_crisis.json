@@ -17,22 +17,11 @@
       "verified": false
     },
     {
-      "id": 2,
-      "name": "988 en español",
-      "kind": "call",
-      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
-      "href": "tel:988",
-      "hours": "24/7",
-      "campus": "all",
-      "language": "es",
-      "verified": false
-    },
-    {
       "id": 3,
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -44,6 +33,17 @@
       "kind": "emergency",
       "contact": "Call 911",
       "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
       "hours": "24/7",
       "campus": "all",
       "language": "any",

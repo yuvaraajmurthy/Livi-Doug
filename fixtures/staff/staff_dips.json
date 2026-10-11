@@ -13,24 +13,234 @@
   "threshold": 0.15,
   "dips": [
     {
-      "campus": "new_brunswick",
+      "campus": "camden",
+      "dimension": "emotional",
+      "week": "2026-09-28",
+      "avg_score": 2.4,
+      "trailing_avg": 2.627,
+      "drop": 0.227,
+      "n": 22,
+      "overlay": null
+    },
+    {
+      "campus": "camden",
+      "dimension": "environmental",
+      "week": "2026-09-28",
+      "avg_score": 2.631,
+      "trailing_avg": 2.851,
+      "drop": 0.22,
+      "n": 22,
+      "overlay": null
+    },
+    {
+      "campus": "newark",
+      "dimension": "emotional",
+      "week": "2026-10-05",
+      "avg_score": 2.388,
+      "trailing_avg": 2.59,
+      "drop": 0.202,
+      "n": 33,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "newark",
+      "dimension": "intellectual",
+      "week": "2026-10-05",
+      "avg_score": 2.711,
+      "trailing_avg": 2.896,
+      "drop": 0.185,
+      "n": 33,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "newark",
+      "dimension": "social",
+      "week": "2026-10-05",
+      "avg_score": 2.291,
+      "trailing_avg": 2.451,
+      "drop": 0.16,
+      "n": 33,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "newark",
+      "dimension": "intellectual",
+      "week": "2026-10-12",
+      "avg_score": 2.684,
+      "trailing_avg": 2.853,
+      "drop": 0.169,
+      "n": 47,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "newark",
       "dimension": "physical",
       "week": "2026-10-12",
-      "avg_score": 2.63,
-      "trailing_avg": 2.82,
-      "drop": 0.19,
-      "n": 118,
+      "avg_score": 2.407,
+      "trailing_avg": 2.56,
+      "drop": 0.153,
+      "n": 47,
       "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "camden",
+      "dimension": "physical",
+      "week": "2026-10-19",
+      "avg_score": 2.235,
+      "trailing_avg": 2.482,
+      "drop": 0.247,
+      "n": 25,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "newark",
+      "dimension": "physical",
+      "week": "2026-10-19",
+      "avg_score": 2.324,
+      "trailing_avg": 2.529,
+      "drop": 0.205,
+      "n": 39,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "camden",
+      "dimension": "environmental",
+      "week": "2026-10-26",
+      "avg_score": 2.651,
+      "trailing_avg": 2.815,
+      "drop": 0.164,
+      "n": 20,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "camden",
+      "dimension": "occupational",
+      "week": "2026-10-26",
+      "avg_score": 2.646,
+      "trailing_avg": 2.824,
+      "drop": 0.178,
+      "n": 20,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "newark",
+      "dimension": "environmental",
+      "week": "2026-11-09",
+      "avg_score": 2.69,
+      "trailing_avg": 2.897,
+      "drop": 0.207,
+      "n": 16,
+      "overlay": null
+    },
+    {
+      "campus": "newark",
+      "dimension": "spiritual",
+      "week": "2026-11-09",
+      "avg_score": 2.577,
+      "trailing_avg": 2.825,
+      "drop": 0.248,
+      "n": 16,
+      "overlay": null
+    },
+    {
+      "campus": "newark",
+      "dimension": "occupational",
+      "week": "2026-11-16",
+      "avg_score": 2.624,
+      "trailing_avg": 2.828,
+      "drop": 0.204,
+      "n": 16,
+      "overlay": null
+    },
+    {
+      "campus": "camden",
+      "dimension": "environmental",
+      "week": "2026-11-23",
+      "avg_score": 2.662,
+      "trailing_avg": 2.831,
+      "drop": 0.169,
+      "n": 11,
+      "overlay": "Thanksgiving recess"
+    },
+    {
+      "campus": "camden",
+      "dimension": "financial",
+      "week": "2026-11-23",
+      "avg_score": 2.089,
+      "trailing_avg": 2.285,
+      "drop": 0.196,
+      "n": 11,
+      "overlay": "Thanksgiving recess"
+    },
+    {
+      "campus": "camden",
+      "dimension": "physical",
+      "week": "2026-11-23",
+      "avg_score": 2.297,
+      "trailing_avg": 2.484,
+      "drop": 0.187,
+      "n": 11,
+      "overlay": "Thanksgiving recess"
+    },
+    {
+      "campus": "camden",
+      "dimension": "spiritual",
+      "week": "2026-11-23",
+      "avg_score": 2.689,
+      "trailing_avg": 2.859,
+      "drop": 0.17,
+      "n": 11,
+      "overlay": "Thanksgiving recess"
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-11-30",
+      "avg_score": 2.491,
+      "trailing_avg": 2.651,
+      "drop": 0.16,
+      "n": 58,
+      "overlay": null
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "emotional",
+      "week": "2026-12-14",
+      "avg_score": 2.457,
+      "trailing_avg": 2.643,
+      "drop": 0.186,
+      "n": 30,
+      "overlay": "Reading days"
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "intellectual",
+      "week": "2026-12-14",
+      "avg_score": 2.719,
+      "trailing_avg": 2.919,
+      "drop": 0.2,
+      "n": 30,
+      "overlay": "Reading days"
     },
     {
       "campus": "new_brunswick",
       "dimension": "physical",
       "week": "2026-12-14",
-      "avg_score": 2.5,
-      "trailing_avg": 2.78,
-      "drop": 0.28,
-      "n": 131,
-      "overlay": "Final exams"
+      "avg_score": 2.221,
+      "trailing_avg": 2.564,
+      "drop": 0.343,
+      "n": 30,
+      "overlay": "Reading days"
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "social",
+      "week": "2026-12-14",
+      "avg_score": 2.426,
+      "trailing_avg": 2.6,
+      "drop": 0.174,
+      "n": 30,
+      "overlay": "Reading days"
     }
   ],
   "overlays": [
@@ -39,35 +249,42 @@
       "start": "2026-09-01",
       "end": "2026-09-01",
       "approximate": false,
-      "source": "Rutgers academic calendar"
+      "source": "Rutgers academic calendar (fall 2026)"
     },
     {
       "label": "Midterms (approximate)",
       "start": "2026-10-05",
       "end": "2026-10-30",
       "approximate": true,
-      "source": "Assumption: not on the registrar calendar"
+      "source": "Assumption: midterms are not on the registrar calendar"
     },
     {
       "label": "Thanksgiving recess",
       "start": "2026-11-26",
       "end": "2026-11-29",
       "approximate": false,
-      "source": "Rutgers academic calendar"
+      "source": "Rutgers academic calendar (fall 2026)"
+    },
+    {
+      "label": "Classes end",
+      "start": "2026-12-10",
+      "end": "2026-12-10",
+      "approximate": false,
+      "source": "Rutgers academic calendar (fall 2026)"
     },
     {
       "label": "Reading days",
       "start": "2026-12-11",
       "end": "2026-12-14",
       "approximate": false,
-      "source": "Rutgers academic calendar"
+      "source": "Rutgers academic calendar (fall 2026)"
     },
     {
       "label": "Final exams",
       "start": "2026-12-15",
       "end": "2026-12-22",
       "approximate": false,
-      "source": "Rutgers academic calendar"
+      "source": "Rutgers academic calendar (fall 2026)"
     }
   ]
 }

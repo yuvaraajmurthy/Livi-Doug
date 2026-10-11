@@ -1,5 +1,24 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
-  "items": []
+  "now": "2026-10-13T15:30:00-04:00",
+  "items": [
+    {
+      "id": 2,
+      "kind": "followup",
+      "title": "How was Commuter lunch and board games?",
+      "body": "Two taps: did you go, and did it help?",
+      "deep_link": "/followup/3096",
+      "at": "2026-10-13T15:30:00-04:00",
+      "delivered": "push"
+    },
+    {
+      "id": 1,
+      "kind": "reminder",
+      "title": "Commuter lunch and board games starts in 15 minutes",
+      "body": "Paul Robeson Campus Center.",
+      "deep_link": "/plan/3096",
+      "at": "2026-10-13T12:15:00-04:00",
+      "delivered": "push"
+    }
+  ]
 }

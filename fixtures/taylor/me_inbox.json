@@ -1,5 +1,15 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
-  "items": []
+  "now": "2026-10-14T17:00:00-04:00",
+  "items": [
+    {
+      "id": 4,
+      "kind": "followup",
+      "title": "How was CAPS Main Office?",
+      "body": "Two taps: did you go, and did it help?",
+      "deep_link": "/followup/3098",
+      "at": "2026-10-14T17:00:00-04:00",
+      "delivered": "push"
+    }
+  ]
 }

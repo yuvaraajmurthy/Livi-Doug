@@ -3,7 +3,7 @@
   "now": "2026-10-12T09:00:00-04:00",
   "kind": "profile",
   "profile": {
-    "focus": null,
+    "focus": "emotional",
     "barriers": [],
     "barriers_from_text": [],
     "free_windows": [],

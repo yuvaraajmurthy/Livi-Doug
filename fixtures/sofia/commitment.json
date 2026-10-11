@@ -2,37 +2,36 @@
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
   "kind": "commitment",
-  "commitment_id": 9001,
+  "commitment_id": 3099,
   "status": "planned",
   "item": {
-    "id": "res-cmd-004",
-    "kind": "resource",
-    "title": "Rutgers–Camden Food Pantry",
-    "summary": "Free food for Rutgers–Camden students.",
+    "id": "pin-sofia-budget-online-2026-10-14",
+    "kind": "online",
+    "title": "Budgeting for real life, evening online session (sample)",
+    "summary": "Taller en línea de 45 minutos para estirar tu sueldo. Cámara opcional.",
     "dimensions": [
-      "financial",
-      "physical"
+      "financial"
     ],
     "url": null,
     "phone": null,
     "hours_text": null,
-    "synthetic": false
+    "synthetic": true
   },
-  "when_label": "Esta semana",
+  "when_label": "mié 14 oct, 7:30–8:15 PM",
   "where": {
-    "venue": "Rutgers–Camden",
+    "venue": null,
     "address": null,
-    "lat": 39.9483,
-    "lon": -75.1224,
-    "campus": "camden"
+    "lat": null,
+    "lon": null,
+    "campus": "online"
   },
-  "plan_text": "This week, after my last class, I stop by Rutgers–Camden Food Pantry.",
-  "plan_source": "template",
-  "ics_url": "/commitments/9001/ics?t=fixture-invite",
-  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE",
-  "reminder_at": null,
-  "followup_at": "2026-10-15T09:00:00-04:00",
-  "invite_url": "/i/fixture-invite",
-  "invite_token": "fixture-invite",
-  "share_text": "I'm going to Rutgers–Camden Food Pantry this week. Come with me?"
+  "plan_text": "Cuando termine mi clase el miércoles a las 7:00, yo camino a Budgeting for real life, evening online session.",
+  "plan_source": "ai",
+  "ics_url": "/commitments/3099/ics?t=1Y8vjYzfjICp",
+  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Budgeting+for+real+life%2C+evening+online+session+%28sample%29&details=Cuando+termine+mi+clase+el+mi%C3%A9rcoles+a+las+7%3A00%2C+yo+camino+a+Budgeting+for+real+life%2C+evening+online+session.&location=&dates=20261014T233000Z%2F20261015T001500Z",
+  "reminder_at": "2026-10-14T19:15:00-04:00",
+  "followup_at": "2026-10-15T08:00:00-04:00",
+  "invite_url": "/i/1Y8vjYzfjICp",
+  "invite_token": "1Y8vjYzfjICp",
+  "share_text": "Voy a Budgeting for real life, evening online session (mié 14 oct, 7:30–8:15 PM). ¿Vienes conmigo?"
 }

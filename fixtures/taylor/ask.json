@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "answer",
+  "text": "You have a couple of great options to talk to someone! You can join Let's Talk With Art, which is hosted by Counseling, Alcohol and Other Drug Assistance Program & Psychiatric Services. If you need to talk to someone right away, the 24-hour nurse line (Rutgers–Camden students) is available 24/7.",
+  "items": [
+    {
+      "id": "res-cmd-nurse-line",
+      "title": "24-hour nurse line (Rutgers–Camden students)",
+      "when_label": null,
+      "where": {
+        "venue": null,
+        "address": null,
+        "lat": null,
+        "lon": null,
+        "campus": "online"
+      },
+      "url": "https://wellnesscenter.camden.rutgers.edu/emergency-after-hours/",
+      "phone": "1-800-424-5090",
+      "synthetic": false
+    }
+  ],
+  "source": "ai"
+}

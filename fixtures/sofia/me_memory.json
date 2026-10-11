@@ -1,11 +1,11 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
+  "now": "2026-10-15T08:00:00-04:00",
   "items": [
     {
       "id": "profile:focus",
       "kind": "focus",
-      "statement": "You chose to grow: Financial",
+      "statement": "You chose to grow: Financiero",
       "source": {
         "type": "you_chose",
         "label": "Your choice",
@@ -19,7 +19,7 @@
     {
       "id": "profile:barrier:no_time",
       "kind": "barrier",
-      "statement": "What gets in the way: no time",
+      "statement": "What gets in the way: No time between class and work",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -33,7 +33,7 @@
     {
       "id": "profile:barrier:money",
       "kind": "barrier",
-      "statement": "What gets in the way: money",
+      "statement": "What gets in the way: Money is tight",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -41,6 +41,90 @@
       },
       "used_for": "Favours steps that get around it",
       "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:0",
+      "kind": "free_window",
+      "statement": "Free: Tue 19:00-21:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:1",
+      "kind": "free_window",
+      "statement": "Free: Wed 19:00-21:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:2",
+      "kind": "free_window",
+      "statement": "Free: Sat 10:00-14:00",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:12",
+      "kind": "time_works",
+      "statement": "Los miércoles a las noches te funcionan",
+      "source": {
+        "type": "attendance",
+        "label": "You went on Wednesday",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Wednesday evenings rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:11",
+      "kind": "likes_format",
+      "statement": "Los talleres te funcionaron",
+      "source": {
+        "type": "rating",
+        "label": "You rated Budgeting for real life, evening online session 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Workshops rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:10",
+      "kind": "likes_format",
+      "statement": "Las opciones en línea te funcionaron",
+      "source": {
+        "type": "rating",
+        "label": "You rated Budgeting for real life, evening online session 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Online options rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
       "last_used_at": null,
       "deletable": true
     }

@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "answer",
+  "text": "Here are a few places that might help: Study space at Math/Physics Library, Study space at Carr Library, Study space at Alexander Library.",
+  "items": [
+    {
+      "id": "place-libcal-math-physics-library",
+      "title": "Study space at Math/Physics Library",
+      "when_label": null,
+      "where": {
+        "venue": "Math/Physics Library",
+        "address": "110 Frelinghuysen Rd, Piscataway, NJ 08854",
+        "lat": 40.52205,
+        "lon": -74.4627,
+        "campus": "new_brunswick"
+      },
+      "url": "https://libcal.rutgers.edu/spaces",
+      "phone": null,
+      "synthetic": false
+    },
+    {
+      "id": "place-libcal-carr-library",
+      "title": "Study space at Carr Library",
+      "when_label": null,
+      "where": {
+        "venue": "Carr Library",
+        "address": "75 Avenue E, Piscataway, NJ 08854",
+        "lat": 40.52197,
+        "lon": -74.43932,
+        "campus": "new_brunswick"
+      },
+      "url": "https://libcal.rutgers.edu/spaces",
+      "phone": null,
+      "synthetic": false
+    },
+    {
+      "id": "place-libcal-alexander-library",
+      "title": "Study space at Alexander Library",
+      "when_label": null,
+      "where": {
+        "venue": "Alexander Library",
+        "address": "169 College Ave, New Brunswick, NJ 08901",
+        "lat": 40.50447,
+        "lon": -74.45296,
+        "campus": "new_brunswick"
+      },
+      "url": "https://libcal.rutgers.edu/spaces",
+      "phone": null,
+      "synthetic": false
+    }
+  ],
+  "source": "template"
+}

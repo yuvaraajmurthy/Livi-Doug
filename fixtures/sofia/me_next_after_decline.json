@@ -1,45 +1,43 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
-  "set_id": "set-sofia-2",
+  "now": "2026-10-15T08:00:00-04:00",
+  "set_id": "set-2881ebd9c1ed",
   "care_first": false,
   "support_card": null,
   "pick": {
-    "rec_id": 402,
+    "rec_id": 8536,
     "item": {
-      "id": "syn-camden-043",
-      "kind": "event",
-      "title": "Cook a cheap healthy dinner (sample)",
-      "summary": null,
+      "id": "res-cmd-onestop",
+      "kind": "resource",
+      "title": "Rutgers–Camden One Stop (financial aid, billing, registrar)",
+      "summary": "Walk-in help with financial aid, bills and registration. No appointment needed.",
       "dimensions": [
-        "physical",
-        "financial",
-        "social"
+        "financial"
       ],
-      "url": null,
+      "url": "https://camden.rutgers.edu/osssc",
       "phone": null,
-      "hours_text": null,
-      "synthetic": true
+      "hours_text": "Mon–Fri 8:30 am–4:30 pm, walk-in",
+      "synthetic": false
     },
-    "starts_at": "2026-10-16T17:30:00-04:00",
-    "ends_at": "2026-10-16T18:45:00-04:00",
-    "when_label": "Vie 16 oct, 5:30–6:45 PM",
+    "starts_at": null,
+    "ends_at": null,
+    "when_label": "Esta semana",
     "window_label": null,
     "where": {
-      "venue": "Athletic and Fitness Center",
-      "address": null,
-      "lat": 39.9497,
-      "lon": -75.1208,
+      "venue": "Armitage Hall, 1st floor",
+      "address": "311 N 5th St, Camden, NJ 08102",
+      "lat": null,
+      "lon": null,
       "campus": "camden"
     },
     "walk_min": null,
     "cost": "free",
     "cost_label": "Gratis",
-    "rung": 2,
-    "rung_label": "Structured: you'll be doing something, not mingling",
+    "rung": 1,
+    "rung_label": "Solo ve",
     "going": {
       "count": null,
-      "label": "Van algunos estudiantes"
+      "label": ""
     },
     "reasons": {
       "filters": [
@@ -58,62 +56,62 @@
           "weight": 0.35,
           "score": 1.0,
           "contribution": 0.35,
-          "text": "Financiero"
+          "text": "Financial"
         },
         {
           "name": "barrier",
           "weight": 0.25,
           "score": 0.5,
           "contribution": 0.125,
-          "text": ""
+          "text": "money"
         },
         {
           "name": "window",
           "weight": 0.2,
-          "score": 0.5,
-          "contribution": 0.1,
+          "score": 0.2,
+          "contribution": 0.04,
           "text": ""
         },
         {
           "name": "rung",
           "weight": 0.1,
-          "score": 0.5,
-          "contribution": 0.05,
-          "text": ""
+          "score": 1.0,
+          "contribution": 0.1,
+          "text": "Just show up"
         },
         {
           "name": "helped_similar",
           "weight": 0.1,
-          "score": 0.5,
-          "contribution": 0.05,
-          "text": ""
+          "score": 0.525,
+          "contribution": 0.053,
+          "text": "No ratings yet"
         }
       ],
       "memory": [],
       "distance": null,
-      "total": 0.675
+      "total": 0.667
     },
-    "why": "Una cena barata que puedes repetir en casa.",
-    "why_source": "template",
+    "why": "Te conviene pasar sin cita para recibir ayuda gratuita con tu ayuda financiera, facturas y registro.",
+    "why_source": "ai",
     "pushed": true,
     "source": {
-      "name": "Compass sample event (synthetic)",
-      "url": null,
-      "verified_on": null
+      "name": "Compass research (verified)",
+      "url": "https://camden.rutgers.edu/osssc",
+      "verified_on": "2026-10-10"
     }
   },
   "alternates": [
     {
-      "rec_id": 403,
+      "rec_id": 8537,
       "item": {
         "id": "res-cmd-002",
         "kind": "online",
         "title": "Uwill free teletherapy (Camden students)",
-        "summary": null,
+        "summary": "online, evenings and weekends",
         "dimensions": [
           "emotional"
         ],
-        "url": null,
+        "url": "https://app.uwill.com",
         "phone": null,
         "hours_text": null,
         "synthetic": false
@@ -121,7 +119,7 @@
       "starts_at": null,
       "ends_at": null,
       "when_label": "Cuando quieras",
-      "window_label": null,
+      "window_label": "Any time, online",
       "where": {
         "venue": null,
         "address": null,
@@ -133,7 +131,7 @@
       "cost": "free",
       "cost_label": "Gratis",
       "rung": 1,
-      "rung_label": "Just show up",
+      "rung_label": "Solo ve",
       "going": {
         "count": null,
         "label": ""
@@ -142,7 +140,11 @@
         "filters": [
           {
             "code": "online",
-            "text": "En línea"
+            "text": "Online"
+          },
+          {
+            "code": "free",
+            "text": "Free"
           }
         ],
         "components": [
@@ -156,77 +158,82 @@
           {
             "name": "barrier",
             "weight": 0.25,
-            "score": 0.5,
-            "contribution": 0.125,
-            "text": ""
+            "score": 1.0,
+            "contribution": 0.25,
+            "text": "no_time, money"
           },
           {
             "name": "window",
             "weight": 0.2,
-            "score": 1.0,
-            "contribution": 0.2,
-            "text": ""
+            "score": 0.8,
+            "contribution": 0.16,
+            "text": "Any time, online"
           },
           {
             "name": "rung",
             "weight": 0.1,
             "score": 1.0,
             "contribution": 0.1,
-            "text": ""
+            "text": "Just show up"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.0,
-            "contribution": 0.0,
-            "text": ""
+            "score": 0.74,
+            "contribution": 0.074,
+            "text": "88% of 8 Camden commuters rated it 4+"
           }
         ],
-        "memory": [],
-        "distance": null,
-        "total": 0.425
+        "memory": [
+          {
+            "memory_id": "m:10",
+            "statement": "Online options worked for you",
+            "delta": 0.044
+          }
+        ],
+        "distance": "Online",
+        "total": 0.628
       },
-      "why": "Por si el estrés del dinero pesa: en línea, de noche o fin de semana.",
-      "why_source": "template",
+      "why": "Te conviene porque es gratis, en línea y disponible en tardes y fines de semana; solo tienes que presentarte.",
+      "why_source": "ai",
       "pushed": true,
       "source": {
-        "name": "Rutgers–Camden Student Wellness Center",
-        "url": "https://wellnesscenter.camden.rutgers.edu/",
-        "verified_on": null
+        "name": "scarletwell_list_or_verified",
+        "url": "https://app.uwill.com",
+        "verified_on": "2026-10-10"
       }
     },
     {
-      "rec_id": 401,
+      "rec_id": 8538,
       "item": {
-        "id": "res-cmd-004",
-        "kind": "resource",
-        "title": "Rutgers–Camden Food Pantry",
-        "summary": "Free food for Rutgers–Camden students.",
+        "id": "res-cmd-nurse-line",
+        "kind": "online",
+        "title": "24-hour nurse line (Rutgers–Camden students)",
+        "summary": "Talk to a nurse any time when the Wellness Center is closed.",
         "dimensions": [
-          "financial",
           "physical"
         ],
-        "url": null,
-        "phone": null,
-        "hours_text": null,
+        "url": "https://wellnesscenter.camden.rutgers.edu/emergency-after-hours/",
+        "phone": "1-800-424-5090",
+        "hours_text": "24/7",
         "synthetic": false
       },
       "starts_at": null,
       "ends_at": null,
-      "when_label": "Esta semana",
-      "window_label": null,
+      "when_label": "Cuando quieras",
+      "window_label": "Any time, online",
       "where": {
-        "venue": "Rutgers–Camden",
+        "venue": null,
         "address": null,
-        "lat": 39.9483,
-        "lon": -75.1224,
-        "campus": "camden"
+        "lat": null,
+        "lon": null,
+        "campus": "online"
       },
       "walk_min": null,
       "cost": "free",
-      "cost_label": "Gratis para estudiantes",
+      "cost_label": "Gratis",
       "rung": 1,
-      "rung_label": "Just show up",
+      "rung_label": "Solo ve",
       "going": {
         "count": null,
         "label": ""
@@ -234,66 +241,68 @@
       "reasons": {
         "filters": [
           {
-            "code": "campus",
-            "text": "On your campus"
+            "code": "online",
+            "text": "Online"
           },
           {
             "code": "free",
             "text": "Free"
-          },
-          {
-            "code": "hours_unknown",
-            "text": "Horario no publicado aquí"
           }
         ],
         "components": [
           {
             "name": "dimension",
             "weight": 0.35,
-            "score": 1.0,
-            "contribution": 0.35,
-            "text": "Financiero"
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
           },
           {
             "name": "barrier",
             "weight": 0.25,
             "score": 1.0,
             "contribution": 0.25,
-            "text": "Ayuda con 'el dinero no alcanza'"
+            "text": "no_time, money"
           },
           {
             "name": "window",
             "weight": 0.2,
-            "score": 0.5,
-            "contribution": 0.1,
-            "text": "Lugar con horario"
+            "score": 0.8,
+            "contribution": 0.16,
+            "text": "Any time, online"
           },
           {
             "name": "rung",
             "weight": 0.1,
             "score": 1.0,
             "contribution": 0.1,
-            "text": "Solo ve"
+            "text": "Just show up"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.5,
-            "contribution": 0.05,
-            "text": ""
+            "score": 0.525,
+            "contribution": 0.053,
+            "text": "No ratings yet"
           }
         ],
-        "memory": [],
-        "distance": null,
-        "total": 0.85
+        "memory": [
+          {
+            "memory_id": "m:10",
+            "statement": "Online options worked for you",
+            "delta": 0.044
+          }
+        ],
+        "distance": "Online",
+        "total": 0.607
       },
-      "why": "Comida gratis en tu campus, para que el dinero alcance un poco más esta semana.",
+      "why": "Es en línea, cabe en el tiempo que realmente tienes y es gratis.",
       "why_source": "template",
       "pushed": true,
       "source": {
-        "name": "Rutgers–Camden Student Wellness Center",
-        "url": "https://wellnesscenter.camden.rutgers.edu/",
-        "verified_on": null
+        "name": "Compass research (verified)",
+        "url": "https://wellnesscenter.camden.rutgers.edu/emergency-after-hours/",
+        "verified_on": "2026-10-10"
       }
     }
   ],
@@ -325,7 +334,7 @@
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -343,12 +352,34 @@
       "verified": false
     },
     {
-      "id": 7,
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 8,
       "name": "Rutgers–Camden Student Wellness Center",
       "kind": "call",
-      "contact": "856-225-6005; after hours Uwill crisis line 833-646-1526",
+      "contact": "856-225-6005",
       "href": "tel:+18562256005",
-      "hours": "Mon–Fri 8:30–4:30; Uwill 24/7",
+      "hours": "Mon–Fri 8:30 am–4:30 pm",
+      "campus": "camden",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 9,
+      "name": "Uwill crisis line (after hours)",
+      "kind": "call",
+      "contact": "833-646-1526",
+      "href": "tel:+18336461526",
+      "hours": "24/7",
       "campus": "camden",
       "language": "any",
       "verified": false

@@ -2,36 +2,36 @@
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
   "kind": "commitment",
-  "commitment_id": 9001,
+  "commitment_id": 3097,
   "status": "planned",
   "item": {
     "id": "res-nb-023",
     "kind": "resource",
     "title": "Busch Learning Center",
-    "summary": "Free tutoring and study groups, including math and science courses.",
+    "summary": "Rutgers Learning Centers",
     "dimensions": [
       "intellectual"
     ],
-    "url": "https://rlc.rutgers.edu/",
-    "phone": null,
-    "hours_text": "Check current tutoring hours on the Learning Centers site",
+    "url": null,
+    "phone": "848-445-4322",
+    "hours_text": null,
     "synthetic": false
   },
-  "when_label": "Drop in this week",
+  "when_label": "This week",
   "where": {
     "venue": "Rutgers Learning Centers",
-    "address": "118 Frelinghuysen Road, Piscataway, NJ 08854",
-    "lat": 40.5226,
-    "lon": -74.4627,
+    "address": "118 Frelinghuysen Road, Piscataway, NJ 08854,",
+    "lat": 40.52266,
+    "lon": -74.4652,
     "campus": "new_brunswick"
   },
-  "plan_text": "This week, after my last class, I stop by Busch Learning Center.",
-  "plan_source": "template",
-  "ics_url": "/commitments/9001/ics?t=fixture-invite",
-  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE",
+  "plan_text": "When my last class ends this week, I’ll stop by Busch Learning Center at Rutgers Learning Centers.",
+  "plan_source": "ai",
+  "ics_url": "/commitments/3097/ics?t=0x__FNhBX335",
+  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Busch+Learning+Center&details=When+my+last+class+ends+this+week%2C+I%E2%80%99ll+stop+by+Busch+Learning+Center+at+Rutgers+Learning+Centers.&location=118+Frelinghuysen+Road%2C+Piscataway%2C+NJ+08854%2C",
   "reminder_at": null,
-  "followup_at": "2026-10-15T09:00:00-04:00",
-  "invite_url": "/i/fixture-invite",
-  "invite_token": "fixture-invite",
-  "share_text": "I'm going to Busch Learning Center this week. Come with me?"
+  "followup_at": "2026-10-14T17:00:00-04:00",
+  "invite_url": "/i/0x__FNhBX335",
+  "invite_token": "0x__FNhBX335",
+  "share_text": "I'm going to Busch Learning Center (This week). Come with me?"
 }

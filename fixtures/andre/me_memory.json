@@ -1,6 +1,6 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
+  "now": "2026-10-13T15:30:00-04:00",
   "items": [
     {
       "id": "profile:focus",
@@ -19,7 +19,7 @@
     {
       "id": "profile:barrier:no_time",
       "kind": "barrier",
-      "statement": "What gets in the way: no time",
+      "statement": "What gets in the way: No time between class and work",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -33,7 +33,7 @@
     {
       "id": "profile:barrier:dont_know_anyone",
       "kind": "barrier",
-      "statement": "What gets in the way: dont know anyone",
+      "statement": "What gets in the way: I don't know anyone",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -69,6 +69,62 @@
       },
       "used_for": "Only suggests things that fit",
       "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:4",
+      "kind": "rung",
+      "statement": "Ready for more open social events",
+      "source": {
+        "type": "rating",
+        "label": "After a step you rated 4 or 5",
+        "at": "2026-10-13T15:30:00-04:00"
+      },
+      "used_for": "Sets how social the next suggestion is",
+      "learned_at": "2026-10-13T15:30:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:3",
+      "kind": "time_works",
+      "statement": "Tuesday midday works for you",
+      "source": {
+        "type": "attendance",
+        "label": "You went on Tuesday",
+        "at": "2026-10-13T15:30:00-04:00"
+      },
+      "used_for": "Tuesday midday ranks a little higher",
+      "learned_at": "2026-10-13T15:30:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:2",
+      "kind": "likes_format",
+      "statement": "You enjoyed game-based events",
+      "source": {
+        "type": "rating",
+        "label": "You rated Commuter lunch and board games 4/5",
+        "at": "2026-10-13T15:30:00-04:00"
+      },
+      "used_for": "Game-based events rank a little higher",
+      "learned_at": "2026-10-13T15:30:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:1",
+      "kind": "likes_format",
+      "statement": "Events with food worked for you",
+      "source": {
+        "type": "rating",
+        "label": "You rated Commuter lunch and board games 4/5",
+        "at": "2026-10-13T15:30:00-04:00"
+      },
+      "used_for": "Events with food rank a little higher",
+      "learned_at": "2026-10-13T15:30:00-04:00",
       "last_used_at": null,
       "deletable": true
     }

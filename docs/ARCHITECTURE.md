@@ -44,7 +44,7 @@ Inside the API, per request: **safety check** (code lexicon → two model labell
 
 | Metric | Value |
 |---|---|
-| Student endpoints | `/me/next` p95 0.22 s; `/me/map` p95 0.21 s; `/me/focus` p95 1.5 s (includes two parallel safety labellers) |
+| Student endpoints | `/me/next` p95 0.22 s; `/me/map` p95 0.21 s; `/me/focus` p95 1.36 s (includes two parallel safety labellers); `/wins` p95 0.21 s |
 | Staff endpoints | 0.17–0.28 s |
 | Crisis test set | 61 crisis + 17 concern + 27 false-alarm phrases; 100% caught by the code lexicon alone (passes with Bedrock blocked); 0 false alarms in the set |
 | Stage-2 labellers | Haiku 4.5 p90 0.76 s, gpt-oss-safeguard p90 0.78 s; agreed on 34/35 sampled phrases |

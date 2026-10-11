@@ -2,8 +2,8 @@
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
   "kind": "crisis",
-  "title": "You don't have to handle this alone",
-  "message": "It sounds like things are really hard right now. You can reach a real person right now, any time, for free.",
+  "title": "No tienes que pasar por esto solo",
+  "message": "Parece que las cosas están muy difíciles ahora. Puedes hablar con una persona real ahora mismo, a cualquier hora y gratis.",
   "lines": [
     {
       "id": 1,
@@ -32,7 +32,7 @@
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -50,12 +50,34 @@
       "verified": false
     },
     {
-      "id": 7,
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 8,
       "name": "Rutgers–Camden Student Wellness Center",
       "kind": "call",
-      "contact": "856-225-6005; after hours Uwill crisis line 833-646-1526",
+      "contact": "856-225-6005",
       "href": "tel:+18562256005",
-      "hours": "Mon–Fri 8:30–4:30; Uwill 24/7",
+      "hours": "Mon–Fri 8:30 am–4:30 pm",
+      "campus": "camden",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 9,
+      "name": "Uwill crisis line (after hours)",
+      "kind": "call",
+      "contact": "833-646-1526",
+      "href": "tel:+18336461526",
+      "hours": "24/7",
       "campus": "camden",
       "language": "any",
       "verified": false

@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "answer",
+  "text": "Yes! You could check out Commuter lunch and board games (sample) on Tuesday at lunch—it's a drop-in event with food and games for commuter students at Paul Robeson Campus Center. It's free and a great way to meet people!",
+  "items": [
+    {
+      "id": "pin-andre-lunch-2026-10-13",
+      "title": "Commuter lunch and board games (sample)",
+      "when_label": "Tue Oct 13, 12:30 PM",
+      "where": {
+        "venue": "Paul Robeson Campus Center",
+        "address": "350 Dr. Martin Luther King Jr. Blvd, Newark, NJ 07102",
+        "lat": 40.7415,
+        "lon": -74.1752,
+        "campus": "newark"
+      },
+      "url": null,
+      "phone": null,
+      "synthetic": true
+    }
+  ],
+  "source": "ai"
+}

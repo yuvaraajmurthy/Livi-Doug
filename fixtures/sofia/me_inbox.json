@@ -1,5 +1,24 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
-  "items": []
+  "now": "2026-10-15T08:00:00-04:00",
+  "items": [
+    {
+      "id": 6,
+      "kind": "followup",
+      "title": "¿Qué tal Budgeting for real life, evening online session?",
+      "body": "Dos toques: ¿fuiste? ¿te ayudó?",
+      "deep_link": "/followup/3099",
+      "at": "2026-10-15T08:00:00-04:00",
+      "delivered": "push"
+    },
+    {
+      "id": 5,
+      "kind": "reminder",
+      "title": "Budgeting for real life, evening online session empieza en 15 minutos",
+      "body": "Toca para ver el plan.",
+      "deep_link": "/plan/3099",
+      "at": "2026-10-14T19:15:00-04:00",
+      "delivered": "push"
+    }
+  ]
 }

@@ -11,7 +11,7 @@ from app.models.loop import CommitResult, FollowupResponse, InviteAccepted, Invi
 from app.models.social import PulseResponse, SameHere, WinResult
 from app.models.staff import DipsResponse, FunnelResponse, GapsResponse, RetakesResponse, WeeklyResponse
 from app.models.student import (
-    CardResponse, DeleteResult, FocusResponse, InboxResponse, MapResponse, MemoryList, NextResponse,
+    AskResult, CardResponse, DeleteResult, FocusResponse, InboxResponse, MapResponse, MemoryList, NextResponse,
 )
 
 FIXTURES = Path(__file__).resolve().parents[2] / "fixtures"
@@ -23,7 +23,7 @@ REGISTRY = {
     "followup": FollowupResponse, "pulse": PulseResponse, "win_accepted": WinResult, "win_crisis": WinResult,
     "same_here": SameHere, "skip_ahead": SkipAheadResponse, "staff_funnel": FunnelResponse, "staff_gaps": GapsResponse,
     "staff_weekly": WeeklyResponse, "staff_dips": DipsResponse, "staff_retakes": RetakesResponse,
-    "personas": PersonasResponse, "reset": ResetResponse, "invite": InviteView, "invite_accepted": InviteAccepted,
+    "personas": PersonasResponse, "ask": AskResult, "reset": ResetResponse, "invite": InviteView, "invite_accepted": InviteAccepted,
 }
 
 ALL = sorted(FIXTURES.glob("*/*.json"))

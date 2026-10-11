@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "answer",
+  "text": "¡Hola! Puedes obtener comida gratis en Scarlet Raptor's Nest (Rutgers–Camden food pantry) ubicado en el Student Wellness Center, Campus Center 2nd floor. Necesitas hacer una cita a través de PantrySoft (selecciona Rutgers University-Camden) y presentar tu Rutgers ID.",
+  "items": [
+    {
+      "id": "res-cmd-004",
+      "title": "Scarlet Raptor's Nest (Rutgers–Camden food pantry)",
+      "when_label": null,
+      "where": {
+        "venue": "Student Wellness Center, Campus Center 2nd floor",
+        "address": "326 Penn St, Camden, NJ 08102",
+        "lat": null,
+        "lon": null,
+        "campus": "camden"
+      },
+      "url": "https://wellnesscenter.camden.rutgers.edu/",
+      "phone": "856-225-6005",
+      "synthetic": false
+    }
+  ],
+  "source": "ai"
+}

@@ -1,12 +1,12 @@
 {
   "synthetic": true,
-  "now": "2026-10-13T15:30:00-04:00",
-  "commitment_id": 9001,
+  "now": "2026-10-14T17:00:00-04:00",
+  "commitment_id": 3097,
   "status": "went",
   "progress": {
     "dimension": "physical",
     "steps_this_month": 1,
-    "message": "One step taken this month. That counts."
+    "message": "1 step taken this month. That counts."
   },
   "arc": {
     "status": "mock",
@@ -18,9 +18,38 @@
     "added": 1,
     "progress": 103,
     "goal": 400,
-    "pct": 0.25
+    "pct": 0.258
   },
   "next_rung": null,
-  "learned": [],
+  "learned": [
+    {
+      "id": "m:6",
+      "kind": "likes_format",
+      "statement": "Tutoring helped you",
+      "source": {
+        "type": "rating",
+        "label": "You rated Busch Learning Center 4/5",
+        "at": "2026-10-14T17:00:00-04:00"
+      },
+      "used_for": "Tutoring ranks a little higher",
+      "learned_at": "2026-10-14T17:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:7",
+      "kind": "helped",
+      "statement": "Tutoring helped you",
+      "source": {
+        "type": "rating",
+        "label": "You rated Busch Learning Center 4/5",
+        "at": "2026-10-14T17:00:00-04:00"
+      },
+      "used_for": "Tutoring ranks a little higher",
+      "learned_at": "2026-10-14T17:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    }
+  ],
   "win_prompt": true
 }

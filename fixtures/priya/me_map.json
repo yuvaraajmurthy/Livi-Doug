@@ -86,14 +86,12 @@
       "label": "Physical",
       "score": 2.0,
       "band": "low",
-      "blurb": "An area with room to grow. Small steps count here.",
+      "blurb": "Room to grow here. Small steps count.",
       "change": null
     }
   ],
   "strengths": [
-    "environmental",
-    "social",
-    "occupational"
+    "environmental"
   ],
   "growth_areas": [
     "physical"
@@ -101,10 +99,8 @@
   "care_first": false,
   "previous_takes": [],
   "profile": {
-    "focus": "physical",
-    "barriers": [
-      "coursework"
-    ],
+    "focus": null,
+    "barriers": [],
     "barriers_from_text": [],
     "free_windows": [],
     "social_rung": 1,

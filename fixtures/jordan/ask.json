@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "answer",
+  "text": "Here are a few places that might help: Join an intramural team: field sports at Basketball Court 2, College Ave Gym, Join an intramural team: field sports at Basketball Court 1, College Ave Gym, Join an intramural team: field sports at Basketball Court 1, Cook Rec Center.",
+  "items": [
+    {
+      "id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+      "title": "Join an intramural team: field sports at Basketball Court 2, College Ave Gym",
+      "when_label": null,
+      "where": {
+        "venue": "Basketball Court 2, College Ave Gym",
+        "address": "University Park, Piscataway, NJ 08854",
+        "lat": 40.5257,
+        "lon": -74.44208,
+        "campus": "new_brunswick"
+      },
+      "url": "https://www.imleagues.com/spa/portal/school?schoolId=rutgers",
+      "phone": null,
+      "synthetic": false
+    },
+    {
+      "id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+      "title": "Join an intramural team: field sports at Basketball Court 1, College Ave Gym",
+      "when_label": null,
+      "where": {
+        "venue": "Basketball Court 1, College Ave Gym",
+        "address": "University Park, Piscataway, NJ 08854",
+        "lat": 40.5257,
+        "lon": -74.44208,
+        "campus": "new_brunswick"
+      },
+      "url": "https://www.imleagues.com/spa/portal/school?schoolId=rutgers",
+      "phone": null,
+      "synthetic": false
+    },
+    {
+      "id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+      "title": "Join an intramural team: field sports at Basketball Court 1, Cook Rec Center",
+      "when_label": null,
+      "where": {
+        "venue": "Basketball Court 1, Cook Rec Center",
+        "address": "University Park, Piscataway, NJ 08854",
+        "lat": 40.5257,
+        "lon": -74.44208,
+        "campus": "new_brunswick"
+      },
+      "url": "https://www.imleagues.com/spa/portal/school?schoolId=rutgers",
+      "phone": null,
+      "synthetic": false
+    }
+  ],
+  "source": "template"
+}

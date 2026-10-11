@@ -1,11 +1,11 @@
 {
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
-  "set_id": "set-taylor-1",
+  "set_id": "set-ddb4c9c0922b",
   "care_first": true,
   "support_card": {
     "title": "Talking to someone can help",
-    "message": "Your results suggest this might be a heavy stretch. That's not a label, just a reason to put a person first. All of these are free for Rutgers students.",
+    "message": "Right now a person might be a better first step than an event. That's not a label, just an offer. All of these are free for Rutgers students.",
     "options": [
       {
         "name": "CAPS (Counseling, ADAP & Psychiatric Services)",
@@ -13,7 +13,7 @@
         "contact": "848-932-7884",
         "url": "https://health.rutgers.edu/medical-and-counseling-services/counseling-services",
         "address": "17 Senior Street, New Brunswick, NJ 08901",
-        "hours": "Call for same-week options; after hours follow the prompts",
+        "hours": "Call for options this week; after hours follow the prompts",
         "campus": "new_brunswick"
       },
       {
@@ -31,42 +31,40 @@
         "contact": null,
         "url": "https://togetherall.com",
         "address": null,
-        "hours": "24/7, moderated",
+        "hours": "24/7, moderated by licensed practitioners",
         "campus": "online"
       }
     ]
   },
   "pick": {
-    "rec_id": 301,
+    "rec_id": 8527,
     "item": {
-      "id": "evt-4457-2026-10-13",
-      "kind": "event",
-      "title": "LSM Pumpkin Decorating Event",
-      "summary": null,
+      "id": "res-nb-034",
+      "kind": "resource",
+      "title": "CAPS Main Office",
+      "summary": "Counseling, Alcohol and Other Drug Assistance and Psychiatric",
       "dimensions": [
-        "emotional",
-        "intellectual",
-        "social"
+        "emotional"
       ],
       "url": null,
-      "phone": null,
+      "phone": "848-932-7884",
       "hours_text": null,
       "synthetic": false
     },
-    "starts_at": "2026-10-13T14:00:00-04:00",
-    "ends_at": "2026-10-13T16:00:00-04:00",
-    "when_label": "Tue Oct 13, 2–4 PM",
+    "starts_at": null,
+    "ends_at": null,
+    "when_label": "This week",
     "window_label": null,
     "where": {
-      "venue": "Library of Science and Medicine",
-      "address": "165 Bevier Rd, Piscataway",
-      "lat": 40.5236,
-      "lon": -74.4648,
+      "venue": "Counseling, Alcohol and Other Drug Assistance and Psychiatric",
+      "address": "17 Senior Street, New Brunswick, NJ 08901",
+      "lat": 40.50349,
+      "lon": -74.45403,
       "campus": "new_brunswick"
     },
-    "walk_min": null,
-    "cost": "unknown",
-    "cost_label": "Cost not listed",
+    "walk_min": 10,
+    "cost": "free",
+    "cost_label": "Free for students",
     "rung": 1,
     "rung_label": "Just show up",
     "going": {
@@ -78,14 +76,22 @@
         {
           "code": "campus",
           "text": "On your campus"
+        },
+        {
+          "code": "free",
+          "text": "Free"
+        },
+        {
+          "code": "hours_unknown",
+          "text": "Hours not listed here: check before you go"
         }
       ],
       "components": [
         {
           "name": "dimension",
           "weight": 0.35,
-          "score": 1.0,
-          "contribution": 0.35,
+          "score": 0.95,
+          "contribution": 0.332,
           "text": "Emotional"
         },
         {
@@ -112,25 +118,220 @@
         {
           "name": "helped_similar",
           "weight": 0.1,
-          "score": 0.5,
-          "contribution": 0.05,
-          "text": ""
+          "score": 0.557,
+          "contribution": 0.056,
+          "text": "55% of 11 New Brunswick residents rated it 4+"
         }
       ],
       "memory": [],
-      "distance": null,
-      "total": 0.6
+      "distance": "10-minute walk",
+      "total": 0.588
     },
-    "why": "Low-key and hands-on, whenever you feel up for it.",
-    "why_source": "template",
+    "why": "This free option fits you because the next step is simply to show up.",
+    "why_source": "ai",
     "pushed": false,
     "source": {
-      "name": "ScarletWell Wellness Calendar",
-      "url": "https://wellnesscalendar.rutgers.edu/",
-      "verified_on": null
+      "name": "scarletwell_list_or_verified",
+      "url": null,
+      "verified_on": "2026-10-10"
     }
   },
-  "alternates": [],
+  "alternates": [
+    {
+      "rec_id": 8528,
+      "item": {
+        "id": "res-cmd-003",
+        "kind": "online",
+        "title": "Togetherall 24/7 peer support community",
+        "summary": "online, 24/7, moderated by licensed practitioners",
+        "dimensions": [
+          "emotional",
+          "social"
+        ],
+        "url": "https://togetherall.com",
+        "phone": null,
+        "hours_text": null,
+        "synthetic": false
+      },
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "Any time",
+      "window_label": null,
+      "where": {
+        "venue": null,
+        "address": null,
+        "lat": null,
+        "lon": null,
+        "campus": "online"
+      },
+      "walk_min": null,
+      "cost": "free",
+      "cost_label": "Free",
+      "rung": 2,
+      "rung_label": "Structured: you'll be doing something, not mingling",
+      "going": {
+        "count": null,
+        "label": ""
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "online",
+            "text": "Online"
+          },
+          {
+            "code": "free",
+            "text": "Free"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 0.85,
+            "contribution": 0.297,
+            "text": "Emotional"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 0.8,
+            "contribution": 0.16,
+            "text": "Any time, online"
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": "Structured: you'll be doing something, not mingling"
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.707,
+            "contribution": 0.071,
+            "text": "78% of 9 New Brunswick residents rated it 4+"
+          }
+        ],
+        "memory": [],
+        "distance": "Online",
+        "total": 0.528
+      },
+      "why": "This online peer support community gives you something structured to do, not just mingling.",
+      "why_source": "ai",
+      "pushed": false,
+      "source": {
+        "name": "scarletwell_list_or_verified",
+        "url": "https://togetherall.com",
+        "verified_on": "2026-10-10"
+      }
+    },
+    {
+      "rec_id": 8529,
+      "item": {
+        "id": "evt-10003690-2026-10-15",
+        "kind": "event",
+        "title": "Turn the Campus Purple (October is National Domestic Violence Awareness Month)",
+        "summary": "Rutgers stands with all survivors of domestic and relationship violence. Showing up is how we build a campus where survivors feel supported. The Office of Violence Prevention and Victim Assistance is marking 35 years of this work with events open to the entire Rutgers community. ",
+        "dimensions": [
+          "emotional",
+          "social"
+        ],
+        "url": "https://wellnesscalendar.rutgers.edu/event/turn-the-campus-purple-october-is-national-domestic-violence-awareness-month-2/2026-10-15/",
+        "phone": null,
+        "hours_text": null,
+        "synthetic": false
+      },
+      "starts_at": "2026-10-15T00:00:00-04:00",
+      "ends_at": "2026-10-15T23:59:59-04:00",
+      "when_label": "Thu Oct 15, all day",
+      "window_label": null,
+      "where": {
+        "venue": "Multiple campuses",
+        "address": null,
+        "lat": null,
+        "lon": null,
+        "campus": "new_brunswick"
+      },
+      "walk_min": null,
+      "cost": "unknown",
+      "cost_label": "Cost not listed",
+      "rung": 1,
+      "rung_label": "Just show up",
+      "going": {
+        "count": null,
+        "label": "A few students are going"
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "campus",
+            "text": "On your campus"
+          },
+          {
+            "code": "cost_unknown",
+            "text": "Cost not listed"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 0.7,
+            "contribution": 0.245,
+            "text": "Emotional"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 0.5,
+            "contribution": 0.1,
+            "text": ""
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 1.0,
+            "contribution": 0.1,
+            "text": "Just show up"
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.581,
+            "contribution": 0.058,
+            "text": "No ratings yet"
+          }
+        ],
+        "memory": [],
+        "distance": null,
+        "total": 0.503
+      },
+      "why": "Showing up for Turn the Campus Purple fits you because it helps build a campus where survivors feel supported.",
+      "why_source": "ai",
+      "pushed": false,
+      "source": {
+        "name": "ScarletWell Wellness Calendar",
+        "url": "https://wellnesscalendar.rutgers.edu/event/turn-the-campus-purple-october-is-national-domestic-violence-awareness-month-2/2026-10-15/",
+        "verified_on": "2026-10-10"
+      }
+    }
+  ],
   "crisis_lines": [
     {
       "id": 1,
@@ -144,22 +345,11 @@
       "verified": false
     },
     {
-      "id": 2,
-      "name": "988 en español",
-      "kind": "call",
-      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
-      "href": "tel:988",
-      "hours": "24/7",
-      "campus": "all",
-      "language": "es",
-      "verified": false
-    },
-    {
       "id": 3,
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -171,6 +361,17 @@
       "kind": "emergency",
       "contact": "Call 911",
       "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
       "hours": "24/7",
       "campus": "all",
       "language": "any",

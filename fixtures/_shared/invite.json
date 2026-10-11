@@ -1,12 +1,12 @@
 {
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
-  "token": "fixture-invite",
+  "token": "Id1lD3mS3qr8",
   "item": {
     "id": "pin-andre-lunch-2026-10-13",
     "kind": "event",
     "title": "Commuter lunch and board games (sample)",
-    "summary": "Drop-in lunch with board and card games for commuter students. Food provided.",
+    "summary": "Drop-in lunch with board and card games for commuter students. Food provided. Come solo; tables are mixed.",
     "dimensions": [
       "social",
       "financial"
@@ -25,8 +25,8 @@
     "campus": "newark"
   },
   "going": {
-    "count": 14,
-    "label": "14 Newark students are going"
+    "count": 15,
+    "label": "15 students are going"
   },
   "accepted": false,
   "note": "Your friend thought you might like this. No account needed."

@@ -1,17 +1,17 @@
 {
   "synthetic": true,
-  "now": "2026-10-13T12:15:00-04:00",
+  "now": "2026-10-14T17:00:00-04:00",
   "previous_now": "2026-10-12T09:00:00-04:00",
   "fired": [
     {
-      "id": 1,
-      "kind": "reminder",
-      "title": "Busch Learning Center starts in 15 minutes",
-      "body": "Rutgers Learning Centers. Tap for the plan.",
-      "deep_link": "/plan/9001",
-      "send_at": "2026-10-13T12:15:00-04:00",
+      "id": 3,
+      "kind": "followup",
+      "title": "How was Busch Learning Center?",
+      "body": "Two taps: did you go, and did it help?",
+      "deep_link": "/followup/3097",
+      "send_at": "2026-10-14T17:00:00-04:00",
       "delivered": "push",
-      "commitment_id": 9001
+      "commitment_id": 3097
     }
   ]
 }

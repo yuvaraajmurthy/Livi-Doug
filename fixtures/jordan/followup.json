@@ -1,12 +1,12 @@
 {
   "synthetic": true,
-  "now": "2026-10-13T15:30:00-04:00",
-  "commitment_id": 9001,
+  "now": "2026-10-15T08:00:00-04:00",
+  "commitment_id": 3100,
   "status": "went",
   "progress": {
     "dimension": "social",
     "steps_this_month": 1,
-    "message": "One step taken this month. That counts."
+    "message": "1 step taken this month. That counts."
   },
   "arc": {
     "status": "mock",
@@ -16,11 +16,72 @@
     "challenge_id": "ch-campus-cup-oct-new_brunswick",
     "title": "Scarlet Wellness Cup: steps this week",
     "added": 1,
-    "progress": 103,
+    "progress": 105,
     "goal": 400,
-    "pct": 0.25
+    "pct": 0.263
   },
-  "next_rung": null,
-  "learned": [],
+  "next_rung": {
+    "rung": 3,
+    "label": "Open social",
+    "message": "That went well. Ready to try something a bit more open next week?"
+  },
+  "learned": [
+    {
+      "id": "m:14",
+      "kind": "likes_format",
+      "statement": "You enjoyed game-based events",
+      "source": {
+        "type": "rating",
+        "label": "You rated Livingston halls game night 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Game-based events rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:15",
+      "kind": "likes_format",
+      "statement": "You liked structured events",
+      "source": {
+        "type": "rating",
+        "label": "You rated Livingston halls game night 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Structured events rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:16",
+      "kind": "time_works",
+      "statement": "Wednesday evenings work for you",
+      "source": {
+        "type": "attendance",
+        "label": "You went on Wednesday",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Wednesday evenings rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:17",
+      "kind": "rung",
+      "statement": "Ready for more open social events",
+      "source": {
+        "type": "rating",
+        "label": "After a step you rated 4 or 5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Sets how social the next suggestion is",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    }
+  ],
   "win_prompt": true
 }

@@ -30,7 +30,7 @@
       "label": "Spiritual",
       "score": 3.4,
       "band": "high",
-      "blurb": "This is a real strength for you right now.",
+      "blurb": "A real strength for you right now.",
       "change": null
     },
     {
@@ -38,7 +38,7 @@
       "label": "Intellectual",
       "score": 3.2,
       "band": "high",
-      "blurb": "This is a real strength for you right now.",
+      "blurb": "A real strength for you right now.",
       "change": null
     },
     {
@@ -78,7 +78,7 @@
       "label": "Financial",
       "score": 2.1,
       "band": "low",
-      "blurb": "An area with room to grow. Small steps count here.",
+      "blurb": "Room to grow here. Small steps count.",
       "change": null
     },
     {
@@ -86,14 +86,13 @@
       "label": "Social",
       "score": 1.9,
       "band": "low",
-      "blurb": "An area with room to grow. Small steps count here.",
+      "blurb": "Room to grow here. Small steps count.",
       "change": null
     }
   ],
   "strengths": [
     "spiritual",
-    "intellectual",
-    "occupational"
+    "intellectual"
   ],
   "growth_areas": [
     "financial",
@@ -102,19 +101,20 @@
   "care_first": false,
   "previous_takes": [],
   "profile": {
-    "focus": "social",
-    "barriers": [
-      "no_time",
-      "dont_know_anyone"
-    ],
+    "focus": null,
+    "barriers": [],
     "barriers_from_text": [],
     "free_windows": [
       "Tue 12:20-14:30",
       "Thu 12:20-14:30"
     ],
-    "social_rung": 2,
+    "social_rung": 1,
     "free_only": true,
     "language": "en"
   },
-  "retake_nudge": null
+  "retake_nudge": {
+    "show": true,
+    "message": "Fresh start: retake the inventory in MyRutgers to see what's changed.",
+    "url": "https://my.rutgers.edu"
+  }
 }

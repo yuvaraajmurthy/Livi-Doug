@@ -1,5 +1,24 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
-  "items": []
+  "now": "2026-10-15T08:00:00-04:00",
+  "items": [
+    {
+      "id": 8,
+      "kind": "followup",
+      "title": "How was Livingston halls game night?",
+      "body": "Two taps: did you go, and did it help?",
+      "deep_link": "/followup/3100",
+      "at": "2026-10-15T08:00:00-04:00",
+      "delivered": "push"
+    },
+    {
+      "id": 7,
+      "kind": "reminder",
+      "title": "Livingston halls game night starts in 15 minutes",
+      "body": "Livingston Student Center.",
+      "deep_link": "/plan/3100",
+      "at": "2026-10-14T19:45:00-04:00",
+      "delivered": "push"
+    }
+  ]
 }

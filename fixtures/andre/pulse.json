@@ -12,7 +12,7 @@
       "progress": 26,
       "pct": 0.236,
       "starts_on": "2026-10-12",
-      "ends_on": "2026-10-18",
+      "ends_on": "2026-10-25",
       "rule": "Cooperative: each campus races its own goal, sized to enrollment. No individual leaderboard.",
       "yours": true,
       "synthetic": true
@@ -44,11 +44,20 @@
       "synthetic": true
     },
     {
-      "id": "w02",
-      "text": "Brought my lab partner to game night. We stayed two hours.",
+      "id": "w06",
+      "text": "Asked a question in office hours. Nobody laughed.",
+      "dimension": "intellectual",
+      "campus": "new_brunswick",
+      "same_here": 38,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w15",
+      "text": "Told my roommate I was having a rough week. So was she.",
       "dimension": "social",
       "campus": "new_brunswick",
-      "same_here": 27,
+      "same_here": 36,
       "created_at": "2026-10-09T12:00:00-04:00",
       "synthetic": true
     },
@@ -58,6 +67,150 @@
       "dimension": "social",
       "campus": "newark",
       "same_here": 33,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w13",
+      "text": "Talked to someone at CAPS. Glad I did.",
+      "dimension": "emotional",
+      "campus": "new_brunswick",
+      "same_here": 31,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w10",
+      "text": "Used the food pantry for the first time. Wish I'd gone sooner.",
+      "dimension": "financial",
+      "campus": "newark",
+      "same_here": 29,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w02",
+      "text": "Brought my lab partner to game night. We stayed two hours.",
+      "dimension": "social",
+      "campus": "new_brunswick",
+      "same_here": 27,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w20",
+      "text": "Retook the inventory. My social score went up. Didn't expect that.",
+      "dimension": "social",
+      "campus": "newark",
+      "same_here": 26,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w11",
+      "text": "Joined pickup basketball. I'm bad. It was great.",
+      "dimension": "social",
+      "campus": "new_brunswick",
+      "same_here": 24,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w08",
+      "text": "Slept before midnight three nights in a row for Sleep Week.",
+      "dimension": "physical",
+      "campus": "new_brunswick",
+      "same_here": 22,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w19",
+      "text": "Cooked a real dinner with my suite. Four dollars each.",
+      "dimension": "financial",
+      "campus": "new_brunswick",
+      "same_here": 21,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w16",
+      "text": "Went to my first club meeting. Already in the group chat.",
+      "dimension": "social",
+      "campus": "newark",
+      "same_here": 20,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w04",
+      "text": "Finally made a budget. It's ugly but it's mine.",
+      "dimension": "financial",
+      "campus": "camden",
+      "same_here": 19,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w18",
+      "text": "Did the two-minute breathing thing before my exam. Helped more than I expected.",
+      "dimension": "emotional",
+      "campus": "new_brunswick",
+      "same_here": 18,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w09",
+      "text": "Went to the interfaith lunch alone. Left with two names in my phone.",
+      "dimension": "spiritual",
+      "campus": "camden",
+      "same_here": 17,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w07",
+      "text": "Went to the resume drop-in. Left with an actual resume.",
+      "dimension": "occupational",
+      "campus": "newark",
+      "same_here": 15,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w14",
+      "text": "Studied in the library with free coffee instead of my room. Got way more done.",
+      "dimension": "intellectual",
+      "campus": "camden",
+      "same_here": 14,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w05",
+      "text": "Did chair yoga between classes. My shoulders forgot they were stressed.",
+      "dimension": "physical",
+      "campus": "newark",
+      "same_here": 12,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w12",
+      "text": "Volunteered at the campus garden. Turns out dirt is calming.",
+      "dimension": "environmental",
+      "campus": "new_brunswick",
+      "same_here": 9,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w17",
+      "text": "Walked to class instead of driving around for parking. Twice.",
+      "dimension": "physical",
+      "campus": "camden",
+      "same_here": 8,
       "created_at": "2026-10-09T12:00:00-04:00",
       "synthetic": true
     }

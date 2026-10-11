@@ -88,9 +88,9 @@ def on_feedback(conn, student_id: str, item: dict, went: bool, helped: int | Non
         b = _bucket(st_at)
         part_en = {"morning": "mornings", "midday": "midday", "afternoon": "afternoons", "evening": "evenings"}[b]
         part_es = {"morning": "las mañanas", "midday": "el mediodía", "afternoon": "las tardes", "evening": "las noches"}[b]
-        ids.append(upsert(conn, student_id, "time_works", f"{DAY[d]}_{b}", f"{DAY_EN[d]} {part_en} work for you",
+        ids.append(upsert(conn, student_id, "time_works", f"{DAY[d]}_{b}", f"{DAY_EN[d]} {part_en} {'works' if b == 'midday' else 'work'} for you",
                           f"Los {DAY_ES[d]} a {part_es} te funcionan", "attendance", f"You went on {DAY_EN[d]}",
-                          f"{DAY_EN[d]} {part_en} rank a little higher", now, confidence=0.6))
+                          f"{DAY_EN[d]} {part_en} {'ranks' if b == 'midday' else 'rank'} a little higher", now, confidence=0.6))
     return ids
 
 

@@ -2,37 +2,36 @@
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
   "kind": "commitment",
-  "commitment_id": 9001,
+  "commitment_id": 3100,
   "status": "planned",
   "item": {
-    "id": "ss-imleagues-pickleball-liv",
+    "id": "pin-jordan-hall-game-night-2026-10-14",
     "kind": "event",
-    "title": "Intramural pickleball open play",
-    "summary": null,
+    "title": "Livingston halls game night (sample)",
+    "summary": "Board games, Smash and snacks in the Livingston Student Center lounge. Drop in for twenty minutes or stay all night.",
     "dimensions": [
-      "physical",
       "social"
     ],
     "url": null,
     "phone": null,
     "hours_text": null,
-    "synthetic": false
+    "synthetic": true
   },
-  "when_label": "Wed Oct 14, 7–8 PM",
+  "when_label": "Wed Oct 14, 8–10 PM",
   "where": {
-    "venue": "Livingston Rec Center",
-    "address": "62 Road 3, Piscataway, NJ 08854",
-    "lat": 40.5249,
-    "lon": -74.4363,
+    "venue": "Livingston Student Center",
+    "address": "84 Joyce Kilmer Ave, Piscataway, NJ 08854",
+    "lat": 40.5236,
+    "lon": -74.4366,
     "campus": "new_brunswick"
   },
-  "plan_text": "On Wednesday at 7:00 PM, I go to Livingston Rec Center.",
-  "plan_source": "template",
-  "ics_url": "/commitments/9001/ics?t=fixture-invite",
-  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE",
-  "reminder_at": "2026-10-14T18:45:00-04:00",
-  "followup_at": "2026-10-14T22:00:00-04:00",
-  "invite_url": "/i/fixture-invite",
-  "invite_token": "fixture-invite",
-  "share_text": "I'm going to Intramural pickleball open play Wed Oct 14, 7–8 PM. Come with me?"
+  "plan_text": "When it hits 8 PM on Wednesday, I head to Livingston halls game night at Livingston Student Center.",
+  "plan_source": "ai",
+  "ics_url": "/commitments/3100/ics?t=-RmEWRu-i7OS",
+  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Livingston+halls+game+night+%28sample%29&details=When+it+hits+8+PM+on+Wednesday%2C+I+head+to+Livingston+halls+game+night+at+Livingston+Student+Center.&location=84+Joyce+Kilmer+Ave%2C+Piscataway%2C+NJ+08854&dates=20261015T000000Z%2F20261015T020000Z",
+  "reminder_at": "2026-10-14T19:45:00-04:00",
+  "followup_at": "2026-10-15T08:00:00-04:00",
+  "invite_url": "/i/-RmEWRu-i7OS",
+  "invite_token": "-RmEWRu-i7OS",
+  "share_text": "I'm going to Livingston halls game night (Wed Oct 14, 8–10 PM). Come with me?"
 }

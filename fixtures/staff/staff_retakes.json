@@ -12,31 +12,31 @@
   "min_group_size": 10,
   "rows": [
     {
-      "campus": "new_brunswick",
-      "users": 600,
-      "users_retook": 420,
-      "users_rate": 0.7,
-      "non_users": 400,
-      "non_users_retook": 220,
-      "non_users_rate": 0.55
+      "campus": "camden",
+      "users": 105,
+      "users_retook": 72,
+      "users_rate": 0.686,
+      "non_users": 63,
+      "non_users_retook": 41,
+      "non_users_rate": 0.651
     },
     {
       "campus": "newark",
-      "users": 170,
-      "users_retook": 121,
-      "users_rate": 0.71,
-      "non_users": 110,
-      "non_users_retook": 59,
-      "non_users_rate": 0.54
+      "users": 171,
+      "users_retook": 118,
+      "users_rate": 0.69,
+      "non_users": 103,
+      "non_users_retook": 54,
+      "non_users_rate": 0.524
     },
     {
-      "campus": "camden",
-      "users": 110,
-      "users_retook": 76,
-      "users_rate": 0.69,
-      "non_users": 75,
-      "non_users_retook": 48,
-      "non_users_rate": 0.64
+      "campus": "new_brunswick",
+      "users": 653,
+      "users_retook": 450,
+      "users_rate": 0.689,
+      "non_users": 410,
+      "non_users_retook": 231,
+      "non_users_rate": 0.563
     }
   ]
 }

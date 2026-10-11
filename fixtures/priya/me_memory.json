@@ -1,6 +1,6 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
+  "now": "2026-10-14T17:00:00-04:00",
   "items": [
     {
       "id": "profile:focus",
@@ -19,7 +19,7 @@
     {
       "id": "profile:barrier:coursework",
       "kind": "barrier",
-      "statement": "What gets in the way: coursework",
+      "statement": "What gets in the way: Coursework is eating my time",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -27,6 +27,34 @@
       },
       "used_for": "Favours steps that get around it",
       "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:7",
+      "kind": "helped",
+      "statement": "Tutoring helped you",
+      "source": {
+        "type": "rating",
+        "label": "You rated Busch Learning Center 4/5",
+        "at": "2026-10-14T17:00:00-04:00"
+      },
+      "used_for": "Tutoring ranks a little higher",
+      "learned_at": "2026-10-14T17:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:6",
+      "kind": "likes_format",
+      "statement": "Tutoring helped you",
+      "source": {
+        "type": "rating",
+        "label": "You rated Busch Learning Center 4/5",
+        "at": "2026-10-14T17:00:00-04:00"
+      },
+      "used_for": "Tutoring ranks a little higher",
+      "learned_at": "2026-10-14T17:00:00-04:00",
       "last_used_at": null,
       "deletable": true
     }

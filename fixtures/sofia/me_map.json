@@ -11,7 +11,7 @@
   },
   "latest": {
     "take_no": 1,
-    "taken_on": "2026-10-06",
+    "taken_on": "2026-09-21",
     "total": 2.64,
     "scores": {
       "emotional": 2.6,
@@ -27,42 +27,42 @@
   "dimensions": [
     {
       "dimension": "occupational",
-      "label": "Occupational",
+      "label": "Ocupacional",
       "score": 3.5,
       "band": "high",
-      "blurb": "This is a real strength for you right now.",
+      "blurb": "Una verdadera fortaleza para ti ahora.",
       "change": null
     },
     {
       "dimension": "intellectual",
-      "label": "Intellectual",
+      "label": "Intelectual",
       "score": 3.0,
       "band": "middle",
-      "blurb": "Steady. Worth keeping an eye on.",
+      "blurb": "Estable. Vale la pena cuidarlo.",
       "change": null
     },
     {
       "dimension": "environmental",
-      "label": "Environmental",
+      "label": "Ambiental",
       "score": 2.8,
       "band": "middle",
-      "blurb": "Steady. Worth keeping an eye on.",
+      "blurb": "Estable. Vale la pena cuidarlo.",
       "change": null
     },
     {
       "dimension": "emotional",
-      "label": "Emotional",
+      "label": "Emocional",
       "score": 2.6,
       "band": "middle",
-      "blurb": "Steady. Worth keeping an eye on.",
+      "blurb": "Estable. Vale la pena cuidarlo.",
       "change": null
     },
     {
       "dimension": "physical",
-      "label": "Physical",
+      "label": "Física",
       "score": 2.6,
       "band": "middle",
-      "blurb": "Steady. Worth keeping an eye on.",
+      "blurb": "Estable. Vale la pena cuidarlo.",
       "change": null
     },
     {
@@ -70,44 +70,44 @@
       "label": "Social",
       "score": 2.5,
       "band": "middle",
-      "blurb": "Steady. Worth keeping an eye on.",
+      "blurb": "Estable. Vale la pena cuidarlo.",
       "change": null
     },
     {
       "dimension": "spiritual",
-      "label": "Spiritual",
+      "label": "Espiritual",
       "score": 2.2,
       "band": "low",
-      "blurb": "An area with room to grow. Small steps count here.",
+      "blurb": "Aquí hay espacio para crecer. Los pasos pequeños cuentan.",
       "change": null
     },
     {
       "dimension": "financial",
-      "label": "Financial",
+      "label": "Financiero",
       "score": 1.9,
       "band": "low",
-      "blurb": "An area with room to grow. Small steps count here.",
+      "blurb": "Aquí hay espacio para crecer. Los pasos pequeños cuentan.",
       "change": null
     }
   ],
   "strengths": [
-    "occupational",
-    "intellectual"
+    "occupational"
   ],
   "growth_areas": [
-    "financial",
-    "spiritual"
+    "spiritual",
+    "financial"
   ],
   "care_first": false,
   "previous_takes": [],
   "profile": {
-    "focus": "financial",
-    "barriers": [
-      "no_time",
-      "money"
-    ],
+    "focus": null,
+    "barriers": [],
     "barriers_from_text": [],
-    "free_windows": [],
+    "free_windows": [
+      "Tue 19:00-21:30",
+      "Wed 19:00-21:30",
+      "Sat 10:00-14:00"
+    ],
     "social_rung": 1,
     "free_only": true,
     "language": "es"

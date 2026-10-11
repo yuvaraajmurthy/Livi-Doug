@@ -1,36 +1,36 @@
 {
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
-  "set_id": "set-priya-1",
+  "set_id": "set-e09b9d5b27e1",
   "care_first": false,
   "support_card": null,
   "pick": {
-    "rec_id": 201,
+    "rec_id": 8521,
     "item": {
       "id": "res-nb-023",
       "kind": "resource",
       "title": "Busch Learning Center",
-      "summary": "Free tutoring and study groups, including math and science courses.",
+      "summary": "Rutgers Learning Centers",
       "dimensions": [
         "intellectual"
       ],
-      "url": "https://rlc.rutgers.edu/",
-      "phone": null,
-      "hours_text": "Check current tutoring hours on the Learning Centers site",
+      "url": null,
+      "phone": "848-445-4322",
+      "hours_text": null,
       "synthetic": false
     },
     "starts_at": null,
     "ends_at": null,
-    "when_label": "Drop in this week",
+    "when_label": "This week",
     "window_label": null,
     "where": {
       "venue": "Rutgers Learning Centers",
-      "address": "118 Frelinghuysen Road, Piscataway, NJ 08854",
-      "lat": 40.5226,
-      "lon": -74.4627,
+      "address": "118 Frelinghuysen Road, Piscataway, NJ 08854,",
+      "lat": 40.52266,
+      "lon": -74.4652,
       "campus": "new_brunswick"
     },
-    "walk_min": 4,
+    "walk_min": 10,
     "cost": "free",
     "cost_label": "Free for students",
     "rung": 1,
@@ -67,14 +67,14 @@
           "weight": 0.25,
           "score": 1.0,
           "contribution": 0.25,
-          "text": "Fits 'coursework is eating my time'"
+          "text": "coursework"
         },
         {
           "name": "window",
           "weight": 0.2,
           "score": 0.5,
           "contribution": 0.1,
-          "text": "Open-hours place"
+          "text": ""
         },
         {
           "name": "rung",
@@ -86,57 +86,56 @@
         {
           "name": "helped_similar",
           "weight": 0.1,
-          "score": 0.68,
-          "contribution": 0.068,
-          "text": "Rated 4+ by 68% of 41 Busch residents"
+          "score": 0.557,
+          "contribution": 0.056,
+          "text": "50% of 2 New Brunswick residents rated it 4+"
         }
       ],
       "memory": [],
-      "distance": "4-minute walk",
-      "total": 0.763
+      "distance": "10-minute walk",
+      "total": 0.751
     },
-    "why": "Calc II is what's eating your nights, so getting help with the problem sets is the sleep step. Four minutes from you, free.",
-    "why_source": "template",
+    "why": "Just showing up at the free Busch Learning Center fits because it’s an in-person Rutgers Learning Centers resource for coursework.",
+    "why_source": "ai",
     "pushed": true,
     "source": {
-      "name": "ScarletWell resource list",
-      "url": "https://newbrunswick.rutgers.edu/scarletwell/wellness-resources",
+      "name": "scarletwell_list_or_verified",
+      "url": null,
       "verified_on": "2026-10-10"
     }
   },
   "alternates": [
     {
-      "rec_id": 202,
+      "rec_id": 8522,
       "item": {
-        "id": "evt-10003706-2026-10-15",
-        "kind": "event",
-        "title": "Rutgers Big Chill 5K – Register Now!",
-        "summary": null,
+        "id": "place-libcal-math-physics-library",
+        "kind": "place",
+        "title": "Study space at Math/Physics Library",
+        "summary": "Bookable study rooms and open seating. Check live room availability on LibCal.",
         "dimensions": [
-          "physical",
-          "social"
+          "intellectual"
         ],
-        "url": null,
+        "url": "https://libcal.rutgers.edu/spaces",
         "phone": null,
-        "hours_text": null,
+        "hours_text": "Room availability shown live on LibCal",
         "synthetic": false
       },
-      "starts_at": "2026-10-15T10:00:00-04:00",
-      "ends_at": "2026-10-15T11:00:00-04:00",
-      "when_label": "Thu Oct 15, 10–11 AM",
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "This week",
       "window_label": null,
       "where": {
-        "venue": "College Ave Gym",
-        "address": "130 College Ave, New Brunswick",
-        "lat": 40.5017,
-        "lon": -74.4497,
+        "venue": "Math/Physics Library",
+        "address": "110 Frelinghuysen Rd, Piscataway, NJ 08854",
+        "lat": 40.52205,
+        "lon": -74.4627,
         "campus": "new_brunswick"
       },
-      "walk_min": null,
-      "cost": "unknown",
-      "cost_label": "Cost not listed",
-      "rung": 2,
-      "rung_label": "Structured: you'll be doing something, not mingling",
+      "walk_min": 6,
+      "cost": "free",
+      "cost_label": "Free for students",
+      "rung": 1,
+      "rung_label": "Just show up",
       "going": {
         "count": null,
         "label": ""
@@ -148,24 +147,28 @@
             "text": "On your campus"
           },
           {
-            "code": "cost_unknown",
-            "text": "Cost not listed"
+            "code": "free",
+            "text": "Free"
+          },
+          {
+            "code": "hours_unknown",
+            "text": "Hours not listed here: check before you go"
           }
         ],
         "components": [
           {
             "name": "dimension",
             "weight": 0.35,
-            "score": 1.0,
-            "contribution": 0.35,
-            "text": "Physical"
+            "score": 0.7,
+            "contribution": 0.245,
+            "text": "Addresses what's cutting into your sleep (coursework)"
           },
           {
             "name": "barrier",
             "weight": 0.25,
-            "score": 0.0,
-            "contribution": 0.0,
-            "text": ""
+            "score": 0.75,
+            "contribution": 0.188,
+            "text": "coursework"
           },
           {
             "name": "window",
@@ -177,60 +180,60 @@
           {
             "name": "rung",
             "weight": 0.1,
-            "score": 0.5,
-            "contribution": 0.05,
-            "text": ""
+            "score": 1.0,
+            "contribution": 0.1,
+            "text": "Just show up"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.5,
-            "contribution": 0.05,
-            "text": ""
+            "score": 0.58,
+            "contribution": 0.058,
+            "text": "No ratings yet"
           }
         ],
         "memory": [],
-        "distance": "Bus ride from Busch",
-        "total": 0.55
+        "distance": "6-minute walk",
+        "total": 0.691
       },
-      "why": "Moving earlier in the day can make it easier to wind down at night.",
-      "why_source": "template",
+      "why": "Since coursework is the barrier, just showing up at the Math/Physics Library gives you bookable study rooms and open seating.",
+      "why_source": "ai",
       "pushed": true,
       "source": {
-        "name": "ScarletWell Wellness Calendar",
-        "url": "https://wellnesscalendar.rutgers.edu/",
+        "name": "via Scarlet Sync (student project)",
+        "url": "https://libcal.rutgers.edu/spaces",
         "verified_on": null
       }
     },
     {
-      "rec_id": 203,
+      "rec_id": 8523,
       "item": {
-        "id": "micro-physical-1",
-        "kind": "micro",
-        "title": "10-minute wind-down: phone across the room at midnight",
-        "summary": null,
+        "id": "place-libcal-library-of-science-and-medicine-lsm",
+        "kind": "place",
+        "title": "Study space at Library of Science and Medicine (LSM)",
+        "summary": "Bookable study rooms and open seating. Check live room availability on LibCal.",
         "dimensions": [
-          "physical"
+          "intellectual"
         ],
-        "url": null,
+        "url": "https://libcal.rutgers.edu/spaces",
         "phone": null,
-        "hours_text": null,
+        "hours_text": "Room availability shown live on LibCal",
         "synthetic": false
       },
       "starts_at": null,
       "ends_at": null,
-      "when_label": "Tonight",
+      "when_label": "This week",
       "window_label": null,
       "where": {
-        "venue": null,
-        "address": null,
-        "lat": null,
-        "lon": null,
-        "campus": "online"
+        "venue": "Library of Science and Medicine (LSM)",
+        "address": "165 Bevier Rd, Piscataway, NJ 08854",
+        "lat": 40.52599,
+        "lon": -74.46585,
+        "campus": "new_brunswick"
       },
-      "walk_min": null,
+      "walk_min": 11,
       "cost": "free",
-      "cost_label": "Free",
+      "cost_label": "Free for students",
       "rung": 1,
       "rung_label": "Just show up",
       "going": {
@@ -240,57 +243,65 @@
       "reasons": {
         "filters": [
           {
+            "code": "campus",
+            "text": "On your campus"
+          },
+          {
             "code": "free",
             "text": "Free"
+          },
+          {
+            "code": "hours_unknown",
+            "text": "Hours not listed here: check before you go"
           }
         ],
         "components": [
           {
             "name": "dimension",
             "weight": 0.35,
-            "score": 1.0,
-            "contribution": 0.35,
-            "text": "Physical"
+            "score": 0.7,
+            "contribution": 0.245,
+            "text": "Addresses what's cutting into your sleep (coursework)"
           },
           {
             "name": "barrier",
             "weight": 0.25,
-            "score": 0.0,
-            "contribution": 0.0,
-            "text": ""
+            "score": 0.75,
+            "contribution": 0.188,
+            "text": "coursework"
           },
           {
             "name": "window",
             "weight": 0.2,
-            "score": 1.0,
-            "contribution": 0.2,
-            "text": "Any time"
+            "score": 0.5,
+            "contribution": 0.1,
+            "text": ""
           },
           {
             "name": "rung",
             "weight": 0.1,
             "score": 1.0,
             "contribution": 0.1,
-            "text": "Just you"
+            "text": "Just show up"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.0,
-            "contribution": 0.0,
-            "text": ""
+            "score": 0.58,
+            "contribution": 0.058,
+            "text": "No ratings yet"
           }
         ],
         "memory": [],
-        "distance": null,
-        "total": 0.65
+        "distance": "11-minute walk",
+        "total": 0.691
       },
-      "why": "A tiny step for the nights the problem set runs late.",
-      "why_source": "template",
+      "why": "This free Library of Science and Medicine study space fits your coursework barrier: just show up for a bookable room or open seat.",
+      "why_source": "ai",
       "pushed": true,
       "source": {
-        "name": "Compass micro-steps",
-        "url": null,
+        "name": "via Scarlet Sync (student project)",
+        "url": "https://libcal.rutgers.edu/spaces",
         "verified_on": null
       }
     }
@@ -308,22 +319,11 @@
       "verified": false
     },
     {
-      "id": 2,
-      "name": "988 en español",
-      "kind": "call",
-      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
-      "href": "tel:988",
-      "hours": "24/7",
-      "campus": "all",
-      "language": "es",
-      "verified": false
-    },
-    {
       "id": 3,
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -335,6 +335,17 @@
       "kind": "emergency",
       "contact": "Call 911",
       "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
       "hours": "24/7",
       "campus": "all",
       "language": "any",

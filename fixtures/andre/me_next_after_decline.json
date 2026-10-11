@@ -1,44 +1,44 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
-  "set_id": "set-andre-2",
+  "now": "2026-10-13T15:30:00-04:00",
+  "set_id": "set-c8039edd2d44",
   "care_first": false,
   "support_card": null,
   "pick": {
-    "rec_id": 102,
+    "rec_id": 8518,
     "item": {
-      "id": "syn-newark-016",
+      "id": "pin-andre-basketball-2026-10-22",
       "kind": "event",
-      "title": "Interfaith dialogue lunch (sample)",
-      "summary": "Lunch and a guided conversation.",
+      "title": "Open gym pickup basketball (sample)",
+      "summary": "Pickup games, all levels. Teams form on the spot.",
       "dimensions": [
-        "spiritual",
-        "social"
+        "social",
+        "physical"
       ],
       "url": null,
       "phone": null,
       "hours_text": null,
       "synthetic": true
     },
-    "starts_at": "2026-10-26T12:00:00-04:00",
-    "ends_at": "2026-10-26T13:00:00-04:00",
-    "when_label": "Mon Oct 26, 12–1 PM",
-    "window_label": null,
+    "starts_at": "2026-10-22T12:30:00-04:00",
+    "ends_at": "2026-10-22T13:45:00-04:00",
+    "when_label": "Thu Oct 22, 12:30–1:45 PM",
+    "window_label": "Fits your Thursday gap, 12:20–2:30",
     "where": {
-      "venue": "Paul Robeson Campus Center",
-      "address": "350 Dr. Martin Luther King Jr. Blvd, Newark, NJ 07102",
-      "lat": 40.7415,
-      "lon": -74.1752,
+      "venue": "Golden Dome Athletic Center",
+      "address": "42 Warren St, Newark, NJ 07102",
+      "lat": 40.7428,
+      "lon": -74.1787,
       "campus": "newark"
     },
-    "walk_min": 3,
+    "walk_min": 5,
     "cost": "free",
-    "cost_label": "Free lunch",
-    "rung": 2,
-    "rung_label": "Structured: you'll be doing something, not mingling",
+    "cost_label": "Free",
+    "rung": 3,
+    "rung_label": "Open social",
     "going": {
-      "count": null,
-      "label": "A few students are going"
+      "count": 6,
+      "label": "6 Newark students are going"
     },
     "reasons": {
       "filters": [
@@ -49,6 +49,14 @@
         {
           "code": "free",
           "text": "Free"
+        },
+        {
+          "code": "in_window",
+          "text": "Inside one of your free windows"
+        },
+        {
+          "code": "sample",
+          "text": "Sample event (synthetic)"
         }
       ],
       "components": [
@@ -62,38 +70,44 @@
         {
           "name": "barrier",
           "weight": 0.25,
-          "score": 0.5,
-          "contribution": 0.125,
-          "text": "Fits 'I don't know anyone'"
+          "score": 1.0,
+          "contribution": 0.25,
+          "text": "no_time, dont_know_anyone"
         },
         {
           "name": "window",
           "weight": 0.2,
-          "score": 0.5,
-          "contribution": 0.1,
-          "text": "Not in your usual gap"
+          "score": 1.0,
+          "contribution": 0.2,
+          "text": "Fits your Thursday gap, 12:20–2:30"
         },
         {
           "name": "rung",
           "weight": 0.1,
           "score": 1.0,
           "contribution": 0.1,
-          "text": "Structured"
+          "text": "Open social"
         },
         {
           "name": "helped_similar",
           "weight": 0.1,
-          "score": 0.6,
-          "contribution": 0.06,
-          "text": "Rated 4+ by 60% of similar students"
+          "score": 0.641,
+          "contribution": 0.064,
+          "text": "65% of 20 Newark commuters rated it 4+"
         }
       ],
-      "memory": [],
-      "distance": "3-minute walk",
-      "total": 0.735
+      "memory": [
+        {
+          "memory_id": "m:2",
+          "statement": "You enjoyed game-based events",
+          "delta": 0.044
+        }
+      ],
+      "distance": "5-minute walk",
+      "total": 1.008
     },
-    "why": "Builds on your strongest area, spiritual, with a built-in topic so it's easy to join in.",
-    "why_source": "template",
+    "why": "This free pickup basketball fits your open Thursday gap, and teams form on the spot so you can join without knowing anyone.",
+    "why_source": "ai",
     "pushed": true,
     "source": {
       "name": "Compass sample event (synthetic)",
@@ -103,50 +117,46 @@
   },
   "alternates": [
     {
-      "rec_id": 103,
+      "rec_id": 8519,
       "item": {
-        "id": "syn-newark-012",
-        "kind": "event",
-        "title": "Open gym pickup basketball (sample)",
-        "summary": "Casual pickup games, all levels.",
+        "id": "res-cmd-003",
+        "kind": "online",
+        "title": "Togetherall 24/7 peer support community",
+        "summary": "online, 24/7, moderated by licensed practitioners",
         "dimensions": [
-          "physical",
+          "emotional",
           "social"
         ],
-        "url": null,
+        "url": "https://togetherall.com",
         "phone": null,
         "hours_text": null,
-        "synthetic": true
+        "synthetic": false
       },
-      "starts_at": "2026-10-20T12:00:00-04:00",
-      "ends_at": "2026-10-20T13:00:00-04:00",
-      "when_label": "Tue Oct 20, 12–1 PM",
-      "window_label": "Fits your Tuesday gap, 12:20–2:30",
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "Any time",
+      "window_label": "Any time, online",
       "where": {
-        "venue": "John Cotton Dana Library",
+        "venue": null,
         "address": null,
-        "lat": 40.742,
-        "lon": -74.1768,
-        "campus": "newark"
+        "lat": null,
+        "lon": null,
+        "campus": "online"
       },
-      "walk_min": 5,
+      "walk_min": null,
       "cost": "free",
       "cost_label": "Free",
       "rung": 2,
       "rung_label": "Structured: you'll be doing something, not mingling",
       "going": {
-        "count": 6,
-        "label": "6 Newark students are going"
+        "count": null,
+        "label": ""
       },
       "reasons": {
         "filters": [
           {
-            "code": "campus",
-            "text": "On your campus"
-          },
-          {
-            "code": "in_window",
-            "text": "Inside one of your free windows"
+            "code": "online",
+            "text": "Online"
           },
           {
             "code": "free",
@@ -157,87 +167,86 @@
           {
             "name": "dimension",
             "weight": 0.35,
-            "score": 1.0,
-            "contribution": 0.35,
+            "score": 0.7,
+            "contribution": 0.245,
             "text": "Social"
           },
           {
             "name": "barrier",
             "weight": 0.25,
-            "score": 0.5,
-            "contribution": 0.125,
-            "text": "Fits 'no time'"
+            "score": 0.875,
+            "contribution": 0.219,
+            "text": "no_time, dont_know_anyone"
           },
           {
             "name": "window",
             "weight": 0.2,
             "score": 0.8,
             "contribution": 0.16,
-            "text": "Mostly inside your Tuesday gap"
+            "text": "Any time, online"
           },
           {
             "name": "rung",
             "weight": 0.1,
-            "score": 1.0,
-            "contribution": 0.1,
-            "text": "Structured"
+            "score": 0.5,
+            "contribution": 0.05,
+            "text": "Structured: you'll be doing something, not mingling"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.55,
-            "contribution": 0.055,
-            "text": "Rated 4+ by 55% of similar students"
+            "score": 0.543,
+            "contribution": 0.054,
+            "text": "53% of 19 Newark commuters rated it 4+"
           }
         ],
         "memory": [],
-        "distance": "5-minute walk",
-        "total": 0.79
+        "distance": "Online",
+        "total": 0.728
       },
-      "why": "A game to play means you meet people without having to start a conversation.",
-      "why_source": "template",
+      "why": "Since it's free and online, Togetherall lets you connect with peers even when your schedule is tight and you don't know anyone yet.",
+      "why_source": "ai",
       "pushed": true,
       "source": {
-        "name": "Compass sample event (synthetic)",
-        "url": null,
-        "verified_on": null
+        "name": "scarletwell_list_or_verified",
+        "url": "https://togetherall.com",
+        "verified_on": "2026-10-10"
       }
     },
     {
-      "rec_id": 101,
+      "rec_id": 8520,
       "item": {
-        "id": "pin-andre-lunch-2026-10-13",
-        "kind": "event",
-        "title": "Commuter lunch and board games (sample)",
-        "summary": "Drop-in lunch with board and card games for commuter students. Food provided.",
+        "id": "res-nwk-ssl",
+        "kind": "resource",
+        "title": "Rutgers–Newark Student Life & Leadership (clubs and organizations)",
+        "summary": "Find one of 100+ student organizations. Meetings by appointment.",
         "dimensions": [
-          "social",
-          "financial"
+          "social"
         ],
-        "url": null,
-        "phone": null,
-        "hours_text": null,
-        "synthetic": true
+        "url": "https://studentaffairs.newark.rutgers.edu/",
+        "phone": "973-353-5300",
+        "hours_text": "9 am–5 pm, meetings by appointment",
+        "synthetic": false
       },
-      "starts_at": "2026-10-13T12:30:00-04:00",
-      "ends_at": "2026-10-13T13:30:00-04:00",
-      "when_label": "Tue Oct 13, 12:30–1:30 PM",
-      "window_label": "Fits your Tuesday gap, 12:20–2:30",
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "This week",
+      "window_label": null,
       "where": {
-        "venue": "Paul Robeson Campus Center",
-        "address": "350 Dr. Martin Luther King Jr. Blvd, Newark, NJ 07102",
-        "lat": 40.7415,
-        "lon": -74.1752,
+        "venue": "Paul Robeson Campus Center, Room 352",
+        "address": "350 Dr Martin Luther King Jr Blvd, Newark, NJ 07102",
+        "lat": null,
+        "lon": null,
         "campus": "newark"
       },
-      "walk_min": 3,
+      "walk_min": null,
       "cost": "free",
-      "cost_label": "Free lunch",
-      "rung": 2,
-      "rung_label": "Structured: you'll be doing something, not mingling",
+      "cost_label": "Free for students",
+      "rung": 3,
+      "rung_label": "Open social",
       "going": {
-        "count": 14,
-        "label": "14 Newark students are going"
+        "count": null,
+        "label": ""
       },
       "reasons": {
         "filters": [
@@ -246,12 +255,12 @@
             "text": "On your campus"
           },
           {
-            "code": "in_window",
-            "text": "Inside one of your free windows"
-          },
-          {
             "code": "free",
             "text": "Free"
+          },
+          {
+            "code": "hours_unknown",
+            "text": "Hours not listed here: check before you go"
           }
         ],
         "components": [
@@ -265,43 +274,43 @@
           {
             "name": "barrier",
             "weight": 0.25,
-            "score": 1.0,
-            "contribution": 0.25,
-            "text": "Fits 'no time' and 'I don't know anyone'"
+            "score": 0.375,
+            "contribution": 0.094,
+            "text": "dont_know_anyone"
           },
           {
             "name": "window",
             "weight": 0.2,
-            "score": 1.0,
-            "contribution": 0.2,
-            "text": "Fits your Tuesday gap"
+            "score": 0.5,
+            "contribution": 0.1,
+            "text": ""
           },
           {
             "name": "rung",
             "weight": 0.1,
             "score": 1.0,
             "contribution": 0.1,
-            "text": "Structured: you'll be playing, not mingling"
+            "text": "Open social"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.72,
-            "contribution": 0.072,
-            "text": "Rated 4+ by 72% of 36 Newark commuters"
+            "score": 0.605,
+            "contribution": 0.06,
+            "text": "No ratings yet"
           }
         ],
         "memory": [],
-        "distance": "3-minute walk",
-        "total": 0.972
+        "distance": null,
+        "total": 0.704
       },
-      "why": "It's in your Tuesday gap, three minutes away, free, and the games give everyone something to do besides small talk.",
+      "why": "It's free and there's something to do, so you don't need to know anyone.",
       "why_source": "template",
       "pushed": true,
       "source": {
-        "name": "Compass sample event (synthetic)",
-        "url": null,
-        "verified_on": null
+        "name": "Compass research (verified)",
+        "url": "https://studentaffairs.newark.rutgers.edu/",
+        "verified_on": "2026-10-10"
       }
     }
   ],
@@ -318,22 +327,11 @@
       "verified": false
     },
     {
-      "id": 2,
-      "name": "988 en español",
-      "kind": "call",
-      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
-      "href": "tel:988",
-      "hours": "24/7",
-      "campus": "all",
-      "language": "es",
-      "verified": false
-    },
-    {
       "id": 3,
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -351,12 +349,34 @@
       "verified": false
     },
     {
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
       "id": 6,
       "name": "Rutgers–Newark Counseling Center",
       "kind": "call",
-      "contact": "973-353-5805; after hours Uwill crisis line 833-646-1526",
+      "contact": "973-353-5805",
       "href": "tel:+19733535805",
-      "hours": "Mon–Fri 8:30–4:30; Uwill 24/7",
+      "hours": "Mon–Fri 8:30 am–4:30 pm",
+      "campus": "newark",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 7,
+      "name": "Uwill crisis line (after hours)",
+      "kind": "call",
+      "contact": "833-646-1526",
+      "href": "tel:+18336461526",
+      "hours": "24/7",
       "campus": "newark",
       "language": "any",
       "verified": false

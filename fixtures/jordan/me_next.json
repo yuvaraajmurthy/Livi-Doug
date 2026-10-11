@@ -1,44 +1,43 @@
 {
   "synthetic": true,
   "now": "2026-10-12T09:00:00-04:00",
-  "set_id": "set-jordan-1",
+  "set_id": "set-280cdd63b455",
   "care_first": false,
   "support_card": null,
   "pick": {
-    "rec_id": 501,
+    "rec_id": 8539,
     "item": {
-      "id": "ss-imleagues-pickleball-liv",
+      "id": "pin-jordan-hall-game-night-2026-10-14",
       "kind": "event",
-      "title": "Intramural pickleball open play",
-      "summary": null,
+      "title": "Livingston halls game night (sample)",
+      "summary": "Board games, Smash and snacks in the Livingston Student Center lounge. Drop in for twenty minutes or stay all night.",
       "dimensions": [
-        "physical",
         "social"
       ],
       "url": null,
       "phone": null,
       "hours_text": null,
-      "synthetic": false
+      "synthetic": true
     },
-    "starts_at": "2026-10-14T19:00:00-04:00",
-    "ends_at": "2026-10-14T20:00:00-04:00",
-    "when_label": "Wed Oct 14, 7–8 PM",
-    "window_label": null,
+    "starts_at": "2026-10-14T20:00:00-04:00",
+    "ends_at": "2026-10-14T22:00:00-04:00",
+    "when_label": "Wed Oct 14, 8–10 PM",
+    "window_label": "Fits your Wednesday gap, 6–10:30",
     "where": {
-      "venue": "Livingston Rec Center",
-      "address": "62 Road 3, Piscataway, NJ 08854",
-      "lat": 40.5249,
-      "lon": -74.4363,
+      "venue": "Livingston Student Center",
+      "address": "84 Joyce Kilmer Ave, Piscataway, NJ 08854",
+      "lat": 40.5236,
+      "lon": -74.4366,
       "campus": "new_brunswick"
     },
-    "walk_min": 6,
+    "walk_min": 1,
     "cost": "free",
     "cost_label": "Free",
     "rung": 2,
     "rung_label": "Structured: you'll be doing something, not mingling",
     "going": {
-      "count": null,
-      "label": "A few students are going"
+      "count": 7,
+      "label": "7 New Brunswick students are going"
     },
     "reasons": {
       "filters": [
@@ -49,6 +48,14 @@
         {
           "code": "free",
           "text": "Free"
+        },
+        {
+          "code": "in_window",
+          "text": "Inside one of your free windows"
+        },
+        {
+          "code": "sample",
+          "text": "Sample event (synthetic)"
         }
       ],
       "components": [
@@ -64,164 +71,64 @@
           "weight": 0.25,
           "score": 1.0,
           "contribution": 0.25,
-          "text": "Fits 'I don't know anyone'"
+          "text": "dont_know_anyone, not_my_scene"
         },
         {
           "name": "window",
           "weight": 0.2,
-          "score": 0.5,
-          "contribution": 0.1,
-          "text": "Evening"
+          "score": 0.9,
+          "contribution": 0.18,
+          "text": "Fits your Wednesday gap, 6–10:30"
         },
         {
           "name": "rung",
           "weight": 0.1,
           "score": 1.0,
           "contribution": 0.1,
-          "text": "Structured"
+          "text": "Structured: you'll be doing something, not mingling"
         },
         {
           "name": "helped_similar",
           "weight": 0.1,
-          "score": 0.6,
-          "contribution": 0.06,
-          "text": "Rated 4+ by 60% of first-years"
+          "score": 0.687,
+          "contribution": 0.069,
+          "text": "71% of 24 New Brunswick residents rated it 4+"
         }
       ],
       "memory": [],
-      "distance": "6-minute walk",
-      "total": 0.86
+      "distance": "1-minute walk",
+      "total": 0.949
     },
-    "why": "You already play: a game is the easiest way to meet people on Livingston.",
-    "why_source": "template",
+    "why": "This game night gives you a structured way to hang out over board games, Smash, and snacks without needing to mingle or know anyone.",
+    "why_source": "ai",
     "pushed": true,
     "source": {
-      "name": "Rutgers Recreation via Scarlet Sync",
-      "url": "https://recreation.rutgers.edu/",
+      "name": "Compass sample event (synthetic)",
+      "url": null,
       "verified_on": null
     }
   },
   "alternates": [
     {
-      "rec_id": 502,
+      "rec_id": 8540,
       "item": {
-        "id": "syn-newark-012",
-        "kind": "event",
-        "title": "Open gym pickup basketball (sample)",
-        "summary": "Casual pickup games, all levels.",
+        "id": "res-cmd-003",
+        "kind": "online",
+        "title": "Togetherall 24/7 peer support community",
+        "summary": "online, 24/7, moderated by licensed practitioners",
         "dimensions": [
-          "physical",
+          "emotional",
           "social"
         ],
-        "url": null,
-        "phone": null,
-        "hours_text": null,
-        "synthetic": true
-      },
-      "starts_at": "2026-10-20T12:00:00-04:00",
-      "ends_at": "2026-10-20T13:00:00-04:00",
-      "when_label": "Tue Oct 20, 12–1 PM",
-      "window_label": "Fits your Tuesday gap, 12:20–2:30",
-      "where": {
-        "venue": "John Cotton Dana Library",
-        "address": null,
-        "lat": 40.742,
-        "lon": -74.1768,
-        "campus": "newark"
-      },
-      "walk_min": 5,
-      "cost": "free",
-      "cost_label": "Free",
-      "rung": 2,
-      "rung_label": "Structured: you'll be doing something, not mingling",
-      "going": {
-        "count": 6,
-        "label": "6 Newark students are going"
-      },
-      "reasons": {
-        "filters": [
-          {
-            "code": "campus",
-            "text": "On your campus"
-          },
-          {
-            "code": "in_window",
-            "text": "Inside one of your free windows"
-          },
-          {
-            "code": "free",
-            "text": "Free"
-          }
-        ],
-        "components": [
-          {
-            "name": "dimension",
-            "weight": 0.35,
-            "score": 1.0,
-            "contribution": 0.35,
-            "text": "Social"
-          },
-          {
-            "name": "barrier",
-            "weight": 0.25,
-            "score": 0.5,
-            "contribution": 0.125,
-            "text": "Fits 'no time'"
-          },
-          {
-            "name": "window",
-            "weight": 0.2,
-            "score": 0.8,
-            "contribution": 0.16,
-            "text": "Mostly inside your Tuesday gap"
-          },
-          {
-            "name": "rung",
-            "weight": 0.1,
-            "score": 1.0,
-            "contribution": 0.1,
-            "text": "Structured"
-          },
-          {
-            "name": "helped_similar",
-            "weight": 0.1,
-            "score": 0.55,
-            "contribution": 0.055,
-            "text": "Rated 4+ by 55% of similar students"
-          }
-        ],
-        "memory": [],
-        "distance": "5-minute walk",
-        "total": 0.79
-      },
-      "why": "A game to play means you meet people without having to start a conversation.",
-      "why_source": "template",
-      "pushed": true,
-      "source": {
-        "name": "Compass sample event (synthetic)",
-        "url": null,
-        "verified_on": null
-      }
-    },
-    {
-      "rec_id": 503,
-      "item": {
-        "id": "micro-physical-1",
-        "kind": "micro",
-        "title": "10-minute wind-down: phone across the room at midnight",
-        "summary": null,
-        "dimensions": [
-          "physical"
-        ],
-        "url": null,
+        "url": "https://togetherall.com",
         "phone": null,
         "hours_text": null,
         "synthetic": false
       },
       "starts_at": null,
       "ends_at": null,
-      "when_label": "Tonight",
-      "window_label": null,
+      "when_label": "Any time",
+      "window_label": "Any time, online",
       "where": {
         "venue": null,
         "address": null,
@@ -232,14 +139,18 @@
       "walk_min": null,
       "cost": "free",
       "cost_label": "Free",
-      "rung": 1,
-      "rung_label": "Just show up",
+      "rung": 2,
+      "rung_label": "Structured: you'll be doing something, not mingling",
       "going": {
         "count": null,
         "label": ""
       },
       "reasons": {
         "filters": [
+          {
+            "code": "online",
+            "text": "Online"
+          },
           {
             "code": "free",
             "text": "Free"
@@ -249,49 +160,150 @@
           {
             "name": "dimension",
             "weight": 0.35,
-            "score": 1.0,
-            "contribution": 0.35,
-            "text": "Physical"
+            "score": 0.7,
+            "contribution": 0.245,
+            "text": "Social"
           },
           {
             "name": "barrier",
             "weight": 0.25,
-            "score": 0.0,
-            "contribution": 0.0,
-            "text": ""
+            "score": 0.875,
+            "contribution": 0.219,
+            "text": "dont_know_anyone, not_my_scene"
           },
           {
             "name": "window",
             "weight": 0.2,
-            "score": 1.0,
-            "contribution": 0.2,
-            "text": "Any time"
+            "score": 0.8,
+            "contribution": 0.16,
+            "text": "Any time, online"
           },
           {
             "name": "rung",
             "weight": 0.1,
             "score": 1.0,
             "contribution": 0.1,
-            "text": "Just you"
+            "text": "Structured: you'll be doing something, not mingling"
           },
           {
             "name": "helped_similar",
             "weight": 0.1,
-            "score": 0.0,
-            "contribution": 0.0,
-            "text": ""
+            "score": 0.708,
+            "contribution": 0.071,
+            "text": "78% of 9 New Brunswick residents rated it 4+"
           }
         ],
         "memory": [],
-        "distance": null,
-        "total": 0.65
+        "distance": "Online",
+        "total": 0.794
       },
-      "why": "A tiny step for the nights the problem set runs late.",
-      "why_source": "template",
+      "why": "Because you don't know anyone and big scenes aren't your thing, this free online community gives you structured peer support.",
+      "why_source": "ai",
       "pushed": true,
       "source": {
-        "name": "Compass micro-steps",
-        "url": null,
+        "name": "scarletwell_list_or_verified",
+        "url": "https://togetherall.com",
+        "verified_on": "2026-10-10"
+      }
+    },
+    {
+      "rec_id": 8541,
+      "item": {
+        "id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+        "kind": "resource",
+        "title": "Join an intramural team: field sports at Basketball Court 1, College Ave Gym",
+        "summary": "Rutgers Recreation intramural leagues. Sign up solo as a free agent and get placed on a team.",
+        "dimensions": [
+          "physical",
+          "social"
+        ],
+        "url": "https://www.imleagues.com/spa/portal/school?schoolId=rutgers",
+        "phone": null,
+        "hours_text": null,
+        "synthetic": false
+      },
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "This week",
+      "window_label": null,
+      "where": {
+        "venue": "Basketball Court 1, College Ave Gym",
+        "address": "University Park, Piscataway, NJ 08854",
+        "lat": 40.5257,
+        "lon": -74.44208,
+        "campus": "new_brunswick"
+      },
+      "walk_min": 8,
+      "cost": "free",
+      "cost_label": "Free for students",
+      "rung": 3,
+      "rung_label": "Open social",
+      "going": {
+        "count": null,
+        "label": ""
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "campus",
+            "text": "On your campus"
+          },
+          {
+            "code": "free",
+            "text": "Free"
+          },
+          {
+            "code": "hours_unknown",
+            "text": "Hours not listed here: check before you go"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 0.85,
+            "contribution": 0.297,
+            "text": "Social"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 1.0,
+            "contribution": 0.25,
+            "text": "dont_know_anyone, not_my_scene"
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 0.5,
+            "contribution": 0.1,
+            "text": ""
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": "Open social"
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.583,
+            "contribution": 0.058,
+            "text": "No ratings yet"
+          }
+        ],
+        "memory": [],
+        "distance": "8-minute walk",
+        "total": 0.706
+      },
+      "why": "You can sign up solo as a free agent and get placed on a team, so it fits even if you don't know anyone yet.",
+      "why_source": "ai",
+      "pushed": true,
+      "source": {
+        "name": "via Scarlet Sync (student project)",
+        "url": "https://www.imleagues.com/School/FacilitySchedule.aspx?SchId=9fc6b407ba184dae89b2926072b5ec57#game-r24220833",
         "verified_on": null
       }
     }
@@ -309,22 +321,11 @@
       "verified": false
     },
     {
-      "id": 2,
-      "name": "988 en español",
-      "kind": "call",
-      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
-      "href": "tel:988",
-      "hours": "24/7",
-      "campus": "all",
-      "language": "es",
-      "verified": false
-    },
-    {
       "id": 3,
       "name": "Crisis Text Line",
       "kind": "text",
       "contact": "Text HOME to 741741",
-      "href": "sms:741741?body=HOME",
+      "href": "sms:741741?&body=HOME",
       "hours": "24/7",
       "campus": "all",
       "language": "any",
@@ -336,6 +337,17 @@
       "kind": "emergency",
       "contact": "Call 911",
       "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 10,
+      "name": "NJ Hopeline",
+      "kind": "call",
+      "contact": "855-654-6735",
+      "href": "tel:+18556546735",
       "hours": "24/7",
       "campus": "all",
       "language": "any",

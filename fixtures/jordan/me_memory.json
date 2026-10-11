@@ -1,6 +1,6 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
+  "now": "2026-10-15T08:00:00-04:00",
   "items": [
     {
       "id": "profile:focus",
@@ -19,7 +19,7 @@
     {
       "id": "profile:barrier:dont_know_anyone",
       "kind": "barrier",
-      "statement": "What gets in the way: dont know anyone",
+      "statement": "What gets in the way: I don't know anyone",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -33,7 +33,7 @@
     {
       "id": "profile:barrier:not_my_scene",
       "kind": "barrier",
-      "statement": "What gets in the way: not my scene",
+      "statement": "What gets in the way: Events aren't really my scene",
       "source": {
         "type": "you_chose",
         "label": "You tapped this",
@@ -41,6 +41,104 @@
       },
       "used_for": "Favours steps that get around it",
       "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:0",
+      "kind": "free_window",
+      "statement": "Free: Mon 18:00-22:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:1",
+      "kind": "free_window",
+      "statement": "Free: Wed 18:00-22:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:2",
+      "kind": "free_window",
+      "statement": "Free: Fri 15:00-22:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:17",
+      "kind": "rung",
+      "statement": "Ready for more open social events",
+      "source": {
+        "type": "rating",
+        "label": "After a step you rated 4 or 5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Sets how social the next suggestion is",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:16",
+      "kind": "time_works",
+      "statement": "Wednesday evenings work for you",
+      "source": {
+        "type": "attendance",
+        "label": "You went on Wednesday",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Wednesday evenings rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:15",
+      "kind": "likes_format",
+      "statement": "You liked structured events",
+      "source": {
+        "type": "rating",
+        "label": "You rated Livingston halls game night 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Structured events rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:14",
+      "kind": "likes_format",
+      "statement": "You enjoyed game-based events",
+      "source": {
+        "type": "rating",
+        "label": "You rated Livingston halls game night 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Game-based events rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
       "last_used_at": null,
       "deletable": true
     }

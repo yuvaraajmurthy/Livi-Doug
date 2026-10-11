@@ -3,7 +3,7 @@
   "now": "2026-10-12T09:00:00-04:00",
   "kind": "step",
   "title": "Busch Learning Center",
-  "when_label": "Drop in this week",
-  "line": "Calc II is what's eating your nights, so getting help with the problem sets is the sleep step. Four minutes from you, free.",
+  "when_label": "This week",
+  "line": "Just showing up at the free Busch Learning Center fits because it’s an in-person Rutgers Learning Centers resource for coursework.",
   "deep_link": "/next"
 }

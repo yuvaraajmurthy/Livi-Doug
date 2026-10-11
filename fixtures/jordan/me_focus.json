@@ -9,7 +9,11 @@
       "not_my_scene"
     ],
     "barriers_from_text": [],
-    "free_windows": [],
+    "free_windows": [
+      "Mon 18:00-22:30",
+      "Wed 18:00-22:30",
+      "Fri 15:00-22:30"
+    ],
     "social_rung": 2,
     "free_only": true,
     "language": "en"

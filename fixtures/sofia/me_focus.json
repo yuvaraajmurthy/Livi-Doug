@@ -9,7 +9,11 @@
       "money"
     ],
     "barriers_from_text": [],
-    "free_windows": [],
+    "free_windows": [
+      "Tue 19:00-21:30",
+      "Wed 19:00-21:30",
+      "Sat 10:00-14:00"
+    ],
     "social_rung": 1,
     "free_only": true,
     "language": "es"

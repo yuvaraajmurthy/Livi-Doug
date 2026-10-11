@@ -1,11 +1,11 @@
 {
   "synthetic": true,
-  "now": "2026-10-12T09:00:00-04:00",
+  "now": "2026-10-14T17:00:00-04:00",
   "items": [
     {
       "id": "profile:focus",
       "kind": "focus",
-      "statement": "You haven't picked an area yet",
+      "statement": "You chose to grow: Emotional",
       "source": {
         "type": "you_chose",
         "label": "Your choice",

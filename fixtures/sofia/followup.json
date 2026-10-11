@@ -1,26 +1,69 @@
 {
   "synthetic": true,
-  "now": "2026-10-13T15:30:00-04:00",
-  "commitment_id": 9001,
+  "now": "2026-10-15T08:00:00-04:00",
+  "commitment_id": 3099,
   "status": "went",
   "progress": {
     "dimension": "financial",
     "steps_this_month": 1,
-    "message": "One step taken this month. That counts."
+    "message": "1 paso(s) este mes. Cuenta."
   },
   "arc": {
     "status": "mock",
-    "message": "Wellness credit added to The Arc (demo)"
+    "message": "Crédito de bienestar agregado a The Arc (demo)"
   },
   "challenge": {
     "challenge_id": "ch-campus-cup-oct-camden",
     "title": "Scarlet Wellness Cup: steps this week",
     "added": 1,
-    "progress": 103,
-    "goal": 400,
-    "pct": 0.25
+    "progress": 20,
+    "goal": 70,
+    "pct": 0.286
   },
   "next_rung": null,
-  "learned": [],
+  "learned": [
+    {
+      "id": "m:10",
+      "kind": "likes_format",
+      "statement": "Las opciones en línea te funcionaron",
+      "source": {
+        "type": "rating",
+        "label": "You rated Budgeting for real life, evening online session 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Online options rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:11",
+      "kind": "likes_format",
+      "statement": "Los talleres te funcionaron",
+      "source": {
+        "type": "rating",
+        "label": "You rated Budgeting for real life, evening online session 4/5",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Workshops rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "m:12",
+      "kind": "time_works",
+      "statement": "Los miércoles a las noches te funcionan",
+      "source": {
+        "type": "attendance",
+        "label": "You went on Wednesday",
+        "at": "2026-10-15T08:00:00-04:00"
+      },
+      "used_for": "Wednesday evenings rank a little higher",
+      "learned_at": "2026-10-15T08:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    }
+  ],
   "win_prompt": true
 }
