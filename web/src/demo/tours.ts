@@ -58,6 +58,16 @@ export const TOURS: Record<TourName, StoryStep[]> = {
     t("andre", "went", "went-yes", "Did he go? Tap Yes."),
     t("andre", "helped", "helped-4", "Did it help? Tap 4."),
     t("andre", "send", "followup-send", "Tap Send and see what Compass learned.", { waitFor: "followup:submitted" }),
+    t("andre", "chat", "tab-chat", "Or just ask. Open Chat from the tab bar."),
+    t("andre", "ask", "chat-input", "Ask anything, or tap “Do it for me”.", {
+      perform: [
+        { kind: "type", target: "chat-input", text: "anything social with free food this week?" },
+        { kind: "tap", target: "chat-send" },
+      ],
+      waitFor: "chat:answered",
+    }),
+    t("andre", "card", "chat-event-0", "Every answer is a real event. Tap one.", { waitFor: "event:opened" }),
+    t("andre", "remind", "event-remind", "Tap “Remind me”. Same plan and follow-up as before.", { waitFor: "reminder:set" }),
   ],
   priya: [
     start("priya", "Meet Priya: sleep is her lowest score. Let's ask why.", "Ask why."),
