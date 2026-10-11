@@ -14,6 +14,11 @@
   "lon": -74.45017,
   "provider": "amazon_location"
  },
+ "110 Frelinghuysen Rd, Piscataway, NJ 08854": {
+  "lat": 40.52205,
+  "lon": -74.4627,
+  "provider": "amazon_location"
+ },
  "110 Hospital Road, Piscataway, NJ 08854": {
   "lat": 40.52447,
   "lon": -74.4432,
@@ -74,6 +79,11 @@
   "lon": -74.46585,
   "provider": "amazon_location"
  },
+ "165 Bevier Rd, Piscataway, NJ 08854": {
+  "lat": 40.52599,
+  "lon": -74.46585,
+  "provider": "amazon_location"
+ },
  "165 Bevier Road, Piscataway, NJ 08854": {
   "lat": 40.52599,
   "lon": -74.46585,
@@ -114,9 +124,24 @@
   "lon": -74.46646,
   "provider": "amazon_location"
  },
+ "185 University Ave, Newark, NJ 07102": {
+  "lat": 40.74077,
+  "lon": -74.17443,
+  "provider": "amazon_location"
+ },
+ "199 College Ave, New Brunswick, NJ 08901": {
+  "lat": 40.50577,
+  "lon": -74.45403,
+  "provider": "amazon_location"
+ },
  "30 Easton Ave New Brunswick, NJ": {
   "lat": 40.49702,
   "lon": -74.4474,
+  "provider": "amazon_location"
+ },
+ "300 N 4th St, Camden, NJ 08102": {
+  "lat": 39.94936,
+  "lon": -75.12126,
   "provider": "amazon_location"
  },
  "321 Easton Ave, New Brunswick, NJ 08901": {
@@ -130,6 +155,11 @@
   "provider": "amazon_location"
  },
  "40 College Ave, New Brunswick, NJ": {
+  "lat": 40.49937,
+  "lon": -74.44826,
+  "provider": "amazon_location"
+ },
+ "40 College Ave, New Brunswick, NJ 08901": {
   "lat": 40.49937,
   "lon": -74.44826,
   "provider": "amazon_location"
@@ -157,6 +187,11 @@
  "55 Rockefeller Rd Unit #30, Piscataway, NJ 08854": {
   "lat": 40.52437,
   "lon": -74.43948,
+  "provider": "amazon_location"
+ },
+ "59 Dudley Rd, New Brunswick, NJ 08901": {
+  "lat": 40.47923,
+  "lon": -74.43755,
   "provider": "amazon_location"
  },
  "59 Dudley Road, New Brunswick, NJ 08901": {
@@ -190,6 +225,11 @@
   "provider": "amazon_location"
  },
  "62 Road 3 Piscataway, NJ 08854": {
+  "lat": 40.5215,
+  "lon": -74.43251,
+  "provider": "amazon_location"
+ },
+ "62 Road 3, Piscataway, NJ 08854": {
   "lat": 40.5215,
   "lon": -74.43251,
   "provider": "amazon_location"
@@ -237,6 +277,11 @@
  "75 Avenue E, Piscataway, NJ 08854": {
   "lat": 40.52197,
   "lon": -74.43932,
+  "provider": "amazon_location"
+ },
+ "8 Chapel Dr, New Brunswick, NJ 08901": {
+  "lat": 40.48541,
+  "lon": -74.43659,
   "provider": "amazon_location"
  },
  "8 Chapel Drive, New Brunswick, NJ": {
@@ -292,6 +337,11 @@
  "Rutgers Student Center, 126 College Ave, New Brunswick, NJ": {
   "lat": 40.50247,
   "lon": -74.45178,
+  "provider": "amazon_location"
+ },
+ "University Park, Piscataway, NJ 08854": {
+  "lat": 40.5257,
+  "lon": -74.44208,
   "provider": "amazon_location"
  },
  "various, New Brunswick, NJ": {

@@ -65,6 +65,7 @@ def load_kb(conn: psycopg.Connection) -> int:
     load_micro_steps(conn)
     from ingest.geocode import apply_to_kb
     apply_to_kb(conn, network=False)
+    apply_ai_tags(conn)
     for item_id, campus in (("res-cmd-002", "camden"),):
         conn.execute("INSERT INTO kb_tags (item_id, tag_type, tag, tagged_by) VALUES (%s, 'audience', %s, 'staff') ON CONFLICT DO NOTHING", (item_id, campus))
     for extra in ("research_items", "snapshot_items"):
@@ -141,6 +142,22 @@ def upsert_item(conn: psycopg.Connection, p: dict, tagged_by: str = "keyword") -
                 conn.execute(
                     "INSERT INTO kb_tags (item_id, tag_type, tag, confidence, tagged_by) VALUES (%s, %s, %s, %s, %s) ON CONFLICT DO NOTHING",
                     (p["id"], tag_type, t, conf, tagged_by))
+
+
+def apply_ai_tags(conn: psycopg.Connection) -> None:
+    """Offline copy of the AI tags produced by ingest.run --snapshot (deterministic seed, no model calls)."""
+    path = SEED / "ai_tags.json"
+    if not path.exists():
+        return
+    data = json.loads(path.read_text(encoding="utf-8"))
+    ids = sorted({t["item_id"] for t in data["tags"]})
+    existing = {r["id"] for r in conn.execute("SELECT id FROM kb_items WHERE id = ANY(%s)", (ids,)).fetchall()}
+    conn.execute("DELETE FROM kb_tags WHERE item_id = ANY(%s) AND tagged_by IN ('keyword', 'ai')", (list(existing),))
+    with conn.cursor() as cur:
+        cur.executemany("INSERT INTO kb_tags (item_id, tag_type, tag, confidence, tagged_by) VALUES (%s, %s, %s, %s, 'ai') ON CONFLICT DO NOTHING",
+                        [(t["item_id"], t["tag_type"], t["tag"], t["confidence"]) for t in data["tags"] if t["item_id"] in existing])
+        cur.executemany("UPDATE kb_items SET social_level = coalesce(%s, social_level), solo_friendly = coalesce(%s, solo_friendly), formats = %s WHERE id = %s",
+                        [(m["social_level"], m["solo_friendly"], m["formats"] or [], m["id"]) for m in data["items"] if m["id"] in existing])
 
 
 def load_micro_steps(conn: psycopg.Connection) -> None:

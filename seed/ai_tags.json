@@ -1,0 +1,7659 @@
+{
+"tags": [
+{
+"item_id": "evt-10003455-2026-10-13",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003455-2026-10-13",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003455-2026-10-13",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003455-2026-10-13",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003455-2026-10-13",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003455-2026-10-13",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003456-2026-10-20",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003456-2026-10-20",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003456-2026-10-20",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003456-2026-10-20",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003456-2026-10-20",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003456-2026-10-20",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003457-2026-10-27",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003457-2026-10-27",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003457-2026-10-27",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003457-2026-10-27",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003457-2026-10-27",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003457-2026-10-27",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003490-2026-10-10",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003490-2026-10-10",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003490-2026-10-10",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003490-2026-10-10",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003490-2026-10-10",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003490-2026-10-10",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003491-2026-10-17",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003491-2026-10-17",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003491-2026-10-17",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003491-2026-10-17",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003491-2026-10-17",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003491-2026-10-17",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003492-2026-10-24",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003492-2026-10-24",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003492-2026-10-24",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003492-2026-10-24",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003492-2026-10-24",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003492-2026-10-24",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003493-2026-10-31",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003493-2026-10-31",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003493-2026-10-31",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003493-2026-10-31",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003493-2026-10-31",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003493-2026-10-31",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003494-2026-11-07",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003494-2026-11-07",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003494-2026-11-07",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003494-2026-11-07",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003494-2026-11-07",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003494-2026-11-07",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.55
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003495-2026-11-14",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.55
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003496-2026-11-21",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003543-2026-10-16",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003544-2026-10-23",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003545-2026-10-30",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003546-2026-11-06",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003547-2026-11-13",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003548-2026-11-20",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003624-2026-10-15",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003624-2026-10-15",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003624-2026-10-15",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003624-2026-10-15",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003624-2026-10-15",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003624-2026-10-15",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003625-2026-10-22",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003625-2026-10-22",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003625-2026-10-22",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003625-2026-10-22",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003625-2026-10-22",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003625-2026-10-22",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003626-2026-10-29",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003626-2026-10-29",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003626-2026-10-29",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003626-2026-10-29",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003626-2026-10-29",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003626-2026-10-29",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003627-2026-11-05",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003627-2026-11-05",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003627-2026-11-05",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003627-2026-11-05",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003627-2026-11-05",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003627-2026-11-05",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003628-2026-11-12",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003628-2026-11-12",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003628-2026-11-12",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003628-2026-11-12",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003628-2026-11-12",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003628-2026-11-12",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003629-2026-11-19",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003629-2026-11-19",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003629-2026-11-19",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003629-2026-11-19",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003629-2026-11-19",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003629-2026-11-19",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.45
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003673-2026-10-12",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.45
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003674-2026-10-19",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003675-2026-10-26",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003676-2026-11-02",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003690-2026-10-15",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003691-2026-10-22",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.7
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003692-2026-10-29",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003706-2026-10-15",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003706-2026-10-15",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003706-2026-10-15",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003706-2026-10-15",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "evt-10003706-2026-10-15",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003706-2026-10-15",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003707-2026-10-22",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003707-2026-10-22",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003707-2026-10-22",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003707-2026-10-22",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "evt-10003707-2026-10-22",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003707-2026-10-22",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003708-2026-10-29",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003708-2026-10-29",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003708-2026-10-29",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003708-2026-10-29",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "evt-10003708-2026-10-29",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003708-2026-10-29",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.65
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003709-2026-11-05",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.65
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003710-2026-11-12",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.65
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003711-2026-11-19",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.65
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003712-2026-11-26",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.65
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003713-2026-12-03",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.65
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003714-2026-12-10",
+"tag_type": "format",
+"tag": "volunteering",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003723-2026-10-30",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.85
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003728-2027-04-30",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.4
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003731-2027-01-29",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.4
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003732-2027-02-26",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.4
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-10003733-2027-03-26",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4088-2026-10-22",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4088-2026-10-22",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4088-2026-10-22",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4088-2026-10-22",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.55
+},
+{
+"item_id": "evt-4088-2026-10-22",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4088-2026-10-22",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4097-2026-12-03",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4097-2026-12-03",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4097-2026-12-03",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4097-2026-12-03",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.5
+},
+{
+"item_id": "evt-4097-2026-12-03",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4097-2026-12-03",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "cause",
+"tag": "career",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.6
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.9
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4342-2026-11-02",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "cause",
+"tag": "career",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.85
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.6
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.5
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4344-2026-11-05",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4348-2026-10-15",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4348-2026-10-15",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4348-2026-10-15",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.55
+},
+{
+"item_id": "evt-4348-2026-10-15",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4348-2026-10-15",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4348-2026-10-15",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4359-2026-10-22",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4359-2026-10-22",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.95
+},
+{
+"item_id": "evt-4359-2026-10-22",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4359-2026-10-22",
+"tag_type": "format",
+"tag": "online",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4359-2026-10-22",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4359-2026-10-22",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4361-2026-11-19",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4361-2026-11-19",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.95
+},
+{
+"item_id": "evt-4361-2026-11-19",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4361-2026-11-19",
+"tag_type": "format",
+"tag": "online",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4361-2026-11-19",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4361-2026-11-19",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "cause",
+"tag": "career",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.5
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.75
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4399-2026-11-13",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4426-2026-10-20",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4426-2026-10-20",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4426-2026-10-20",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.55
+},
+{
+"item_id": "evt-4426-2026-10-20",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-4426-2026-10-20",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4426-2026-10-20",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4428-2026-11-03",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4428-2026-11-03",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4428-2026-11-03",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.55
+},
+{
+"item_id": "evt-4428-2026-11-03",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-4428-2026-11-03",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4428-2026-11-03",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4430-2026-11-17",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4430-2026-11-17",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4430-2026-11-17",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.55
+},
+{
+"item_id": "evt-4430-2026-11-17",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "evt-4430-2026-11-17",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4430-2026-11-17",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.6
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4457-2026-10-13",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.6
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.85
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.75
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4463-2026-10-29",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.5
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4483-2026-11-20",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.5
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "evt-4485-2026-12-18",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-alexander-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-alexander-library",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.4
+},
+{
+"item_id": "place-libcal-alexander-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-alexander-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-alexander-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-art-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-art-library",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.4
+},
+{
+"item_id": "place-libcal-art-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-art-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-art-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-carr-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-carr-library",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.4
+},
+{
+"item_id": "place-libcal-carr-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-carr-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-carr-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-chang-science-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-chang-science-library",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.4
+},
+{
+"item_id": "place-libcal-chang-science-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-chang-science-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-chang-science-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-dana-library-newark",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-dana-library-newark",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.4
+},
+{
+"item_id": "place-libcal-dana-library-newark",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-dana-library-newark",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-dana-library-newark",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-douglass-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-douglass-library",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.4
+},
+{
+"item_id": "place-libcal-douglass-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-douglass-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-douglass-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-kilmer-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-kilmer-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-kilmer-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-kilmer-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-library-of-science-and-medicine-lsm",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-library-of-science-and-medicine-lsm",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-library-of-science-and-medicine-lsm",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-library-of-science-and-medicine-lsm",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-math-physics-library",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-math-physics-library",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-math-physics-library",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-math-physics-library",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-robeson-library-camden",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-robeson-library-camden",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "place-libcal-robeson-library-camden",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "place-libcal-robeson-library-camden",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-001",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-001",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-001",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-cmd-001",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-001",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-001",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-002",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-002",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.95
+},
+{
+"item_id": "res-cmd-002",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-002",
+"tag_type": "format",
+"tag": "online",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.85
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "format",
+"tag": "online",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-003",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-004",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-004",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-004",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.9
+},
+{
+"item_id": "res-cmd-004",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-cmd-004",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-livingston-rec-center",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-university-park-fields-busch",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.85
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "format",
+"tag": "games",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-imleagues-pickleball-livingston-rec-center",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-001",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-001",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-001",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-001",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-001",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-002",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-002",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-002",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-002",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-002",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-003",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-003",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-003",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-003",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-003",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-004",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-004",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-004",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-004",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-005",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-005",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-005",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-005",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-005",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-006",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-006",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-007",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-007",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-008",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-008",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-008",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-008",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-009",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-009",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-009",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-009",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-010",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-010",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-010",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-010",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-011",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-011",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-011",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-011",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-012",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-012",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-012",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-012",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-013",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-013",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.75
+},
+{
+"item_id": "res-nb-013",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-013",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-014",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-014",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-nb-014",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "res-nb-014",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-014",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-015",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-015",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-015",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-015",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-016",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-016",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-nb-016",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-016",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-017",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-017",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-nb-017",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-017",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-018",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-018",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-nb-018",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-018",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-019",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-019",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-019",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-019",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-020",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-020",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-020",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-020",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.5
+},
+{
+"item_id": "res-nb-020",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-020",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-021",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-021",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.4
+},
+{
+"item_id": "res-nb-021",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-021",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-021",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-021",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-022",
+"tag_type": "cause",
+"tag": "career",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-022",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.4
+},
+{
+"item_id": "res-nb-022",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-022",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-022",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-023",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-023",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-023",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-023",
+"tag_type": "format",
+"tag": "tutoring",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-024",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-024",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-024",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-024",
+"tag_type": "format",
+"tag": "tutoring",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-025",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-025",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-025",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-025",
+"tag_type": "format",
+"tag": "tutoring",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-026",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-026",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-026",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-026",
+"tag_type": "format",
+"tag": "tutoring",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-027",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-027",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-027",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-027",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-028",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-028",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-028",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-028",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-029",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-029",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-029",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-029",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-030",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-030",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-030",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-030",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-031",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-031",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-031",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-031",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-032",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-032",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-032",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-032",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-033",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-033",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-033",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-033",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-034",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-034",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.95
+},
+{
+"item_id": "res-nb-034",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-034",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-034",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-035",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-035",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-035",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-035",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-036",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-036",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.25
+},
+{
+"item_id": "res-nb-036",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-037",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-037",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-037",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-037",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-038",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-038",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-038",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-038",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-038",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-039",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-039",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-039",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-039",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-039",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-040",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-040",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-040",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-040",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-040",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-040",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-041",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-041",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-041",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-041",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-041",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-041",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-042",
+"tag_type": "cause",
+"tag": "career",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-042",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.9
+},
+{
+"item_id": "res-nb-042",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-042",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-043",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-043",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-043",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-043",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-043",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-044",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-044",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-044",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-044",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-045",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-045",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-045",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-045",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-046",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-046",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-046",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-046",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-047",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-047",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-047",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.85
+},
+{
+"item_id": "res-nb-047",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-047",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-048",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-048",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-048",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-nb-048",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-048",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-048",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-049",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-049",
+"tag_type": "dimension",
+"tag": "environmental",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-049",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.6
+},
+{
+"item_id": "res-nb-049",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-049",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-049",
+"tag_type": "format",
+"tag": "nature",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-050",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-050",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.4
+},
+{
+"item_id": "res-nb-050",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "res-nb-050",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-050",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-050",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-051",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-051",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-051",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nb-051",
+"tag_type": "format",
+"tag": "quiet",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-001",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-001",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "res-nwk-001",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-001",
+"tag_type": "format",
+"tag": "online",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-001",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-001",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "cause",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "cause",
+"tag": "money",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "dimension",
+"tag": "financial",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.5
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "format",
+"tag": "drop_in",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "format",
+"tag": "food",
+"confidence": 0.8
+},
+{
+"item_id": "res-nwk-002",
+"tag_type": "format",
+"tag": "online",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-00a5885f-46d",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-00a5885f-46d",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-00a5885f-46d",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-00a5885f-46d",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-05ecd95c-8c0",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-05ecd95c-8c0",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-05ecd95c-8c0",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-05ecd95c-8c0",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-05ecd95c-8c0",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-05ecd95c-8c0",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-10f2d6a0-788",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-10f2d6a0-788",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-10f2d6a0-788",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-10f2d6a0-788",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-10f2d6a0-788",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-10f2d6a0-788",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-2ee59452-d34",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-2ee59452-d34",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-2ee59452-d34",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-2ee59452-d34",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-2ee59452-d34",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-2ee59452-d34",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-56b845c8-ccf",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-56b845c8-ccf",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-56b845c8-ccf",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-56b845c8-ccf",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.85
+},
+{
+"item_id": "ss-getinvolved-56b845c8-ccf",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-56b845c8-ccf",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-5f901fd0-05d",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-5f901fd0-05d",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-5f901fd0-05d",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-5f901fd0-05d",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-5f901fd0-05d",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-5f901fd0-05d",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-605666ba-bd5",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-605666ba-bd5",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-605666ba-bd5",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-605666ba-bd5",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-605666ba-bd5",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-605666ba-bd5",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-647be4c5-c10",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-647be4c5-c10",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-647be4c5-c10",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-647be4c5-c10",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.85
+},
+{
+"item_id": "ss-getinvolved-647be4c5-c10",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-647be4c5-c10",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-65c3be0c-1d5",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-6e33f1ca-055",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-6e33f1ca-055",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-6e33f1ca-055",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-6e33f1ca-055",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-6e33f1ca-055",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-6e33f1ca-055",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "format",
+"tag": "support_group",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-78721f3b-40b",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-7e3abd8d-030",
+"tag_type": "cause",
+"tag": "academic_workload",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-7e3abd8d-030",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-7e3abd8d-030",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-7e3abd8d-030",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.4
+},
+{
+"item_id": "ss-getinvolved-7e3abd8d-030",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-7e3abd8d-030",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-833f478f-58e",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-833f478f-58e",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-833f478f-58e",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-833f478f-58e",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-833f478f-58e",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-833f478f-58e",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-87303454-b39",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-87303454-b39",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-87303454-b39",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-getinvolved-87303454-b39",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-87303454-b39",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-87303454-b39",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-8af96f2d-aaa",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-8af96f2d-aaa",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-8af96f2d-aaa",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-8af96f2d-aaa",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-8af96f2d-aaa",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-8af96f2d-aaa",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97a5069a-c8c",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97a5069a-c8c",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-97a5069a-c8c",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-97a5069a-c8c",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97a5069a-c8c",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97af94b5-bfd",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97af94b5-bfd",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97af94b5-bfd",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-getinvolved-97af94b5-bfd",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97af94b5-bfd",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-97af94b5-bfd",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-9efb9f46-0c1",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-9efb9f46-0c1",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-9efb9f46-0c1",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-9efb9f46-0c1",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-9efb9f46-0c1",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-9efb9f46-0c1",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-a2abf705-38e",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-a2abf705-38e",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-a2abf705-38e",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-a2abf705-38e",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-a2abf705-38e",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-a2abf705-38e",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-acf6e409-7ef",
+"tag_type": "cause",
+"tag": "career",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-acf6e409-7ef",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-acf6e409-7ef",
+"tag_type": "dimension",
+"tag": "occupational",
+"confidence": 0.4
+},
+{
+"item_id": "ss-getinvolved-acf6e409-7ef",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b1313e19-b97",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b1313e19-b97",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b1313e19-b97",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b1313e19-b97",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b1e4c22d-db1",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b1e4c22d-db1",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-b1e4c22d-db1",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-b1e4c22d-db1",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b2f3377f-60d",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b2f3377f-60d",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b2f3377f-60d",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-b2f3377f-60d",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-b2f3377f-60d",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b459e5b0-fef",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-b459e5b0-fef",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.7
+},
+{
+"item_id": "ss-getinvolved-b459e5b0-fef",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-b459e5b0-fef",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c2395785-377",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c2395785-377",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c2395785-377",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c2395785-377",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c2395785-377",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c394e2a8-b40",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c394e2a8-b40",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c394e2a8-b40",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-c394e2a8-b40",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c394e2a8-b40",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-c394e2a8-b40",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d3377844-83e",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d3377844-83e",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d3377844-83e",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-d3377844-83e",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-d3377844-83e",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d3377844-83e",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d392d222-a13",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d392d222-a13",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d392d222-a13",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.5
+},
+{
+"item_id": "ss-getinvolved-d392d222-a13",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d392d222-a13",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-d392d222-a13",
+"tag_type": "format",
+"tag": "structured",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-f98e6516-764",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-f98e6516-764",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-f98e6516-764",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.6
+},
+{
+"item_id": "ss-getinvolved-f98e6516-764",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.9
+},
+{
+"item_id": "ss-getinvolved-f98e6516-764",
+"tag_type": "format",
+"tag": "faith",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-f98e6516-764",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "cause",
+"tag": "loneliness",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.85
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "format",
+"tag": "counseling",
+"confidence": 0.8
+},
+{
+"item_id": "ss-getinvolved-ff2f3076-aed",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-480e3345-f28",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-480e3345-f28",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-480e3345-f28",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-newbrunswick-480e3345-f28",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-846f4c2c-d05",
+"tag_type": "cause",
+"tag": "purpose",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-846f4c2c-d05",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-846f4c2c-d05",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-newbrunswick-846f4c2c-d05",
+"tag_type": "format",
+"tag": "talk",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-ed7e996b-758",
+"tag_type": "cause",
+"tag": "belonging",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-ed7e996b-758",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.5
+},
+{
+"item_id": "ss-newbrunswick-ed7e996b-758",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.7
+},
+{
+"item_id": "ss-newbrunswick-ed7e996b-758",
+"tag_type": "dimension",
+"tag": "spiritual",
+"confidence": 0.3
+},
+{
+"item_id": "ss-newbrunswick-ed7e996b-758",
+"tag_type": "format",
+"tag": "arts",
+"confidence": 0.8
+},
+{
+"item_id": "ss-newbrunswick-ed7e996b-758",
+"tag_type": "format",
+"tag": "mixer",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-018dcc88-945",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-018dcc88-945",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.95
+},
+{
+"item_id": "ss-recreation-018dcc88-945",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-018dcc88-945",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-0f63f897-85e",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-0f63f897-85e",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.5
+},
+{
+"item_id": "ss-recreation-0f63f897-85e",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-0f63f897-85e",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-0f63f897-85e",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-24c5f258-eb8",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-24c5f258-eb8",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.5
+},
+{
+"item_id": "ss-recreation-24c5f258-eb8",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-24c5f258-eb8",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-24c5f258-eb8",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-a191afa9-573",
+"tag_type": "cause",
+"tag": "stress",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-a191afa9-573",
+"tag_type": "dimension",
+"tag": "emotional",
+"confidence": 0.5
+},
+{
+"item_id": "ss-recreation-a191afa9-573",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-a191afa9-573",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-a191afa9-573",
+"tag_type": "format",
+"tag": "workshop",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-ca9f1f19-2e4",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-ca9f1f19-2e4",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "ss-recreation-ca9f1f19-2e4",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-recreation-ca9f1f19-2e4",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-ca9f1f19-2e4",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-f3f1ccea-332",
+"tag_type": "cause",
+"tag": "inactivity",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-f3f1ccea-332",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.9
+},
+{
+"item_id": "ss-recreation-f3f1ccea-332",
+"tag_type": "dimension",
+"tag": "social",
+"confidence": 0.4
+},
+{
+"item_id": "ss-recreation-f3f1ccea-332",
+"tag_type": "format",
+"tag": "active",
+"confidence": 0.8
+},
+{
+"item_id": "ss-recreation-f3f1ccea-332",
+"tag_type": "format",
+"tag": "sports",
+"confidence": 0.8
+},
+{
+"item_id": "study-001",
+"tag_type": "cause",
+"tag": "sleep_habits",
+"confidence": 0.8
+},
+{
+"item_id": "study-001",
+"tag_type": "dimension",
+"tag": "intellectual",
+"confidence": 0.3
+},
+{
+"item_id": "study-001",
+"tag_type": "dimension",
+"tag": "physical",
+"confidence": 0.4
+},
+{
+"item_id": "study-001",
+"tag_type": "format",
+"tag": "health_service",
+"confidence": 0.8
+}
+],
+"items": [
+{
+"id": "evt-10003455-2026-10-13",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003456-2026-10-20",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003457-2026-10-27",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003490-2026-10-10",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003491-2026-10-17",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003492-2026-10-24",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003493-2026-10-31",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003494-2026-11-07",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003495-2026-11-14",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003496-2026-11-21",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003543-2026-10-16",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003544-2026-10-23",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003545-2026-10-30",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003546-2026-11-06",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003547-2026-11-13",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003548-2026-11-20",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003624-2026-10-15",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003625-2026-10-22",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003626-2026-10-29",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003627-2026-11-05",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003628-2026-11-12",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003629-2026-11-19",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "evt-10003673-2026-10-12",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in",
+"structured"
+]
+},
+{
+"id": "evt-10003674-2026-10-19",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in",
+"structured"
+]
+},
+{
+"id": "evt-10003675-2026-10-26",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in",
+"structured"
+]
+},
+{
+"id": "evt-10003676-2026-11-02",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in",
+"structured"
+]
+},
+{
+"id": "evt-10003690-2026-10-15",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"talk",
+"drop_in"
+]
+},
+{
+"id": "evt-10003691-2026-10-22",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"talk",
+"drop_in"
+]
+},
+{
+"id": "evt-10003692-2026-10-29",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"talk",
+"drop_in"
+]
+},
+{
+"id": "evt-10003706-2026-10-15",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003707-2026-10-22",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003708-2026-10-29",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003709-2026-11-05",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003710-2026-11-12",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003711-2026-11-19",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003712-2026-11-26",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003713-2026-12-03",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003714-2026-12-10",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"volunteering",
+"active",
+"sports"
+]
+},
+{
+"id": "evt-10003723-2026-10-30",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk",
+"support_group",
+"workshop"
+]
+},
+{
+"id": "evt-10003728-2027-04-30",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk",
+"support_group",
+"workshop"
+]
+},
+{
+"id": "evt-10003731-2027-01-29",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"workshop"
+]
+},
+{
+"id": "evt-10003732-2027-02-26",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"workshop"
+]
+},
+{
+"id": "evt-10003733-2027-03-26",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"workshop"
+]
+},
+{
+"id": "evt-4088-2026-10-22",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"workshop",
+"arts"
+]
+},
+{
+"id": "evt-4097-2026-12-03",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"workshop",
+"arts"
+]
+},
+{
+"id": "evt-4342-2026-11-02",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food",
+"mixer"
+]
+},
+{
+"id": "evt-4344-2026-11-05",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk",
+"workshop"
+]
+},
+{
+"id": "evt-4348-2026-10-15",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"nature",
+"workshop",
+"arts"
+]
+},
+{
+"id": "evt-4359-2026-10-22",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk",
+"workshop",
+"online"
+]
+},
+{
+"id": "evt-4361-2026-11-19",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk",
+"workshop",
+"online"
+]
+},
+{
+"id": "evt-4399-2026-11-13",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"workshop",
+"arts"
+]
+},
+{
+"id": "evt-4426-2026-10-20",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"workshop"
+]
+},
+{
+"id": "evt-4428-2026-11-03",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"workshop"
+]
+},
+{
+"id": "evt-4430-2026-11-17",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"workshop"
+]
+},
+{
+"id": "evt-4457-2026-10-13",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food",
+"arts"
+]
+},
+{
+"id": "evt-4463-2026-10-29",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"food"
+]
+},
+{
+"id": "evt-4483-2026-11-20",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"workshop"
+]
+},
+{
+"id": "evt-4485-2026-12-18",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"workshop"
+]
+},
+{
+"id": "place-libcal-alexander-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-art-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-carr-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-chang-science-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-dana-library-newark",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-douglass-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-kilmer-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-library-of-science-and-medicine-lsm",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-math-physics-library",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "place-libcal-robeson-library-camden",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-cmd-001",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"health_service",
+"counseling"
+]
+},
+{
+"id": "res-cmd-002",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"online",
+"counseling"
+]
+},
+{
+"id": "res-cmd-003",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"online"
+]
+},
+{
+"id": "res-cmd-004",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-imleagues-field-sports-basketball-court-1-college-ave-gym",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-basketball-court-1-cook-rec-center",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-basketball-court-2-college-ave-gym",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-basketball-court-2-cook-rec-center",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-livingston-rec-center",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-university-park-fields-busch",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-volleyball-court-1-werblin-rec-center",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-field-sports-volleyball-court-2-werblin-rec-center",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-imleagues-pickleball-livingston-rec-center",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"games",
+"structured"
+]
+},
+{
+"id": "res-nb-001",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in"
+]
+},
+{
+"id": "res-nb-002",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in"
+]
+},
+{
+"id": "res-nb-003",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in"
+]
+},
+{
+"id": "res-nb-004",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"drop_in"
+]
+},
+{
+"id": "res-nb-005",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports",
+"drop_in"
+]
+},
+{
+"id": "res-nb-006",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"health_service"
+]
+},
+{
+"id": "res-nb-007",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"health_service"
+]
+},
+{
+"id": "res-nb-008",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"health_service",
+"counseling"
+]
+},
+{
+"id": "res-nb-009",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"health_service",
+"counseling"
+]
+},
+{
+"id": "res-nb-010",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-011",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-012",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-013",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-014",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-015",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-016",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-017",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-018",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-019",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"food"
+]
+},
+{
+"id": "res-nb-020",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"drop_in"
+]
+},
+{
+"id": "res-nb-021",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk",
+"workshop",
+"health_service"
+]
+},
+{
+"id": "res-nb-022",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"counseling"
+]
+},
+{
+"id": "res-nb-023",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"tutoring"
+]
+},
+{
+"id": "res-nb-024",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"tutoring"
+]
+},
+{
+"id": "res-nb-025",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"tutoring"
+]
+},
+{
+"id": "res-nb-026",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"tutoring"
+]
+},
+{
+"id": "res-nb-027",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-028",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-029",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-030",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-031",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-032",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-033",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-034",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"drop_in",
+"counseling"
+]
+},
+{
+"id": "res-nb-035",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"support_group",
+"counseling"
+]
+},
+{
+"id": "res-nb-036",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in"
+]
+},
+{
+"id": "res-nb-037",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"health_service"
+]
+},
+{
+"id": "res-nb-038",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"faith"
+]
+},
+{
+"id": "res-nb-039",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"faith"
+]
+},
+{
+"id": "res-nb-040",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet",
+"faith"
+]
+},
+{
+"id": "res-nb-041",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet",
+"faith"
+]
+},
+{
+"id": "res-nb-042",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"counseling"
+]
+},
+{
+"id": "res-nb-043",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nb-044",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"quiet"
+]
+},
+{
+"id": "res-nb-045",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"quiet"
+]
+},
+{
+"id": "res-nb-046",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"nature",
+"structured"
+]
+},
+{
+"id": "res-nb-047",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"nature",
+"quiet"
+]
+},
+{
+"id": "res-nb-048",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"nature",
+"drop_in"
+]
+},
+{
+"id": "res-nb-049",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"active",
+"nature",
+"drop_in"
+]
+},
+{
+"id": "res-nb-050",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"arts",
+"quiet"
+]
+},
+{
+"id": "res-nb-051",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"quiet"
+]
+},
+{
+"id": "res-nwk-001",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"workshop",
+"support_group",
+"online",
+"counseling"
+]
+},
+{
+"id": "res-nwk-002",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"drop_in",
+"online",
+"food"
+]
+},
+{
+"id": "ss-getinvolved-00a5885f-46d",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-getinvolved-05ecd95c-8c0",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-10f2d6a0-788",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-2ee59452-d34",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-56b845c8-ccf",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-5f901fd0-05d",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-605666ba-bd5",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-647be4c5-c10",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-65c3be0c-1d5",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk",
+"arts",
+"counseling"
+]
+},
+{
+"id": "ss-getinvolved-6e33f1ca-055",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-78721f3b-40b",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk",
+"support_group",
+"arts"
+]
+},
+{
+"id": "ss-getinvolved-7e3abd8d-030",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-833f478f-58e",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-87303454-b39",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-8af96f2d-aaa",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-97a5069a-c8c",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk",
+"workshop"
+]
+},
+{
+"id": "ss-getinvolved-97af94b5-bfd",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-9efb9f46-0c1",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk",
+"workshop"
+]
+},
+{
+"id": "ss-getinvolved-a2abf705-38e",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-acf6e409-7ef",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-getinvolved-b1313e19-b97",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-getinvolved-b1e4c22d-db1",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-getinvolved-b2f3377f-60d",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith"
+]
+},
+{
+"id": "ss-getinvolved-b459e5b0-fef",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-getinvolved-c2395785-377",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"arts",
+"counseling"
+]
+},
+{
+"id": "ss-getinvolved-c394e2a8-b40",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-d3377844-83e",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-d392d222-a13",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"faith",
+"structured"
+]
+},
+{
+"id": "ss-getinvolved-f98e6516-764",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"faith",
+"mixer"
+]
+},
+{
+"id": "ss-getinvolved-ff2f3076-aed",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk",
+"arts",
+"counseling"
+]
+},
+{
+"id": "ss-newbrunswick-480e3345-f28",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-newbrunswick-846f4c2c-d05",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"talk"
+]
+},
+{
+"id": "ss-newbrunswick-ed7e996b-758",
+"social_level": 3,
+"solo_friendly": true,
+"formats": [
+"arts",
+"mixer"
+]
+},
+{
+"id": "ss-recreation-018dcc88-945",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports"
+]
+},
+{
+"id": "ss-recreation-0f63f897-85e",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"workshop"
+]
+},
+{
+"id": "ss-recreation-24c5f258-eb8",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"workshop"
+]
+},
+{
+"id": "ss-recreation-a191afa9-573",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"workshop"
+]
+},
+{
+"id": "ss-recreation-ca9f1f19-2e4",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports"
+]
+},
+{
+"id": "ss-recreation-f3f1ccea-332",
+"social_level": 2,
+"solo_friendly": true,
+"formats": [
+"active",
+"sports"
+]
+},
+{
+"id": "study-001",
+"social_level": 1,
+"solo_friendly": true,
+"formats": [
+"health_service"
+]
+}
+]
+}
