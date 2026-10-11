@@ -2,6 +2,17 @@
 
 Frontend: read this before each pull. Additive changes only after v1 unless flagged **BREAKING**.
 
+## v1.1.0 (2026-10-10, Sat night): additive only
+
+- **Live data behind every route** (fixtures remain the automatic fallback; header `X-Compass-Fallback`).
+- `POST /ask {question}` → `{kind: "answer"|"redirect", text, items[], source}` or `{kind: "crisis", ...}`. Questions about Rutgers resources/events only; medication/diagnosis questions get a redirect to people.
+- `POST /staff/ask {question}` (staff token) → `{ok, message, sql, columns, rows}`. Show `sql` to the user. Read-only, groups under 10 never included.
+- `POST /v1/chat/completions` (OpenAI-compatible, `stream: true` supported) for ElevenLabs custom LLM. Put a student demo token in the custom LLM's API key field.
+- `GET /me/next`: `pick.source` now carries real attribution (e.g. "ScarletWell Wellness Calendar", "via Scarlet Sync (student project)", "Compass research (verified)") and `verified_on`.
+- `GET /pulse`: challenges include the student's residence-hall challenge (Jordan: Livingston halls).
+- `FollowupResponse.learned[]` lists what Compass just learned (link these to the "What Compass knows" screen).
+- `POST /demo/reset` takes ~2 s on AWS and re-warms AI wording in the background (~1 min).
+
 ## v1.0.0 (2026-10-10, Sat evening)
 
 First published contract. `contract/openapi.json` is generated from the code (`python -m scripts.export_openapi`).

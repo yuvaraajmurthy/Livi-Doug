@@ -25,7 +25,7 @@ sm = boto3.client("secretsmanager", region_name=REGION)
 
 
 def sh(cmd: list[str], cwd: Path = INFRA) -> None:
-    print("$", " ".join(cmd), flush=True)
+    print("$", " ".join("origin_secret=***" if c.startswith("origin_secret=") else c for c in cmd), flush=True)
     env = {**os.environ, "CDK_DEFAULT_ACCOUNT": boto3.client("sts").get_caller_identity()["Account"]}
     venv_scripts = str(Path(sys.executable).parent)
     env["PATH"] = venv_scripts + os.pathsep + env["PATH"]
