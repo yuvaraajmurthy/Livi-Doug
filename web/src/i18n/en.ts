@@ -61,6 +61,8 @@ export const en = {
   "today.growing": "Growing: {area}",
   "today.change": "Change",
   "today.yourStep": "Your next step",
+  "today.title": "One step that fits your week",
+  "today.titleCare": "Let's start with a person",
   "today.imIn": "I'm in",
   "today.notForMe": "Not for me",
   "today.why": "Why this fits",

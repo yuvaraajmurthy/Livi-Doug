@@ -62,6 +62,8 @@ export const es: Record<Key, string> = {
   "today.growing": "Creciendo: {area}",
   "today.change": "Cambiar",
   "today.yourStep": "Tu próximo paso",
+  "today.title": "Un paso que cabe en tu semana",
+  "today.titleCare": "Empecemos con una persona",
   "today.imIn": "Me apunto",
   "today.notForMe": "No es para mí",
   "today.why": "Por qué te conviene",
