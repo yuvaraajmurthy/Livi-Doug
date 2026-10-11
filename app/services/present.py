@@ -4,6 +4,8 @@ from datetime import datetime
 
 from psycopg.types.json import Jsonb
 
+from app import trace
+from app.trace import _TRACE
 from app.engine.rank import DAY_NAMES, cfg
 from app.engine.types import RankResult, Scored, StudentCtx
 from app.llm import wording
@@ -77,6 +79,7 @@ def why_facts(s: Scored, ctx: StudentCtx) -> dict:
         "barriers_hit": barriers_hit,
         "rung_label": cfg()["rung_labels"].get(it.rung or 1),
         "root_cause": s.component_text.get("dimension", "").startswith("root_cause"),
+        "helps_with": helps_with(s.component_text.get("dimension", ""), ctx.language),
         "online": it.campus == "online",
         "venue": it.venue,
         "summary": (it.summary or "")[:200] or None,
@@ -110,6 +113,8 @@ def to_item(s: Scored, lang: str) -> Item:
 def suggestion(conn, s: Scored, rec_id: int, ctx: StudentCtx, pushed: bool) -> Suggestion:
     lang = ctx.language
     why, src = wording.get(conn, "why", why_facts(s, ctx), lang)
+    if not trace_has("wording"):  # the hero card is first; its wording source is the one worth showing
+        trace.note(wording="ai" if src == "ai" else "template")
     it = s.item
     rung = it.rung or 1
     labels = cfg()["rung_labels_es" if lang == "es" else "rung_labels"]
@@ -153,3 +158,23 @@ def persist_set(conn, ctx: StudentCtx, result: RankResult, now: datetime, pushed
 
 
 DAY_NAMES = DAY_NAMES
+
+
+def trace_has(key: str) -> bool:
+    d = _TRACE.get()
+    return bool(d and key in d)
+
+
+# What a root-cause step helps with, in plain non-clinical words (the judge's sleep -> coursework -> tutoring example).
+HELPS_WITH = {
+    "academic_workload": ("the coursework that's been eating into your nights", "las tareas que te están quitando las noches"),
+    "money": ("the money pressure you mentioned", "la presión de dinero que mencionaste"),
+    "loneliness": ("not knowing anyone yet", "no conocer a nadie todavía"),
+}
+
+
+def helps_with(dimension_text: str, lang: str) -> str | None:
+    if not dimension_text.startswith("root_cause:"):
+        return None
+    en, es = HELPS_WITH.get(dimension_text.split(":", 1)[1], ("what you said gets in the way", "lo que dijiste que te frena"))
+    return es if lang == "es" else en

@@ -7,6 +7,10 @@ Frontend: read this before each pull. Additive changes only after v1 unless flag
 - `POST /demo/session {persona, sandbox: true}` gives the session a private copy of the persona (`student_id` like
   `DEMO-ANDRE~sb…`). Use it for table-mode tours so concurrent judges never share state. Staff aggregates exclude
   sandbox students; `/demo/reset` deletes them; they also expire after 6 hours.
+- Header `X-Compass-Trace` (exposed via CORS) on student routes: `key=value;...`, numbers and enum words only.
+  Keys: `safety` (`lexicon`|`classifier`|`fallback`), `safety_label`, `safety_ms`, `candidates` (items considered),
+  `passed` (after hard filters), `rank_ms`, `wording` (`ai`|`template`, for the hero card). Use it for "under the hood"
+  evidence; never required for the UI to work.
 
 ## v1.1.0 (2026-10-10, Sat night): additive only
 

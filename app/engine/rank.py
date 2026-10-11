@@ -8,9 +8,11 @@ import random
 import re
 from datetime import datetime, time, timedelta
 from functools import lru_cache
+from time import perf_counter
 
 import yaml
 
+from app import trace
 from app.engine.types import HelpedStats, KbItem, MemoryFact, RankResult, Scored, StudentCtx, Window
 from app.services.meta import barriers_config
 from config.settings import CONFIG_DIR
@@ -319,7 +321,9 @@ def _fallbacks(ctx: StudentCtx, items: list[KbItem], now: datetime) -> list[Scor
 
 def rank(ctx: StudentCtx, items: list[KbItem], stats: HelpedStats, memory: list[MemoryFact], now: datetime,
          n: int = 3, explore: bool | None = None) -> RankResult:
+    t0 = perf_counter()
     scored = [s for s in (score_item(ctx, it, stats, memory, now) for it in items) if s is not None]
+    passed = len(scored)
     explore = cfg()["explore"] if explore is None else explore
     if explore:
         seed = int(hashlib.sha256(f"{ctx.id}:{now.isocalendar()[1]}".encode()).hexdigest()[:8], 16)
@@ -338,4 +342,5 @@ def rank(ctx: StudentCtx, items: list[KbItem], stats: HelpedStats, memory: list[
     picks = diverse_top(scored, n)
     if len(picks) < n:
         picks += _fallbacks(ctx, items, now)[: n - len(picks)]
+    trace.note(candidates=len(items), passed=passed, rank_ms=(perf_counter() - t0) * 1000)
     return RankResult(care_first=ctx.care_first, picks=picks, considered=len(items), engine_version=cfg()["version"])

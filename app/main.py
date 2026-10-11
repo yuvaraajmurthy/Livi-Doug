@@ -4,6 +4,8 @@ import logging
 import sys
 import time
 import uuid
+
+from app import trace
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Request
@@ -67,7 +69,7 @@ def create_app() -> FastAPI:
     origins = [o.strip() for o in s.cors_origins.split(",")] if s.cors_origins != "*" else ["*"]
     app.add_middleware(
         CORSMiddleware, allow_origins=origins, allow_credentials=False,
-        allow_methods=["*"], allow_headers=["*"], expose_headers=["X-Compass-Fallback", "X-Request-Id"],
+        allow_methods=["*"], allow_headers=["*"], expose_headers=["X-Compass-Fallback", "X-Request-Id", "X-Compass-Trace"],
     )
 
     access = logging.getLogger("compass.access")
@@ -76,9 +78,12 @@ def create_app() -> FastAPI:
     async def request_log(request: Request, call_next):
         rid = request.headers.get("x-request-id") or uuid.uuid4().hex[:12]
         t = time.perf_counter()
+        tr = trace.begin()
         response = await call_next(request)
         ms = round((time.perf_counter() - t) * 1000, 1)
         response.headers["X-Request-Id"] = rid
+        if tr:
+            response.headers["X-Compass-Trace"] = trace.header(tr)
         route = request.scope.get("route")
         access.info("request", extra={
             "request_id": rid, "method": request.method, "route": getattr(route, "path", request.url.path),

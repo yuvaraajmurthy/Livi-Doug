@@ -1,8 +1,10 @@
 """The one entry point for free text. Order: lexicon -> classifier -> fail-safe. Text is never stored or logged."""
+import time
 import logging
 from dataclasses import dataclass
 from typing import Literal
 
+from app import trace
 from app.safety import classifier
 from app.safety.lexicon import scan
 
@@ -28,6 +30,14 @@ def _trivial(text: str) -> bool:
 
 
 def check_text(text: str | None, use_classifier: bool = True) -> SafetyVerdict:
+    t0 = time.perf_counter()
+    v = _check(text, use_classifier)
+    if v.stage != "empty":
+        trace.note(safety=v.stage, safety_label=v.label, safety_ms=(time.perf_counter() - t0) * 1000)
+    return v
+
+
+def _check(text: str | None, use_classifier: bool) -> SafetyVerdict:
     if not text or not text.strip():
         return SafetyVerdict("none", "empty")
     hit = scan(text)

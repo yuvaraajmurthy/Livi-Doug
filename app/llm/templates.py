@@ -28,7 +28,12 @@ def why(f: dict, lang: str = "en") -> str:
     """f: title, window_label, walk_min, cost, barriers_hit, rung, root_cause, kind, online."""
     es = lang == "es"
     bits = []
-    if f.get("root_cause"):
+    if f.get("helps_with"):
+        bits.append(f"es ayuda gratuita con {f['helps_with']}" if es and f.get("cost") == "free"
+                    else f"es ayuda con {f['helps_with']}" if es
+                    else f"it's free help with {f['helps_with']}" if f.get("cost") == "free"
+                    else f"it's help with {f['helps_with']}")
+    elif f.get("root_cause"):
         bits.append("ataca lo que te está quitando el sueño" if es else "it goes after what's cutting into your sleep")
     if f.get("window_label"):
         bits.append("cabe en tu horario libre" if es else f.get("window_label")[0].lower() + f.get("window_label")[1:])
@@ -36,7 +41,7 @@ def why(f: dict, lang: str = "en") -> str:
         bits.append(f"queda a {f['walk_min']} minutos a pie" if es else f"it's a {f['walk_min']}-minute walk")
     if f.get("online"):
         bits.append("es en línea" if es else "it's online")
-    if f.get("cost") == "free" and "money" not in (f.get("barriers_hit") or []):
+    if f.get("cost") == "free" and "money" not in (f.get("barriers_hit") or []) and not f.get("helps_with"):
         bits.append("es gratis" if es else "it's free")
     for b in (f.get("barriers_hit") or [])[:2]:
         p = BARRIER_PHRASE["es" if es else "en"].get(b)
