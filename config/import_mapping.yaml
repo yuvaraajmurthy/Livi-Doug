@@ -1,0 +1,22 @@
+# How a ScarletWell export maps into Compass. Edit this file, not code, when the real export arrives.
+# Wide CSV: one row per inventory take. Either give dimension columns directly, or item columns grouped by dimension
+# (each dimension score = mean of its items). Scale is the placeholder 1.00-4.00 from config/scoring.yaml.
+format: wide
+columns:
+  student_id: student_id          # de-identified id; hashed again on import with the salt below
+  taken_on: taken_on              # ISO date or M/D/YYYY
+  campus: campus                  # optional; used only when the student is new
+dimensions:                       # dimension -> column (wide format with dimension scores)
+  emotional: emotional
+  environmental: environmental
+  financial: financial
+  intellectual: intellectual
+  occupational: occupational
+  physical: physical
+  social: social
+  spiritual: spiritual
+items: {}                         # alternative: dimension -> [item columns], e.g. {social: [q7, q8], ...}
+item_scale: {min: 1, max: 4}      # rescaled to 1-4 if the items use a different scale
+campus_values: {NB: new_brunswick, "New Brunswick": new_brunswick, NWK: newark, Newark: newark, CAM: camden, Camden: camden}
+hash_ids: false                   # true for a real export: student ids are salted + hashed before storage
+source: scarletwell_export
