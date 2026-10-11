@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { Entry } from "../features/entry/Entry";
 import { FocusFlow } from "../features/focus/FocusFlow";
@@ -13,6 +14,8 @@ import { CardPage } from "../features/card/CardPage";
 import { RequireStudent } from "./RequireStudent";
 import { LiveRegion, ToastHost } from "../ui/Toast";
 import { Shell } from "./Shell";
+
+const StaffApp = lazy(() => import("../features/staff/StaffApp").then(m => ({ default: m.StaffApp })));
 
 export function AppRouter() {
   return (
@@ -31,6 +34,7 @@ export function AppRouter() {
           <Route path="/inbox" element={<Inbox />} />
           <Route path="/followup/:id" element={<Followup />} />
         </Route>
+        <Route path="/staff/*" element={<Suspense fallback={null}><StaffApp /></Suspense>} />
         <Route path="*" element={<Entry />} />
       </Routes>
       <ToastHost />
