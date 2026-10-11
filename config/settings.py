@@ -36,8 +36,15 @@ class Settings(BaseSettings):
     model_embed: str = "us.cohere.embed-v4:0"
     model_voice: str = "amazon.nova-2-5-sonic"
     voice_name: str = "tiffany"
-    guardrail_id: str | None = None
+    guardrail_id: str | None = None          # old native guardrail: only used by app/llm/bedrock.py converse()
     guardrail_version: str = "DRAFT"
+    # Chat + voice assistant (ported from voice_bot.py): guardrail-as-prompt, knowledge base, email Lambda.
+    # Default boto3 credential chain; these resources live in assistant_region.
+    assistant_region: str = "us-east-1"
+    bedrock_guardrail_id: str = "7a6u58w100yu"
+    bedrock_guardrail_version: str = "DRAFT"
+    bedrock_knowledge_base_id: str = "DQTTJ5HDWT"
+    send_text_lambda_arn: str = "arn:aws:lambda:us-east-1:204762614174:function:sendText"
     inline_timeout_s: float = 1.2
     wording_timeout_s: float = 25.0
     force_templates: bool = False

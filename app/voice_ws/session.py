@@ -32,7 +32,8 @@ def make_agent(system_prompt: str, tools: list) -> Any:
     from strands.bidi.agent import BidiAgent
     from strands.bidi.models import BedrockNovaSonicModel
     s = get_settings()
-    model = BedrockNovaSonicModel(model_id=s.model_voice, region=s.aws_region, voice=s.voice_name,
+    # amazon.nova-2-5-sonic in assistant_region (us-east-1), as in voice_bot.py; guardrail rules are in system_prompt
+    model = BedrockNovaSonicModel(model_id=s.model_voice, region=s.assistant_region, voice=s.voice_name,
                                   audio={"input": {"sample_rate": 16000}, "output": {"sample_rate": 24000}})
     return BidiAgent(model=model, system_prompt=system_prompt, tools=tools)
 

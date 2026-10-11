@@ -9,7 +9,7 @@ from datetime import datetime
 from strands import tool
 
 from app.auth import SessionCtx
-from app.chat import catalog, memory
+from app.chat import assist_aws, catalog, memory
 from app.chat.prompt import PromptBundle
 from app.db import conn
 from app.repo import kb
@@ -36,6 +36,8 @@ STATUS = {
     "forget": "Forgetting that…",
     "recall": "Checking what I remember…",
     "show_support": "Finding someone to talk to…",
+    "search_knowledge_base": "Checking Rutgers info…",
+    "send_email_notification": "Sending the email…",
 }
 STATUS_ES = {
     "show_events": "Eligiendo algunas opciones…",
@@ -46,6 +48,8 @@ STATUS_ES = {
     "forget": "Olvidando eso…",
     "recall": "Revisando lo que recuerdo…",
     "show_support": "Buscando con quién hablar…",
+    "search_knowledge_base": "Consultando información de Rutgers…",
+    "send_email_notification": "Enviando el correo…",
 }
 
 
@@ -109,20 +113,56 @@ def make_tools(tc: ToolContext) -> list:
 
     @tool
     def set_reminder(event_id: str) -> str:
-        """Make a plan and set a reminder for one event. Only call when the student clearly says yes to it.
+        """Save one event to the student's plan and set a reminder for it. Call this whenever the student says yes to
+        one specific event, or asks to be reminded about it, or to add, schedule, plan or save it. Never tell the
+        student it is saved or that you will remind them unless this tool says it was saved.
 
         Args:
-            event_id: The event the student chose.
+            event_id: The id of the event the student chose (from the catalog, search_events or events you showed).
         """
+        import logging
+
+        from fastapi import HTTPException
+
+        from app import clock
         from app.services.items import remind
-        if event_id not in (tc.bundle.catalog_ids | tc.found):
-            return "Unknown event id."
-        r = remind(tc.ctx, event_id, via="chat")
+        failed = "Not saved because of an error. Tell the student it didn't go through and that they can tap the event and use Remind me."
+        eid = (event_id or "").strip()
+        if eid not in (tc.bundle.catalog_ids | tc.found):
+            # An id from an earlier turn's search (tc.found is per turn in chat) or a title instead of an id: accept it
+            # only if it resolves to a real item. Nothing is ever invented.
+            with conn() as c:
+                exists = bool(eid) and bool(kb.load_items(c, tc.bundle.campus, tc.now, ids=[eid]))
+            if not exists:
+                low = eid.lower().replace(" (sample)", "")
+                hits = [i for i, it in tc.bundle.items.items() if low and it.title.lower().replace(" (sample)", "") == low]
+                if len(hits) != 1:
+                    return "Unknown event id, nothing was saved. Use the id from the catalog or search_events."
+                eid = hits[0]
+        try:
+            r = remind(tc.ctx, eid, via="chat")
+        except HTTPException as e:
+            code = e.detail.get("error") if isinstance(e.detail, dict) else None
+            if code == "already_started":
+                return "Not saved: that event has already started. Tell the student and offer another time or event."
+            if code == "not_found":
+                return "Unknown event id, nothing was saved. Use the id from the catalog or search_events."
+            return failed
+        except Exception:
+            logging.getLogger("compass.chat").exception("set_reminder failed")
+            return failed
         payload = r.model_dump(mode="json")
         if payload.get("kind") == "crisis":
             return "Could not set a reminder."
         tc.emit({"type": "plan", "plan": payload})
-        return f"Reminder set. Plan: {payload.get('plan_text')} Reminder at {payload.get('reminder_at')}."
+        what = f"{(payload.get('item') or {}).get('title', '').replace(' (sample)', '')} ({payload.get('when_label')})"
+        if payload.get("reminder_at"):
+            at = clock.to_ny(datetime.fromisoformat(payload["reminder_at"]))
+            at_label = f"{at:%a %b} {at.day} at {at.hour % 12 or 12}:{at.minute:02d} {'AM' if at.hour < 12 else 'PM'}"
+            return (f"Saved to the student's plan and reminder set: {what}. The reminder goes out {at_label}. "
+                    f"Plan: {payload.get('plan_text')}")
+        return (f"Saved to the student's plan: {what}. No timed reminder (it has no fixed start time, or it starts too "
+                f"soon); Compass will check in with them afterwards. Plan: {payload.get('plan_text')}")
 
     @tool
     def remember(fact: str, kind: str = "interest") -> str:
@@ -171,4 +211,25 @@ def make_tools(tc: ToolContext) -> list:
         tc.emit({"type": "support", "card": card.model_dump(mode="json")})
         return "Support options shown: " + ", ".join(o.name for o in card.options)
 
-    return [show_events, get_event, search_events, set_reminder, remember, forget, recall, show_support]
+    # voice_bot.py tools (same names, docstrings and behaviour); implementations in assist_aws
+    @tool
+    def search_knowledge_base(query: str) -> str:
+        """Search the Rutgers knowledge base for official university information, room availability, and library spaces.
+
+        Args:
+            query: The topic, question, or location to look up in the knowledge base.
+        """
+        return assist_aws.search_knowledge_base(query)
+
+    @tool
+    def send_email_notification(subject: str, message: str) -> str:
+        """Send an email notification with a subject and message when the user asks to send details to their email.
+
+        Args:
+            subject: The subject title of the email.
+            message: The detailed body text or information to email to the user.
+        """
+        return assist_aws.send_email_notification(subject, message)
+
+    return [show_events, get_event, search_events, set_reminder, remember, forget, recall, show_support,
+            search_knowledge_base, send_email_notification]

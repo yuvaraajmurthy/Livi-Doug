@@ -10,11 +10,10 @@ import {
   Tag,
   UsersThree,
 } from "@phosphor-icons/react";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { lazy, Suspense } from "react";
 import { Link } from "react-router";
 import { api } from "../../api/client";
-import { signal } from "../../api/inspector";
 import { useLang, useT } from "../../i18n/useT";
 import type { Key } from "../../i18n/en";
 import { timeLabel } from "../../lib/format";
@@ -22,7 +21,7 @@ import { SourceBadge } from "../../ui/Badge";
 import { Button } from "../../ui/Button";
 import { Sheet } from "../../ui/Sheet";
 import { ErrorState, Skeleton } from "../../ui/States";
-import { plans } from "../plan/plans";
+import { applyPlan } from "../plan/applyPlan";
 import { cleanTitle } from "../today/StepCard";
 
 const EventMap = lazy(() => import("./EventMap").then(m => ({ default: m.EventMap })));
@@ -31,14 +30,11 @@ const EventMap = lazy(() => import("./EventMap").then(m => ({ default: m.EventMa
 export function EventSheet({ eventId, onClose }: { eventId: string | null; onClose: () => void }) {
   const t = useT();
   const lang = useLang();
+  const qc = useQueryClient();
   const q = useQuery({ queryKey: ["item", eventId], queryFn: () => api.item(eventId!), enabled: !!eventId });
   const remind = useMutation({
     mutationFn: () => api.remind(eventId!),
-    onSuccess: c => {
-      plans.add(c);
-      signal("commitment:created", c);
-      signal("reminder:set");
-    },
+    onSuccess: c => applyPlan(qc, c),
   });
   const d = q.data;
   const place = d ? [d.venue, d.address].filter(Boolean).join(", ") : "";

@@ -8,11 +8,11 @@ import { MapPage } from "../../src/features/map/MapPage";
 import { YouPage } from "../../src/features/you/YouPage";
 import { language } from "../../src/i18n/useT";
 
-describe("Map", () => {
+describe("Wellness", () => {
   beforeEach(() => setupPersona("andre"));
 
   it("leads with strengths and names the inventory date", async () => {
-    renderAt(<MapPage />, "/map");
+    renderAt(<MapPage />, "/wellness");
     expect(await screen.findByText("From the inventory on Sep 14")).toBeInTheDocument();
     const rows = screen.getAllByTestId("dim-row").map(r => r.getAttribute("data-dimension"));
     expect(rows[0]).toBe("spiritual");
@@ -28,7 +28,7 @@ describe("Map", () => {
       d.dimension === "social" ? { ...d, score: 2.4, band: "middle", change: 0.5 } : d,
     );
     server.use(http.get(`${API}/me/map`, () => HttpResponse.json(m)));
-    renderAt(<MapPage />, "/map");
+    renderAt(<MapPage />, "/wellness");
     const social = (await screen.findAllByTestId("dim-row")).find(r => r.getAttribute("data-dimension") === "social")!;
     expect(within(social).getByText("2.4")).toBeInTheDocument();
     expect(within(social).getByText(/0\.5 since Sep 14/)).toBeInTheDocument();
@@ -36,9 +36,9 @@ describe("Map", () => {
 
   it("switches the chrome to Spanish for Sofia", async () => {
     setupPersona("sofia");
-    renderAt(<MapPage />, "/map");
+    renderAt(<MapPage />, "/wellness");
     await waitFor(() => expect(language.get()).toBe("es"));
-    expect(await screen.findByRole("heading", { name: "Tu mapa de bienestar" })).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: "Tu bienestar" })).toBeInTheDocument();
   });
 });
 

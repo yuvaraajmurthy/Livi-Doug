@@ -6,7 +6,7 @@ test("chat: ask → event buttons → card with map → remind me", async ({ pag
   test.setTimeout(180_000);
   await page.goto("/");
   await page.getByRole("button", { name: /Andre/ }).click();
-  await page.waitForURL(/\/(focus|next)/);
+  await page.waitForURL(/\/next/);
   await page.goto("/chat");
   await expect(page.getByText(/Hi Andre/)).toBeVisible({ timeout: 20_000 });
   await page.waitForTimeout(500);

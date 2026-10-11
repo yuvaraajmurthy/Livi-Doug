@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { api } from "../../api/client";
 import { language } from "../../i18n/useT";
 
-/** The student's map; also keeps the UI language in step with the student's profile (Sofia reads Spanish). */
+/** The student's wellness scores (GET /me/map, shown on the Wellness tab); also keeps the UI language in step with the student's profile (Sofia reads Spanish). */
 export function useMap(enabled = true) {
   const q = useQuery({ queryKey: ["map"], queryFn: api.map, enabled });
   const l = q.data?.student.language;

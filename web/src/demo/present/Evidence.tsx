@@ -98,12 +98,12 @@ export function Evidence({ kind, ev }: { kind?: ProofKind; ev: Ev }) {
     }
     case "chat": {
       const c = last(ev.calls, /^\/chat/);
-      return <Chips items={["Every real event, in context", "Buttons, not lists", c ? `${(c.ms / 1000).toFixed(1)} s` : "Strands + Haiku"]} />;
+      return <Chips items={["Every real event, in context", "Guardrail + Knowledge Base", c ? `${(c.ms / 1000).toFixed(1)} s` : "Strands + Haiku"]} />;
     }
     case "card":
       return <Chips items={["Live listing", "Map", "Directions"]} />;
     case "reminder":
-      return <Chips items={["Plan", "Reminder", "Follow-up"]} accent={1} />;
+      return <Chips items={["Plan", "Reminder", "Email on request"]} accent={1} />;
     case "care":
       return <Chips items={["CAPS", "Teletherapy", "Peers"]} />;
     case "safety": {

@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes, useNavigate, useParams } from "react-router";
 import { Entry } from "../features/entry/Entry";
+import { AutoSignIn } from "../features/entry/AutoSignIn";
 import { FocusFlow } from "../features/focus/FocusFlow";
 import { Today } from "../features/today/Today";
 import { PlanView } from "../features/plan/PlanView";
@@ -46,6 +47,7 @@ export function AppRouter() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Entry />} />
+        <Route path="/as/:persona" element={<AutoSignIn />} />
         <Route path="/i/:token" element={<InvitePage />} />
         <Route path="/tour" element={<TourHome />} />
         <Route path="/join" element={<Join />} />
@@ -56,7 +58,8 @@ export function AppRouter() {
         <Route element={<Shell />}>
           <Route path="/next" element={<Today />} />
           <Route path="/plan/:id" element={<PlanView />} />
-          <Route path="/map" element={<MapPage />} />
+          <Route path="/wellness" element={<MapPage />} />
+          <Route path="/map" element={<Navigate to="/wellness" replace />} />
           <Route path="/chat" element={<ChatPage />} />
           <Route path="/campus" element={<Navigate to="/chat" replace />} />
           <Route path="/you" element={<YouPage />} />

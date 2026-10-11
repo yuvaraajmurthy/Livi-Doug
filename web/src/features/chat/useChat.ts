@@ -2,7 +2,7 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { api, type CommitResponse, type CrisisResponse, type SupportCard } from "../../api/client";
 import { signal } from "../../api/inspector";
-import { plans } from "../plan/plans";
+import { applyPlan, hydratePlans } from "../plan/applyPlan";
 import { streamChat } from "./sse";
 import type { ChatMessage, EventChip, UIEvent } from "./types";
 
@@ -45,6 +45,7 @@ export function useChat() {
     loaded.current = true;
     conv.current ??= h.conversation_id;
     const past = h.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at }));
+    hydratePlans(past.flatMap(m => m.blocks as UIEvent[]));
     setMessages(ms => [...past, ...ms]);
   }, []);
 
@@ -95,11 +96,8 @@ export function useChat() {
             } else {
               const block = toBlock(ev);
               if (!block) return;
-              if (block.type === "plan") {
-                plans.add(block.plan);
-                signal("commitment:created", block.plan);
-                signal("reminder:set");
-              }
+              // same end state as the card's "Remind me": local plan list, signals, fresh inbox/map/card
+              if (block.type === "plan") applyPlan(qc, block.plan);
               if (block.type === "events") signal("chat:events", block.items);
               if (block.type === "memory" || block.type === "memory_removed") void qc.invalidateQueries({ queryKey: ["memory"] });
               patch(aid, m => ({ ...m, blocks: [...m.blocks, block], status: null }));
@@ -129,7 +127,9 @@ export function useChat() {
     const r = await api.chatHistory();
     loaded.current = true;
     conv.current = r.conversation_id;
-    setMessages(r.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at })));
+    const msgs = r.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at }));
+    hydratePlans(msgs.flatMap(m => m.blocks as UIEvent[])); // plans made by voice show up even if its frame was missed
+    setMessages(msgs);
   }, []);
 
   return {

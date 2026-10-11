@@ -1,4 +1,4 @@
-import { ChartBar, ChartLine, ChatCircleText, SignOut, SquaresFour } from "@phosphor-icons/react";
+import { ChartBar, ChartLine, SignOut, SquaresFour } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Link, NavLink, Navigate, Route, Routes, useNavigate } from "react-router";
 import type { StaffFilters } from "../../api/client";
@@ -6,7 +6,6 @@ import { useClock } from "../../session/clock";
 import { session, useSession } from "../../session/session";
 import { clockLabel } from "../../lib/format";
 import { LogoMark } from "../../ui/Logo";
-import { AskData } from "./AskData";
 import { Filters } from "./Filters";
 import { Gaps } from "./Gaps";
 import { Overview } from "./Overview";
@@ -16,7 +15,6 @@ const NAV = [
   { to: "/staff", end: true, label: "Overview", Icon: SquaresFour },
   { to: "/staff/gaps", label: "Where supply is thin", Icon: ChartBar },
   { to: "/staff/trends", label: "Trends", Icon: ChartLine },
-  { to: "/staff/ask", label: "Ask the data", Icon: ChatCircleText },
 ];
 
 export function StaffApp() {
@@ -82,7 +80,6 @@ export function StaffApp() {
           <Route index element={<Overview filters={filters} />} />
           <Route path="gaps" element={<Gaps filters={filters} />} />
           <Route path="trends" element={<Trends filters={filters} />} />
-          <Route path="ask" element={<AskData />} />
         </Routes>
       </main>
     </div>

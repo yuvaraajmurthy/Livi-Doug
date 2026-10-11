@@ -40,3 +40,19 @@ class ScriptedModel(Model):
                         yield {"contentBlockDelta": {"delta": {"text": chunk}}}
                 yield {"contentBlockStop": {}}
         yield {"messageStop": {"stopReason": "tool_use" if used_tool else "end_turn"}}
+
+
+class FakeAWSClient:
+    """Stands in for a boto3 client: each operation returns its canned response (or raises it) and is recorded."""
+    def __init__(self, **responses):
+        self.responses = responses
+        self.calls: list[tuple[str, dict]] = []
+
+    def __getattr__(self, op):
+        def call(**kw):
+            self.calls.append((op, kw))
+            r = self.responses[op]
+            if isinstance(r, Exception):
+                raise r
+            return r
+        return call

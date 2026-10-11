@@ -9,6 +9,49 @@ sys.path.insert(0, str(ROOT))
 os.environ.setdefault("ENV", "test")
 
 
+@pytest.fixture(autouse=True)
+def _never_invoke_send_text_lambda(monkeypatch):
+    """The sendText Lambda emails a real person: no test may reach it. Tests that need it patch assist_aws.client."""
+    from app.chat import assist_aws
+    real = assist_aws.client
+
+    def guarded(service, region):
+        if service == "lambda":
+            raise AssertionError("tests must not invoke the real sendText Lambda")
+        return real(service, region)
+    monkeypatch.setattr(assist_aws, "client", guarded)
+
+
+@pytest.fixture
+def fake_aws(monkeypatch):
+    """Route app.chat.assist_aws.client(service, region) to fakes: fake_aws("lambda", invoke={...}) -> FakeAWSClient.
+    fake_aws.regions records (service, region) for every client made."""
+    from app.chat import assist_aws
+    from tests.chat.fakes import FakeAWSClient
+    fakes: dict = {}
+    regions: list = []
+
+    def use(service: str, **responses):
+        fakes[service] = FakeAWSClient(**responses)
+        return fakes[service]
+
+    def client(service, region):
+        regions.append((service, region))
+        return fakes[service]
+    monkeypatch.setattr(assist_aws, "client", client)
+    assist_aws.clear_cache()
+    use.regions = regions
+    yield use
+    assist_aws.clear_cache()
+
+
+@pytest.fixture
+def bedrock_on(monkeypatch):
+    """Let the guardrail fetch run (live_db switches Bedrock off). Pair with fake_aws."""
+    from config.settings import get_settings
+    monkeypatch.setattr(get_settings(), "bedrock_enabled", True)
+
+
 @pytest.fixture
 def fixture_mode_client(monkeypatch):
     from fastapi.testclient import TestClient

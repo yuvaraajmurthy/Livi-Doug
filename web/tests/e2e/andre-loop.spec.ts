@@ -6,21 +6,15 @@ async function openTime(page: Page) {
   await expect(page.getByRole("dialog", { name: "Demo time" })).toBeVisible();
 }
 
-test("Andre: focus → step → plan → reminder → follow-up → next week", async ({ page }) => {
+test("Andre: step → plan → reminder → follow-up → next week", async ({ page }) => {
   test.skip(test.info().project.name !== "phone", "phone only");
   test.setTimeout(240_000);
 
   await page.goto("/");
   await page.getByRole("button", { name: /Andre/ }).click();
-  await page.waitForURL(/\/focus/);
-  await page.getByRole("button", { name: "Choose one area to work on" }).click();
-  await page.getByRole("button", { name: /Social/ }).click();
-  await page.getByRole("button", { name: "Continue" }).click();
-  await page.getByRole("button", { name: /No time between class/ }).click();
-  await page.getByRole("button", { name: /I don't know anyone/ }).click();
-  await page.getByRole("button", { name: "Find my step" }).click();
+  // no questionnaire: straight to Today with his weakest area (Social) as the focus
   await page.waitForURL(/\/next/);
-  await expect(page.getByTestId("step-card")).toContainText("Commuter lunch and board games");
+  await expect(page.getByTestId("step-card")).toContainText("Commuter lunch and board games", { timeout: 20_000 });
 
   await page.getByRole("button", { name: "I'm in" }).click();
   await page.waitForURL(/\/plan\//);

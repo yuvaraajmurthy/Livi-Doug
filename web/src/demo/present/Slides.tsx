@@ -94,6 +94,9 @@ export function useQr(url: string) {
   return src;
 }
 
+/** A phone in the audience can't open a localhost demo, so the QR only shows when the app is on a real host. */
+const PUBLIC_HOST = !/^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
+
 export function Close() {
   const qr = useQr(`${window.location.origin}/tour`);
   return (
@@ -113,10 +116,14 @@ export function Close() {
         </motion.p>
       </div>
       <motion.div {...rise(3)} className="flex flex-col items-center gap-3">
-        {qr ? (
-          <img src={qr} alt="QR code to try Compass on your phone" className="h-[min(260px,32vh)] w-[min(260px,32vh)] rounded-2xl" />
-        ) : null}
-        <p className="text-[clamp(15px,2.2vh,19px)] font-medium">Try it on your phone</p>
+        {qr && PUBLIC_HOST ? (
+          <>
+            <img src={qr} alt="QR code to try Compass on your phone" className="h-[min(260px,32vh)] w-[min(260px,32vh)] rounded-2xl" />
+            <p className="text-[clamp(15px,2.2vh,19px)] font-medium">Try it on your phone</p>
+          </>
+        ) : (
+          <p className="max-w-[16ch] text-center text-[clamp(18px,2.8vh,26px)] font-medium leading-snug">In myRutgers, next to ScarletWell</p>
+        )}
       </motion.div>
     </div>
   );

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MemoryRouter } from "react-router";
 import { useState } from "react";
@@ -56,23 +56,24 @@ describe("Sheet", () => {
     await user.click(trigger);
     const dialog = await screen.findByRole("dialog", { name: "Why this fits" });
     expect(dialog).toBeInTheDocument();
-    expect(dialog.contains(document.activeElement)).toBe(true);
+    // Sheet moves focus in requestAnimationFrame, which can land after the dialog is queryable.
+    await waitFor(() => expect(dialog.contains(document.activeElement)).toBe(true));
     for (let i = 0; i < 5; i++) await user.tab();
     expect(dialog.contains(document.activeElement)).toBe(true);
     await user.keyboard("{Escape}");
-    await vi.waitFor(() => expect(screen.queryByRole("dialog")).not.toBeInTheDocument());
-    expect(trigger).toHaveFocus();
+    await waitFor(() => expect(screen.queryByRole("dialog")).not.toBeInTheDocument());
+    await waitFor(() => expect(trigger).toHaveFocus());
   });
 });
 
 describe("TabBar", () => {
   it("marks the current tab", () => {
     render(
-      <MemoryRouter initialEntries={["/map"]}>
+      <MemoryRouter initialEntries={["/wellness"]}>
         <TabBar />
       </MemoryRouter>,
     );
-    expect(screen.getByRole("link", { name: /Map/ })).toHaveAttribute("aria-current", "page");
+    expect(screen.getByRole("link", { name: /Wellness/ })).toHaveAttribute("aria-current", "page");
     expect(screen.getByRole("link", { name: /Today/ })).not.toHaveAttribute("aria-current");
   });
 });

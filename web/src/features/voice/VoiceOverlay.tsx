@@ -1,11 +1,15 @@
-import { CalendarBlank, CaretRight, Keyboard, Microphone, MicrophoneSlash, PhoneDisconnect } from "@phosphor-icons/react";
+import { CalendarBlank, CalendarCheck, CaretRight, Keyboard, Microphone, MicrophoneSlash, PhoneDisconnect } from "@phosphor-icons/react";
+import { useQueryClient } from "@tanstack/react-query";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import type { CrisisResponse } from "../../api/client";
-import { useT } from "../../i18n/useT";
+import { Link } from "react-router";
+import type { CommitResponse, CrisisResponse } from "../../api/client";
+import { useLang, useT } from "../../i18n/useT";
 import type { Key } from "../../i18n/en";
+import { shortDate, timeLabel } from "../../lib/format";
 import { EventSheet } from "../event/EventSheet";
+import { applyPlan } from "../plan/applyPlan";
 import { CrisisScreen } from "../safety/CrisisScreen";
 import { cleanTitle } from "../today/StepCard";
 import type { EventChip } from "../chat/types";
@@ -35,10 +39,13 @@ export function mergeCaption(cs: Caption[], role: Caption["role"], text: string,
 /** Full-screen voice mode: one breathing orb, one state word, two caption lines, cards when Compass shows events. */
 export function VoiceOverlay({ onClose, conversationId }: { onClose: (typeInstead?: boolean) => void; conversationId?: string | null }) {
   const t = useT();
+  const lang = useLang();
+  const qc = useQueryClient();
   const reduced = useReducedMotion();
   const [state, setState] = useState<VoiceState>("connecting");
   const [captions, setCaptions] = useState<Caption[]>([]);
   const [events, setEvents] = useState<EventChip[]>([]);
+  const [plan, setPlan] = useState<CommitResponse | null>(null);
   const [open, setOpen] = useState<string | null>(null);
   const [muted, setMuted] = useState(false);
   const [problem, setProblem] = useState<string | null>(null);
@@ -63,6 +70,11 @@ export function VoiceOverlay({ onClose, conversationId }: { onClose: (typeInstea
       ui: e => {
         if (!alive) return;
         if (e.type === "events") setEvents(e.items);
+        else if (e.type === "plan") {
+          // set_reminder by voice: same end state as chat and the card's "Remind me"
+          applyPlan(qc, e.plan);
+          setPlan(e.plan);
+        } else if (e.type === "memory" || e.type === "memory_removed") void qc.invalidateQueries({ queryKey: ["memory"] });
       },
       crisis: c => {
         if (!alive) return;
@@ -151,6 +163,24 @@ export function VoiceOverlay({ onClose, conversationId }: { onClose: (typeInstea
           {!problem && !captions.length && state === "listening" ? <p className="text-[17px] text-ink-2">{t("voice.hint")}</p> : null}
         </div>
       </div>
+
+      {plan ? (
+        <Link
+          to={`/plan/${plan.commitment_id}`}
+          onClick={() => onClose()}
+          role="status"
+          data-tour="voice-plan"
+          className="mb-3 flex w-full max-w-[440px] items-center gap-2 rounded-full bg-green-tint px-4 py-2.5 text-[15px] font-medium text-green"
+        >
+          <CalendarCheck size={18} className="shrink-0" aria-hidden />
+          <span className="min-w-0 flex-1 truncate">
+            {plan.reminder_at
+              ? t("chat.reminderSet", { when: `${shortDate(plan.reminder_at, lang)} ${timeLabel(plan.reminder_at, lang)}` })
+              : `${t("event.planned")} · ${plan.when_label}`}
+          </span>
+          <span className="shrink-0 underline underline-offset-2">{t("today.viewPlan")}</span>
+        </Link>
+      ) : null}
 
       <AnimatePresence>
         {events.length ? (

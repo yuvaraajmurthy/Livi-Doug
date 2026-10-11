@@ -25,13 +25,8 @@ const t = (p: Persona, id: string, target: string, coach: string, extra: Partial
 
 export const TOURS: Record<TourName, StoryStep[]> = {
   andre: [
-    start("andre", "Meet Andre: Newark commuter, works afternoons. This is his inventory.", "Strengths first."),
-    t("andre", "cta", "strengths-cta", "Strengths come first. Tap “Choose one area to work on”."),
-    t("andre", "pick", "pick-social", "Social is his growth area. Tap Social."),
-    t("andre", "cont", "pick-continue", "Tap Continue."),
-    t("andre", "barrier", "barrier-dont_know_anyone", "What gets in the way? Tap “I don't know anyone”."),
-    t("andre", "submit", "focus-submit", "Tap “Find my step”.", { waitFor: "next:shown" }),
-    t("andre", "why", "why-open", "One step that fits his Tuesday gap. Tap “Why this fits” to see the ranking."),
+    start("andre", "Meet Andre: Newark commuter, works afternoons. Compass reads the inventory he already took.", "One step."),
+    t("andre", "why", "why-open", "Social is his lowest score. One step that fits his Tuesday gap. Tap “Why this fits” to see the ranking."),
     t("andre", "commit", "im-in", "Close the sheet, then tap “I'm in”.", {
       perform: [{ kind: "key", key: "Escape" }, { kind: "wait", ms: 400 }, { kind: "tap", target: "im-in" }],
       waitFor: "commitment:created",
@@ -60,15 +55,12 @@ export const TOURS: Record<TourName, StoryStep[]> = {
     t("andre", "send", "followup-send", "Tap Send and see what Compass learned.", { waitFor: "followup:submitted" }),
   ],
   priya: [
-    start("priya", "Meet Priya: sleep is her lowest score. Let's ask why.", "Ask why."),
-    t("priya", "cta", "strengths-cta", "Tap “Choose one area to work on”."),
-    t("priya", "pick", "pick-physical", "Tap Physical (that's where sleep lives)."),
-    t("priya", "cont", "pick-continue", "Tap Continue."),
-    t("priya", "barrier", "barrier-coursework", "Tap “Coursework is eating my time”."),
-    t("priya", "words", "own-words", "Type why in her words, or tap “Do it for me”.", {
-      perform: [{ kind: "type", target: "own-words", text: "Calc II problem sets keep me up till 2" }],
+    start("priya", "Meet Priya: sleep is her lowest score, and coursework is what's in the way.", "Fix the cause."),
+    t("priya", "why", "why-open", "Tutoring, not sleep tips: it goes after the cause. Tap “Why this fits”."),
+    t("priya", "commit", "im-in", "Close the sheet, then tap “I'm in”.", {
+      perform: [{ kind: "key", key: "Escape" }, { kind: "wait", ms: 400 }, { kind: "tap", target: "im-in" }],
+      waitFor: "commitment:created",
     }),
-    t("priya", "submit", "focus-submit", "Tap “Find my step”: tutoring, not sleep tips.", { waitFor: "next:shown" }),
   ],
   taylor: [
     {
@@ -86,20 +78,15 @@ export const TOURS: Record<TourName, StoryStep[]> = {
   ],
   sofia: [
     start("sofia", "Meet Sofia: Camden grad student, works full time, prefers Spanish.", "Spanish, Camden."),
-    t("sofia", "cta", "strengths-cta", "The app is in Spanish. Tap “Elige un área para trabajar”."),
-    t("sofia", "pick", "pick-financial", "Tap Financiero."),
-    t("sofia", "cont", "pick-continue", "Tap Continuar."),
-    t("sofia", "barrier", "barrier-money", "Tap “El dinero no alcanza”."),
-    t("sofia", "submit", "focus-submit", "Tap “Buscar mi paso”: online, evening, free.", { waitFor: "next:shown" }),
+    t("sofia", "why", "why-open", "The app is in Spanish, from her profile. One step: online, evening, free. Tap “Por qué te conviene”."),
+    t("sofia", "commit", "im-in", "Close the sheet, then tap “Me apunto”.", {
+      perform: [{ kind: "key", key: "Escape" }, { kind: "wait", ms: 400 }, { kind: "tap", target: "im-in" }],
+      waitFor: "commitment:created",
+    }),
   ],
   jordan: [
     start("jordan", "Meet Jordan: Livingston first-year, doesn't know anyone yet.", "Bring a friend."),
-    t("jordan", "cta", "strengths-cta", "Tap “Choose one area to work on”."),
-    t("jordan", "pick", "pick-social", "Tap Social."),
-    t("jordan", "cont", "pick-continue", "Tap Continue."),
-    t("jordan", "barrier", "barrier-dont_know_anyone", "Tap “I don't know anyone”."),
-    t("jordan", "submit", "focus-submit", "Tap “Find my step”.", { waitFor: "next:shown" }),
-    t("jordan", "commit", "im-in", "Tap “I'm in”.", { waitFor: "commitment:created" }),
+    t("jordan", "commit", "im-in", "One step for someone new: something structured to do. Tap “I'm in”.", { waitFor: "commitment:created" }),
     t("jordan", "invite", "invite", "Invite a friend: a private link, no contacts. It counts double for the hall."),
     t("jordan", "chat", "tab-chat", "Or skip the browsing and just ask. Open Chat."),
     t("jordan", "ask", "chat-input", "Ask anything, or tap “Do it for me”.", {
@@ -116,7 +103,6 @@ export const TOURS: Record<TourName, StoryStep[]> = {
     start("staff", "This is what ScarletWell staff see: groups only, never a person.", "Aggregates only."),
     t("staff", "gaps", "staff-gaps", "Tap “Where supply is thin”.", { waitFor: "staff:gaps" }),
     t("staff", "narrow", "staff-narrow", "Now try to see a small group.", { waitFor: "staff:suppressed" }),
-    t("staff", "ask", "staff-ask", "The database refused. Tap “Ask the data” for plain-English questions with the SQL shown."),
   ],
 };
 

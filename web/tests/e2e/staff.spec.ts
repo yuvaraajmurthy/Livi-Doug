@@ -20,8 +20,5 @@ test("staff pulse", async ({ page }) => {
   await expect(page.getByRole("figure")).toBeVisible();
   await page.waitForTimeout(600);
   await shoot(page, "33-staff-trends");
-  await page.getByRole("link", { name: "Ask the data" }).click();
-  await page.getByRole("button", { name: /fewest financial resources/ }).click();
-  await expect(page.getByText("SQL that ran")).toBeVisible({ timeout: 30_000 });
-  await shoot(page, "34-staff-ask");
+  await expect(page.getByRole("link", { name: "Ask the data" })).toHaveCount(0);
 });

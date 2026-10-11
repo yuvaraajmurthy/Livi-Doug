@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>myRutgers (Localhost)</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
       <div class="tabs">
         <button id="eventsTab" class="tab active" onclick="showTab('events')">Events</button>
         <button id="checkinTab" class="tab" onclick="showTab('checkin')">Check-in</button>
-        <button id="DougTab" class="tab" onclick="showTab('Tab')">Doug</button>
+        <button id="dougTab" class="tab" onclick="showTab('doug')">Doug</button>
       </div>
 
       
@@ -107,10 +107,11 @@
         <button class="button" onclick="totalScore()">View Total Score</button>
         <p id="totalNote" class="note"></p>
       </div>
+
+      <div id="doug" class="panel app-panel">
+        <iframe id="dougFrame" title="Doug" allow="microphone; autoplay; clipboard-write; geolocation"></iframe>
+      </div>
     </div>
-    <div id="dough" class="panel">
-      
-</div>
 
     <div class="card profile">
       <div class="profile-top">
@@ -144,14 +145,18 @@
     var SCORE = "4.00";
 
     
+    // Running app shown in the Doug tab, signed in as Jordan. Override with ?app=<url>.
+    var APP_URL = new URLSearchParams(location.search).get("app") || "http://127.0.0.1:5173/as/jordan";
+
     function showTab(name) {
-      document.getElementById("events").classList.remove("show");
-      document.getElementById("checkin").classList.remove("show");
-      document.getElementById("eventsTab").classList.remove("active");
-      document.getElementById("checkinTab").classList.remove("active");
+      var panels = document.querySelectorAll(".card .panel");
+      for (var i = 0; i < panels.length; i++) panels[i].classList.remove("show");
+      var tabs = document.querySelectorAll(".card .tab");
+      for (var j = 0; j < tabs.length; j++) tabs[j].classList.remove("active");
 
       document.getElementById(name).classList.add("show");
       document.getElementById(name + "Tab").classList.add("active");
+      document.querySelector(".card").classList.toggle("wide", name === "doug");
     }
 
   
@@ -186,6 +191,7 @@
     }
 
     document.getElementById("score").textContent = SCORE;
+    document.getElementById("dougFrame").src = APP_URL;
   </script>
 
 </body>

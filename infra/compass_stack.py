@@ -24,6 +24,7 @@ from aws_cdk import (
 from constructs import Construct
 
 CLOUDFRONT_PREFIX_LIST = "pl-82a045eb"  # com.amazonaws.global.cloudfront.origin-facing (us-west-2)
+SEND_TEXT_LAMBDA_ARN = "arn:aws:lambda:us-east-1:204762614174:function:sendText"  # = settings.send_text_lambda_arn
 
 
 class BaseStack(Stack):
@@ -94,8 +95,10 @@ class AppStack(Stack):
         task_role.add_to_policy(iam.PolicyStatement(
             actions=["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream", "bedrock:Converse",
                      "bedrock:ConverseStream", "bedrock:ApplyGuardrail", "bedrock:GetGuardrail",
-                     "bedrock:InvokeModelWithBidirectionalStream"],
+                     "bedrock:InvokeModelWithBidirectionalStream", "bedrock:Retrieve"],
             resources=["*"]))
+        # chat/voice email tool (voice_bot.py port): the sendText Lambda in us-east-1, nothing else
+        task_role.add_to_policy(iam.PolicyStatement(actions=["lambda:InvokeFunction"], resources=[SEND_TEXT_LAMBDA_ARN]))
         task_role.add_to_policy(iam.PolicyStatement(
             actions=["geo:SearchPlaceIndexForText", "geo-places:Geocode", "geo-places:SearchText"], resources=["*"]))
 

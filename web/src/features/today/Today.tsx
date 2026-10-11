@@ -2,7 +2,7 @@ import { ArrowRight, CalendarCheck, CaretRight, ChatCircleDots } from "@phosphor
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useMap } from "../map/useMap";
 import { api, type NextResponse, type Suggestion } from "../../api/client";
 import { signal } from "../../api/inspector";
@@ -17,7 +17,8 @@ import { Sheet } from "../../ui/Sheet";
 import { ErrorState, Skeleton } from "../../ui/States";
 import { announce } from "../../ui/Toast";
 import { PERSONA_COPY } from "../entry/personas";
-import { plans, usePlans } from "../plan/plans";
+import { applyPlan } from "../plan/applyPlan";
+import { usePlans } from "../plan/plans";
 import { cleanTitle, StepCard } from "./StepCard";
 import { SupportFirst } from "./SupportFirst";
 import { WhySheet } from "./WhySheet";
@@ -37,11 +38,11 @@ export function Today() {
   const [showEvents, setShowEvents] = useState(false);
   const planList = usePlans();
   const pending = planList.find(p => p.status === "planned") ?? null;
+  // every open plan (from here, the event card, chat or voice), not only the newest
+  const plannedIds = new Set(planList.filter(p => p.status === "planned").map(p => p.commitment.item.id));
 
   // once something is planned, don't offer the same thing again; keep the other options visible
-  const all: Suggestion[] = (next.data ? [next.data.pick, ...next.data.alternates] : []).filter(
-    x => !pending || x.item.id !== pending.commitment.item.id,
-  );
+  const all: Suggestion[] = (next.data ? [next.data.pick, ...next.data.alternates] : []).filter(x => !plannedIds.has(x.item.id));
   const planOnly = !!pending && !!next.data && all.length < 1 + next.data.alternates.length;
   const hero = all[heroIdx] ?? all[0] ?? null;
   const others = planOnly ? all : all.filter(x => x !== hero);
@@ -54,8 +55,7 @@ export function Today() {
   const commit = useMutation({
     mutationFn: (recId: number) => api.commit(recId),
     onSuccess: c => {
-      plans.add(c);
-      signal("commitment:created", c);
+      applyPlan(qc, c, { reminder: false });
       announce(t("plan.title"));
       nav(`/plan/${c.commitment_id}`);
     },
@@ -70,8 +70,6 @@ export function Today() {
       announce(cleanTitle(data.pick.item.title));
     },
   });
-
-  if (map.data && !map.data.profile.focus && !map.data.care_first) return <Navigate to="/focus" replace />;
 
   const name = s && s.persona !== "staff" ? PERSONA_COPY[s.persona].name : "";
   const focus = map.data?.profile.focus;

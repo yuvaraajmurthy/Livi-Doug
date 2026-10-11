@@ -75,7 +75,9 @@ def remind(ctx: SessionCtx, item_id: str, via: str = "card"):
         if existing:
             p = c.execute("SELECT language FROM profiles WHERE student_id = %s", (ctx.student_id,)).fetchone() or {}
             return _commit_response(c, existing, it, now, p.get("language") or "en")
-        focus = (c.execute("SELECT focus_dimension FROM profiles WHERE student_id = %s", (ctx.student_id,)).fetchone() or {}).get("focus_dimension")
+        if it.starts_at and it.starts_at <= now:  # same rule as commit(), checked before leaving a stray suggestion row
+            raise HTTPException(409, detail={"error": "already_started", "message": "That one has already started. Try another step."})
+        focus =(c.execute("SELECT focus_dimension FROM profiles WHERE student_id = %s", (ctx.student_id,)).fetchone() or {}).get("focus_dimension")
         dim = focus or (max(it.dims, key=it.dims.get) if it.dims else "social")
         rec_id = c.execute(
             """INSERT INTO recommendations (student_id, item_id, dimension, rung, shown_on, shown_at, status, set_id, rank, reasons,

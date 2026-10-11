@@ -5,7 +5,7 @@ from datetime import datetime
 
 from app import clock
 from app.auth import SessionCtx
-from app.chat import catalog
+from app.chat import assist_aws, catalog
 from app.engine import care_first as cf
 from app.repo import kb
 
@@ -20,7 +20,10 @@ give medical or medication advice, and never discuss self-harm methods."""
 STYLE = {
     "chat": """Style: 1 to 3 short sentences. Warm, specific, plain words, like a friend who knows campus. At most one
 question per reply. Never write lists of events in text: events are shown to the student as buttons by the show_events
-tool, so after calling it write one short line about why they fit (time, place, cost, what you know about them).""",
+tool, so after calling it write one short line about why they fit (time, place, cost, what you know about them).
+Plain text only: no markdown, no asterisks, no bullet points. Never narrate your work ("Let me search…", "Let me get
+the details"): the app already shows a status line while tools run. Call the tools you need first, then write your
+reply once. When you find events that fit, show them with show_events right away instead of asking whether to.""",
     "voice": """Style: this is a spoken conversation. Keep every reply to one or two short spoken sentences, no lists,
 no markdown, no ids. Say times naturally ("Tuesday at twelve thirty"). Events you show with show_events also appear on
 the student's screen as cards, so you can say "I put two on your screen".""",
@@ -32,8 +35,16 @@ TOOLS = """Tool rules:
 - Any specific event, place or service you mention must be shown with show_events in the same reply.
 - Never invent events, times, places or prices; only use the catalog, get_event or search_events results.
 - Use search_events only when nothing in the catalog matches what they asked for.
+- Use search_knowledge_base (not search_events) for official Rutgers facts that are not events: library spaces and
+  study rooms, room availability, campus offices, hours, policies and other university information. Answer only from
+  what it returns; those answers don't need show_events. To find events or activities to suggest, use the catalog or
+  search_events, never search_knowledge_base.
+- Call send_email_notification only when the student asks for something to be emailed or to be notified by email.
 - Prefer free events inside their free windows on their campus.
-- Call set_reminder only when the student clearly says yes to one specific event.
+- When the student says yes to one specific event, or asks you to remind them, add it, schedule it, plan it or save
+  it, call set_reminder with that event's id in the same reply. Saying "I'll remind you", "it's on your plan" or
+  "done" without calling set_reminder does nothing: only say it is saved after set_reminder confirms it, and if it
+  says nothing was saved, tell the student. If it's unclear which event they mean, ask which one.
 - When the student tells you a NEW lasting preference, interest, schedule fact, constraint or goal about themselves
   (not already in "What you remember"), call remember with a short third-person phrase (e.g. "Plays pickup
   basketball"). Never remember health, medication, diagnosis, mood or crisis details, or anything about other people.
@@ -109,6 +120,11 @@ def _memory(conn, student_id: str) -> str:
     return "\n".join(out) or "- nothing yet"
 
 
+def assistant_sections() -> list[str]:
+    """voice_bot.py's KB/email tool instructions and the live Bedrock guardrail rules (cached ~10 min, so stable)."""
+    return [assist_aws.TOOL_INSTRUCTIONS, assist_aws.guardrail_rules()]
+
+
 def build(conn, ctx: SessionCtx, now: datetime | None = None, style: str = "chat") -> PromptBundle:
     now = now or clock.now(conn, ctx.sid)
     profile, sctx, lang = _profile(conn, ctx, now)
@@ -119,6 +135,7 @@ def build(conn, ctx: SessionCtx, now: datetime | None = None, style: str = "chat
         ROLE,
         STYLE.get(style, STYLE["chat"]),
         TOOLS,
+        *assistant_sections(),
         "Event catalog (id | title | when | where | cost | areas). Only these exist:\n" + catalog.render(items),
         "About this student (snapshot):\n" + profile,
         "What you remember about them (each can be forgotten on request):\n" + memory,

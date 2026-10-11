@@ -11,7 +11,7 @@ test("voice: opens, connects, listens, ends", async ({ baseURL }) => {
   page.on("pageerror", e => errors.push(e.message));
   await page.goto("/");
   await page.getByRole("button", { name: /Andre/ }).click();
-  await page.waitForURL(/\/(focus|next)/);
+  await page.waitForURL(/\/next/);
   await page.goto("/chat");
   await page.locator('[data-tour="voice-open"]').click();
   const status = page.locator('[data-tour="voice-overlay"] [role="status"]');

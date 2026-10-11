@@ -383,3 +383,28 @@ body {
   font-size: 14px;
   padding: 10px;
 }
+
+/* Doug tab: the running app, phone-sized */
+.card {
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.card.wide {
+  width: 400px;
+  height: 820px;
+}
+
+.app-panel {
+  padding: 0;
+}
+
+.app-panel.show {
+  display: flex;
+}
+
+.app-panel iframe {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background: white;
+}

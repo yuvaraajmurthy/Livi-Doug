@@ -112,7 +112,8 @@ export function ChatPage() {
           ))}
         </div>
       )}
-      <div ref={end} />
+      {/* clear the fixed composer + tab bar when scrolling the newest message into view */}
+      <div ref={end} style={{ scrollMarginBottom: "calc(160px + env(safe-area-inset-bottom))" }} />
 
       <form
         onSubmit={e => {

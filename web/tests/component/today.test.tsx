@@ -14,10 +14,11 @@ describe("Today (Andre)", () => {
     server.use(http.get(`${API}/me/map`, () => HttpResponse.json(map)));
   });
 
-  it("sends a student without a focus to the focus flow", async () => {
+  it("keeps a student without a focus on Today (no questionnaire)", async () => {
     server.use(http.get(`${API}/me/map`, () => HttpResponse.json(fixture("andre", "me_map"))));
     renderAt(<Today />, "/next");
-    expect(await screen.findByTestId("navigated")).toBeInTheDocument();
+    expect(await screen.findByRole("heading", { name: "One step that fits your week" })).toBeInTheDocument();
+    expect(screen.queryByTestId("navigated")).not.toBeInTheDocument();
   });
 
   it("shows one concrete step with the facts that make it fit", async () => {

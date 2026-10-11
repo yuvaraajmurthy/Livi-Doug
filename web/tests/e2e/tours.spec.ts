@@ -27,9 +27,10 @@ async function runTour(page: Page, name: string, shots: number[] = []) {
 test.describe("table tours on production", () => {
   test.beforeEach(() => test.skip(test.info().project.name !== "phone", "phone only"));
   test.setTimeout(240_000);
-  test("andre", async ({ page }) => runTour(page, "Andre", [2, 7, 12]));
-  test("jordan", async ({ page }) => runTour(page, "Jordan", [10, 11]));
-  test("priya", async ({ page }) => runTour(page, "Priya", [6]));
+  test("andre", async ({ page }) => runTour(page, "Andre", [2, 7]));
+  test("jordan", async ({ page }) => runTour(page, "Jordan", [5, 6]));
+  test("priya", async ({ page }) => runTour(page, "Priya", [2]));
+  test("sofia", async ({ page }) => runTour(page, "Sofia", [2]));
   test("taylor", async ({ page }) => runTour(page, "Taylor", [2]));
   test("staff", async ({ page }) => runTour(page, "Staff Pulse", [3]));
 });

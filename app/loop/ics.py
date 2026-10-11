@@ -7,7 +7,7 @@ def _fmt(dt: datetime) -> str:
 
 
 def _esc(s: str) -> str:
-    return (s or "").replace("\\", "\\\\").replace(";", "\;").replace(",", "\,").replace("\n", "\n")
+    return (s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
 
 
 def build(uid: str, title: str, start: datetime | None, end: datetime | None, location: str | None, description: str, now: datetime) -> str:

@@ -48,6 +48,10 @@ export const plans = {
     const list = load().filter(p => p.commitment.commitment_id !== c.commitment_id);
     save([{ commitment: c, status: "planned", helped: null, friendComing: false }, ...list]);
   },
+  /** Add only if this commitment isn't known yet (never resets a plan's status or follow-up). */
+  ensure(c: CommitResponse) {
+    if (!load().some(p => p.commitment.commitment_id === c.commitment_id)) plans.add(c);
+  },
   update(id: number, patch: Partial<PlanRecord>) {
     save(load().map(p => (p.commitment.commitment_id === id ? { ...p, ...patch } : p)));
   },

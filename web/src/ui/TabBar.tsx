@@ -1,4 +1,4 @@
-import { ChatCircleDots, Compass, MapTrifold, UserCircle } from "@phosphor-icons/react";
+import { ChatCircleDots, Compass, Heartbeat, UserCircle } from "@phosphor-icons/react";
 import { NavLink } from "react-router";
 import type { Key } from "../i18n/en";
 import { useT } from "../i18n/useT";
@@ -6,7 +6,7 @@ import { useT } from "../i18n/useT";
 const TABS: { to: string; label: Key; Icon: typeof Compass; tour: string }[] = [
   { to: "/next", label: "tab.today", Icon: Compass, tour: "tab-today" },
   { to: "/chat", label: "tab.chat", Icon: ChatCircleDots, tour: "tab-chat" },
-  { to: "/map", label: "tab.map", Icon: MapTrifold, tour: "tab-map" },
+  { to: "/wellness", label: "tab.map", Icon: Heartbeat, tour: "tab-wellness" },
   { to: "/you", label: "tab.you", Icon: UserCircle, tour: "tab-you" },
 ];
 

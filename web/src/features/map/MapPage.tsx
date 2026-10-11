@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowSquareOut, ArrowUp, CheckCircle, Info } from "@phosphor-icons/react";
+import { ArrowDown, ArrowSquareOut, ArrowUp, Info } from "@phosphor-icons/react";
 import { motion } from "motion/react";
 import { useEffect } from "react";
 import { signal } from "../../api/inspector";
@@ -6,11 +6,9 @@ import type { MapResponse } from "../../api/client";
 import { useLang, useT } from "../../i18n/useT";
 import type { Key } from "../../i18n/en";
 import { score, shortDate } from "../../lib/format";
-import { Card, PageTitle, SectionTitle } from "../../ui/Card";
+import { PageTitle } from "../../ui/Card";
 import { DimensionIcon } from "../../ui/DimensionIcon";
 import { ErrorState, Skeleton } from "../../ui/States";
-import { usePlans } from "../plan/plans";
-import { cleanTitle } from "../today/StepCard";
 import { useMap } from "./useMap";
 
 const SCALE_MIN = 1;
@@ -21,7 +19,6 @@ export function MapPage() {
   const t = useT();
   const lang = useLang();
   const map = useMap();
-  const plans = usePlans();
   useEffect(() => {
     if (map.data) signal("map:shown", map.data);
   }, [map.data?.latest.take_no]);
@@ -29,7 +26,6 @@ export function MapPage() {
   if (map.isError) return <ErrorState error={map.error} onRetry={() => map.refetch()} />;
   const m = map.data;
   const prevDate = m?.previous_takes.length ? m.previous_takes[m.previous_takes.length - 1].taken_on : null;
-  const went = plans.filter(p => p.status === "went");
 
   return (
     <div>
@@ -39,7 +35,7 @@ export function MapPage() {
         <Skeleton className="h-96" />
       ) : (
         <>
-          <ul className="overflow-hidden rounded-[20px] border border-line bg-surface" data-tour="map-rows">
+          <ul className="overflow-hidden rounded-[20px] border border-line bg-surface" data-tour="wellness-rows">
             {m.dimensions.map((d, i) => (
               <DimRow key={d.dimension} d={d} i={i} prevDate={prevDate} />
             ))}
@@ -61,30 +57,6 @@ export function MapPage() {
               <ArrowSquareOut size={18} className="shrink-0 text-ink-2" aria-hidden />
             </a>
           ) : null}
-
-          <section className="mt-8">
-            <SectionTitle>{t("map.steps")}</SectionTitle>
-            {went.length ? (
-              <ul className="flex flex-col gap-2">
-                {went.map(p => (
-                  <li key={p.commitment.commitment_id}>
-                    <Card className="flex items-center gap-3 px-4 py-3">
-                      <CheckCircle size={22} weight="fill" className="shrink-0 text-green" aria-hidden />
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-[16px] font-medium">{cleanTitle(p.commitment.item.title)}</span>
-                        <span className="block text-[14px] text-ink-2">
-                          {p.commitment.when_label}
-                          {p.helped ? ` · helped ${p.helped}/5` : ""}
-                        </span>
-                      </span>
-                    </Card>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="text-[15px] text-ink-2">{t("map.stepsNone")}</p>
-            )}
-          </section>
         </>
       )}
     </div>

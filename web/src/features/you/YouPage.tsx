@@ -1,15 +1,15 @@
-import { Brain, CaretRight, Trash, Translate, BellRinging, IdentificationCard, Warning } from "@phosphor-icons/react";
+import { Brain, CaretRight, Trash, BellRinging, IdentificationCard, Warning } from "@phosphor-icons/react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { api, type MemoryList } from "../../api/client";
 import { signal } from "../../api/inspector";
-import { language, useLang, useT } from "../../i18n/useT";
+import { useLang, useT } from "../../i18n/useT";
 import { shortDate } from "../../lib/format";
 import { enablePush, pushPermission } from "../../push/push";
 import { session } from "../../session/session";
-import { Card, PageTitle, SectionTitle } from "../../ui/Card";
+import { PageTitle, SectionTitle } from "../../ui/Card";
 import { ErrorState, Skeleton } from "../../ui/States";
 import { announce, toast } from "../../ui/Toast";
 import { plans, usePlans } from "../plan/plans";
@@ -158,23 +158,6 @@ export function YouPage() {
       </section>
 
       <section className="mb-8 flex flex-col gap-2">
-        <Card className="flex items-center gap-3 px-4 py-3">
-          <Translate size={22} className="shrink-0" aria-hidden />
-          <span className="flex-1 text-[16px] font-medium">{t("you.language")}</span>
-          <div role="group" aria-label={t("you.language")} className="flex rounded-full bg-surface-2 p-1">
-            {(["en", "es"] as const).map(l => (
-              <button
-                key={l}
-                type="button"
-                aria-pressed={lang === l}
-                onClick={() => language.set(l)}
-                className={`h-9 rounded-full px-3.5 text-[14px] font-semibold cursor-pointer ${lang === l ? "bg-surface text-ink shadow-sm" : "text-ink-2"}`}
-              >
-                {l === "en" ? "English" : "Español"}
-              </button>
-            ))}
-          </div>
-        </Card>
         <button
           type="button"
           onClick={async () => {

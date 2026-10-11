@@ -35,12 +35,11 @@ def make_model(style: str = "chat"):
     from strands.models.bedrock import BedrockModel
     from strands.models.model import CacheConfig
     s = get_settings()
-    kw: dict[str, Any] = dict(model_id=s.model_fast, region_name=s.aws_region, temperature=0.3, max_tokens=600,
+    # Runs in assistant_region (us-east-1) beside the guardrail, KB and email Lambda. No native guardrail attachment:
+    # as in voice_bot.py, the guardrail is enforced through the system prompt (assist_aws.guardrail_rules).
+    kw: dict[str, Any] = dict(model_id=s.model_fast, region_name=s.assistant_region, temperature=0.3, max_tokens=600,
                               cache_config=CacheConfig(strategy="auto"),
                               streaming=True, boto_client_config=Config(read_timeout=30, connect_timeout=5, retries={"max_attempts": 2}))
-    if s.guardrail_id:
-        kw.update(guardrail_id=s.guardrail_id, guardrail_version=s.guardrail_version, guardrail_trace="disabled",
-                  guardrail_redact_input=False)
     return BedrockModel(**kw)
 
 
@@ -151,6 +150,18 @@ async def run_turn(ctx: SessionCtx, message: str, conversation_id: str | None = 
     producer = asyncio.create_task(produce())
     checker = asyncio.create_task(stage2())
     text, seen_tools, got_output, failed = "", set(), False, False
+    pending = ""  # text of the current model message, held until we know it isn't narration before a tool call
+
+    def flush():
+        nonlocal text, pending
+        out = pending.strip()
+        pending = ""
+        if not out:
+            return None
+        out = (" " if text else "") + out
+        text += out
+        return out
+
     try:
         while True:
             try:
@@ -160,6 +171,8 @@ async def run_turn(ctx: SessionCtx, message: str, conversation_id: str | None = 
                 failed = True
                 break
             if kind == "end":
+                if (out := flush()):
+                    yield "delta", {"text": out}
                 break
             if kind == "fail":
                 failed = True
@@ -181,9 +194,15 @@ async def run_turn(ctx: SessionCtx, message: str, conversation_id: str | None = 
             ev = payload
             if "data" in ev and isinstance(ev["data"], str):
                 got_output = True
-                text += ev["data"]
-                yield "delta", {"text": ev["data"]}
+                pending += ev["data"]
+            elif "messageStop" in (ev.get("event") or {}):
+                # a message that ends in a tool call was narration ("Let me search…"); the status line covers it
+                if ev["event"]["messageStop"].get("stopReason") == "tool_use":
+                    pending = ""
+                elif (out := flush()):
+                    yield "delta", {"text": out}
             elif ev.get("type") == "tool_use_stream":
+                pending = ""
                 tu = ev.get("current_tool_use") or {}
                 tid = tu.get("toolUseId")
                 if tid and tid not in seen_tools:

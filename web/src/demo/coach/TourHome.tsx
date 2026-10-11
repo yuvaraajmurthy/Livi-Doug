@@ -10,7 +10,7 @@ import type { Persona } from "../types";
 
 const WHAT: Record<Persona, string> = {
   andre: "The whole loop: one step, a plan, a reminder, a follow-up, what Compass learns.",
-  priya: "Low sleep, ask why, and get tutoring for the actual cause.",
+  priya: "Low sleep, and tutoring for the actual cause.",
   taylor: "When a person comes first, and how crisis words are handled.",
   sofia: "Camden, in Spanish, online and in the evening.",
   jordan: "A first-year who doesn't know anyone, and a private bring-a-friend link.",

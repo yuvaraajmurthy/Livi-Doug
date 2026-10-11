@@ -116,7 +116,6 @@ export const api = {
     weekly: (f: StaffFilters = {}) => call<S["WeeklyResponse"]>("GET", `/staff/weekly${qs(f)}`),
     dips: (f: StaffFilters = {}) => call<S["DipsResponse"]>("GET", `/staff/dips${qs(f)}`),
     retakes: (f: StaffFilters = {}) => call<S["RetakesResponse"]>("GET", `/staff/retakes${qs(f)}`),
-    ask: (question: string) => call<S["StaffAskResponse"]>("POST", "/staff/ask", { question }),
   },
 };
 

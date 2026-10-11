@@ -15,8 +15,8 @@ const SUMMARY: Record<Persona, { title: string; lines: string[] }> = {
     ],
   },
   priya: {
-    title: "You asked why.",
-    lines: ["Low sleep, caused by Calc II", "So: free tutoring at Busch, not generic sleep tips", "Her words were safety-checked and never stored"],
+    title: "Fix the cause.",
+    lines: ["Low sleep, with coursework in the way", "So: free tutoring, not generic sleep tips", "Code picked it; AI only wrote the sentence"],
   },
   taylor: {
     title: "Safety came first.",
@@ -32,7 +32,7 @@ const SUMMARY: Record<Persona, { title: string; lines: string[] }> = {
   },
   staff: {
     title: "Groups, never people.",
-    lines: ["Where supply is thin, campus by campus", "Groups under 10 refused by the database", "Plain-English questions with the SQL shown"],
+    lines: ["Where supply is thin, campus by campus", "Groups under 10 refused by the database", "Tells ScarletWell where to add a workshop"],
   },
 };
 

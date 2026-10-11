@@ -1,6 +1,5 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 import { http, HttpResponse } from "msw";
 import { server } from "../setup";
 import { API, fixture, renderAt, setupPersona } from "../helpers";
@@ -53,26 +52,5 @@ describe("Staff Pulse", () => {
     renderAt(<StaffApp />, "/staff/trends", "/staff/*");
     const fig = await screen.findByRole("figure", { name: /Weekly average/i });
     expect(within(fig).getByRole("table")).toBeInTheDocument();
-  });
-
-  it("shows the SQL behind an answer", async () => {
-    server.use(
-      http.post(`${API}/staff/ask`, () =>
-        HttpResponse.json({
-          synthetic: true,
-          now: "2026-10-12T09:00:00-04:00",
-          ok: true,
-          message: "Camden has the fewest financial resources per student.",
-          sql: "SELECT campus, low_students_per_item FROM staff_gaps(NULL,NULL,NULL,NULL,NULL)",
-          columns: ["campus", "low_students_per_item"],
-          rows: [{ campus: "camden", low_students_per_item: 20.5 }],
-        }),
-      ),
-    );
-    renderAt(<StaffApp />, "/staff/ask", "/staff/*");
-    await userEvent.type(await screen.findByRole("textbox", { name: /Ask the data/ }), "where is financial supply thinnest?");
-    await userEvent.click(screen.getByRole("button", { name: "Ask" }));
-    expect(await screen.findByText(/SELECT campus, low_students_per_item/)).toBeInTheDocument();
-    expect(screen.getByRole("cell", { name: "20.5" })).toBeInTheDocument();
   });
 });

@@ -24,49 +24,11 @@ export const MAIN_STORY: StoryStep[] = [
     chapter: "Andre",
     persona: "andre",
     perform: [{ kind: "session", persona: "andre", sandbox: true }],
-    claim: "Strengths first.",
-    proof: "strengths",
-    note:
-      "Andre commutes to Newark, has a gap from 12:20 to 2:30 on Tuesdays and Thursdays, and works at 3. We open on what's going well, not on the low score.",
-    tag: "Engagement",
-  },
-  {
-    id: "andre-pick",
-    chapter: "Andre",
-    persona: "andre",
-    perform: [
-      { kind: "tap", target: "strengths-cta" },
-      { kind: "wait", ms: 500 },
-      { kind: "tap", target: "pick-social" },
-      { kind: "wait", ms: 400 },
-      { kind: "tap", target: "pick-continue" },
-    ],
-    claim: "He picks one area.",
-    note: "No questionnaire. He already took the inventory; we only ask what blocks him.",
-    tag: "Engagement",
-  },
-  {
-    id: "andre-barriers",
-    chapter: "Andre",
-    persona: "andre",
-    perform: [
-      { kind: "tap", target: "barrier-no_time" },
-      { kind: "wait", ms: 300 },
-      { kind: "tap", target: "barrier-dont_know_anyone" },
-    ],
-    claim: "Two taps: what gets in the way.",
-    tag: "Engagement",
-  },
-  {
-    id: "andre-step",
-    chapter: "One step",
-    persona: "andre",
-    target: "focus-submit",
-    perform: [{ kind: "tap", target: "focus-submit" }],
     waitFor: "next:shown",
     claim: "One step that fits his week.",
     proof: "latency",
-    note: "It ranked every Newark event and service in his week, live, in about a fifth of a second.",
+    note:
+      "Andre commutes to Newark, has a gap from 12:20 to 2:30 on Tuesdays and Thursdays, and works at 3. No new questionnaire: Compass starts from the inventory he already took and ranked every Newark event and service in his week, live, in about a fifth of a second.",
     tag: "Impact",
   },
   {
@@ -145,7 +107,8 @@ export const MAIN_STORY: StoryStep[] = [
     waitFor: "chat:answered",
     claim: "Or just ask.",
     proof: "chat",
-    note: "A Strands agent on Claude Haiku. Its prompt holds every real event this fortnight; it can only show events by id, as buttons, never invented.",
+    note:
+      "A Strands agent on Claude Haiku, held to our Bedrock Guardrail and grounded in a Bedrock Knowledge Base of official Rutgers info. Its prompt holds every real event this fortnight; it can only show events by id, as buttons, never invented.",
     tag: "Engagement",
   },
   {
@@ -168,6 +131,8 @@ export const MAIN_STORY: StoryStep[] = [
     waitFor: "reminder:set",
     claim: "One tap. Reminder set.",
     proof: "reminder",
+    note:
+      "Or just say it: “remind me about that” sets the same plan and reminder from chat or voice, and “email me the details” sends them to your inbox.",
     tag: "Engagement",
   },
   {
@@ -194,7 +159,7 @@ export const MAIN_STORY: StoryStep[] = [
     id: "andre-retake",
     chapter: "Retake",
     persona: "andre",
-    perform: [{ kind: "clock", now: DATES.retake }, { kind: "navigate", to: "/map" }],
+    perform: [{ kind: "clock", now: DATES.retake }, { kind: "navigate", to: "/wellness" }],
     waitFor: "map:shown",
     claim: "His next inventory: Social rises.",
     proof: "score",
@@ -205,22 +170,11 @@ export const MAIN_STORY: StoryStep[] = [
     id: "priya",
     chapter: "Priya",
     persona: "priya",
-    target: "focus-submit",
-    perform: [
-      { kind: "session", persona: "priya", sandbox: true },
-      { kind: "tap", target: "strengths-cta" },
-      { kind: "wait", ms: 400 },
-      { kind: "tap", target: "pick-physical" },
-      { kind: "tap", target: "pick-continue" },
-      { kind: "wait", ms: 400 },
-      { kind: "tap", target: "barrier-coursework" },
-      { kind: "type", target: "own-words", text: "Calc II problem sets keep me up till 2" },
-      { kind: "tap", target: "focus-submit" },
-    ],
+    perform: [{ kind: "session", persona: "priya", sandbox: true }],
     waitFor: "next:shown",
-    claim: "Ask why. Fix the cause.",
+    claim: "Fix the cause, not the symptom.",
     proof: "fit",
-    note: "This is the example we heard from you: ask why, then fix the cause. Her own words were safety-checked and never stored.",
+    note: "This is the example we heard from you. Her lowest score is sleep, and coursework is what's in the way, so Compass offers free tutoring, not sleep tips.",
     tag: "Impact",
   },
   {
@@ -279,7 +233,8 @@ export const MAIN_STORY: StoryStep[] = [
     persona: null,
     slide: "numbers",
     claim: "Built to run on campus.",
-    note: "Live on AWS: ECS Fargate, RDS Postgres, Bedrock. Works with AI switched off and with the network cut.",
+    note:
+      "Built on AWS: Bedrock (Claude Haiku chat, Nova Sonic voice, Guardrails, Knowledge Base), Lambda email, ECS Fargate and RDS Postgres. Works with AI switched off and with the network cut.",
     tag: "Feasibility",
   },
   {
@@ -289,7 +244,7 @@ export const MAIN_STORY: StoryStep[] = [
     slide: "close",
     claim: "Ready for a spring pilot.",
     note:
-      "One metric: how many students take one step within 14 days of their scores. Scan the code to try it yourself, as any of the five students.",
+      "One metric: how many students take one step within 14 days of their scores. It already lives where students are: the Doug tab in myRutgers, next to ScarletWell.",
     tag: "Feasibility",
   },
 ];
