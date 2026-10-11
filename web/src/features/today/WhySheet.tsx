@@ -54,7 +54,7 @@ export function WhySheet({ s, open, onClose }: { s: Suggestion | null; open: boo
             <div className="mb-3 flex items-baseline justify-between">
               <h3 className="text-[13px] font-semibold uppercase tracking-[0.08em] text-ink-2">{t("why.ranking")}</h3>
               <span className="text-[13px] text-ink-2 tabular">
-                {t("why.total")} <strong className="text-ink">{Math.round(s.reasons.total * 100)}</strong>/100
+                {t("why.total")} <strong className="text-ink">{Math.min(100, Math.round(s.reasons.total * 100))}</strong>/100
               </span>
             </div>
             <ul className="flex flex-col gap-4">
@@ -94,9 +94,9 @@ export function WhySheet({ s, open, onClose }: { s: Suggestion | null; open: boo
                     <Brain size={18} className="mt-0.5 shrink-0 text-scarlet-ink" aria-hidden />
                     <span>
                       {m.statement}{" "}
-                      <span className="text-ink-2 tabular">
-                        ({m.delta > 0 ? "+" : ""}
-                        {Math.round(m.delta * 100)})
+                      <span className="whitespace-nowrap text-ink-2 tabular">
+                        {m.delta > 0 ? "+" : "−"}
+                        {Math.abs(Math.round(m.delta * 100))} {t("why.fitUnit")}
                       </span>
                     </span>
                   </li>

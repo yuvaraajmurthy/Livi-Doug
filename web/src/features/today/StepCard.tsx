@@ -43,7 +43,12 @@ export function StepCard({ s, onCommit, onWhy, onDecline, committing, label }: P
   const place = s.where.venue ?? (s.where.campus === "online" ? t("campus.online") : null);
   const walk = walkLabel(s);
   return (
-    <motion.div layoutId={`step-${s.item.id}`} transition={{ type: "spring", stiffness: 300, damping: 34 }}>
+    <motion.div
+      layoutId={`step-${s.item.id}`}
+      initial={{ opacity: 0, y: 14 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", stiffness: 300, damping: 34 }}
+    >
       <Card elevated className="overflow-hidden" data-testid="step-card" data-tour="step-card">
         <div className="px-5 pb-5 pt-5">
           <div className="mb-3 flex items-center justify-between gap-2">

@@ -4,6 +4,8 @@ import { FocusFlow } from "../features/focus/FocusFlow";
 import { Today } from "../features/today/Today";
 import { PlanView } from "../features/plan/PlanView";
 import { InvitePage } from "../features/invite/InvitePage";
+import { Followup } from "../features/followup/Followup";
+import { Inbox } from "../features/inbox/Inbox";
 import { RequireStudent } from "./RequireStudent";
 import { LiveRegion, ToastHost } from "../ui/Toast";
 import { Shell } from "./Shell";
@@ -31,7 +33,8 @@ export function AppRouter() {
           <Route path="/map" element={<Placeholder name="Map" />} />
           <Route path="/campus" element={<Placeholder name="Campus" />} />
           <Route path="/you" element={<Placeholder name="You" />} />
-          <Route path="/inbox" element={<Placeholder name="Inbox" />} />
+          <Route path="/inbox" element={<Inbox />} />
+          <Route path="/followup/:id" element={<Followup />} />
         </Route>
         <Route path="*" element={<Entry />} />
       </Routes>

@@ -1,6 +1,6 @@
 import { ArrowRight, CalendarCheck, CaretRight } from "@phosphor-icons/react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router";
 import { api, type NextResponse, type Suggestion } from "../../api/client";
@@ -126,7 +126,6 @@ export function Today() {
           </div>
         ) : (
           hero && !planOnly && (
-            <AnimatePresence mode="popLayout">
               <StepCard
                 key={hero.rec_id}
                 s={hero}
@@ -138,7 +137,6 @@ export function Today() {
                 }}
                 onDecline={() => setDeclineOpen(true)}
               />
-            </AnimatePresence>
           )
         )
       ) : null}
