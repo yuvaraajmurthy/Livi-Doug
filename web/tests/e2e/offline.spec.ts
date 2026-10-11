@@ -11,7 +11,7 @@ test("offline: the stage story finishes on replay after the API is cut off", asy
   for (let i = 1; i < MAIN_STORY.length; i++) {
     if (i === cutAt) {
       // the venue Wi-Fi dies: every API call now fails
-      await context.route(/cloudfront\.net\/(me|demo|ask|commitments|followups|pulse|staff|meta|push|invites|wins)/, r => r.abort());
+      await context.route(/cloudfront\.net\/(me|demo|ask|commitments|followups|pulse|staff|meta|push|invites|wins|chat|items)/, r => r.abort());
       await page.keyboard.press("o");
       await expect(page.getByText("Offline replay")).toBeVisible({ timeout: 10_000 });
     }

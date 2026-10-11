@@ -18,6 +18,10 @@ export function startRecording() {
   recorder = [];
   (globalThis as { __compassRecording?: unknown }).__compassRecording = recorder;
 }
+/** Add a response that didn't go through request() (the chat stream) to the recording, if one is running. */
+export function record(method: string, path: string, status: number, body: unknown) {
+  recorder?.push({ method, path, status, body, persona: opts.token()?.split(".")[1] });
+}
 /** Called with the running count each time a request fails for network/server reasons. */
 export function onFailure(fn: (n: number) => void) {
   failureListeners.add(fn);

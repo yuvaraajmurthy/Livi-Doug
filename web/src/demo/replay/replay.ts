@@ -12,7 +12,7 @@ let lastByKey = new Map<string, Recorded>();
 let fixtures: Record<string, unknown> = {};
 
 const ID_SEGMENT = /^(?:\d+|[A-Za-z0-9_-]{8,}|m%3A\d+|m:\d+|profile[:%].*)$/;
-const STATIC = new Set(["me", "next", "map", "focus", "memory", "inbox", "card", "decline", "commitments", "followups", "invites", "wins", "same-here", "pulse", "ask", "demo", "session", "clock", "skip-ahead", "reset", "personas", "force-templates", "staff", "funnel", "gaps", "weekly", "dips", "retakes", "push", "subscriptions", "vapid-key", "meta", "barriers", "health", "ics"]);
+const STATIC = new Set(["me", "next", "map", "focus", "memory", "inbox", "card", "decline", "commitments", "followups", "invites", "wins", "same-here", "pulse", "ask", "demo", "session", "clock", "skip-ahead", "reset", "personas", "force-templates", "staff", "funnel", "gaps", "weekly", "dips", "retakes", "push", "subscriptions", "vapid-key", "meta", "barriers", "health", "ics", "chat", "history", "new", "items", "remind"]);
 
 export function routeKey(method: string, path: string): string {
   const clean = path.split("?")[0];

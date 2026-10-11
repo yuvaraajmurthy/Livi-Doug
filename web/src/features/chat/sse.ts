@@ -1,6 +1,7 @@
 // POST-based server-sent events for /chat (EventSource can't POST or send headers).
 import { inspector } from "../../api/inspector";
-import { apiBase } from "../../api/transport";
+import { apiBase, record, transportKind } from "../../api/transport";
+import { replayRequest } from "../../demo/replay/replay";
 import { session } from "../../session/session";
 import { clock } from "../../session/clock";
 import type { ChatSSE } from "./types";
@@ -39,6 +40,7 @@ export async function streamChat(
   onEvent: (e: ChatSSE) => void,
   signal?: AbortSignal,
 ): Promise<void> {
+  if (transportKind() === "replay") return replayChat(body, onEvent);
   const t0 = performance.now();
   const token = session.token();
   const r = await fetch(`${apiBase()}/chat`, {
@@ -55,15 +57,18 @@ export async function streamChat(
   const dec = new TextDecoder();
   const parser = parseSSE();
   let source: string | null = null;
+  const frames: ChatSSE[] = [];
   for (;;) {
     const { done, value } = await reader.read();
     if (done) break;
     for (const ev of parser.push(dec.decode(value, { stream: true }))) {
       if (ev.event === "meta") clock.observe(ev.data.now);
       if (ev.event === "done") source = ev.data.source;
+      frames.push(ev);
       onEvent(ev);
     }
   }
+  record("POST", "/chat", r.status, { frames });
   inspector.emit({
     type: "call",
     call: {
@@ -77,4 +82,14 @@ export async function streamChat(
       source: "live",
     },
   });
+}
+
+/** Offline: play back a recorded answer with a little pacing so it still reads as streaming. */
+async function replayChat(body: unknown, onEvent: (e: ChatSSE) => void): Promise<void> {
+  const { data } = await replayRequest<{ frames: ChatSSE[] }>("POST", "/chat", body);
+  for (const ev of data.frames) {
+    if (ev.event === "meta") clock.observe(ev.data.now);
+    onEvent(ev);
+    if (ev.event === "delta") await new Promise(r => setTimeout(r, 30));
+  }
 }
