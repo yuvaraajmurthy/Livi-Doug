@@ -111,5 +111,21 @@ export function useChat() {
     setMessages([]);
   }, [busy]);
 
-  return { messages, busy, send, newChat, crisis, clearCrisis: () => setCrisis(null), loading: history.isPending };
+  const reload = useCallback(async () => {
+    const r = await api.chatHistory();
+    conv.current = r.conversation_id;
+    setMessages(r.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at })));
+  }, []);
+
+  return {
+    messages,
+    busy,
+    send,
+    newChat,
+    reload,
+    conversationId: () => conv.current,
+    crisis,
+    clearCrisis: () => setCrisis(null),
+    loading: history.isPending,
+  };
 }

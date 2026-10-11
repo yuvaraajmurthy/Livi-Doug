@@ -147,7 +147,7 @@ export function ChatPage() {
             }}
             className="max-h-[120px] min-h-11 flex-1 resize-none bg-transparent px-3 py-2.5 text-[16px] leading-6 outline-none placeholder:text-ink-2/70"
           />
-          <VoiceLauncher />
+          <VoiceLauncher onEnded={() => void chat.reload()} conversationId={chat.conversationId()} />
           <button
             type="submit"
             aria-label={t("chat.send")}
