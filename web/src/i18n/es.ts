@@ -104,6 +104,8 @@ export const es: Record<Key, string> = {
   "plan.remindersBlocked": "Las notificaciones están bloqueadas. Las verás igual en tu bandeja.",
   "plan.friendComing": "Tu amistad dijo que va. Cuenta doble para la Copa.",
   "plan.done": "Listo",
+  "plan.went": "Fuiste",
+  "plan.followupAt": "Luego a las {time}: dos toques, ¿te ayudó?",
   "plan.missing": "Este plan está en la pestaña Tú.",
   "followup.went": "¿Fuiste?",
   "followup.yes": "Sí",

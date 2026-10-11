@@ -38,9 +38,13 @@ export function Today() {
   const planList = usePlans();
   const pending = planList.find(p => p.status === "planned") ?? null;
 
-  const all: Suggestion[] = next.data ? [next.data.pick, ...next.data.alternates] : [];
+  // once something is planned, don't offer the same thing again; keep the other options visible
+  const all: Suggestion[] = (next.data ? [next.data.pick, ...next.data.alternates] : []).filter(
+    x => !pending || x.item.id !== pending.commitment.item.id,
+  );
+  const planOnly = !!pending && !!next.data && all.length < 1 + next.data.alternates.length;
   const hero = all[heroIdx] ?? all[0] ?? null;
-  const others = all.filter(x => x !== hero);
+  const others = planOnly ? all : all.filter(x => x !== hero);
 
   useEffect(() => setHeroIdx(0), [next.data?.set_id]);
   useEffect(() => {
@@ -121,7 +125,7 @@ export function Today() {
             )}
           </div>
         ) : (
-          hero && (
+          hero && !planOnly && (
             <AnimatePresence mode="popLayout">
               <StepCard
                 key={hero.rec_id}

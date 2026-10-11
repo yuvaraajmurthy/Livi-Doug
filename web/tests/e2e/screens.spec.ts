@@ -36,6 +36,16 @@ test.describe("screens", () => {
     await expect(page.getByRole("dialog")).toBeVisible();
     await page.waitForTimeout(900);
     await shoot(page, "08-why", { fullPage: false });
+    await page.keyboard.press("Escape");
+    await page.getByRole("button", { name: "I'm in" }).click();
+    await page.waitForURL(/\/plan\//);
+    await expect(page.getByText(/We'll remind you at/)).toBeVisible();
+    await page.waitForTimeout(700);
+    await shoot(page, "10-plan");
+    await page.getByRole("button", { name: "Done" }).click();
+    await page.waitForURL(/\/next/);
+    await page.waitForTimeout(500);
+    await shoot(page, "11-today-planned", { fullPage: false });
   });
 
   test("taylor care-first", async ({ page }) => {

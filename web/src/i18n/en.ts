@@ -103,6 +103,8 @@ export const en = {
   "plan.remindersBlocked": "Notifications are blocked in this browser. You'll still see them in your inbox.",
   "plan.friendComing": "Your friend said they'll come. Counts double for the Cup.",
   "plan.done": "Done",
+  "plan.went": "You went",
+  "plan.followupAt": "Then at {time}: two taps, did it help?",
   "plan.missing": "This plan is in your You tab.",
   "followup.went": "Did you go?",
   "followup.yes": "Yes",
