@@ -182,10 +182,48 @@ def staff() -> None:
     check("users retake more than non-users", r["rows"] and all(x["users_rate"] > x["non_users_rate"] for x in r["rows"]))
 
 
+def bedrock_blocked() -> None:
+    print("Bedrock blocked (stage switch: templates only)")
+    call("POST", "/demo/force-templates", json={"on": True})
+    try:
+        t = session("priya")
+        worst = 0.0
+        for method, path, body in (("GET", "/me/map", None), ("POST", "/me/focus", {"dimension": "physical", "barriers": ["coursework"], "text": "calc problem sets keep me up"}),
+                                   ("GET", "/me/next", None), ("POST", "/wins", {"text": "Went to tutoring today, felt good"}),
+                                   ("POST", "/me/focus", {"dimension": "physical", "text": "i want to end my life"})):
+            t0 = time.perf_counter()
+            r = call(method, path, t, json=body) if body else call(method, path, t)
+            worst = max(worst, time.perf_counter() - t0)
+            check(f"{method} {path} answers with Bedrock off", r.status_code == 200, r.text[:200])
+        check("all within 1.5 s with Bedrock off", worst < 1.5, f"{worst:.2f}s")
+        r = call("POST", "/me/focus", t, json={"dimension": "physical", "text": "i want to end my life"}).json()
+        check("crisis still caught with Bedrock off", r.get("kind") == "crisis")
+        n = call("GET", "/me/next", t).json()
+        check("wording falls back to templates", n["pick"]["why_source"] == "template")
+    finally:
+        call("POST", "/demo/force-templates", json={"on": False})
+
+
+def reset_and_forget() -> None:
+    print("Reset exactness and forget me")
+    call("POST", "/demo/reset")
+    t = session("andre")
+    mem = call("GET", "/me/memory", t).json()
+    check("after reset, no learned memory", not [m for m in mem["items"] if m["id"].startswith("m:")])
+    call("POST", "/me/focus", t, json={"dimension": "social", "barriers": ["no_time", "dont_know_anyone"]})
+    check("after reset, Andre's pick is the lunch again", call("GET", "/me/next", t).json()["pick"]["item"]["id"] == "pin-andre-lunch-2026-10-13")
+    j = session("jordan")
+    d = call("DELETE", "/me", j)
+    check("forget me deletes", d.status_code == 200 and d.json()["deleted"] == 1)
+    gone = call("GET", "/me/map", j)
+    check("forgotten student has no data", gone.status_code == 404)
+    call("POST", "/demo/reset")
+
+
 def main() -> None:
     if RESET:
         print("reset", call("POST", "/demo/reset").json())
-    for fn in (andre, taylor, priya, sofia, wins, staff, crisis_all):
+    for fn in (andre, taylor, priya, sofia, wins, staff, crisis_all, bedrock_blocked, reset_and_forget):
         try:
             fn()
         except Exception as exc:
