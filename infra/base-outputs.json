@@ -1,0 +1,13 @@
+{
+  "CompassBase": {
+    "ExportsOutputFnGetAttRepo02AC86CFArn39FFAA30": "arn:aws:ecr:us-west-2:204762614174:repository/compass-api",
+    "ExportsOutputRefAppSecretFAB5164C4B25CED8": "arn:aws:secretsmanager:us-west-2:204762614174:secret:compass/app-oLGDAC",
+    "SourceKey": "29596e54d7330ee3aa7ee88d0ecbba040c9c266c615cfb862b2f52f4eb1f65e0.zip",
+    "ExportsOutputRefDbSecretAttachment7AED447C36A58A6F": "arn:aws:secretsmanager:us-west-2:204762614174:secret:compass/db-IFtOPA",
+    "ExportsOutputFnGetAttDbSg495F8305GroupIdA39418C8": "sg-0f52b558740ae8ff9",
+    "DbEndpoint": "compassbase-db5d02a0a9-g4m1gico5gvg.cno0s64aw9zs.us-west-2.rds.amazonaws.com",
+    "ExportsOutputRefRepo02AC86CF4670CBFE": "compass-api",
+    "RepoUri": "204762614174.dkr.ecr.us-west-2.amazonaws.com/compass-api",
+    "BuilderName": "compass-image-builder"
+  }
+}
