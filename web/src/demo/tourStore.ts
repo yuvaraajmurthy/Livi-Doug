@@ -48,12 +48,31 @@ if (typeof document !== "undefined") {
   );
 }
 
+/** Resolves once the tour has moved off step `id` (or ended), or after `ms` so a lost signal can't wedge the button. */
+function leaves(id: string, ms = 30_000): Promise<void> {
+  return new Promise(resolve => {
+    const check = () => {
+      if (!state || state.done || current(state.engine).id !== id) finish();
+    };
+    const finish = () => {
+      clearTimeout(timer);
+      listeners.delete(check);
+      resolve();
+    };
+    const timer = setTimeout(finish, ms);
+    listeners.add(check);
+    check();
+  });
+}
+
 export async function runCurrent() {
   if (!state || state.busy) return;
   const st = current(state.engine);
   set({ ...state, busy: true, error: null });
   try {
     if (st.perform?.length) await perform(st.perform);
+    // A step that waits on a signal (an answer streaming in) stays busy until it arrives: tapping again would redo it.
+    if (st.waitFor) await leaves(st.id);
     // A performed tap advances through the click listener; anything else (typing, info steps) advances here.
     // Wait a beat so a click-driven advance lands first, then only advance if we're still on the same step.
     await new Promise(r => setTimeout(r, 60));

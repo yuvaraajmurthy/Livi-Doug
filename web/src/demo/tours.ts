@@ -58,16 +58,6 @@ export const TOURS: Record<TourName, StoryStep[]> = {
     t("andre", "went", "went-yes", "Did he go? Tap Yes."),
     t("andre", "helped", "helped-4", "Did it help? Tap 4."),
     t("andre", "send", "followup-send", "Tap Send and see what Compass learned.", { waitFor: "followup:submitted" }),
-    t("andre", "chat", "tab-chat", "Or just ask. Open Chat from the tab bar."),
-    t("andre", "ask", "chat-input", "Ask anything, or tap “Do it for me”.", {
-      perform: [
-        { kind: "type", target: "chat-input", text: "anything social with free food this week?" },
-        { kind: "tap", target: "chat-send" },
-      ],
-      waitFor: "chat:answered",
-    }),
-    t("andre", "card", "chat-event-0", "Every answer is a real event. Tap one.", { waitFor: "event:opened" }),
-    t("andre", "remind", "event-remind", "Tap “Remind me”. Same plan and follow-up as before.", { waitFor: "reminder:set" }),
   ],
   priya: [
     start("priya", "Meet Priya: sleep is her lowest score. Let's ask why.", "Ask why."),
@@ -111,6 +101,16 @@ export const TOURS: Record<TourName, StoryStep[]> = {
     t("jordan", "submit", "focus-submit", "Tap “Find my step”.", { waitFor: "next:shown" }),
     t("jordan", "commit", "im-in", "Tap “I'm in”.", { waitFor: "commitment:created" }),
     t("jordan", "invite", "invite", "Invite a friend: a private link, no contacts. It counts double for the hall."),
+    t("jordan", "chat", "tab-chat", "Or skip the browsing and just ask. Open Chat."),
+    t("jordan", "ask", "chat-input", "Ask anything, or tap “Do it for me”.", {
+      perform: [
+        { kind: "type", target: "chat-input", text: "anything social with free food this week?" },
+        { kind: "tap", target: "chat-send" },
+      ],
+      waitFor: "chat:answered",
+    }),
+    t("jordan", "card", "chat-event-0", "Every answer is a real event. Tap one.", { waitFor: "event:opened" }),
+    t("jordan", "remind", "event-remind", "Tap “Remind me”. Same plan and follow-up as before.", { waitFor: "reminder:set" }),
   ],
   staff: [
     start("staff", "This is what ScarletWell staff see: groups only, never a person.", "Aggregates only."),
