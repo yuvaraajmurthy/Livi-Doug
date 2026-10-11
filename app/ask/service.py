@@ -41,6 +41,12 @@ def answer(conn, question: str, campus: str, now, lang: str = "en") -> dict:
     if not rows:
         return {"kind": "redirect", "source": "rule", "items": [],
                 "text": "I can help with Rutgers resources and events. Try asking about tutoring, food, recreation, or something to do this week."}
+    seen, uniq = set(), []
+    for r in rows:  # one entry per title (recurring events share a title)
+        if r["title"] not in seen:
+            seen.add(r["title"])
+            uniq.append(r)
+    rows = uniq
     briefs = [_item_brief(r) for r in rows]
     s = get_settings()
     try:
