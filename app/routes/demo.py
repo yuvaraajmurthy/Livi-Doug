@@ -14,7 +14,7 @@ router = APIRouter(prefix="/demo", tags=["demo"])
 
 @router.post("/session", response_model=SessionResponse)
 def new_session(body: SessionRequest, response: Response):
-    ctx = auth.issue(body.persona)
+    ctx = auth.issue(body.persona, sandbox=body.sandbox and body.persona != "staff")
     return svc.start_session(ctx, body.now, response)
 
 

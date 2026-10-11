@@ -12,6 +12,8 @@ Persona = Literal["andre", "priya", "taylor", "sofia", "jordan", "staff"]
 class SessionRequest(Model):
     persona: Persona
     now: datetime | None = Field(None, description="Optional simulated start time; defaults to the demo start.")
+    sandbox: bool = Field(False, description="Give this session a private copy of the persona (table-mode tours). "
+                                             "Staff never see sandbox students; reset deletes them.")
 
 
 class SessionResponse(Envelope):

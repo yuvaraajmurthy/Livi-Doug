@@ -22,6 +22,9 @@ PERSONA_STUDENT = {
 }
 
 
+SANDBOX_PREFIX = "sb"
+
+
 @dataclass(frozen=True)
 class SessionCtx:
     token: str
@@ -33,8 +36,14 @@ class SessionCtx:
         return "staff" if self.persona == "staff" else "student"
 
     @property
+    def sandbox(self) -> bool:
+        """Table-mode tours run on a private clone of the persona; the marker lives in the signed sid."""
+        return self.sid.startswith(SANDBOX_PREFIX)
+
+    @property
     def student_id(self) -> str | None:
-        return PERSONA_STUDENT.get(self.persona)
+        base = PERSONA_STUDENT.get(self.persona)
+        return f"{base}~{self.sid}" if base and self.sandbox else base
 
 
 def _sig(payload: str) -> str:
@@ -43,8 +52,12 @@ def _sig(payload: str) -> str:
     return base64.urlsafe_b64encode(digest).decode().rstrip("=")
 
 
-def issue(persona: str) -> SessionCtx:
+def issue(persona: str, sandbox: bool = False) -> SessionCtx:
     sid = secrets.token_urlsafe(9)
+    if sid.startswith(SANDBOX_PREFIX):  # plain sids must never look like sandbox sids
+        sid = "x" + sid[1:]
+    if sandbox:
+        sid = SANDBOX_PREFIX + sid
     payload = f"v1.{persona}.{sid}"
     return SessionCtx(token=f"{payload}.{_sig(payload)}", persona=persona, sid=sid)
 

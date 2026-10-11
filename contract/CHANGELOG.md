@@ -2,6 +2,12 @@
 
 Frontend: read this before each pull. Additive changes only after v1 unless flagged **BREAKING**.
 
+## v1.2.0 (2026-10-10, late night): additive only
+
+- `POST /demo/session {persona, sandbox: true}` gives the session a private copy of the persona (`student_id` like
+  `DEMO-ANDRE~sb…`). Use it for table-mode tours so concurrent judges never share state. Staff aggregates exclude
+  sandbox students; `/demo/reset` deletes them; they also expire after 6 hours.
+
 ## v1.1.0 (2026-10-10, Sat night): additive only
 
 - **Live data behind every route** (fixtures remain the automatic fallback; header `X-Compass-Fallback`).

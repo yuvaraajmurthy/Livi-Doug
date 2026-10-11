@@ -5376,6 +5376,12 @@
             ],
             "title": "Now",
             "description": "Optional simulated start time; defaults to the demo start."
+          },
+          "sandbox": {
+            "type": "boolean",
+            "title": "Sandbox",
+            "description": "Give this session a private copy of the persona (table-mode tours). Staff never see sandbox students; reset deletes them.",
+            "default": false
           }
         },
         "additionalProperties": false,

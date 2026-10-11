@@ -3,6 +3,7 @@ import time
 from datetime import datetime
 
 from fastapi import Response
+from psycopg import sql
 
 from app import clock
 from app.auth import SessionCtx
@@ -31,6 +32,9 @@ def start_session(ctx: SessionCtx, start: datetime | None, response: Response) -
             with conn() as c:
                 if sim_now is None:
                     sim_now = clock.now(c, None)
+                if ctx.sandbox and ctx.student_id:
+                    from app.auth import PERSONA_STUDENT
+                    clone_persona(c, PERSONA_STUDENT[ctx.persona], ctx.student_id)
                 c.execute(
                     "INSERT INTO demo_sessions (sid, persona, student_id, sim_now) VALUES (%s, %s, %s, %s)",
                     (ctx.sid, ctx.persona, ctx.student_id, sim_now),
@@ -72,3 +76,47 @@ def reset() -> ResetResponse:
 def force_templates(on: bool) -> ResetResponse:
     get_settings().force_templates = on
     return ResetResponse(synthetic=True, now=clock.default_now(), ok=True, seconds=0.0)
+
+
+# Sandbox clones ------------------------------------------------------------------------------------------------------
+_COLS: dict[str, list[str]] = {}
+
+
+def _cols(c, table: str) -> list[str]:
+    if table not in _COLS:
+        rows = c.execute("SELECT column_name FROM information_schema.columns WHERE table_name = %s "
+                         "AND table_schema = current_schema() ORDER BY ordinal_position", (table,)).fetchall()
+        _COLS[table] = [r["column_name"] for r in rows]
+    return _COLS[table]
+
+
+def _copy(c, table: str, key: str, base_id: str, clone_id: str, skip: tuple[str, ...] = ("id",),
+          override: dict[str, object] | None = None) -> None:
+    """INSERT INTO table (cols) SELECT cols FROM table WHERE key = base_id, with key := clone_id and overrides."""
+    override = {key: clone_id, **(override or {})}
+    cols = [col for col in _cols(c, table) if col not in skip or col in override]
+    select = [sql.Placeholder() if col in override else sql.Identifier(col) for col in cols]
+    params = [override[col] for col in cols if col in override] + [base_id]
+    c.execute(sql.SQL("INSERT INTO {t} ({cols}) SELECT {sel} FROM {t} WHERE {k} = %s").format(
+        t=sql.Identifier(table), cols=sql.SQL(", ").join(map(sql.Identifier, cols)),
+        sel=sql.SQL(", ").join(select), k=sql.Identifier(key)), params)
+
+
+def clone_persona(c, base_id: str, clone_id: str) -> None:
+    """Copy a demo persona (identity, profile, consents, memory, inventory takes and scores) to a private sandbox id."""
+    _copy(c, "students", "id", base_id, clone_id, skip=(), override={"sandbox": True, "sandbox_created": datetime.now().astimezone()})
+    for table in ("profiles", "consents", "student_memory"):
+        _copy(c, table, "student_id", base_id, clone_id)
+    takes = c.execute("SELECT id, take_no, taken_on, source, total FROM inventory_takes WHERE student_id = %s",
+                      (base_id,)).fetchall()
+    for t in takes:  # dimension_scores hang off take ids, so map old -> new per take
+        new_id = c.execute("INSERT INTO inventory_takes (student_id, take_no, taken_on, source, total) "
+                           "VALUES (%s, %s, %s, %s, %s) RETURNING id",
+                           (clone_id, t["take_no"], t["taken_on"], t["source"], t["total"])).fetchone()["id"]
+        c.execute("INSERT INTO dimension_scores (take_id, dimension, score) "
+                  "SELECT %s, dimension, score FROM dimension_scores WHERE take_id = %s", (new_id, t["id"]))
+
+
+def sweep_sandboxes(c, max_age_hours: int = 6) -> int:
+    return c.execute("DELETE FROM students WHERE sandbox AND sandbox_created < now() - make_interval(hours => %s)",
+                     (max_age_hours,)).rowcount

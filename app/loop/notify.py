@@ -192,6 +192,8 @@ def tick() -> None:
     with conn() as c:
         if not c.execute("SELECT pg_try_advisory_xact_lock(4243) AS ok").fetchone()["ok"]:
             return
+        from app.services.demo import sweep_sandboxes
+        sweep_sandboxes(c)
         sessions = c.execute(
             """SELECT DISTINCT ON (student_id) student_id, sim_now FROM demo_sessions
                WHERE student_id IS NOT NULL AND sim_now IS NOT NULL ORDER BY student_id, created_at DESC""").fetchall()
