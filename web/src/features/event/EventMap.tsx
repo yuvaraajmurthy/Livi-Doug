@@ -22,6 +22,8 @@ export function EventMap({ lat, lon, label, href }: { lat: number; lon: number; 
   useEffect(() => {
     const el = box.current;
     if (!el) return;
+    setW(el.clientWidth);
+    if (typeof ResizeObserver === "undefined") return;
     const ro = new ResizeObserver(() => setW(el.clientWidth));
     ro.observe(el);
     return () => ro.disconnect();
