@@ -11,3 +11,4 @@ node_modules/
 .pytest_cache/
 .ruff_cache/
 /secrets/
+.codex-out/
