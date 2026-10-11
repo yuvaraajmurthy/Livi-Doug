@@ -55,7 +55,8 @@ def _safeguard(text: str, timeout: float) -> str:
     out = converse(s.model_safeguard, text, system=SAFEGUARD_POLICY, max_tokens=400, timeout=timeout,
                    temperature=None, guardrail=False, purpose="classify_safeguard",
                    extra={"reasoning_effort": "low"})
-    return _parse(out)
+    # Second opinion on crisis only: its "concern" is noisier on ordinary loneliness, so Haiku + lexicon own concern.
+    return "crisis" if _parse(out) == "crisis" else "none"
 
 
 def classify(text: str, timeout: float | None = None) -> tuple[str | None, list[str]]:
