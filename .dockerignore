@@ -1,0 +1,9 @@
+.venv
+.git
+**/__pycache__
+cdk.out
+infra/cdk.out
+tests
+docs
+.env
+handoff/data/*.py

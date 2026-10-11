@@ -1,0 +1,11 @@
+# 10-minute fallback steps: shown only when nothing else fits. Never empty.
+- {id: micro-social-1, dimension: social, title: "Text one classmate about the homework", title_es: "Escríbele a un compañero sobre la tarea", formats: [solo]}
+- {id: micro-social-2, dimension: social, title: "Eat lunch somewhere on campus instead of alone in your car", title_es: "Almuerza en el campus en vez de en tu carro", formats: [solo]}
+- {id: micro-physical-1, dimension: physical, title: "10-minute wind-down: phone across the room at midnight", title_es: "10 minutos para relajarte: el teléfono lejos a medianoche", formats: [solo]}
+- {id: micro-physical-2, dimension: physical, title: "Take the long way to your next class", title_es: "Toma el camino largo a tu próxima clase", formats: [solo, active]}
+- {id: micro-emotional-1, dimension: emotional, title: "Two minutes of slow breathing before your next class", title_es: "Dos minutos de respiración lenta antes de clase", formats: [solo]}
+- {id: micro-financial-1, dimension: financial, title: "Check if you qualify for the campus food pantry (2 minutes)", title_es: "Revisa si calificas para la despensa del campus (2 minutos)", formats: [solo]}
+- {id: micro-intellectual-1, dimension: intellectual, title: "Write down the one question you'd ask a tutor", title_es: "Escribe la pregunta que le harías a un tutor", formats: [solo]}
+- {id: micro-occupational-1, dimension: occupational, title: "Update one line of your resume", title_es: "Actualiza una línea de tu currículum", formats: [solo]}
+- {id: micro-spiritual-1, dimension: spiritual, title: "Five quiet minutes outside between classes", title_es: "Cinco minutos tranquilos afuera entre clases", formats: [solo]}
+- {id: micro-environmental-1, dimension: environmental, title: "Clear one surface where you study", title_es: "Despeja una superficie donde estudias", formats: [solo]}

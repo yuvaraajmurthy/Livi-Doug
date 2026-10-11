@@ -1,0 +1,79 @@
+# Labelled sample events pinned for a deterministic demo. Real venues, made-up events (synthetic: true).
+# Times are local America/New_York wall-clock.
+- id: pin-andre-lunch-2026-10-13
+  kind: event
+  title: Commuter lunch and board games (sample)
+  summary: Drop-in lunch with board and card games for commuter students. Food provided. Come solo; tables are mixed.
+  summary_es: Almuerzo con juegos de mesa para estudiantes que viajan. Comida incluida. Puedes ir solo.
+  campus: newark
+  venue: Paul Robeson Campus Center
+  address: 350 Dr. Martin Luther King Jr. Blvd, Newark, NJ 07102
+  lat: 40.7415
+  lon: -74.1752
+  starts_at: "2026-10-13 12:30"
+  ends_at: "2026-10-13 13:30"
+  cost: free
+  social_level: 2
+  solo_friendly: true
+  formats: [games, food, structured]
+  dimensions: [social, financial]
+  causes: [loneliness, money]
+  barriers: [dont_know_anyone, no_time, money]
+  series_key: commuter-lunch-games-newark
+  arc_activity_id: arc-mock-commuter-lunch
+- id: pin-andre-basketball-2026-10-22
+  kind: event
+  title: Open gym pickup basketball (sample)
+  summary: Pickup games, all levels. Teams form on the spot.
+  summary_es: Partidos de baloncesto informales, todos los niveles.
+  campus: newark
+  venue: Golden Dome Athletic Center
+  address: 42 Warren St, Newark, NJ 07102
+  lat: 40.7428
+  lon: -74.1787
+  starts_at: "2026-10-22 12:30"
+  ends_at: "2026-10-22 13:45"
+  cost: free
+  social_level: 3
+  solo_friendly: true
+  formats: [games, sports, active]
+  dimensions: [social, physical]
+  causes: [loneliness, inactivity]
+  barriers: [dont_know_anyone, no_time]
+  series_key: pickup-basketball-newark
+  arc_activity_id: arc-mock-pickup-basketball
+- id: pin-jordan-hall-game-night-2026-10-14
+  kind: event
+  title: Livingston halls game night (sample)
+  summary: Board games, Smash and snacks in the Livingston Student Center lounge. Drop in for twenty minutes or stay all night.
+  campus: new_brunswick
+  venue: Livingston Student Center
+  address: 84 Joyce Kilmer Ave, Piscataway, NJ 08854
+  lat: 40.5236
+  lon: -74.4366
+  starts_at: "2026-10-14 20:00"
+  ends_at: "2026-10-14 22:00"
+  cost: free
+  social_level: 2
+  solo_friendly: true
+  formats: [games, structured]
+  dimensions: [social]
+  causes: [loneliness]
+  barriers: [dont_know_anyone, not_my_scene]
+  series_key: livingston-game-night
+- id: pin-sofia-budget-online-2026-10-14
+  kind: online
+  title: Budgeting for real life, evening online session (sample)
+  summary: A 45-minute online workshop on stretching a paycheck. Camera optional.
+  summary_es: Taller en línea de 45 minutos para estirar tu sueldo. Cámara opcional.
+  campus: online
+  starts_at: "2026-10-14 19:30"
+  ends_at: "2026-10-14 20:15"
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  formats: [workshop, online]
+  dimensions: [financial]
+  causes: [money]
+  barriers: [money, no_time]
+  series_key: budgeting-online

@@ -1,0 +1,7 @@
+# Starting profiles for demo personas (what each student told Compass before the demo starts).
+# Focus and barriers are empty: the student picks them in the demo.
+DEMO-ANDRE:  {free_windows: ["Tue 12:20-14:30", "Thu 12:20-14:30"], language: en, free_only: true}
+DEMO-PRIYA:  {free_windows: [], language: en, free_only: true}
+DEMO-TAYLOR: {free_windows: [], language: en, free_only: true}
+DEMO-SOFIA:  {free_windows: ["Tue 19:00-21:30", "Wed 19:00-21:30", "Sat 10:00-14:00"], language: es, free_only: true}
+DEMO-JORDAN: {free_windows: ["Mon 18:00-22:30", "Wed 18:00-22:30", "Fri 15:00-22:30"], language: en, free_only: true}

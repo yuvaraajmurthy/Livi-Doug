@@ -3,6 +3,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Literal
 
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -47,6 +48,22 @@ class Settings(BaseSettings):
     dispatcher_interval_s: float = 30.0
     run_dispatcher: bool = True
     run_wording_worker: bool = True
+
+    # On AWS the RDS-managed secret is injected as separate fields; compose them into database_url.
+    db_host: str | None = None
+    db_port: int = 5432
+    db_user: str | None = None
+    db_password: str | None = None
+    db_name: str = "compass"
+
+    @model_validator(mode="after")
+    def _compose_db_url(self):
+        if self.db_host and self.db_user and self.db_password:
+            from urllib.parse import quote
+            self.database_url = (
+                f"postgresql://{quote(self.db_user)}:{quote(self.db_password, safe='')}@{self.db_host}:{self.db_port}/{self.db_name}?sslmode=require"
+            )
+        return self
 
 
 @lru_cache
