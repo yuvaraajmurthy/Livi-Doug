@@ -1,0 +1,20 @@
+# PLACEHOLDERS until ScarletWell shares the official scoring. A model never computes or changes a score.
+scale: {min: 1.0, max: 4.0}
+bands:
+  low_below: 2.3
+  high_from: 3.2
+care_first:
+  emotional_at_or_below: 1.6
+  other_low_dimensions: 3      # emotional low AND at least this many other dimensions low
+blurbs:
+  en:
+    high: "A real strength for you right now."
+    middle: "Steady. Worth keeping an eye on."
+    low: "Room to grow here. Small steps count."
+  es:
+    high: "Una verdadera fortaleza para ti ahora."
+    middle: "Estable. Vale la pena cuidarlo."
+    low: "Aquí hay espacio para crecer. Los pasos pequeños cuentan."
+labels:
+  en: {emotional: Emotional, environmental: Environmental, financial: Financial, intellectual: Intellectual, occupational: Occupational, physical: Physical, social: Social, spiritual: Spiritual}
+  es: {emotional: Emocional, environmental: Ambiental, financial: Financiero, intellectual: Intelectual, occupational: Ocupacional, physical: Física, social: Social, spiritual: Espiritual}

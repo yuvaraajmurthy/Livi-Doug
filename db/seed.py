@@ -63,6 +63,10 @@ def load_kb(conn: psycopg.Connection) -> int:
     conn.execute("UPDATE kb_items SET attribution = 'Compass sample event (synthetic)' WHERE synthetic")
     upsert_pins(conn)
     load_micro_steps(conn)
+    from ingest.geocode import apply_to_kb
+    apply_to_kb(conn, network=False)
+    for item_id, campus in (("res-cmd-002", "camden"),):
+        conn.execute("INSERT INTO kb_tags (item_id, tag_type, tag, tagged_by) VALUES (%s, 'audience', %s, 'staff') ON CONFLICT DO NOTHING", (item_id, campus))
     for extra in ("research_items", "snapshot_items"):
         from ingest import loaders
         getattr(loaders, extra)(conn)
@@ -190,9 +194,59 @@ def load_people(conn: psycopg.Connection) -> None:
         conn.execute("INSERT INTO profiles (student_id, free_windows, language, free_only) VALUES (%s, %s, %s, %s)",
                      (sid, prof["free_windows"], prof["language"], prof["free_only"]))
     conn.execute("INSERT INTO app_clock (id, sim_now) VALUES (1, %s)", (datetime.fromisoformat(get_settings().default_now),))
+    seed_demo_history(conn)
     for s in subs:
         conn.execute("INSERT INTO push_subscriptions (student_id, endpoint, p256dh, auth) VALUES (%s, %s, %s, %s) ON CONFLICT (endpoint) DO NOTHING",
                      (s["student_id"], s["endpoint"], s["p256dh"], s["auth"]))
+
+
+HISTORY = [
+    # series, campus, past instances (date, start, end), attendees, helped>=4, going for the pinned instance, pinned id
+    ("commuter-lunch-games-newark", "newark", ["2026-09-22", "2026-09-29", "2026-10-06"], 36, 26, 14, "pin-andre-lunch-2026-10-13"),
+    ("pickup-basketball-newark", "newark", ["2026-10-01", "2026-10-08"], 20, 13, 6, "pin-andre-basketball-2026-10-22"),
+    ("livingston-game-night", "new_brunswick", ["2026-09-30", "2026-10-07"], 24, 17, 7, "pin-jordan-hall-game-night-2026-10-14"),
+]
+
+
+def seed_demo_history(conn: psycopg.Connection) -> None:
+    """Deterministic, synthetic history for pinned series: past ratings (for 'helped similar students')
+    and planned commitments (for 'N students are going'). All rows belong to synthetic students."""
+    for series, campus, dates, attendees, helped, going, pin_id in HISTORY:
+        pin = conn.execute("SELECT * FROM kb_items WHERE id = %s", (pin_id,)).fetchone()
+        if not pin:
+            continue
+        housing_filter = "AND housing = 'commuter'" if campus == "newark" else "AND housing = 'resident'"
+        pool = [r["id"] for r in conn.execute(
+            f"SELECT id FROM students WHERE campus = %s AND synthetic AND id NOT LIKE 'DEMO-%%' {housing_filter} ORDER BY id LIMIT %s",
+            (campus, attendees + going)).fetchall()]
+        hist_ids = []
+        for d in dates:
+            hid = f"hist-{series}-{d}"
+            hist_ids.append(hid)
+            conn.execute(
+                """INSERT INTO kb_items (id, kind, title, campus, venue, address, lat, lon, starts_at, ends_at, cost, social_level,
+                                         solo_friendly, source, synthetic, series_key, formats, active, attribution)
+                   VALUES (%s, 'event', %s, %s, %s, %s, %s, %s, %s::date + %s::time, %s::date + %s::time, 'free', %s, true,
+                           'synthetic', true, %s, %s, false, 'Compass sample event (synthetic)')
+                   ON CONFLICT (id) DO NOTHING""",
+                (hid, pin["title"], campus, pin["venue"], pin["address"], pin["lat"], pin["lon"], d, pin["starts_at"].time(),
+                 d, pin["ends_at"].time(), pin["social_level"], series, pin["formats"]))
+        for i, sid in enumerate(pool[:attendees]):
+            hid = hist_ids[i % len(hist_ids)]
+            rid = conn.execute(
+                "INSERT INTO recommendations (student_id, item_id, dimension, shown_on, status) VALUES (%s, %s, 'social', %s::date - 3, 'committed') RETURNING id",
+                (sid, hid, hid[-10:])).fetchone()["id"]
+            cid = conn.execute(
+                "INSERT INTO commitments (recommendation_id, student_id, item_id, with_friend, status) VALUES (%s, %s, %s, %s, 'went') RETURNING id",
+                (rid, sid, hid, i % 4 == 0)).fetchone()["id"]
+            conn.execute("INSERT INTO feedback (commitment_id, student_id, went, helped, created_at) VALUES (%s, %s, true, %s, %s::date)",
+                         (cid, sid, 4 + (i % 2) if i < helped else 2 + (i % 2), hid[-10:]))
+        for sid in pool[attendees:attendees + going]:
+            rid = conn.execute(
+                "INSERT INTO recommendations (student_id, item_id, dimension, shown_on, status) VALUES (%s, %s, 'social', '2026-10-11', 'committed') RETURNING id",
+                (sid, pin_id)).fetchone()["id"]
+            conn.execute("INSERT INTO commitments (recommendation_id, student_id, item_id, status) VALUES (%s, %s, %s, 'planned')",
+                         (rid, sid, pin_id))
 
 
 def seed_all(conn: psycopg.Connection, kb: bool = True) -> None:
