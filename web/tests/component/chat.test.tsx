@@ -94,6 +94,31 @@ describe("Chat", () => {
     expect(within(dialog).getByRole("link", { name: /Directions/ })).toHaveAttribute("href", DETAIL.directions_url);
   });
 
+  it("a message sent before history loads survives the history arriving", async () => {
+    const user = userEvent.setup();
+    let release!: () => void;
+    const gate = new Promise<void>(r => (release = r));
+    server.use(
+      http.get(`${API}/chat/history`, async () => {
+        await gate;
+        return HttpResponse.json({ conversation_id: "c-old", messages: [] });
+      }),
+      http.post(`${API}/chat`, () =>
+        new HttpResponse(sse([["delta", { text: "Here you go." }], ["done", { message_id: 2, source: "ai" }]]), {
+          headers: { "Content-Type": "text/event-stream" },
+        }),
+      ),
+    );
+    renderAt(<ChatPage />, "/chat");
+    await user.type(screen.getByRole("textbox", { name: /Message Compass/ }), "free food this week?");
+    await user.click(screen.getByRole("button", { name: "Send" }));
+    expect(await screen.findByText("Here you go.")).toBeInTheDocument();
+    release();
+    await new Promise(r => setTimeout(r, 100));
+    expect(screen.getByText("free food this week?")).toBeInTheDocument();
+    expect(screen.getByText("Here you go.")).toBeInTheDocument();
+  });
+
   it("Remind me on the card posts once and confirms", async () => {
     const user = userEvent.setup();
     let hits = 0;

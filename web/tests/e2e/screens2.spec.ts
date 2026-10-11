@@ -36,7 +36,7 @@ test.describe("screens 2", () => {
     await page.waitForTimeout(1200);
     await shoot(page, "22-event", { fullPage: false });
     await page.keyboard.press("Escape");
-    await page.getByRole("link", { name: "Map" }).click();
+    await page.getByRole("link", { name: "Map", exact: true }).click();
     await expect(page.getByTestId("dim-row").first()).toBeVisible();
     await page.waitForTimeout(800);
     await shoot(page, "21-map");

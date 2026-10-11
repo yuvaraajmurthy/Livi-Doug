@@ -39,10 +39,10 @@ export function useChat() {
   useEffect(() => {
     if (!history.data || loaded.current) return;
     loaded.current = true;
-    conv.current = history.data.conversation_id;
-    setMessages(
-      history.data.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at })),
-    );
+    // a turn sent before history arrived already owns the conversation; keep it and put history before it
+    conv.current ??= history.data.conversation_id;
+    const past = history.data.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at }));
+    setMessages(ms => [...past, ...ms]);
   }, [history.data]);
 
   useEffect(() => () => abort.current?.abort(), []);
