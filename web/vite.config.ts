@@ -15,5 +15,6 @@ export default defineConfig({
     include: ["tests/unit/**/*.test.ts", "tests/component/**/*.test.tsx"],
     css: false,
     testTimeout: 15000,
+    alias: [{ find: /^maplibre-gl$/, replacement: fileURLToPath(new URL("./tests/__mocks__/maplibre.ts", import.meta.url)) }],
   },
 });

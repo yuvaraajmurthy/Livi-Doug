@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { useEffect } from "react";
-import { BrowserRouter, Route, Routes, useNavigate, useParams } from "react-router";
+import { BrowserRouter, Navigate, Route, Routes, useNavigate, useParams } from "react-router";
 import { Entry } from "../features/entry/Entry";
 import { FocusFlow } from "../features/focus/FocusFlow";
 import { Today } from "../features/today/Today";
@@ -10,7 +10,7 @@ import { Followup } from "../features/followup/Followup";
 import { Inbox } from "../features/inbox/Inbox";
 import { MapPage } from "../features/map/MapPage";
 import { YouPage } from "../features/you/YouPage";
-import { CampusPage } from "../features/campus/CampusPage";
+import { ChatPage } from "../features/chat/ChatPage";
 import { CardPage } from "../features/card/CardPage";
 import { RequireStudent } from "./RequireStudent";
 import { LiveRegion, ToastHost } from "../ui/Toast";
@@ -55,7 +55,8 @@ export function AppRouter() {
           <Route path="/next" element={<Today />} />
           <Route path="/plan/:id" element={<PlanView />} />
           <Route path="/map" element={<MapPage />} />
-          <Route path="/campus" element={<CampusPage />} />
+          <Route path="/chat" element={<ChatPage />} />
+          <Route path="/campus" element={<Navigate to="/chat" replace />} />
           <Route path="/you" element={<YouPage />} />
           <Route path="/card" element={<CardPage />} />
           <Route path="/inbox" element={<Inbox />} />

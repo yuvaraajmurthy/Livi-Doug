@@ -1,4 +1,4 @@
-import { ArrowRight, CalendarCheck, CaretRight } from "@phosphor-icons/react";
+import { ArrowRight, CalendarCheck, CaretRight, ChatCircleDots } from "@phosphor-icons/react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
@@ -21,7 +21,6 @@ import { plans, usePlans } from "../plan/plans";
 import { cleanTitle, StepCard } from "./StepCard";
 import { SupportFirst } from "./SupportFirst";
 import { WhySheet } from "./WhySheet";
-import { AskLauncher } from "../ask/AskLauncher";
 
 export function Today() {
   const t = useT();
@@ -175,7 +174,14 @@ export function Today() {
         </section>
       ) : null}
 
-      <AskLauncher className="mt-8" />
+      <Link
+        to="/chat"
+        data-tour="today-ask"
+        className="mt-8 flex h-14 w-full items-center gap-3 rounded-full border border-line bg-surface px-5 text-[16px] text-ink-2 hover:bg-surface-2"
+      >
+        <ChatCircleDots size={20} aria-hidden />
+        {t("today.ask")}
+      </Link>
 
       <WhySheet s={hero} open={whyOpen} onClose={() => setWhyOpen(false)} />
       <Sheet open={declineOpen} onClose={() => setDeclineOpen(false)} title={t("decline.title")}>

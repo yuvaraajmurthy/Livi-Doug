@@ -32,7 +32,7 @@ export type ChatSSE =
   | { event: "memory_removed"; data: { id: string } }
   | { event: "support"; data: SupportCard }
   | { event: "crisis"; data: CrisisResponse }
-  | { event: "done"; data: { message_id: number; source: "ai" | "fallback" } }
+  | { event: "done"; data: { message_id: number; source: "ai" | "fallback" | "rule" } }
   | { event: "error"; data: { message: string } };
 
 export type ChatMessage = {
@@ -71,5 +71,6 @@ export type ItemDetail = {
   going: { count: number | null; label: string };
   source: { name: string; url: string | null; verified_on: string | null };
   directions_url: string;
+  calendar_url: string | null;
   ics_url: string | null;
 };

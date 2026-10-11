@@ -78,11 +78,11 @@ export const TOURS: Record<TourName, StoryStep[]> = {
     t("taylor", "support", "support-card", "A person comes first, events wait. Tap Next to try the safety check.", {
       perform: [],
     }),
-    t("taylor", "ask", "ask-open", "Tap the Ask box at the bottom."),
-    t("taylor", "type", "ask-input", "Type something worrying, or tap “Do it for me”.", {
-      perform: [{ kind: "type", target: "ask-input", text: "honestly I don't want to be here anymore" }],
+    t("taylor", "chat", "tab-chat", "Open Chat from the tab bar."),
+    t("taylor", "type", "chat-input", "Type something worrying, or tap “Do it for me”.", {
+      perform: [{ kind: "type", target: "chat-input", text: "honestly I don't want to be here anymore" }],
     }),
-    t("taylor", "send", "ask-send", "Tap Ask. Code catches it before any AI sees it.", { waitFor: "crisis:shown" }),
+    t("taylor", "send", "chat-send", "Send it. Code catches it before any AI sees it.", { waitFor: "crisis:shown" }),
   ],
   sofia: [
     start("sofia", "Meet Sofia: Camden grad student, works full time, prefers Spanish.", "Spanish, Camden."),

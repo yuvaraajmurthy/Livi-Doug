@@ -101,6 +101,15 @@ export const api = {
   unsubscribePush: (sub: S["SubscriptionRequest"]) =>
     call<S["SubscriptionResult"]>("DELETE", "/push/subscriptions", sub),
 
+  item: (id: string) => call<import("../features/chat/types").ItemDetail>("GET", `/items/${encodeURIComponent(id)}`),
+  remind: (id: string) => call<CommitResponse>("POST", `/items/${encodeURIComponent(id)}/remind`),
+  chatHistory: () =>
+    call<{ conversation_id: string | null; messages: { id: number; role: "user" | "assistant"; text: string; blocks: import("../features/chat/types").UIEvent[]; source: string | null; at: string }[] }>(
+      "GET",
+      "/chat/history",
+    ),
+  chatNew: () => call<{ conversation_id: string }>("POST", "/chat/new"),
+
   staff: {
     funnel: (f: StaffFilters = {}) => call<S["FunnelResponse"]>("GET", `/staff/funnel${qs(f)}`),
     gaps: (f: StaffFilters = {}) => call<S["GapsResponse"]>("GET", `/staff/gaps${qs(f)}`),

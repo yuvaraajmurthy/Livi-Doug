@@ -20,7 +20,11 @@ export type Signal =
   | "clock:changed"
   | "route:changed"
   | "decline:done"
-  | "win:posted";
+  | "win:posted"
+  | "chat:answered"
+  | "chat:events"
+  | "event:opened"
+  | "reminder:set";
 
 export type Action =
   | { kind: "tap"; target: string }

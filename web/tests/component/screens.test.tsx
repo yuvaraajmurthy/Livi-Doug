@@ -6,8 +6,6 @@ import { server } from "../setup";
 import { API, fixture, renderAt, setupPersona } from "../helpers";
 import { MapPage } from "../../src/features/map/MapPage";
 import { YouPage } from "../../src/features/you/YouPage";
-import { CampusPage } from "../../src/features/campus/CampusPage";
-import { AskSheet } from "../../src/features/ask/AskSheet";
 import { language } from "../../src/i18n/useT";
 
 describe("Map", () => {
@@ -79,40 +77,5 @@ describe("You: memory and privacy", () => {
     await userEvent.click(screen.getByRole("button", { name: "Forget me" }));
     await waitFor(() => expect(hits).toBe(1));
     confirm.mockRestore();
-  });
-});
-
-describe("Campus", () => {
-  beforeEach(() => setupPersona("andre"));
-
-  it("shows cooperative challenges and lets you say same here, rolling back on error", async () => {
-    server.use(http.post(`${API}/wins/:id/same-here`, () => new HttpResponse(null, { status: 500 })));
-    renderAt(<CampusPage />, "/campus");
-    expect(await screen.findByText("Scarlet Wellness Cup: steps this week")).toBeInTheDocument();
-    expect(screen.getAllByText(/No individual leaderboard/).length).toBeGreaterThan(0);
-    const win = (await screen.findByText(/Went to tutoring for the first time/)).closest("li")!;
-    const btn = within(win).getByRole("button", { name: /Same here/ });
-    expect(btn).toHaveTextContent("41");
-    await userEvent.click(btn);
-    await waitFor(() => expect(btn).toHaveTextContent("41"));
-  });
-});
-
-describe("Ask", () => {
-  beforeEach(() => setupPersona("andre"));
-
-  it("answers with items", async () => {
-    renderAt(<AskSheet open onClose={() => {}} />, "/next");
-    await userEvent.type(screen.getByRole("textbox", { name: "Ask Compass" }), "anything social this week?");
-    await userEvent.click(screen.getByRole("button", { name: "Ask" }));
-    expect(await screen.findByText("Commuter lunch and board games", { selector: "p" })).toBeInTheDocument();
-  });
-
-  it("a crisis question shows the crisis card", async () => {
-    server.use(http.post(`${API}/ask`, () => HttpResponse.json(fixture("andre", "me_focus_crisis"))));
-    renderAt(<AskSheet open onClose={() => {}} />, "/next");
-    await userEvent.type(screen.getByRole("textbox", { name: "Ask Compass" }), "i don't want to be here");
-    await userEvent.click(screen.getByRole("button", { name: "Ask" }));
-    expect(await screen.findByRole("heading", { name: "You don't have to handle this alone" })).toBeInTheDocument();
   });
 });
