@@ -25,16 +25,20 @@ export function StageChild() {
         toParent({ kind: "session", token: s.token, persona: s.persona });
       }
     });
-    const onMessage = async (ev: MessageEvent<ToApp>) => {
+    // One at a time: a step's actions must not start while an earlier switch (offline replay loading) is still running.
+    let queue = Promise.resolve();
+    const onMessage = (ev: MessageEvent<ToApp>) => {
       if (ev.origin !== window.location.origin || ev.data?.source !== "compass-stage") return;
-      if (ev.data.kind === "perform") {
+      const msg = ev.data;
+      if (msg.kind !== "perform") return;
+      queue = queue.then(async () => {
         try {
-          await perform(ev.data.actions, { stage: true });
-          toParent({ kind: "performed", id: ev.data.id });
+          await perform(msg.actions, { stage: true });
+          toParent({ kind: "performed", id: msg.id });
         } catch (e) {
-          toParent({ kind: "performed", id: ev.data.id, error: (e as Error).message });
+          toParent({ kind: "performed", id: msg.id, error: (e as Error).message });
         }
-      }
+      });
     };
     const onKey = (e: KeyboardEvent) => {
       const typing = (e.target as HTMLElement | null)?.closest?.("input, textarea, select");
