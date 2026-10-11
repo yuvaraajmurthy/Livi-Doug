@@ -1,4 +1,5 @@
 """Turn engine output into contract models. Labels, going counts, why lines, recommendation rows."""
+import re
 import hashlib
 from datetime import datetime
 
@@ -95,7 +96,7 @@ def reasons(s: Scored, lang: str) -> Reasons:
     comps = [Component(name=k, weight=w[k], score=round(s.components[k], 3), contribution=round(w[k] * s.components[k], 3),
                        text=comp_text.get(k, "")) for k in w]
     mem = [MemoryReason(memory_id=f"m:{f.id}", statement=f.statement, delta=dlt) for f, dlt in s.memory]
-    return Reasons(filters=[ReasonLine(code=c, text=t) for c, t in s.filters], components=comps, memory=mem,
+    return Reasons(filters=[ReasonLine(code=c, text=localize_filter(c, t, lang)) for c, t in s.filters], components=comps, memory=mem,
                    distance=s.distance_note, total=round(s.score, 3))
 
 
@@ -120,7 +121,7 @@ def suggestion(conn, s: Scored, rec_id: int, ctx: StudentCtx, pushed: bool) -> S
     labels = cfg()["rung_labels_es" if lang == "es" else "rung_labels"]
     return Suggestion(
         rec_id=rec_id, item=to_item(s, lang), starts_at=it.starts_at, ends_at=it.ends_at, when_label=when_label(s, lang),
-        window_label=s.window_label if ctx.windows and s.components.get("window", 0) >= cfg()["min_window_fit"] else None,
+        window_label=localize_window(s.window_label, lang) if ctx.windows and s.components.get("window", 0) >= cfg()["min_window_fit"] else None,
         where=Place(venue=it.venue, address=it.address, lat=it.lat, lon=it.lon, campus=it.campus if it.campus in (
             "new_brunswick", "newark", "camden", "online", "community") else "online"),
         walk_min=s.walk_min, cost=it.cost, cost_label=cost_label(it.cost, lang, it.kind), rung=rung,
@@ -178,3 +179,32 @@ def helps_with(dimension_text: str, lang: str) -> str | None:
         return None
     en, es = HELPS_WITH.get(dimension_text.split(":", 1)[1], ("what you said gets in the way", "lo que dijiste que te frena"))
     return es if lang == "es" else en
+
+
+# Spanish for the engine's English labels (the engine stays language-free; presentation localises) -----------------
+_DAYS_ES = {"Monday": "lunes", "Tuesday": "martes", "Wednesday": "miércoles", "Thursday": "jueves", "Friday": "viernes",
+            "Saturday": "sábado", "Sunday": "domingo"}
+_WINDOW_ES = [
+    (re.compile(r"^Fits your (\w+) gap, (.+)$"), "Cabe en tu hueco del {d}, {t}"),
+    (re.compile(r"^Mostly inside your (\w+) gap, (.+)$"), "Casi todo dentro de tu hueco del {d}, {t}"),
+    (re.compile(r"^Open during your (\w+) gap, (.+)$"), "Abierto durante tu hueco del {d}, {t}"),
+]
+_FIXED_ES = {"Any time": "Cuando quieras", "Any time, online": "Cuando quieras, en línea"}
+_FILTERS_ES = {"campus": "En tu campus", "online": "En línea", "free": "Gratis", "in_window": "Dentro de uno de tus horarios libres",
+               "sample": "Evento de ejemplo (sintético)"}
+
+
+def localize_window(label: str | None, lang: str) -> str | None:
+    if label is None or lang != "es":
+        return label
+    if label in _FIXED_ES:
+        return _FIXED_ES[label]
+    for rx, tpl in _WINDOW_ES:
+        m = rx.match(label)
+        if m:
+            return tpl.format(d=_DAYS_ES.get(m.group(1), m.group(1)), t=m.group(2))
+    return label
+
+
+def localize_filter(code: str, text: str, lang: str) -> str:
+    return _FILTERS_ES.get(code, text) if lang == "es" else text
