@@ -34,6 +34,7 @@ export const en = {
     "Compass reads the inventory you already took and the events Rutgers already lists, then picks one small step, follows up, and learns what works for you.",
   "entry.pick": "Try it as a student",
   "entry.synthetic": "Synthetic student",
+  "entry.privateCopy": "Synthetic students. Each visit gets its own private copy.",
   "entry.present": "Present on stage",
   "entry.tour": "Take the guided tour",
   "entry.staff": "Staff Pulse",

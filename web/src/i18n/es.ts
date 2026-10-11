@@ -35,6 +35,7 @@ export const es: Record<Key, string> = {
     "Compass lee el inventario que ya hiciste y los eventos que Rutgers ya publica, elige un paso pequeño, da seguimiento y aprende lo que te funciona.",
   "entry.pick": "Pruébalo como estudiante",
   "entry.synthetic": "Estudiante sintético",
+  "entry.privateCopy": "Estudiantes sintéticos. Cada visita recibe su propia copia privada.",
   "entry.present": "Presentar en el escenario",
   "entry.tour": "Hacer el recorrido guiado",
   "entry.staff": "Staff Pulse",
