@@ -65,3 +65,16 @@ def test_dispatcher_tick_sweeps_old_sandboxes(client, db):
     ids = {r["id"] for r in db.execute("SELECT id FROM students WHERE sandbox").fetchall()}
     assert s["student_id"] not in ids
     assert fresh["student_id"] in ids
+
+
+def test_sandbox_commitments_do_not_inflate_social_proof(client):
+    def going():
+        s = _session(client, "andre", True)
+        client.post("/me/focus", json=FOCUS, headers=_h(s))
+        return client.get("/me/next", headers=_h(s)).json()["pick"]["going"]["count"], s
+
+    before, s = going()
+    rec = client.get("/me/next", headers=_h(s)).json()["pick"]["rec_id"]
+    assert client.post("/commitments", json={"rec_id": rec}, headers=_h(s)).status_code == 200
+    after, _ = going()
+    assert after == before

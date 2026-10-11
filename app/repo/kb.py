@@ -96,7 +96,7 @@ def helped_stats(conn, ctx: StudentCtx, now: datetime) -> HelpedStats:
            JOIN recommendations r ON r.id = c.recommendation_id
            JOIN students s ON s.id = c.student_id
            JOIN kb_items i ON i.id = c.item_id
-           WHERE f.went AND s.campus = %s AND s.housing IS NOT DISTINCT FROM %s AND r.shown_on <= %s AND s.id <> %s
+           WHERE f.went AND NOT s.sandbox AND s.campus = %s AND s.housing IS NOT DISTINCT FROM %s AND r.shown_on <= %s AND s.id <> %s
            GROUP BY 1""",
         (ctx.campus, ctx.housing, now.astimezone(NY).date(), ctx.id),
     ).fetchall()
@@ -116,5 +116,7 @@ def memory_facts(conn, student_id: str) -> list[MemoryFact]:
 
 
 def going_count(conn, item_id: str) -> int:
-    r = conn.execute("SELECT count(*) AS n FROM commitments WHERE item_id = %s AND status IN ('planned','went')", (item_id,)).fetchone()
+    # sandbox (table-tour) students never count toward social proof
+    r = conn.execute("""SELECT count(*) AS n FROM commitments c JOIN students s ON s.id = c.student_id
+                        WHERE c.item_id = %s AND c.status IN ('planned','went') AND NOT s.sandbox""", (item_id,)).fetchone()
     return int(r["n"])
