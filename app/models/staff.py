@@ -100,3 +100,15 @@ class RetakeRow(Model):
 
 class RetakesResponse(StaffEnvelope):
     rows: list[RetakeRow]
+
+
+class StaffAskRequest(Model):
+    question: str
+
+
+class StaffAskResponse(Envelope):
+    ok: bool
+    message: str
+    sql: str | None
+    columns: list[str]
+    rows: list[dict]

@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, Query, Response
 from app.auth import SessionCtx, staff_session
 from app.models.common import Campus, Dimension
 from app.models.staff import (
-    DipsResponse, FunnelResponse, GapsResponse, RetakesResponse, StaffFilters, WeeklyResponse,
+    DipsResponse, FunnelResponse, StaffAskRequest, StaffAskResponse, GapsResponse, RetakesResponse, StaffFilters, WeeklyResponse,
 )
 from app.routes._serve import serve
 from app.services import staff as svc
@@ -47,3 +47,13 @@ def dips(response: Response, threshold: float | None = Query(None, ge=0.01, le=1
 @router.get("/retakes", response_model=RetakesResponse)
 def retakes(response: Response, f: StaffFilters = Depends(filters), ctx: SessionCtx = Depends(staff_session)):
     return serve(ctx, "staff_retakes", response, lambda: svc.retakes(ctx, f))
+
+
+@router.post("/ask", response_model=StaffAskResponse, tags=["p2"], summary="Ask the data: NL -> read-only SQL over suppressed aggregates (query shown)")
+def staff_ask(body: StaffAskRequest, response: Response, ctx: SessionCtx = Depends(staff_session)):
+    from app.ask.staff_sql import ask
+    from app import clock
+    from app.db import conn
+    with conn() as c:
+        now = clock.now(c, ctx.sid)
+    return StaffAskResponse(synthetic=True, now=now, **ask(body.question[:400], now.date().isoformat()))

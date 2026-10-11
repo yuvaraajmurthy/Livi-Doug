@@ -37,7 +37,9 @@ def _kwargs() -> dict:
 
 def _reset(c: psycopg.Connection) -> None:
     """Defence in depth: a connection never goes back to the pool carrying a role (e.g. compass_staff_ro)."""
+    c.rollback()
     c.execute("RESET ROLE")
+    c.commit()
 
 
 def pool() -> ConnectionPool:
