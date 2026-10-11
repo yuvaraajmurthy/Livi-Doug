@@ -1,0 +1,21 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "profile",
+  "profile": {
+    "focus": "social",
+    "barriers": [
+      "no_time",
+      "dont_know_anyone"
+    ],
+    "barriers_from_text": [],
+    "free_windows": [
+      "Tue 12:20-14:30",
+      "Thu 12:20-14:30"
+    ],
+    "social_rung": 2,
+    "free_only": true,
+    "language": "en"
+  },
+  "support": null
+}

@@ -1,0 +1,66 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "challenges": [
+    {
+      "id": "ch-campus-cup-oct-new_brunswick",
+      "title": "Scarlet Wellness Cup: steps this week",
+      "scope": "campus",
+      "scope_label": "New Brunswick",
+      "dimension": null,
+      "goal": 400,
+      "progress": 102,
+      "pct": 0.255,
+      "starts_on": "2026-10-12",
+      "ends_on": "2026-10-18",
+      "rule": "Cooperative: each campus races its own goal, sized to enrollment. No individual leaderboard.",
+      "yours": true,
+      "synthetic": true
+    },
+    {
+      "id": "ch-sleep-week",
+      "title": "Sleep Week: three wind-down nights",
+      "scope": "all",
+      "scope_label": "All campuses",
+      "dimension": "physical",
+      "goal": 1500,
+      "progress": 0,
+      "pct": 0.0,
+      "starts_on": "2026-10-19",
+      "ends_on": "2026-10-25",
+      "rule": "Timed for midterms. Counts check-ins, not hours slept.",
+      "yours": true,
+      "synthetic": true
+    }
+  ],
+  "wins": [
+    {
+      "id": "w01",
+      "text": "Went to tutoring for the first time. Calc feels less impossible.",
+      "dimension": "intellectual",
+      "campus": "new_brunswick",
+      "same_here": 41,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w02",
+      "text": "Brought my lab partner to game night. We stayed two hours.",
+      "dimension": "social",
+      "campus": "new_brunswick",
+      "same_here": 27,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    },
+    {
+      "id": "w03",
+      "text": "Ate lunch on campus instead of in my car. Small thing, felt good.",
+      "dimension": "social",
+      "campus": "newark",
+      "same_here": 33,
+      "created_at": "2026-10-09T12:00:00-04:00",
+      "synthetic": true
+    }
+  ],
+  "retake_nudge": null
+}

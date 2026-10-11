@@ -1,0 +1,26 @@
+{
+  "synthetic": true,
+  "now": "2026-10-13T15:30:00-04:00",
+  "commitment_id": 9001,
+  "status": "went",
+  "progress": {
+    "dimension": "social",
+    "steps_this_month": 1,
+    "message": "One step taken this month. That counts."
+  },
+  "arc": {
+    "status": "mock",
+    "message": "Wellness credit added to The Arc (demo)"
+  },
+  "challenge": {
+    "challenge_id": "ch-campus-cup-oct-new_brunswick",
+    "title": "Scarlet Wellness Cup: steps this week",
+    "added": 1,
+    "progress": 103,
+    "goal": 400,
+    "pct": 0.25
+  },
+  "next_rung": null,
+  "learned": [],
+  "win_prompt": true
+}

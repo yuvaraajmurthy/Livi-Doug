@@ -1,0 +1,77 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "items": [
+    {
+      "id": "profile:focus",
+      "kind": "focus",
+      "statement": "You chose to grow: Social",
+      "source": {
+        "type": "you_chose",
+        "label": "Your choice",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Picks steps for this area",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:barrier:no_time",
+      "kind": "barrier",
+      "statement": "What gets in the way: no time",
+      "source": {
+        "type": "you_chose",
+        "label": "You tapped this",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Favours steps that get around it",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:barrier:dont_know_anyone",
+      "kind": "barrier",
+      "statement": "What gets in the way: dont know anyone",
+      "source": {
+        "type": "you_chose",
+        "label": "You tapped this",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Favours steps that get around it",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:0",
+      "kind": "free_window",
+      "statement": "Free: Tue 12:20-14:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:window:1",
+      "kind": "free_window",
+      "statement": "Free: Thu 12:20-14:30",
+      "source": {
+        "type": "you_chose",
+        "label": "Your schedule",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Only suggests things that fit",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    }
+  ],
+  "note": "This is everything Compass keeps about you. Your inventory scores stay in MyRutgers and are only read, never changed."
+}

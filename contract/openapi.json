@@ -1,0 +1,6056 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Compass API",
+    "description": "Backend for Compass (Rutgers Health Hack 2026). Turns Wellness Inventory scores into one next step, follows up, and feeds Staff Pulse. All data in this prototype is synthetic or labelled sample unless marked otherwise. Auth: POST /demo/session, then `Authorization: Bearer <token>`. Every response carries `synthetic` and the simulated `now`. Header `X-Compass-Fallback: fixture|template` marks fallbacks.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "ops"
+        ],
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "parameters": [
+          {
+            "name": "deep",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Deep"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/push/vapid-key": {
+      "get": {
+        "tags": [
+          "push"
+        ],
+        "summary": "Vapid Key",
+        "operationId": "vapid_key_push_vapid_key_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VapidKey"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/push/subscriptions": {
+      "post": {
+        "tags": [
+          "push"
+        ],
+        "summary": "Subscribe",
+        "operationId": "subscribe_push_subscriptions_post",
+        "parameters": [
+          {
+            "name": "test",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Test"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SubscriptionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriptionResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "push"
+        ],
+        "summary": "Unsubscribe",
+        "operationId": "unsubscribe_push_subscriptions_delete",
+        "parameters": [
+          {
+            "name": "endpoint",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Endpoint"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriptionResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/session": {
+      "post": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "New Session",
+        "operationId": "new_session_demo_session_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/personas": {
+      "get": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "Personas",
+        "operationId": "personas_demo_personas_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PersonasResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/clock": {
+      "post": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "Set Clock",
+        "operationId": "set_clock_demo_clock_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClockRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/skip-ahead": {
+      "post": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "Skip Ahead",
+        "operationId": "skip_ahead_demo_skip_ahead_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SkipAheadRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SkipAheadResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/reset": {
+      "post": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "Reset",
+        "operationId": "reset_demo_reset_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/demo/force-templates": {
+      "post": {
+        "tags": [
+          "demo"
+        ],
+        "summary": "Stage switch: skip all model calls",
+        "operationId": "force_templates_demo_force_templates_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForceTemplatesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResetResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/meta/barriers": {
+      "get": {
+        "tags": [
+          "student",
+          "meta"
+        ],
+        "summary": "Barrier Meta",
+        "operationId": "barrier_meta_meta_barriers_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BarrierMeta"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/map": {
+      "get": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Map",
+        "operationId": "me_map_me_map_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MapResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/focus": {
+      "post": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Focus",
+        "operationId": "me_focus_me_focus_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FocusRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Profile, or the fixed crisis response if typed text triggered the safety check.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ProfileResult"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CrisisResponse"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "kind",
+                    "mapping": {
+                      "profile": "#/components/schemas/ProfileResult",
+                      "crisis": "#/components/schemas/CrisisResponse"
+                    }
+                  },
+                  "title": "Response Me Focus Me Focus Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/next": {
+      "get": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Next",
+        "operationId": "me_next_me_next_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NextResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/next/{rec_id}/decline": {
+      "post": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Decline",
+        "operationId": "me_decline_me_next__rec_id__decline_post",
+        "parameters": [
+          {
+            "name": "rec_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Rec Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeclineRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NextResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/card": {
+      "get": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Card",
+        "operationId": "me_card_me_card_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CardResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/memory": {
+      "get": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Memory",
+        "operationId": "me_memory_me_memory_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MemoryList"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Memory Delete All",
+        "operationId": "me_memory_delete_all_me_memory_delete",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/memory/{memory_id}": {
+      "delete": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Memory Delete",
+        "operationId": "me_memory_delete_me_memory__memory_id__delete",
+        "parameters": [
+          {
+            "name": "memory_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Memory Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me": {
+      "delete": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Forget me: delete everything personal",
+        "operationId": "forget_me_me_delete",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DeleteResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/inbox": {
+      "get": {
+        "tags": [
+          "student"
+        ],
+        "summary": "Me Inbox",
+        "operationId": "me_inbox_me_inbox_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InboxResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/commitments": {
+      "post": {
+        "tags": [
+          "loop"
+        ],
+        "summary": "Commit",
+        "operationId": "commit_commitments_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommitRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/CommitResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CrisisResponse"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "kind",
+                    "mapping": {
+                      "commitment": "#/components/schemas/CommitResponse",
+                      "crisis": "#/components/schemas/CrisisResponse"
+                    }
+                  },
+                  "title": "Response Commit Commitments Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/commitments/{commitment_id}/ics": {
+      "get": {
+        "tags": [
+          "loop"
+        ],
+        "summary": "Commitment Ics",
+        "description": "Calendar file. `t` is the invite token (so the link works from a calendar app without auth).",
+        "operationId": "commitment_ics_commitments__commitment_id__ics_get",
+        "parameters": [
+          {
+            "name": "commitment_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Commitment Id"
+            }
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "T"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/calendar": {}
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/invites/{token}": {
+      "get": {
+        "tags": [
+          "loop",
+          "public"
+        ],
+        "summary": "Invite View",
+        "operationId": "invite_view_invites__token__get",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InviteView"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "loop",
+          "public"
+        ],
+        "summary": "Invite Accept",
+        "operationId": "invite_accept_invites__token__post",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Token"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InviteAccepted"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/followups/{commitment_id}": {
+      "post": {
+        "tags": [
+          "loop"
+        ],
+        "summary": "Followup",
+        "operationId": "followup_followups__commitment_id__post",
+        "parameters": [
+          {
+            "name": "commitment_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "Commitment Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FollowupRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FollowupResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/pulse": {
+      "get": {
+        "tags": [
+          "social"
+        ],
+        "summary": "Pulse",
+        "operationId": "pulse_pulse_get",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PulseResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wins": {
+      "post": {
+        "tags": [
+          "social"
+        ],
+        "summary": "Post Win",
+        "operationId": "post_win_wins_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WinRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/WinAccepted"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CrisisResponse"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "kind",
+                    "mapping": {
+                      "accepted": "#/components/schemas/WinAccepted",
+                      "held": "#/components/schemas/WinAccepted",
+                      "rejected": "#/components/schemas/WinAccepted",
+                      "crisis": "#/components/schemas/CrisisResponse"
+                    }
+                  },
+                  "title": "Response Post Win Wins Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/wins/{win_id}/same-here": {
+      "post": {
+        "tags": [
+          "social"
+        ],
+        "summary": "Same Here",
+        "operationId": "same_here_wins__win_id__same_here_post",
+        "parameters": [
+          {
+            "name": "win_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Win Id"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SameHere"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/staff/funnel": {
+      "get": {
+        "tags": [
+          "staff"
+        ],
+        "summary": "Funnel",
+        "operationId": "funnel_staff_funnel_get",
+        "parameters": [
+          {
+            "name": "campus",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "new_brunswick",
+                    "newark",
+                    "camden",
+                    "online",
+                    "community"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Campus"
+            }
+          },
+          {
+            "name": "dimension",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "emotional",
+                    "environmental",
+                    "financial",
+                    "intellectual",
+                    "occupational",
+                    "physical",
+                    "social",
+                    "spiritual"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dimension"
+            }
+          },
+          {
+            "name": "level",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "undergrad",
+                    "grad"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Level"
+            }
+          },
+          {
+            "name": "first_gen",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "First Gen"
+            }
+          },
+          {
+            "name": "housing",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "resident",
+                    "commuter"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Housing"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FunnelResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/staff/gaps": {
+      "get": {
+        "tags": [
+          "staff"
+        ],
+        "summary": "Gaps",
+        "operationId": "gaps_staff_gaps_get",
+        "parameters": [
+          {
+            "name": "campus",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "new_brunswick",
+                    "newark",
+                    "camden",
+                    "online",
+                    "community"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Campus"
+            }
+          },
+          {
+            "name": "dimension",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "emotional",
+                    "environmental",
+                    "financial",
+                    "intellectual",
+                    "occupational",
+                    "physical",
+                    "social",
+                    "spiritual"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dimension"
+            }
+          },
+          {
+            "name": "level",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "undergrad",
+                    "grad"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Level"
+            }
+          },
+          {
+            "name": "first_gen",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "First Gen"
+            }
+          },
+          {
+            "name": "housing",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "resident",
+                    "commuter"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Housing"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GapsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/staff/weekly": {
+      "get": {
+        "tags": [
+          "staff"
+        ],
+        "summary": "Weekly",
+        "operationId": "weekly_staff_weekly_get",
+        "parameters": [
+          {
+            "name": "campus",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "new_brunswick",
+                    "newark",
+                    "camden",
+                    "online",
+                    "community"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Campus"
+            }
+          },
+          {
+            "name": "dimension",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "emotional",
+                    "environmental",
+                    "financial",
+                    "intellectual",
+                    "occupational",
+                    "physical",
+                    "social",
+                    "spiritual"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dimension"
+            }
+          },
+          {
+            "name": "level",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "undergrad",
+                    "grad"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Level"
+            }
+          },
+          {
+            "name": "first_gen",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "First Gen"
+            }
+          },
+          {
+            "name": "housing",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "resident",
+                    "commuter"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Housing"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WeeklyResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/staff/dips": {
+      "get": {
+        "tags": [
+          "staff"
+        ],
+        "summary": "Dips",
+        "operationId": "dips_staff_dips_get",
+        "parameters": [
+          {
+            "name": "threshold",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "number",
+                  "maximum": 1.0,
+                  "minimum": 0.01
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Threshold"
+            }
+          },
+          {
+            "name": "campus",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "new_brunswick",
+                    "newark",
+                    "camden",
+                    "online",
+                    "community"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Campus"
+            }
+          },
+          {
+            "name": "dimension",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "emotional",
+                    "environmental",
+                    "financial",
+                    "intellectual",
+                    "occupational",
+                    "physical",
+                    "social",
+                    "spiritual"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dimension"
+            }
+          },
+          {
+            "name": "level",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "undergrad",
+                    "grad"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Level"
+            }
+          },
+          {
+            "name": "first_gen",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "First Gen"
+            }
+          },
+          {
+            "name": "housing",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "resident",
+                    "commuter"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Housing"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DipsResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/staff/retakes": {
+      "get": {
+        "tags": [
+          "staff"
+        ],
+        "summary": "Retakes",
+        "operationId": "retakes_staff_retakes_get",
+        "parameters": [
+          {
+            "name": "campus",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "new_brunswick",
+                    "newark",
+                    "camden",
+                    "online",
+                    "community"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Campus"
+            }
+          },
+          {
+            "name": "dimension",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "emotional",
+                    "environmental",
+                    "financial",
+                    "intellectual",
+                    "occupational",
+                    "physical",
+                    "social",
+                    "spiritual"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Dimension"
+            }
+          },
+          {
+            "name": "level",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "undergrad",
+                    "grad"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Level"
+            }
+          },
+          {
+            "name": "first_gen",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "First Gen"
+            }
+          },
+          {
+            "name": "housing",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "resident",
+                    "commuter"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Housing"
+            }
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RetakesResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ArcStatus": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "mock",
+              "sent",
+              "none"
+            ],
+            "title": "Status"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "message"
+        ],
+        "title": "ArcStatus"
+      },
+      "BarrierMeta": {
+        "properties": {
+          "barriers": {
+            "items": {
+              "$ref": "#/components/schemas/BarrierOption"
+            },
+            "type": "array",
+            "title": "Barriers"
+          },
+          "dimensions": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "propertyNames": {
+              "enum": [
+                "emotional",
+                "environmental",
+                "financial",
+                "intellectual",
+                "occupational",
+                "physical",
+                "social",
+                "spiritual"
+              ]
+            },
+            "type": "object",
+            "title": "Dimensions"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "barriers",
+          "dimensions"
+        ],
+        "title": "BarrierMeta"
+      },
+      "BarrierOption": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "no_time",
+              "dont_know_anyone",
+              "money",
+              "coursework",
+              "not_my_scene",
+              "too_far",
+              "low_energy",
+              "not_sure_where"
+            ],
+            "title": "Id"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "label_es": {
+            "type": "string",
+            "title": "Label Es"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "label_es"
+        ],
+        "title": "BarrierOption"
+      },
+      "CalendarOverlay": {
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "start": {
+            "type": "string",
+            "format": "date",
+            "title": "Start"
+          },
+          "end": {
+            "type": "string",
+            "format": "date",
+            "title": "End"
+          },
+          "approximate": {
+            "type": "boolean",
+            "title": "Approximate"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "label",
+          "start",
+          "end",
+          "approximate",
+          "source"
+        ],
+        "title": "CalendarOverlay"
+      },
+      "CardResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "step",
+              "support"
+            ],
+            "title": "Kind"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "when_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "When Label"
+          },
+          "line": {
+            "type": "string",
+            "title": "Line"
+          },
+          "deep_link": {
+            "type": "string",
+            "title": "Deep Link"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "kind",
+          "title",
+          "line",
+          "deep_link"
+        ],
+        "title": "CardResponse"
+      },
+      "Challenge": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "all",
+              "campus",
+              "hall",
+              "club"
+            ],
+            "title": "Scope"
+          },
+          "scope_label": {
+            "type": "string",
+            "title": "Scope Label"
+          },
+          "dimension": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "emotional",
+                  "environmental",
+                  "financial",
+                  "intellectual",
+                  "occupational",
+                  "physical",
+                  "social",
+                  "spiritual"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dimension"
+          },
+          "goal": {
+            "type": "integer",
+            "title": "Goal"
+          },
+          "progress": {
+            "type": "integer",
+            "title": "Progress"
+          },
+          "pct": {
+            "type": "number",
+            "title": "Pct"
+          },
+          "starts_on": {
+            "type": "string",
+            "format": "date",
+            "title": "Starts On"
+          },
+          "ends_on": {
+            "type": "string",
+            "format": "date",
+            "title": "Ends On"
+          },
+          "rule": {
+            "type": "string",
+            "title": "Rule"
+          },
+          "yours": {
+            "type": "boolean",
+            "title": "Yours",
+            "description": "True if this student's steps count toward it."
+          },
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "scope",
+          "scope_label",
+          "goal",
+          "progress",
+          "pct",
+          "starts_on",
+          "ends_on",
+          "rule",
+          "yours",
+          "synthetic"
+        ],
+        "title": "Challenge"
+      },
+      "ChallengeProgress": {
+        "properties": {
+          "challenge_id": {
+            "type": "string",
+            "title": "Challenge Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "added": {
+            "type": "integer",
+            "title": "Added"
+          },
+          "progress": {
+            "type": "integer",
+            "title": "Progress"
+          },
+          "goal": {
+            "type": "integer",
+            "title": "Goal"
+          },
+          "pct": {
+            "type": "number",
+            "title": "Pct"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "challenge_id",
+          "title",
+          "added",
+          "progress",
+          "goal",
+          "pct"
+        ],
+        "title": "ChallengeProgress"
+      },
+      "ClockRequest": {
+        "properties": {
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "now"
+        ],
+        "title": "ClockRequest"
+      },
+      "CommitRequest": {
+        "properties": {
+          "rec_id": {
+            "type": "integer",
+            "title": "Rec Id"
+          },
+          "plan_text": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 280
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Plan Text",
+            "description": "Student-edited plan. Crisis-checked."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "rec_id"
+        ],
+        "title": "CommitRequest"
+      },
+      "CommitResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "kind": {
+            "type": "string",
+            "const": "commitment",
+            "title": "Kind",
+            "default": "commitment"
+          },
+          "commitment_id": {
+            "type": "integer",
+            "title": "Commitment Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "planned",
+              "went",
+              "missed",
+              "cancelled"
+            ],
+            "title": "Status"
+          },
+          "item": {
+            "$ref": "#/components/schemas/Item"
+          },
+          "when_label": {
+            "type": "string",
+            "title": "When Label"
+          },
+          "where": {
+            "$ref": "#/components/schemas/Place"
+          },
+          "plan_text": {
+            "type": "string",
+            "title": "Plan Text"
+          },
+          "plan_source": {
+            "type": "string",
+            "enum": [
+              "ai",
+              "template",
+              "student"
+            ],
+            "title": "Plan Source"
+          },
+          "ics_url": {
+            "type": "string",
+            "title": "Ics Url"
+          },
+          "google_calendar_url": {
+            "type": "string",
+            "title": "Google Calendar Url"
+          },
+          "reminder_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reminder At"
+          },
+          "followup_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Followup At"
+          },
+          "invite_url": {
+            "type": "string",
+            "title": "Invite Url"
+          },
+          "invite_token": {
+            "type": "string",
+            "title": "Invite Token"
+          },
+          "share_text": {
+            "type": "string",
+            "title": "Share Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "commitment_id",
+          "status",
+          "item",
+          "when_label",
+          "where",
+          "plan_text",
+          "plan_source",
+          "ics_url",
+          "google_calendar_url",
+          "reminder_at",
+          "followup_at",
+          "invite_url",
+          "invite_token",
+          "share_text"
+        ],
+        "title": "CommitResponse"
+      },
+      "Component": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [
+              "dimension",
+              "barrier",
+              "window",
+              "rung",
+              "helped_similar"
+            ],
+            "title": "Name"
+          },
+          "weight": {
+            "type": "number",
+            "title": "Weight"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score"
+          },
+          "contribution": {
+            "type": "number",
+            "title": "Contribution"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "name",
+          "weight",
+          "score",
+          "contribution",
+          "text"
+        ],
+        "title": "Component"
+      },
+      "CrisisLine": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "call",
+              "text",
+              "web",
+              "emergency"
+            ],
+            "title": "Kind"
+          },
+          "contact": {
+            "type": "string",
+            "title": "Contact",
+            "description": "Display text, e.g. 'Call or text 988'."
+          },
+          "href": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Href",
+            "description": "tel:, sms: or https: link."
+          },
+          "hours": {
+            "type": "string",
+            "title": "Hours"
+          },
+          "campus": {
+            "type": "string",
+            "enum": [
+              "all",
+              "new_brunswick",
+              "newark",
+              "camden"
+            ],
+            "title": "Campus"
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "es",
+              "any"
+            ],
+            "title": "Language",
+            "default": "any"
+          },
+          "verified": {
+            "type": "boolean",
+            "title": "Verified",
+            "description": "False until a human has called/checked it. Show a 'verify' badge in non-prod."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "contact",
+          "hours",
+          "campus",
+          "verified"
+        ],
+        "title": "CrisisLine"
+      },
+      "CrisisResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "kind": {
+            "type": "string",
+            "const": "crisis",
+            "title": "Kind",
+            "default": "crisis"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message",
+            "description": "Fixed copy from a table. Never model-written."
+          },
+          "lines": {
+            "items": {
+              "$ref": "#/components/schemas/CrisisLine"
+            },
+            "type": "array",
+            "title": "Lines"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "title",
+          "message",
+          "lines"
+        ],
+        "title": "CrisisResponse"
+      },
+      "DeclineRequest": {
+        "properties": {
+          "reason": {
+            "type": "string",
+            "enum": [
+              "swap",
+              "not_now"
+            ],
+            "title": "Reason",
+            "default": "swap"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "DeclineRequest"
+      },
+      "DeleteResult": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "deleted": {
+            "type": "integer",
+            "title": "Deleted"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "deleted"
+        ],
+        "title": "DeleteResult"
+      },
+      "DimensionScore": {
+        "properties": {
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score"
+          },
+          "band": {
+            "type": "string",
+            "enum": [
+              "low",
+              "middle",
+              "high"
+            ],
+            "title": "Band"
+          },
+          "blurb": {
+            "type": "string",
+            "title": "Blurb",
+            "description": "Plain, kind words. No clinical terms."
+          },
+          "change": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Change",
+            "description": "Change since the previous take, if any."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "dimension",
+          "label",
+          "score",
+          "band",
+          "blurb"
+        ],
+        "title": "DimensionScore"
+      },
+      "Dip": {
+        "properties": {
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          },
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "week": {
+            "type": "string",
+            "format": "date",
+            "title": "Week"
+          },
+          "avg_score": {
+            "type": "number",
+            "title": "Avg Score"
+          },
+          "trailing_avg": {
+            "type": "number",
+            "title": "Trailing Avg"
+          },
+          "drop": {
+            "type": "number",
+            "title": "Drop"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          },
+          "overlay": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Overlay"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "campus",
+          "dimension",
+          "week",
+          "avg_score",
+          "trailing_avg",
+          "drop",
+          "n",
+          "overlay"
+        ],
+        "title": "Dip"
+      },
+      "DipsResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "filters": {
+            "$ref": "#/components/schemas/StaffFilters"
+          },
+          "suppressed_groups": {
+            "type": "integer",
+            "title": "Suppressed Groups"
+          },
+          "min_group_size": {
+            "type": "integer",
+            "title": "Min Group Size",
+            "default": 10
+          },
+          "threshold": {
+            "type": "number",
+            "title": "Threshold"
+          },
+          "dips": {
+            "items": {
+              "$ref": "#/components/schemas/Dip"
+            },
+            "type": "array",
+            "title": "Dips"
+          },
+          "overlays": {
+            "items": {
+              "$ref": "#/components/schemas/CalendarOverlay"
+            },
+            "type": "array",
+            "title": "Overlays"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "filters",
+          "suppressed_groups",
+          "threshold",
+          "dips",
+          "overlays"
+        ],
+        "title": "DipsResponse"
+      },
+      "FiredNotification": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "reminder",
+              "followup",
+              "weekly_pick",
+              "retake_nudge",
+              "challenge"
+            ],
+            "title": "Kind"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body"
+          },
+          "deep_link": {
+            "type": "string",
+            "title": "Deep Link"
+          },
+          "send_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Send At"
+          },
+          "delivered": {
+            "type": "string",
+            "enum": [
+              "push",
+              "in_app",
+              "held_budget",
+              "skipped"
+            ],
+            "title": "Delivered"
+          },
+          "commitment_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Commitment Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "body",
+          "deep_link",
+          "send_at",
+          "delivered"
+        ],
+        "title": "FiredNotification"
+      },
+      "FocusRequest": {
+        "properties": {
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "barriers": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "no_time",
+                "dont_know_anyone",
+                "money",
+                "coursework",
+                "not_my_scene",
+                "too_far",
+                "low_energy",
+                "not_sure_where"
+              ]
+            },
+            "type": "array",
+            "title": "Barriers",
+            "default": []
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 500
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Text"
+          },
+          "free_only": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Free Only"
+          },
+          "free_windows": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Free Windows",
+            "description": "Optional override, e.g. ['Tue 12:20-14:30']."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "dimension"
+        ],
+        "title": "FocusRequest"
+      },
+      "FollowupRequest": {
+        "properties": {
+          "went": {
+            "type": "boolean",
+            "title": "Went"
+          },
+          "helped": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "maximum": 5.0,
+                "minimum": 1.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Helped"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "went"
+        ],
+        "title": "FollowupRequest"
+      },
+      "FollowupResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "commitment_id": {
+            "type": "integer",
+            "title": "Commitment Id"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "went",
+              "missed"
+            ],
+            "title": "Status"
+          },
+          "progress": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ProgressDelta"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "arc": {
+            "$ref": "#/components/schemas/ArcStatus"
+          },
+          "challenge": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ChallengeProgress"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "next_rung": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/NextRung"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "learned": {
+            "items": {
+              "$ref": "#/components/schemas/MemoryItem"
+            },
+            "type": "array",
+            "title": "Learned"
+          },
+          "win_prompt": {
+            "type": "boolean",
+            "title": "Win Prompt"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "commitment_id",
+          "status",
+          "progress",
+          "arc",
+          "challenge",
+          "next_rung",
+          "learned",
+          "win_prompt"
+        ],
+        "title": "FollowupResponse"
+      },
+      "ForceTemplatesRequest": {
+        "properties": {
+          "on": {
+            "type": "boolean",
+            "title": "On"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "on"
+        ],
+        "title": "ForceTemplatesRequest"
+      },
+      "FunnelResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "filters": {
+            "$ref": "#/components/schemas/StaffFilters"
+          },
+          "suppressed_groups": {
+            "type": "integer",
+            "title": "Suppressed Groups"
+          },
+          "min_group_size": {
+            "type": "integer",
+            "title": "Min Group Size",
+            "default": 10
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/FunnelRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "totals": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/FunnelRow"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "filters",
+          "suppressed_groups",
+          "rows",
+          "totals"
+        ],
+        "title": "FunnelResponse"
+      },
+      "FunnelRow": {
+        "properties": {
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          },
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "students": {
+            "type": "integer",
+            "title": "Students"
+          },
+          "suggested": {
+            "type": "integer",
+            "title": "Suggested"
+          },
+          "committed": {
+            "type": "integer",
+            "title": "Committed"
+          },
+          "with_friend": {
+            "type": "integer",
+            "title": "With Friend"
+          },
+          "attended": {
+            "type": "integer",
+            "title": "Attended"
+          },
+          "helped": {
+            "type": "integer",
+            "title": "Helped"
+          },
+          "commit_rate": {
+            "type": "number",
+            "title": "Commit Rate"
+          },
+          "attend_rate": {
+            "type": "number",
+            "title": "Attend Rate"
+          },
+          "helped_rate": {
+            "type": "number",
+            "title": "Helped Rate"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "campus",
+          "dimension",
+          "students",
+          "suggested",
+          "committed",
+          "with_friend",
+          "attended",
+          "helped",
+          "commit_rate",
+          "attend_rate",
+          "helped_rate"
+        ],
+        "title": "FunnelRow"
+      },
+      "GapRow": {
+        "properties": {
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          },
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "low_students": {
+            "type": "integer",
+            "title": "Low Students"
+          },
+          "items": {
+            "type": "integer",
+            "title": "Items"
+          },
+          "low_students_per_item": {
+            "type": "number",
+            "title": "Low Students Per Item"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "campus",
+          "dimension",
+          "low_students",
+          "items",
+          "low_students_per_item"
+        ],
+        "title": "GapRow"
+      },
+      "GapsResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "filters": {
+            "$ref": "#/components/schemas/StaffFilters"
+          },
+          "suppressed_groups": {
+            "type": "integer",
+            "title": "Suppressed Groups"
+          },
+          "min_group_size": {
+            "type": "integer",
+            "title": "Min Group Size",
+            "default": 10
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/GapRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          },
+          "headline": {
+            "type": "string",
+            "title": "Headline"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "filters",
+          "suppressed_groups",
+          "rows",
+          "headline"
+        ],
+        "title": "GapsResponse"
+      },
+      "GoingCount": {
+        "properties": {
+          "count": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Count",
+            "description": "Only set when 5 or more."
+          },
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "description": "'14 Newark students are going', 'A few students are going', or ''."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "label"
+        ],
+        "title": "GoingCount"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Health": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "degraded",
+              "down"
+            ],
+            "title": "Status"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "live",
+              "fixtures"
+            ],
+            "title": "Mode"
+          },
+          "version": {
+            "type": "string",
+            "title": "Version"
+          },
+          "checks": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/HealthCheck"
+            },
+            "type": "object",
+            "title": "Checks"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "status",
+          "mode",
+          "version",
+          "checks"
+        ],
+        "title": "Health"
+      },
+      "HealthCheck": {
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "title": "Ok"
+          },
+          "latency_ms": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Latency Ms"
+          },
+          "detail": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Detail"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "ok"
+        ],
+        "title": "HealthCheck"
+      },
+      "InboxItem": {
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "Id"
+          },
+          "kind": {
+            "type": "string",
+            "title": "Kind"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "body": {
+            "type": "string",
+            "title": "Body"
+          },
+          "deep_link": {
+            "type": "string",
+            "title": "Deep Link"
+          },
+          "at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "At"
+          },
+          "delivered": {
+            "type": "string",
+            "enum": [
+              "push",
+              "in_app"
+            ],
+            "title": "Delivered"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "body",
+          "deep_link",
+          "at",
+          "delivered"
+        ],
+        "title": "InboxItem"
+      },
+      "InboxResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/InboxItem"
+            },
+            "type": "array",
+            "title": "Items"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "items"
+        ],
+        "title": "InboxResponse"
+      },
+      "InviteAccepted": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "accepted": {
+            "type": "boolean",
+            "title": "Accepted"
+          },
+          "ics_url": {
+            "type": "string",
+            "title": "Ics Url"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "token",
+          "accepted",
+          "ics_url",
+          "message"
+        ],
+        "title": "InviteAccepted"
+      },
+      "InviteView": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "item": {
+            "$ref": "#/components/schemas/Item"
+          },
+          "when_label": {
+            "type": "string",
+            "title": "When Label"
+          },
+          "where": {
+            "$ref": "#/components/schemas/Place"
+          },
+          "going": {
+            "$ref": "#/components/schemas/GoingCount"
+          },
+          "accepted": {
+            "type": "boolean",
+            "title": "Accepted"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": "Your friend thought you might like this. No account needed."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "token",
+          "item",
+          "when_label",
+          "where",
+          "going",
+          "accepted"
+        ],
+        "title": "InviteView"
+      },
+      "Item": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "event",
+              "resource",
+              "online",
+              "study",
+              "place",
+              "micro"
+            ],
+            "title": "Kind"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "summary": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Summary"
+          },
+          "dimensions": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "emotional",
+                "environmental",
+                "financial",
+                "intellectual",
+                "occupational",
+                "physical",
+                "social",
+                "spiritual"
+              ]
+            },
+            "type": "array",
+            "title": "Dimensions",
+            "default": []
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          },
+          "phone": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Phone"
+          },
+          "hours_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hours Text"
+          },
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "title"
+        ],
+        "title": "Item"
+      },
+      "MapResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "student": {
+            "$ref": "#/components/schemas/StudentSummary"
+          },
+          "latest": {
+            "$ref": "#/components/schemas/Take"
+          },
+          "dimensions": {
+            "items": {
+              "$ref": "#/components/schemas/DimensionScore"
+            },
+            "type": "array",
+            "title": "Dimensions",
+            "description": "Strengths first, then the rest."
+          },
+          "strengths": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "emotional",
+                "environmental",
+                "financial",
+                "intellectual",
+                "occupational",
+                "physical",
+                "social",
+                "spiritual"
+              ]
+            },
+            "type": "array",
+            "title": "Strengths"
+          },
+          "growth_areas": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "emotional",
+                "environmental",
+                "financial",
+                "intellectual",
+                "occupational",
+                "physical",
+                "social",
+                "spiritual"
+              ]
+            },
+            "type": "array",
+            "title": "Growth Areas"
+          },
+          "care_first": {
+            "type": "boolean",
+            "title": "Care First"
+          },
+          "previous_takes": {
+            "items": {
+              "$ref": "#/components/schemas/Take"
+            },
+            "type": "array",
+            "title": "Previous Takes"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/Profile"
+          },
+          "retake_nudge": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/RetakeNudge"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "student",
+          "latest",
+          "dimensions",
+          "strengths",
+          "growth_areas",
+          "care_first",
+          "previous_takes",
+          "profile"
+        ],
+        "title": "MapResponse"
+      },
+      "MemoryItem": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "kind": {
+            "type": "string",
+            "title": "Kind"
+          },
+          "statement": {
+            "type": "string",
+            "title": "Statement"
+          },
+          "source": {
+            "$ref": "#/components/schemas/MemorySource"
+          },
+          "used_for": {
+            "type": "string",
+            "title": "Used For"
+          },
+          "learned_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Learned At"
+          },
+          "last_used_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Used At"
+          },
+          "deletable": {
+            "type": "boolean",
+            "title": "Deletable",
+            "default": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "statement",
+          "source",
+          "used_for"
+        ],
+        "title": "MemoryItem"
+      },
+      "MemoryList": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/MemoryItem"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "note": {
+            "type": "string",
+            "title": "Note",
+            "default": "This is everything Compass keeps about you. Your inventory scores stay in MyRutgers and are only read, never changed."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "items"
+        ],
+        "title": "MemoryList"
+      },
+      "MemoryReason": {
+        "properties": {
+          "memory_id": {
+            "type": "string",
+            "title": "Memory Id"
+          },
+          "statement": {
+            "type": "string",
+            "title": "Statement"
+          },
+          "delta": {
+            "type": "number",
+            "title": "Delta"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "memory_id",
+          "statement",
+          "delta"
+        ],
+        "title": "MemoryReason"
+      },
+      "MemorySource": {
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "you_chose",
+              "rating",
+              "attendance",
+              "decline",
+              "your_words",
+              "rule"
+            ],
+            "title": "Type"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "label"
+        ],
+        "title": "MemorySource"
+      },
+      "NextResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "set_id": {
+            "type": "string",
+            "title": "Set Id"
+          },
+          "care_first": {
+            "type": "boolean",
+            "title": "Care First"
+          },
+          "support_card": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SupportCard"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "pick": {
+            "$ref": "#/components/schemas/Suggestion"
+          },
+          "alternates": {
+            "items": {
+              "$ref": "#/components/schemas/Suggestion"
+            },
+            "type": "array",
+            "title": "Alternates"
+          },
+          "crisis_lines": {
+            "items": {
+              "$ref": "#/components/schemas/CrisisLine"
+            },
+            "type": "array",
+            "title": "Crisis Lines"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "set_id",
+          "care_first",
+          "pick",
+          "alternates",
+          "crisis_lines"
+        ],
+        "title": "NextResponse"
+      },
+      "NextRung": {
+        "properties": {
+          "rung": {
+            "type": "integer",
+            "title": "Rung"
+          },
+          "label": {
+            "type": "string",
+            "title": "Label"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "rung",
+          "label",
+          "message"
+        ],
+        "title": "NextRung"
+      },
+      "PersonaInfo": {
+        "properties": {
+          "key": {
+            "type": "string",
+            "enum": [
+              "andre",
+              "priya",
+              "taylor",
+              "sofia",
+              "jordan",
+              "staff"
+            ],
+            "title": "Key"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "campus": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "new_brunswick",
+                  "newark",
+                  "camden",
+                  "online",
+                  "community"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Campus"
+          },
+          "role_in_demo": {
+            "type": "string",
+            "title": "Role In Demo"
+          },
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "default": true
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "key",
+          "name",
+          "campus",
+          "role_in_demo"
+        ],
+        "title": "PersonaInfo"
+      },
+      "PersonasResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "personas": {
+            "items": {
+              "$ref": "#/components/schemas/PersonaInfo"
+            },
+            "type": "array",
+            "title": "Personas"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "personas"
+        ],
+        "title": "PersonasResponse"
+      },
+      "Place": {
+        "properties": {
+          "venue": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Venue"
+          },
+          "address": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Address"
+          },
+          "lat": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lat"
+          },
+          "lon": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Lon"
+          },
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "campus"
+        ],
+        "title": "Place"
+      },
+      "Profile": {
+        "properties": {
+          "focus": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "emotional",
+                  "environmental",
+                  "financial",
+                  "intellectual",
+                  "occupational",
+                  "physical",
+                  "social",
+                  "spiritual"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Focus"
+          },
+          "barriers": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "no_time",
+                "dont_know_anyone",
+                "money",
+                "coursework",
+                "not_my_scene",
+                "too_far",
+                "low_energy",
+                "not_sure_where"
+              ]
+            },
+            "type": "array",
+            "title": "Barriers",
+            "default": []
+          },
+          "barriers_from_text": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "no_time",
+                "dont_know_anyone",
+                "money",
+                "coursework",
+                "not_my_scene",
+                "too_far",
+                "low_energy",
+                "not_sure_where"
+              ]
+            },
+            "type": "array",
+            "title": "Barriers From Text",
+            "default": []
+          },
+          "free_windows": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Free Windows",
+            "default": []
+          },
+          "social_rung": {
+            "type": "integer",
+            "title": "Social Rung",
+            "default": 1
+          },
+          "free_only": {
+            "type": "boolean",
+            "title": "Free Only",
+            "default": true
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "es"
+            ],
+            "title": "Language",
+            "default": "en"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Profile"
+      },
+      "ProfileResult": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "kind": {
+            "type": "string",
+            "const": "profile",
+            "title": "Kind",
+            "default": "profile"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/Profile"
+          },
+          "support": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SupportCard"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Present when typed text showed concern: gentle offer of people to talk to."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "profile"
+        ],
+        "title": "ProfileResult"
+      },
+      "ProgressDelta": {
+        "properties": {
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "steps_this_month": {
+            "type": "integer",
+            "title": "Steps This Month"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "dimension",
+          "steps_this_month",
+          "message"
+        ],
+        "title": "ProgressDelta"
+      },
+      "PulseResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "challenges": {
+            "items": {
+              "$ref": "#/components/schemas/Challenge"
+            },
+            "type": "array",
+            "title": "Challenges"
+          },
+          "wins": {
+            "items": {
+              "$ref": "#/components/schemas/Win"
+            },
+            "type": "array",
+            "title": "Wins"
+          },
+          "retake_nudge": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/RetakeNudge"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "challenges",
+          "wins"
+        ],
+        "title": "PulseResponse"
+      },
+      "PushKeys": {
+        "properties": {
+          "p256dh": {
+            "type": "string",
+            "title": "P256Dh"
+          },
+          "auth": {
+            "type": "string",
+            "title": "Auth"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "p256dh",
+          "auth"
+        ],
+        "title": "PushKeys"
+      },
+      "ReasonLine": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "code",
+          "text"
+        ],
+        "title": "ReasonLine"
+      },
+      "Reasons": {
+        "properties": {
+          "filters": {
+            "items": {
+              "$ref": "#/components/schemas/ReasonLine"
+            },
+            "type": "array",
+            "title": "Filters"
+          },
+          "components": {
+            "items": {
+              "$ref": "#/components/schemas/Component"
+            },
+            "type": "array",
+            "title": "Components"
+          },
+          "memory": {
+            "items": {
+              "$ref": "#/components/schemas/MemoryReason"
+            },
+            "type": "array",
+            "title": "Memory"
+          },
+          "distance": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Distance"
+          },
+          "total": {
+            "type": "number",
+            "title": "Total"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "filters",
+          "components",
+          "memory",
+          "total"
+        ],
+        "title": "Reasons"
+      },
+      "ResetResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "ok": {
+            "type": "boolean",
+            "title": "Ok"
+          },
+          "seconds": {
+            "type": "number",
+            "title": "Seconds"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "ok",
+          "seconds"
+        ],
+        "title": "ResetResponse"
+      },
+      "RetakeNudge": {
+        "properties": {
+          "show": {
+            "type": "boolean",
+            "title": "Show"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url",
+            "default": "https://my.rutgers.edu"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "show",
+          "message"
+        ],
+        "title": "RetakeNudge"
+      },
+      "RetakeRow": {
+        "properties": {
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          },
+          "users": {
+            "type": "integer",
+            "title": "Users"
+          },
+          "users_retook": {
+            "type": "integer",
+            "title": "Users Retook"
+          },
+          "users_rate": {
+            "type": "number",
+            "title": "Users Rate"
+          },
+          "non_users": {
+            "type": "integer",
+            "title": "Non Users"
+          },
+          "non_users_retook": {
+            "type": "integer",
+            "title": "Non Users Retook"
+          },
+          "non_users_rate": {
+            "type": "number",
+            "title": "Non Users Rate"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "campus",
+          "users",
+          "users_retook",
+          "users_rate",
+          "non_users",
+          "non_users_retook",
+          "non_users_rate"
+        ],
+        "title": "RetakeRow"
+      },
+      "RetakesResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "filters": {
+            "$ref": "#/components/schemas/StaffFilters"
+          },
+          "suppressed_groups": {
+            "type": "integer",
+            "title": "Suppressed Groups"
+          },
+          "min_group_size": {
+            "type": "integer",
+            "title": "Min Group Size",
+            "default": 10
+          },
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/RetakeRow"
+            },
+            "type": "array",
+            "title": "Rows"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "filters",
+          "suppressed_groups",
+          "rows"
+        ],
+        "title": "RetakesResponse"
+      },
+      "SameHere": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "win_id": {
+            "type": "string",
+            "title": "Win Id"
+          },
+          "same_here": {
+            "type": "integer",
+            "title": "Same Here"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "win_id",
+          "same_here"
+        ],
+        "title": "SameHere"
+      },
+      "SessionRequest": {
+        "properties": {
+          "persona": {
+            "type": "string",
+            "enum": [
+              "andre",
+              "priya",
+              "taylor",
+              "sofia",
+              "jordan",
+              "staff"
+            ],
+            "title": "Persona"
+          },
+          "now": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Now",
+            "description": "Optional simulated start time; defaults to the demo start."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "persona"
+        ],
+        "title": "SessionRequest"
+      },
+      "SessionResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "token": {
+            "type": "string",
+            "title": "Token"
+          },
+          "persona": {
+            "type": "string",
+            "enum": [
+              "andre",
+              "priya",
+              "taylor",
+              "sofia",
+              "jordan",
+              "staff"
+            ],
+            "title": "Persona"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "student",
+              "staff"
+            ],
+            "title": "Role"
+          },
+          "student_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Student Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "token",
+          "persona",
+          "role",
+          "student_id"
+        ],
+        "title": "SessionResponse"
+      },
+      "SkipAheadRequest": {
+        "properties": {
+          "to": {
+            "type": "string",
+            "title": "To",
+            "description": "'next_due', a relative step like '+2d' or '+3h', or an ISO datetime.",
+            "default": "next_due"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "SkipAheadRequest"
+      },
+      "SkipAheadResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "previous_now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Previous Now"
+          },
+          "fired": {
+            "items": {
+              "$ref": "#/components/schemas/FiredNotification"
+            },
+            "type": "array",
+            "title": "Fired"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "previous_now",
+          "fired"
+        ],
+        "title": "SkipAheadResponse"
+      },
+      "SourceRef": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          },
+          "verified_on": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Verified On"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "SourceRef"
+      },
+      "StaffFilters": {
+        "properties": {
+          "campus": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "new_brunswick",
+                  "newark",
+                  "camden",
+                  "online",
+                  "community"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Campus"
+          },
+          "dimension": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "emotional",
+                  "environmental",
+                  "financial",
+                  "intellectual",
+                  "occupational",
+                  "physical",
+                  "social",
+                  "spiritual"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dimension"
+          },
+          "level": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "undergrad",
+                  "grad"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Level"
+          },
+          "first_gen": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "First Gen"
+          },
+          "housing": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "resident",
+                  "commuter"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Housing"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "StaffFilters"
+      },
+      "StudentSummary": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id",
+            "description": "Pseudonymous id. Never a name, email or NetID."
+          },
+          "persona": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Persona",
+            "description": "Demo persona key, e.g. 'andre'."
+          },
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          },
+          "level": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "undergrad",
+                  "grad"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Level"
+          },
+          "housing": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "resident",
+                  "commuter"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Housing"
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "es"
+            ],
+            "title": "Language",
+            "default": "en"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "campus"
+        ],
+        "title": "StudentSummary"
+      },
+      "SubscriptionRequest": {
+        "properties": {
+          "endpoint": {
+            "type": "string",
+            "maxLength": 2048,
+            "title": "Endpoint"
+          },
+          "keys": {
+            "$ref": "#/components/schemas/PushKeys"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "endpoint",
+          "keys"
+        ],
+        "title": "SubscriptionRequest"
+      },
+      "SubscriptionResult": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "ok": {
+            "type": "boolean",
+            "title": "Ok"
+          },
+          "test_sent": {
+            "type": "boolean",
+            "title": "Test Sent",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "ok"
+        ],
+        "title": "SubscriptionResult"
+      },
+      "Suggestion": {
+        "properties": {
+          "rec_id": {
+            "type": "integer",
+            "title": "Rec Id"
+          },
+          "item": {
+            "$ref": "#/components/schemas/Item"
+          },
+          "starts_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Starts At"
+          },
+          "ends_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ends At"
+          },
+          "when_label": {
+            "type": "string",
+            "title": "When Label"
+          },
+          "window_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Window Label"
+          },
+          "where": {
+            "$ref": "#/components/schemas/Place"
+          },
+          "walk_min": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Walk Min"
+          },
+          "cost": {
+            "type": "string",
+            "enum": [
+              "free",
+              "paid",
+              "unknown"
+            ],
+            "title": "Cost"
+          },
+          "cost_label": {
+            "type": "string",
+            "title": "Cost Label"
+          },
+          "rung": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rung"
+          },
+          "rung_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Rung Label"
+          },
+          "going": {
+            "$ref": "#/components/schemas/GoingCount"
+          },
+          "reasons": {
+            "$ref": "#/components/schemas/Reasons"
+          },
+          "why": {
+            "type": "string",
+            "title": "Why"
+          },
+          "why_source": {
+            "type": "string",
+            "enum": [
+              "ai",
+              "template"
+            ],
+            "title": "Why Source"
+          },
+          "pushed": {
+            "type": "boolean",
+            "title": "Pushed",
+            "description": "False under care-first: available, not pushed.",
+            "default": true
+          },
+          "source": {
+            "$ref": "#/components/schemas/SourceRef"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "rec_id",
+          "item",
+          "when_label",
+          "where",
+          "cost",
+          "cost_label",
+          "going",
+          "reasons",
+          "why",
+          "why_source",
+          "source"
+        ],
+        "title": "Suggestion"
+      },
+      "SupportCard": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "options": {
+            "items": {
+              "$ref": "#/components/schemas/SupportOption"
+            },
+            "type": "array",
+            "title": "Options"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "title",
+          "message",
+          "options"
+        ],
+        "title": "SupportCard",
+        "description": "A person first: shown as card 0 for care-first, or as a gentle block on 'concern'."
+      },
+      "SupportOption": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "in_person",
+              "teletherapy",
+              "peer",
+              "phone"
+            ],
+            "title": "Kind"
+          },
+          "contact": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Contact"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          },
+          "address": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Address"
+          },
+          "hours": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hours"
+          },
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "name",
+          "kind",
+          "campus"
+        ],
+        "title": "SupportOption"
+      },
+      "Take": {
+        "properties": {
+          "take_no": {
+            "type": "integer",
+            "title": "Take No"
+          },
+          "taken_on": {
+            "type": "string",
+            "format": "date",
+            "title": "Taken On"
+          },
+          "total": {
+            "type": "number",
+            "title": "Total"
+          },
+          "scores": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "propertyNames": {
+              "enum": [
+                "emotional",
+                "environmental",
+                "financial",
+                "intellectual",
+                "occupational",
+                "physical",
+                "social",
+                "spiritual"
+              ]
+            },
+            "type": "object",
+            "title": "Scores"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "take_no",
+          "taken_on",
+          "total",
+          "scores"
+        ],
+        "title": "Take"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "VapidKey": {
+        "properties": {
+          "public_key": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Public Key",
+            "description": "VAPID application server key (base64url). Null if push is not configured."
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "public_key"
+        ],
+        "title": "VapidKey"
+      },
+      "WeeklyPoint": {
+        "properties": {
+          "campus": {
+            "type": "string",
+            "enum": [
+              "new_brunswick",
+              "newark",
+              "camden",
+              "online",
+              "community"
+            ],
+            "title": "Campus"
+          },
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "emotional",
+              "environmental",
+              "financial",
+              "intellectual",
+              "occupational",
+              "physical",
+              "social",
+              "spiritual"
+            ],
+            "title": "Dimension"
+          },
+          "week": {
+            "type": "string",
+            "format": "date",
+            "title": "Week"
+          },
+          "avg_score": {
+            "type": "number",
+            "title": "Avg Score"
+          },
+          "n": {
+            "type": "integer",
+            "title": "N"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "campus",
+          "dimension",
+          "week",
+          "avg_score",
+          "n"
+        ],
+        "title": "WeeklyPoint"
+      },
+      "WeeklyResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "filters": {
+            "$ref": "#/components/schemas/StaffFilters"
+          },
+          "suppressed_groups": {
+            "type": "integer",
+            "title": "Suppressed Groups"
+          },
+          "min_group_size": {
+            "type": "integer",
+            "title": "Min Group Size",
+            "default": 10
+          },
+          "points": {
+            "items": {
+              "$ref": "#/components/schemas/WeeklyPoint"
+            },
+            "type": "array",
+            "title": "Points"
+          },
+          "overlays": {
+            "items": {
+              "$ref": "#/components/schemas/CalendarOverlay"
+            },
+            "type": "array",
+            "title": "Overlays"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "filters",
+          "suppressed_groups",
+          "points",
+          "overlays"
+        ],
+        "title": "WeeklyResponse"
+      },
+      "Win": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "dimension": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "emotional",
+                  "environmental",
+                  "financial",
+                  "intellectual",
+                  "occupational",
+                  "physical",
+                  "social",
+                  "spiritual"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dimension"
+          },
+          "campus": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "new_brunswick",
+                  "newark",
+                  "camden",
+                  "online",
+                  "community"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Campus"
+          },
+          "same_here": {
+            "type": "integer",
+            "title": "Same Here"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "dimension",
+          "campus",
+          "same_here",
+          "created_at",
+          "synthetic"
+        ],
+        "title": "Win"
+      },
+      "WinAccepted": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "accepted",
+              "held",
+              "rejected"
+            ],
+            "title": "Kind"
+          },
+          "win_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Win Id"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "kind",
+          "win_id",
+          "message"
+        ],
+        "title": "WinAccepted"
+      },
+      "WinRequest": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 140,
+            "minLength": 1,
+            "title": "Text"
+          },
+          "dimension": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "emotional",
+                  "environmental",
+                  "financial",
+                  "intellectual",
+                  "occupational",
+                  "physical",
+                  "social",
+                  "spiritual"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Dimension"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "WinRequest"
+      }
+    }
+  }
+}

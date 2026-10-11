@@ -1,0 +1,35 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "items": [
+    {
+      "id": "profile:focus",
+      "kind": "focus",
+      "statement": "You chose to grow: Physical",
+      "source": {
+        "type": "you_chose",
+        "label": "Your choice",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Picks steps for this area",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    },
+    {
+      "id": "profile:barrier:coursework",
+      "kind": "barrier",
+      "statement": "What gets in the way: coursework",
+      "source": {
+        "type": "you_chose",
+        "label": "You tapped this",
+        "at": "2026-10-12T09:00:00-04:00"
+      },
+      "used_for": "Favours steps that get around it",
+      "learned_at": "2026-10-12T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    }
+  ],
+  "note": "This is everything Compass keeps about you. Your inventory scores stay in MyRutgers and are only read, never changed."
+}

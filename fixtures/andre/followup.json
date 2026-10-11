@@ -1,0 +1,45 @@
+{
+  "synthetic": true,
+  "now": "2026-10-13T15:30:00-04:00",
+  "commitment_id": 9001,
+  "status": "went",
+  "progress": {
+    "dimension": "social",
+    "steps_this_month": 1,
+    "message": "One step taken this month. That counts."
+  },
+  "arc": {
+    "status": "mock",
+    "message": "Wellness credit added to The Arc (demo)"
+  },
+  "challenge": {
+    "challenge_id": "ch-campus-cup-oct-newark",
+    "title": "Scarlet Wellness Cup: steps this week",
+    "added": 2,
+    "progress": 28,
+    "goal": 110,
+    "pct": 0.25
+  },
+  "next_rung": {
+    "rung": 3,
+    "label": "Open social",
+    "message": "That went well. Ready to try something a bit more open next week?"
+  },
+  "learned": [
+    {
+      "id": "m:1",
+      "kind": "likes_format",
+      "statement": "You enjoyed game-based events",
+      "source": {
+        "type": "rating",
+        "label": "You rated Commuter lunch and board games 4/5",
+        "at": "2026-10-15T09:00:00-04:00"
+      },
+      "used_for": "Game-based events rank a little higher",
+      "learned_at": "2026-10-15T09:00:00-04:00",
+      "last_used_at": null,
+      "deletable": true
+    }
+  ],
+  "win_prompt": true
+}

@@ -1,0 +1,355 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "set_id": "set-priya-1",
+  "care_first": false,
+  "support_card": null,
+  "pick": {
+    "rec_id": 201,
+    "item": {
+      "id": "res-nb-023",
+      "kind": "resource",
+      "title": "Busch Learning Center",
+      "summary": "Free tutoring and study groups, including math and science courses.",
+      "dimensions": [
+        "intellectual"
+      ],
+      "url": "https://rlc.rutgers.edu/",
+      "phone": null,
+      "hours_text": "Check current tutoring hours on the Learning Centers site",
+      "synthetic": false
+    },
+    "starts_at": null,
+    "ends_at": null,
+    "when_label": "Drop in this week",
+    "window_label": null,
+    "where": {
+      "venue": "Rutgers Learning Centers",
+      "address": "118 Frelinghuysen Road, Piscataway, NJ 08854",
+      "lat": 40.5226,
+      "lon": -74.4627,
+      "campus": "new_brunswick"
+    },
+    "walk_min": 4,
+    "cost": "free",
+    "cost_label": "Free for students",
+    "rung": 1,
+    "rung_label": "Just show up",
+    "going": {
+      "count": null,
+      "label": ""
+    },
+    "reasons": {
+      "filters": [
+        {
+          "code": "campus",
+          "text": "On your campus"
+        },
+        {
+          "code": "free",
+          "text": "Free"
+        },
+        {
+          "code": "hours_unknown",
+          "text": "Hours not listed here: check before you go"
+        }
+      ],
+      "components": [
+        {
+          "name": "dimension",
+          "weight": 0.35,
+          "score": 0.7,
+          "contribution": 0.245,
+          "text": "Addresses what's cutting into your sleep (coursework)"
+        },
+        {
+          "name": "barrier",
+          "weight": 0.25,
+          "score": 1.0,
+          "contribution": 0.25,
+          "text": "Fits 'coursework is eating my time'"
+        },
+        {
+          "name": "window",
+          "weight": 0.2,
+          "score": 0.5,
+          "contribution": 0.1,
+          "text": "Open-hours place"
+        },
+        {
+          "name": "rung",
+          "weight": 0.1,
+          "score": 1.0,
+          "contribution": 0.1,
+          "text": "Just show up"
+        },
+        {
+          "name": "helped_similar",
+          "weight": 0.1,
+          "score": 0.68,
+          "contribution": 0.068,
+          "text": "Rated 4+ by 68% of 41 Busch residents"
+        }
+      ],
+      "memory": [],
+      "distance": "4-minute walk",
+      "total": 0.763
+    },
+    "why": "Calc II is what's eating your nights, so getting help with the problem sets is the sleep step. Four minutes from you, free.",
+    "why_source": "template",
+    "pushed": true,
+    "source": {
+      "name": "ScarletWell resource list",
+      "url": "https://newbrunswick.rutgers.edu/scarletwell/wellness-resources",
+      "verified_on": "2026-10-10"
+    }
+  },
+  "alternates": [
+    {
+      "rec_id": 202,
+      "item": {
+        "id": "evt-10003706-2026-10-15",
+        "kind": "event",
+        "title": "Rutgers Big Chill 5K – Register Now!",
+        "summary": null,
+        "dimensions": [
+          "physical",
+          "social"
+        ],
+        "url": null,
+        "phone": null,
+        "hours_text": null,
+        "synthetic": false
+      },
+      "starts_at": "2026-10-15T10:00:00-04:00",
+      "ends_at": "2026-10-15T11:00:00-04:00",
+      "when_label": "Thu Oct 15, 10–11 AM",
+      "window_label": null,
+      "where": {
+        "venue": "College Ave Gym",
+        "address": "130 College Ave, New Brunswick",
+        "lat": 40.5017,
+        "lon": -74.4497,
+        "campus": "new_brunswick"
+      },
+      "walk_min": null,
+      "cost": "unknown",
+      "cost_label": "Cost not listed",
+      "rung": 2,
+      "rung_label": "Structured: you'll be doing something, not mingling",
+      "going": {
+        "count": null,
+        "label": ""
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "campus",
+            "text": "On your campus"
+          },
+          {
+            "code": "cost_unknown",
+            "text": "Cost not listed"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 1.0,
+            "contribution": 0.35,
+            "text": "Physical"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 0.5,
+            "contribution": 0.1,
+            "text": ""
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 0.5,
+            "contribution": 0.05,
+            "text": ""
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.5,
+            "contribution": 0.05,
+            "text": ""
+          }
+        ],
+        "memory": [],
+        "distance": "Bus ride from Busch",
+        "total": 0.55
+      },
+      "why": "Moving earlier in the day can make it easier to wind down at night.",
+      "why_source": "template",
+      "pushed": true,
+      "source": {
+        "name": "ScarletWell Wellness Calendar",
+        "url": "https://wellnesscalendar.rutgers.edu/",
+        "verified_on": null
+      }
+    },
+    {
+      "rec_id": 203,
+      "item": {
+        "id": "micro-physical-1",
+        "kind": "micro",
+        "title": "10-minute wind-down: phone across the room at midnight",
+        "summary": null,
+        "dimensions": [
+          "physical"
+        ],
+        "url": null,
+        "phone": null,
+        "hours_text": null,
+        "synthetic": false
+      },
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "Tonight",
+      "window_label": null,
+      "where": {
+        "venue": null,
+        "address": null,
+        "lat": null,
+        "lon": null,
+        "campus": "online"
+      },
+      "walk_min": null,
+      "cost": "free",
+      "cost_label": "Free",
+      "rung": 1,
+      "rung_label": "Just show up",
+      "going": {
+        "count": null,
+        "label": ""
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "free",
+            "text": "Free"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 1.0,
+            "contribution": 0.35,
+            "text": "Physical"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 1.0,
+            "contribution": 0.2,
+            "text": "Any time"
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 1.0,
+            "contribution": 0.1,
+            "text": "Just you"
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          }
+        ],
+        "memory": [],
+        "distance": null,
+        "total": 0.65
+      },
+      "why": "A tiny step for the nights the problem set runs late.",
+      "why_source": "template",
+      "pushed": true,
+      "source": {
+        "name": "Compass micro-steps",
+        "url": null,
+        "verified_on": null
+      }
+    }
+  ],
+  "crisis_lines": [
+    {
+      "id": 1,
+      "name": "988 Suicide & Crisis Lifeline",
+      "kind": "call",
+      "contact": "Call or text 988",
+      "href": "tel:988",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 2,
+      "name": "988 en español",
+      "kind": "call",
+      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
+      "href": "tel:988",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "es",
+      "verified": false
+    },
+    {
+      "id": 3,
+      "name": "Crisis Text Line",
+      "kind": "text",
+      "contact": "Text HOME to 741741",
+      "href": "sms:741741?body=HOME",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 4,
+      "name": "Emergency",
+      "kind": "emergency",
+      "contact": "Call 911",
+      "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 5,
+      "name": "CAPS (New Brunswick)",
+      "kind": "call",
+      "contact": "848-932-7884 (after hours, follow the prompts to reach a counselor)",
+      "href": "tel:+18489327884",
+      "hours": "24/7 via after-hours line",
+      "campus": "new_brunswick",
+      "language": "any",
+      "verified": false
+    }
+  ]
+}

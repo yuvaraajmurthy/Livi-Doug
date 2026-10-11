@@ -1,0 +1,42 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "filters": {
+    "campus": null,
+    "dimension": null,
+    "level": null,
+    "first_gen": null,
+    "housing": null
+  },
+  "suppressed_groups": 0,
+  "min_group_size": 10,
+  "rows": [
+    {
+      "campus": "new_brunswick",
+      "users": 600,
+      "users_retook": 420,
+      "users_rate": 0.7,
+      "non_users": 400,
+      "non_users_retook": 220,
+      "non_users_rate": 0.55
+    },
+    {
+      "campus": "newark",
+      "users": 170,
+      "users_retook": 121,
+      "users_rate": 0.71,
+      "non_users": 110,
+      "non_users_retook": 59,
+      "non_users_rate": 0.54
+    },
+    {
+      "campus": "camden",
+      "users": 110,
+      "users_retook": 76,
+      "users_rate": 0.69,
+      "non_users": 75,
+      "non_users_retook": 48,
+      "non_users_rate": 0.64
+    }
+  ]
+}

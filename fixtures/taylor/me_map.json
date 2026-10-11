@@ -1,0 +1,114 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "student": {
+    "id": "DEMO-TAYLOR",
+    "persona": "taylor",
+    "campus": "new_brunswick",
+    "level": "undergrad",
+    "housing": "resident",
+    "language": "en"
+  },
+  "latest": {
+    "take_no": 1,
+    "taken_on": "2026-10-06",
+    "total": 2.08,
+    "scores": {
+      "emotional": 1.3,
+      "environmental": 2.5,
+      "financial": 2.4,
+      "intellectual": 2.2,
+      "occupational": 2.4,
+      "physical": 1.9,
+      "social": 1.6,
+      "spiritual": 2.3
+    }
+  },
+  "dimensions": [
+    {
+      "dimension": "environmental",
+      "label": "Environmental",
+      "score": 2.5,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "financial",
+      "label": "Financial",
+      "score": 2.4,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "occupational",
+      "label": "Occupational",
+      "score": 2.4,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "spiritual",
+      "label": "Spiritual",
+      "score": 2.3,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "intellectual",
+      "label": "Intellectual",
+      "score": 2.2,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    },
+    {
+      "dimension": "physical",
+      "label": "Physical",
+      "score": 1.9,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    },
+    {
+      "dimension": "social",
+      "label": "Social",
+      "score": 1.6,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    },
+    {
+      "dimension": "emotional",
+      "label": "Emotional",
+      "score": 1.3,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    }
+  ],
+  "strengths": [
+    "environmental"
+  ],
+  "growth_areas": [
+    "emotional",
+    "intellectual",
+    "physical",
+    "social"
+  ],
+  "care_first": true,
+  "previous_takes": [],
+  "profile": {
+    "focus": null,
+    "barriers": [],
+    "barriers_from_text": [],
+    "free_windows": [],
+    "social_rung": 1,
+    "free_only": true,
+    "language": "en"
+  },
+  "retake_nudge": null
+}

@@ -1,0 +1,55 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "filters": {
+    "campus": null,
+    "dimension": null,
+    "level": null,
+    "first_gen": null,
+    "housing": null
+  },
+  "suppressed_groups": 2,
+  "min_group_size": 10,
+  "rows": [
+    {
+      "campus": "new_brunswick",
+      "dimension": "social",
+      "students": 303,
+      "suggested": 1650,
+      "committed": 990,
+      "with_friend": 210,
+      "attended": 640,
+      "helped": 430,
+      "commit_rate": 0.6,
+      "attend_rate": 0.646,
+      "helped_rate": 0.672
+    },
+    {
+      "campus": "newark",
+      "dimension": "social",
+      "students": 93,
+      "suggested": 510,
+      "committed": 300,
+      "with_friend": 66,
+      "attended": 190,
+      "helped": 124,
+      "commit_rate": 0.588,
+      "attend_rate": 0.633,
+      "helped_rate": 0.653
+    },
+    {
+      "campus": "camden",
+      "dimension": "financial",
+      "students": 82,
+      "suggested": 420,
+      "committed": 230,
+      "with_friend": 31,
+      "attended": 140,
+      "helped": 84,
+      "commit_rate": 0.548,
+      "attend_rate": 0.609,
+      "helped_rate": 0.6
+    }
+  ],
+  "totals": null
+}

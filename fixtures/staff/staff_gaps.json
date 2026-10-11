@@ -1,0 +1,44 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "filters": {
+    "campus": null,
+    "dimension": null,
+    "level": null,
+    "first_gen": null,
+    "housing": null
+  },
+  "suppressed_groups": 0,
+  "min_group_size": 10,
+  "rows": [
+    {
+      "campus": "camden",
+      "dimension": "financial",
+      "low_students": 82,
+      "items": 3,
+      "low_students_per_item": 27.3
+    },
+    {
+      "campus": "newark",
+      "dimension": "financial",
+      "low_students": 149,
+      "items": 8,
+      "low_students_per_item": 18.6
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "financial",
+      "low_students": 405,
+      "items": 25,
+      "low_students_per_item": 16.2
+    },
+    {
+      "campus": "camden",
+      "dimension": "social",
+      "low_students": 61,
+      "items": 9,
+      "low_students_per_item": 6.8
+    }
+  ],
+  "headline": "Camden has 27 students with low financial scores for every financial item listed there."
+}

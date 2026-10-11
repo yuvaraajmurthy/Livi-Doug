@@ -1,0 +1,33 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "token": "fixture-invite",
+  "item": {
+    "id": "pin-andre-lunch-2026-10-13",
+    "kind": "event",
+    "title": "Commuter lunch and board games (sample)",
+    "summary": "Drop-in lunch with board and card games for commuter students. Food provided.",
+    "dimensions": [
+      "social",
+      "financial"
+    ],
+    "url": null,
+    "phone": null,
+    "hours_text": null,
+    "synthetic": true
+  },
+  "when_label": "Tue Oct 13, 12:30–1:30 PM",
+  "where": {
+    "venue": "Paul Robeson Campus Center",
+    "address": "350 Dr. Martin Luther King Jr. Blvd, Newark, NJ 07102",
+    "lat": 40.7415,
+    "lon": -74.1752,
+    "campus": "newark"
+  },
+  "going": {
+    "count": 14,
+    "label": "14 Newark students are going"
+  },
+  "accepted": false,
+  "note": "Your friend thought you might like this. No account needed."
+}

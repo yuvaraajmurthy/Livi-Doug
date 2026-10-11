@@ -1,0 +1,48 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "personas": [
+    {
+      "key": "andre",
+      "name": "Andre",
+      "campus": "newark",
+      "role_in_demo": "Main: Newark commuter, first-gen, works afternoons. Social is his growth area.",
+      "synthetic": true
+    },
+    {
+      "key": "priya",
+      "name": "Priya",
+      "campus": "new_brunswick",
+      "role_in_demo": "Busch sophomore: sleep is low because of Calc II. Gets real tutoring.",
+      "synthetic": true
+    },
+    {
+      "key": "taylor",
+      "name": "Taylor",
+      "campus": "new_brunswick",
+      "role_in_demo": "Care-first: a person comes first, events are not pushed.",
+      "synthetic": true
+    },
+    {
+      "key": "sofia",
+      "name": "Sofia",
+      "campus": "camden",
+      "role_in_demo": "Camden grad, works full time, prefers Spanish. Thin financial supply.",
+      "synthetic": true
+    },
+    {
+      "key": "jordan",
+      "name": "Jordan",
+      "campus": "new_brunswick",
+      "role_in_demo": "Livingston first-year, lonely, athletic. Residence-hall challenge.",
+      "synthetic": true
+    },
+    {
+      "key": "staff",
+      "name": "ScarletWell staff",
+      "campus": null,
+      "role_in_demo": "Staff Pulse: aggregates only, groups under 10 hidden.",
+      "synthetic": true
+    }
+  ]
+}

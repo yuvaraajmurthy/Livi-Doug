@@ -1,0 +1,73 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "filters": {
+    "campus": null,
+    "dimension": null,
+    "level": null,
+    "first_gen": null,
+    "housing": null
+  },
+  "suppressed_groups": 0,
+  "min_group_size": 10,
+  "threshold": 0.15,
+  "dips": [
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-10-12",
+      "avg_score": 2.63,
+      "trailing_avg": 2.82,
+      "drop": 0.19,
+      "n": 118,
+      "overlay": "Midterms (approximate)"
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-12-14",
+      "avg_score": 2.5,
+      "trailing_avg": 2.78,
+      "drop": 0.28,
+      "n": 131,
+      "overlay": "Final exams"
+    }
+  ],
+  "overlays": [
+    {
+      "label": "Classes begin",
+      "start": "2026-09-01",
+      "end": "2026-09-01",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    },
+    {
+      "label": "Midterms (approximate)",
+      "start": "2026-10-05",
+      "end": "2026-10-30",
+      "approximate": true,
+      "source": "Assumption: not on the registrar calendar"
+    },
+    {
+      "label": "Thanksgiving recess",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    },
+    {
+      "label": "Reading days",
+      "start": "2026-12-11",
+      "end": "2026-12-14",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    },
+    {
+      "label": "Final exams",
+      "start": "2026-12-15",
+      "end": "2026-12-22",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    }
+  ]
+}

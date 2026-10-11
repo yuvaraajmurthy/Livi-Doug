@@ -1,0 +1,356 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "set_id": "set-jordan-1",
+  "care_first": false,
+  "support_card": null,
+  "pick": {
+    "rec_id": 501,
+    "item": {
+      "id": "ss-imleagues-pickleball-liv",
+      "kind": "event",
+      "title": "Intramural pickleball open play",
+      "summary": null,
+      "dimensions": [
+        "physical",
+        "social"
+      ],
+      "url": null,
+      "phone": null,
+      "hours_text": null,
+      "synthetic": false
+    },
+    "starts_at": "2026-10-14T19:00:00-04:00",
+    "ends_at": "2026-10-14T20:00:00-04:00",
+    "when_label": "Wed Oct 14, 7–8 PM",
+    "window_label": null,
+    "where": {
+      "venue": "Livingston Rec Center",
+      "address": "62 Road 3, Piscataway, NJ 08854",
+      "lat": 40.5249,
+      "lon": -74.4363,
+      "campus": "new_brunswick"
+    },
+    "walk_min": 6,
+    "cost": "free",
+    "cost_label": "Free",
+    "rung": 2,
+    "rung_label": "Structured: you'll be doing something, not mingling",
+    "going": {
+      "count": null,
+      "label": "A few students are going"
+    },
+    "reasons": {
+      "filters": [
+        {
+          "code": "campus",
+          "text": "On your campus"
+        },
+        {
+          "code": "free",
+          "text": "Free"
+        }
+      ],
+      "components": [
+        {
+          "name": "dimension",
+          "weight": 0.35,
+          "score": 1.0,
+          "contribution": 0.35,
+          "text": "Social"
+        },
+        {
+          "name": "barrier",
+          "weight": 0.25,
+          "score": 1.0,
+          "contribution": 0.25,
+          "text": "Fits 'I don't know anyone'"
+        },
+        {
+          "name": "window",
+          "weight": 0.2,
+          "score": 0.5,
+          "contribution": 0.1,
+          "text": "Evening"
+        },
+        {
+          "name": "rung",
+          "weight": 0.1,
+          "score": 1.0,
+          "contribution": 0.1,
+          "text": "Structured"
+        },
+        {
+          "name": "helped_similar",
+          "weight": 0.1,
+          "score": 0.6,
+          "contribution": 0.06,
+          "text": "Rated 4+ by 60% of first-years"
+        }
+      ],
+      "memory": [],
+      "distance": "6-minute walk",
+      "total": 0.86
+    },
+    "why": "You already play: a game is the easiest way to meet people on Livingston.",
+    "why_source": "template",
+    "pushed": true,
+    "source": {
+      "name": "Rutgers Recreation via Scarlet Sync",
+      "url": "https://recreation.rutgers.edu/",
+      "verified_on": null
+    }
+  },
+  "alternates": [
+    {
+      "rec_id": 502,
+      "item": {
+        "id": "syn-newark-012",
+        "kind": "event",
+        "title": "Open gym pickup basketball (sample)",
+        "summary": "Casual pickup games, all levels.",
+        "dimensions": [
+          "physical",
+          "social"
+        ],
+        "url": null,
+        "phone": null,
+        "hours_text": null,
+        "synthetic": true
+      },
+      "starts_at": "2026-10-20T12:00:00-04:00",
+      "ends_at": "2026-10-20T13:00:00-04:00",
+      "when_label": "Tue Oct 20, 12–1 PM",
+      "window_label": "Fits your Tuesday gap, 12:20–2:30",
+      "where": {
+        "venue": "John Cotton Dana Library",
+        "address": null,
+        "lat": 40.742,
+        "lon": -74.1768,
+        "campus": "newark"
+      },
+      "walk_min": 5,
+      "cost": "free",
+      "cost_label": "Free",
+      "rung": 2,
+      "rung_label": "Structured: you'll be doing something, not mingling",
+      "going": {
+        "count": 6,
+        "label": "6 Newark students are going"
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "campus",
+            "text": "On your campus"
+          },
+          {
+            "code": "in_window",
+            "text": "Inside one of your free windows"
+          },
+          {
+            "code": "free",
+            "text": "Free"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 1.0,
+            "contribution": 0.35,
+            "text": "Social"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 0.5,
+            "contribution": 0.125,
+            "text": "Fits 'no time'"
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 0.8,
+            "contribution": 0.16,
+            "text": "Mostly inside your Tuesday gap"
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 1.0,
+            "contribution": 0.1,
+            "text": "Structured"
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.55,
+            "contribution": 0.055,
+            "text": "Rated 4+ by 55% of similar students"
+          }
+        ],
+        "memory": [],
+        "distance": "5-minute walk",
+        "total": 0.79
+      },
+      "why": "A game to play means you meet people without having to start a conversation.",
+      "why_source": "template",
+      "pushed": true,
+      "source": {
+        "name": "Compass sample event (synthetic)",
+        "url": null,
+        "verified_on": null
+      }
+    },
+    {
+      "rec_id": 503,
+      "item": {
+        "id": "micro-physical-1",
+        "kind": "micro",
+        "title": "10-minute wind-down: phone across the room at midnight",
+        "summary": null,
+        "dimensions": [
+          "physical"
+        ],
+        "url": null,
+        "phone": null,
+        "hours_text": null,
+        "synthetic": false
+      },
+      "starts_at": null,
+      "ends_at": null,
+      "when_label": "Tonight",
+      "window_label": null,
+      "where": {
+        "venue": null,
+        "address": null,
+        "lat": null,
+        "lon": null,
+        "campus": "online"
+      },
+      "walk_min": null,
+      "cost": "free",
+      "cost_label": "Free",
+      "rung": 1,
+      "rung_label": "Just show up",
+      "going": {
+        "count": null,
+        "label": ""
+      },
+      "reasons": {
+        "filters": [
+          {
+            "code": "free",
+            "text": "Free"
+          }
+        ],
+        "components": [
+          {
+            "name": "dimension",
+            "weight": 0.35,
+            "score": 1.0,
+            "contribution": 0.35,
+            "text": "Physical"
+          },
+          {
+            "name": "barrier",
+            "weight": 0.25,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          },
+          {
+            "name": "window",
+            "weight": 0.2,
+            "score": 1.0,
+            "contribution": 0.2,
+            "text": "Any time"
+          },
+          {
+            "name": "rung",
+            "weight": 0.1,
+            "score": 1.0,
+            "contribution": 0.1,
+            "text": "Just you"
+          },
+          {
+            "name": "helped_similar",
+            "weight": 0.1,
+            "score": 0.0,
+            "contribution": 0.0,
+            "text": ""
+          }
+        ],
+        "memory": [],
+        "distance": null,
+        "total": 0.65
+      },
+      "why": "A tiny step for the nights the problem set runs late.",
+      "why_source": "template",
+      "pushed": true,
+      "source": {
+        "name": "Compass micro-steps",
+        "url": null,
+        "verified_on": null
+      }
+    }
+  ],
+  "crisis_lines": [
+    {
+      "id": 1,
+      "name": "988 Suicide & Crisis Lifeline",
+      "kind": "call",
+      "contact": "Call or text 988",
+      "href": "tel:988",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 2,
+      "name": "988 en español",
+      "kind": "call",
+      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
+      "href": "tel:988",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "es",
+      "verified": false
+    },
+    {
+      "id": 3,
+      "name": "Crisis Text Line",
+      "kind": "text",
+      "contact": "Text HOME to 741741",
+      "href": "sms:741741?body=HOME",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 4,
+      "name": "Emergency",
+      "kind": "emergency",
+      "contact": "Call 911",
+      "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 5,
+      "name": "CAPS (New Brunswick)",
+      "kind": "call",
+      "contact": "848-932-7884 (after hours, follow the prompts to reach a counselor)",
+      "href": "tel:+18489327884",
+      "hours": "24/7 via after-hours line",
+      "campus": "new_brunswick",
+      "language": "any",
+      "verified": false
+    }
+  ]
+}

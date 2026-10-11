@@ -1,0 +1,120 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "student": {
+    "id": "DEMO-ANDRE",
+    "persona": "andre",
+    "campus": "newark",
+    "level": "undergrad",
+    "housing": "commuter",
+    "language": "en"
+  },
+  "latest": {
+    "take_no": 1,
+    "taken_on": "2026-09-14",
+    "total": 2.73,
+    "scores": {
+      "emotional": 2.6,
+      "environmental": 2.9,
+      "financial": 2.1,
+      "intellectual": 3.2,
+      "occupational": 3.0,
+      "physical": 2.7,
+      "social": 1.9,
+      "spiritual": 3.4
+    }
+  },
+  "dimensions": [
+    {
+      "dimension": "spiritual",
+      "label": "Spiritual",
+      "score": 3.4,
+      "band": "high",
+      "blurb": "This is a real strength for you right now.",
+      "change": null
+    },
+    {
+      "dimension": "intellectual",
+      "label": "Intellectual",
+      "score": 3.2,
+      "band": "high",
+      "blurb": "This is a real strength for you right now.",
+      "change": null
+    },
+    {
+      "dimension": "occupational",
+      "label": "Occupational",
+      "score": 3.0,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "environmental",
+      "label": "Environmental",
+      "score": 2.9,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "physical",
+      "label": "Physical",
+      "score": 2.7,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "emotional",
+      "label": "Emotional",
+      "score": 2.6,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "financial",
+      "label": "Financial",
+      "score": 2.1,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    },
+    {
+      "dimension": "social",
+      "label": "Social",
+      "score": 1.9,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    }
+  ],
+  "strengths": [
+    "spiritual",
+    "intellectual",
+    "occupational"
+  ],
+  "growth_areas": [
+    "financial",
+    "social"
+  ],
+  "care_first": false,
+  "previous_takes": [],
+  "profile": {
+    "focus": "social",
+    "barriers": [
+      "no_time",
+      "dont_know_anyone"
+    ],
+    "barriers_from_text": [],
+    "free_windows": [
+      "Tue 12:20-14:30",
+      "Thu 12:20-14:30"
+    ],
+    "social_rung": 2,
+    "free_only": true,
+    "language": "en"
+  },
+  "retake_nudge": null
+}

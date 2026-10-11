@@ -1,0 +1,64 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "crisis",
+  "title": "You don't have to handle this alone",
+  "message": "It sounds like things are really hard right now. You can reach a real person right now, any time, for free.",
+  "lines": [
+    {
+      "id": 1,
+      "name": "988 Suicide & Crisis Lifeline",
+      "kind": "call",
+      "contact": "Call or text 988",
+      "href": "tel:988",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 2,
+      "name": "988 en español",
+      "kind": "call",
+      "contact": "Llama al 988 y marca 2, o envía AYUDA al 988",
+      "href": "tel:988",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "es",
+      "verified": false
+    },
+    {
+      "id": 3,
+      "name": "Crisis Text Line",
+      "kind": "text",
+      "contact": "Text HOME to 741741",
+      "href": "sms:741741?body=HOME",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 4,
+      "name": "Emergency",
+      "kind": "emergency",
+      "contact": "Call 911",
+      "href": "tel:911",
+      "hours": "24/7",
+      "campus": "all",
+      "language": "any",
+      "verified": false
+    },
+    {
+      "id": 7,
+      "name": "Rutgers–Camden Student Wellness Center",
+      "kind": "call",
+      "contact": "856-225-6005; after hours Uwill crisis line 833-646-1526",
+      "href": "tel:+18562256005",
+      "hours": "Mon–Fri 8:30–4:30; Uwill 24/7",
+      "campus": "camden",
+      "language": "any",
+      "verified": false
+    }
+  ]
+}

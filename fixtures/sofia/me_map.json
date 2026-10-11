@@ -1,0 +1,116 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "student": {
+    "id": "DEMO-SOFIA",
+    "persona": "sofia",
+    "campus": "camden",
+    "level": "grad",
+    "housing": "commuter",
+    "language": "es"
+  },
+  "latest": {
+    "take_no": 1,
+    "taken_on": "2026-10-06",
+    "total": 2.64,
+    "scores": {
+      "emotional": 2.6,
+      "environmental": 2.8,
+      "financial": 1.9,
+      "intellectual": 3.0,
+      "occupational": 3.5,
+      "physical": 2.6,
+      "social": 2.5,
+      "spiritual": 2.2
+    }
+  },
+  "dimensions": [
+    {
+      "dimension": "occupational",
+      "label": "Occupational",
+      "score": 3.5,
+      "band": "high",
+      "blurb": "This is a real strength for you right now.",
+      "change": null
+    },
+    {
+      "dimension": "intellectual",
+      "label": "Intellectual",
+      "score": 3.0,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "environmental",
+      "label": "Environmental",
+      "score": 2.8,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "emotional",
+      "label": "Emotional",
+      "score": 2.6,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "physical",
+      "label": "Physical",
+      "score": 2.6,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "social",
+      "label": "Social",
+      "score": 2.5,
+      "band": "middle",
+      "blurb": "Steady. Worth keeping an eye on.",
+      "change": null
+    },
+    {
+      "dimension": "spiritual",
+      "label": "Spiritual",
+      "score": 2.2,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    },
+    {
+      "dimension": "financial",
+      "label": "Financial",
+      "score": 1.9,
+      "band": "low",
+      "blurb": "An area with room to grow. Small steps count here.",
+      "change": null
+    }
+  ],
+  "strengths": [
+    "occupational",
+    "intellectual"
+  ],
+  "growth_areas": [
+    "financial",
+    "spiritual"
+  ],
+  "care_first": false,
+  "previous_takes": [],
+  "profile": {
+    "focus": "financial",
+    "barriers": [
+      "no_time",
+      "money"
+    ],
+    "barriers_from_text": [],
+    "free_windows": [],
+    "social_rung": 1,
+    "free_only": true,
+    "language": "es"
+  },
+  "retake_nudge": null
+}

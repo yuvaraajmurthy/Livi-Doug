@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "commitment",
+  "commitment_id": 9001,
+  "status": "planned",
+  "item": {
+    "id": "res-nb-023",
+    "kind": "resource",
+    "title": "Busch Learning Center",
+    "summary": "Free tutoring and study groups, including math and science courses.",
+    "dimensions": [
+      "intellectual"
+    ],
+    "url": "https://rlc.rutgers.edu/",
+    "phone": null,
+    "hours_text": "Check current tutoring hours on the Learning Centers site",
+    "synthetic": false
+  },
+  "when_label": "Drop in this week",
+  "where": {
+    "venue": "Rutgers Learning Centers",
+    "address": "118 Frelinghuysen Road, Piscataway, NJ 08854",
+    "lat": 40.5226,
+    "lon": -74.4627,
+    "campus": "new_brunswick"
+  },
+  "plan_text": "This week, after my last class, I stop by Busch Learning Center.",
+  "plan_source": "template",
+  "ics_url": "/commitments/9001/ics?t=fixture-invite",
+  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE",
+  "reminder_at": null,
+  "followup_at": "2026-10-15T09:00:00-04:00",
+  "invite_url": "/i/fixture-invite",
+  "invite_token": "fixture-invite",
+  "share_text": "I'm going to Busch Learning Center this week. Come with me?"
+}

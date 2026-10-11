@@ -1,0 +1,39 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "commitment",
+  "commitment_id": 9001,
+  "status": "planned",
+  "item": {
+    "id": "evt-4457-2026-10-13",
+    "kind": "event",
+    "title": "LSM Pumpkin Decorating Event",
+    "summary": null,
+    "dimensions": [
+      "emotional",
+      "intellectual",
+      "social"
+    ],
+    "url": null,
+    "phone": null,
+    "hours_text": null,
+    "synthetic": false
+  },
+  "when_label": "Tue Oct 13, 2–4 PM",
+  "where": {
+    "venue": "Library of Science and Medicine",
+    "address": "165 Bevier Rd, Piscataway",
+    "lat": 40.5236,
+    "lon": -74.4648,
+    "campus": "new_brunswick"
+  },
+  "plan_text": "On Tuesday at 2:00 PM, I go to Library of Science and Medicine.",
+  "plan_source": "template",
+  "ics_url": "/commitments/9001/ics?t=fixture-invite",
+  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE",
+  "reminder_at": "2026-10-13T13:45:00-04:00",
+  "followup_at": "2026-10-13T18:00:00-04:00",
+  "invite_url": "/i/fixture-invite",
+  "invite_token": "fixture-invite",
+  "share_text": "I'm going to LSM Pumpkin Decorating Event Tue Oct 13, 2–4 PM. Come with me?"
+}

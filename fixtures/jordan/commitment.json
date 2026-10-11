@@ -1,0 +1,38 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "commitment",
+  "commitment_id": 9001,
+  "status": "planned",
+  "item": {
+    "id": "ss-imleagues-pickleball-liv",
+    "kind": "event",
+    "title": "Intramural pickleball open play",
+    "summary": null,
+    "dimensions": [
+      "physical",
+      "social"
+    ],
+    "url": null,
+    "phone": null,
+    "hours_text": null,
+    "synthetic": false
+  },
+  "when_label": "Wed Oct 14, 7–8 PM",
+  "where": {
+    "venue": "Livingston Rec Center",
+    "address": "62 Road 3, Piscataway, NJ 08854",
+    "lat": 40.5249,
+    "lon": -74.4363,
+    "campus": "new_brunswick"
+  },
+  "plan_text": "On Wednesday at 7:00 PM, I go to Livingston Rec Center.",
+  "plan_source": "template",
+  "ics_url": "/commitments/9001/ics?t=fixture-invite",
+  "google_calendar_url": "https://calendar.google.com/calendar/render?action=TEMPLATE",
+  "reminder_at": "2026-10-14T18:45:00-04:00",
+  "followup_at": "2026-10-14T22:00:00-04:00",
+  "invite_url": "/i/fixture-invite",
+  "invite_token": "fixture-invite",
+  "share_text": "I'm going to Intramural pickleball open play Wed Oct 14, 7–8 PM. Come with me?"
+}

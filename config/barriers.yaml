@@ -1,0 +1,51 @@
+# Barrier chips the student can tap, and what each one means to the engine.
+# causes: KB cause tags that address the barrier. formats: item formats that help.
+# prefer: item attributes that help (short = <= 60 min, near = <= 10 min walk, online, free, solo_friendly, low_rung).
+barriers:
+  no_time:
+    label: "No time between class and work"
+    label_es: "No tengo tiempo entre clases y trabajo"
+    prefer: [short, near, online, in_window]
+  dont_know_anyone:
+    label: "I don't know anyone"
+    label_es: "No conozco a nadie"
+    causes: [loneliness]
+    prefer: [solo_friendly, structured]
+    target_rung: 2
+  money:
+    label: "Money is tight"
+    label_es: "El dinero no alcanza"
+    causes: [money]
+    prefer: [free]
+  coursework:
+    label: "Coursework is eating my time"
+    label_es: "Las tareas me quitan el tiempo"
+    causes: [academic_workload]
+    root_cause_for: [physical, emotional, intellectual]
+  not_my_scene:
+    label: "Events aren't really my scene"
+    label_es: "Los eventos no son lo mío"
+    prefer: [low_rung, solo_friendly]
+  too_far:
+    label: "It's too far"
+    label_es: "Me queda muy lejos"
+    prefer: [near, online]
+  low_energy:
+    label: "I'm running on empty"
+    label_es: "Estoy sin energía"
+    causes: [stress, sleep_habits]
+    prefer: [short, low_rung]
+  not_sure_where:
+    label: "I don't know where to start"
+    label_es: "No sé por dónde empezar"
+    prefer: [structured, solo_friendly]
+
+dimensions:
+  emotional: "Emotional"
+  environmental: "Environmental"
+  financial: "Financial"
+  intellectual: "Intellectual"
+  occupational: "Occupational"
+  physical: "Physical"
+  social: "Social"
+  spiritual: "Spiritual"

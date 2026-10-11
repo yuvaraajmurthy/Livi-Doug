@@ -1,0 +1,164 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "filters": {
+    "campus": null,
+    "dimension": null,
+    "level": null,
+    "first_gen": null,
+    "housing": null
+  },
+  "suppressed_groups": 0,
+  "min_group_size": 10,
+  "points": [
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-09-07",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-09-14",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-09-21",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-09-28",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-10-05",
+      "avg_score": 2.65,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-10-12",
+      "avg_score": 2.65,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-10-19",
+      "avg_score": 2.65,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-10-26",
+      "avg_score": 2.65,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-11-02",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-11-09",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-11-16",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-11-23",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-11-30",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-12-07",
+      "avg_score": 2.85,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-12-14",
+      "avg_score": 2.52,
+      "n": 120
+    },
+    {
+      "campus": "new_brunswick",
+      "dimension": "physical",
+      "week": "2026-12-21",
+      "avg_score": 2.52,
+      "n": 120
+    }
+  ],
+  "overlays": [
+    {
+      "label": "Classes begin",
+      "start": "2026-09-01",
+      "end": "2026-09-01",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    },
+    {
+      "label": "Midterms (approximate)",
+      "start": "2026-10-05",
+      "end": "2026-10-30",
+      "approximate": true,
+      "source": "Assumption: not on the registrar calendar"
+    },
+    {
+      "label": "Thanksgiving recess",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    },
+    {
+      "label": "Reading days",
+      "start": "2026-12-11",
+      "end": "2026-12-14",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    },
+    {
+      "label": "Final exams",
+      "start": "2026-12-15",
+      "end": "2026-12-22",
+      "approximate": false,
+      "source": "Rutgers academic calendar"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "now": "2026-10-12T09:00:00-04:00",
+  "kind": "profile",
+  "profile": {
+    "focus": "physical",
+    "barriers": [
+      "coursework"
+    ],
+    "barriers_from_text": [],
+    "free_windows": [],
+    "social_rung": 1,
+    "free_only": true,
+    "language": "en"
+  },
+  "support": null
+}

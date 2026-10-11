@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "now": "2026-10-13T12:15:00-04:00",
+  "previous_now": "2026-10-12T09:00:00-04:00",
+  "fired": [
+    {
+      "id": 1,
+      "kind": "reminder",
+      "title": "Commuter lunch and board games starts in 15 minutes",
+      "body": "Paul Robeson Campus Center. Tap for the plan.",
+      "deep_link": "/plan/9001",
+      "send_at": "2026-10-13T12:15:00-04:00",
+      "delivered": "push",
+      "commitment_id": 9001
+    }
+  ]
+}
