@@ -6,6 +6,8 @@ import { plans } from "../plan/plans";
 import { streamChat } from "./sse";
 import type { ChatMessage, EventChip, UIEvent } from "./types";
 
+type ChatHistory = Awaited<ReturnType<typeof api.chatHistory>>;
+
 let seq = 0;
 const nextId = (p: string) => `${p}-${Date.now()}-${++seq}`;
 
@@ -36,14 +38,19 @@ export function useChat() {
   const loaded = useRef(false);
   const abort = useRef<AbortController | null>(null);
 
-  useEffect(() => {
-    if (!history.data || loaded.current) return;
+  // History goes in once, before anything typed this visit. A turn sent while it is still loading waits for it
+  // (see send), so the snapshot can never already contain that turn.
+  const applyHistory = useCallback((h: ChatHistory) => {
+    if (loaded.current) return;
     loaded.current = true;
-    // a turn sent before history arrived already owns the conversation; keep it and put history before it
-    conv.current ??= history.data.conversation_id;
-    const past = history.data.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at }));
+    conv.current ??= h.conversation_id;
+    const past = h.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at }));
     setMessages(ms => [...past, ...ms]);
-  }, [history.data]);
+  }, []);
+
+  useEffect(() => {
+    if (history.data) applyHistory(history.data);
+  }, [history.data, applyHistory]);
 
   useEffect(() => () => abort.current?.abort(), []);
 
@@ -64,6 +71,12 @@ export function useChat() {
       ]);
       abort.current = new AbortController();
       try {
+        if (!loaded.current) {
+          const h = await qc
+            .ensureQueryData({ queryKey: ["chat-history"], queryFn: api.chatHistory })
+            .catch(() => null);
+          if (h) applyHistory(h);
+        }
         await streamChat(
           { message: text, conversation_id: conv.current },
           ev => {
@@ -101,18 +114,20 @@ export function useChat() {
         setBusy(false);
       }
     },
-    [busy, qc],
+    [busy, qc, applyHistory],
   );
 
   const newChat = useCallback(async () => {
     if (busy) return;
     const r = await api.chatNew();
+    loaded.current = true;
     conv.current = r.conversation_id;
     setMessages([]);
   }, [busy]);
 
   const reload = useCallback(async () => {
     const r = await api.chatHistory();
+    loaded.current = true;
     conv.current = r.conversation_id;
     setMessages(r.messages.map(m => ({ id: `h-${m.id}`, role: m.role, text: m.text, blocks: m.blocks ?? [], at: m.at })));
   }, []);

@@ -94,29 +94,37 @@ describe("Chat", () => {
     expect(within(dialog).getByRole("link", { name: /Directions/ })).toHaveAttribute("href", DETAIL.directions_url);
   });
 
-  it("a message sent before history loads survives the history arriving", async () => {
+  it("a message sent before history loads waits for it: no lost or duplicated turns", async () => {
     const user = userEvent.setup();
     let release!: () => void;
     const gate = new Promise<void>(r => (release = r));
+    const bodies: { conversation_id: string | null }[] = [];
     server.use(
       http.get(`${API}/chat/history`, async () => {
         await gate;
-        return HttpResponse.json({ conversation_id: "c-old", messages: [] });
+        return HttpResponse.json({
+          conversation_id: "c-old",
+          messages: [{ id: 1, role: "assistant", text: "Earlier answer.", blocks: [], at: "2026-10-12T08:00:00-04:00" }],
+        });
       }),
-      http.post(`${API}/chat`, () =>
-        new HttpResponse(sse([["delta", { text: "Here you go." }], ["done", { message_id: 2, source: "ai" }]]), {
+      http.post(`${API}/chat`, async ({ request }) => {
+        bodies.push((await request.json()) as { conversation_id: string | null });
+        return new HttpResponse(sse([["delta", { text: "Here you go." }], ["done", { message_id: 2, source: "ai" }]]), {
           headers: { "Content-Type": "text/event-stream" },
-        }),
-      ),
+        });
+      }),
     );
     renderAt(<ChatPage />, "/chat");
     await user.type(screen.getByRole("textbox", { name: /Message Compass/ }), "free food this week?");
     await user.click(screen.getByRole("button", { name: "Send" }));
-    expect(await screen.findByText("Here you go.")).toBeInTheDocument();
+    expect(await screen.findByText("free food this week?")).toBeInTheDocument();
+    expect(bodies).toHaveLength(0);
     release();
-    await new Promise(r => setTimeout(r, 100));
-    expect(screen.getByText("free food this week?")).toBeInTheDocument();
-    expect(screen.getByText("Here you go.")).toBeInTheDocument();
+    expect(await screen.findByText("Here you go.")).toBeInTheDocument();
+    expect(bodies[0].conversation_id).toBe("c-old");
+    const log = screen.getByRole("log");
+    expect(log.textContent?.indexOf("Earlier answer.")).toBeLessThan(log.textContent!.indexOf("free food this week?"));
+    expect(screen.getAllByText("free food this week?")).toHaveLength(1);
   });
 
   it("Remind me on the card posts once and confirms", async () => {
