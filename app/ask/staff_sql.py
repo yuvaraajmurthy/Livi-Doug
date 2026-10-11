@@ -48,8 +48,7 @@ def validate(sql: str) -> str | None:
 
 
 def ask(question: str, today: str = "2026-10-12") -> dict:
-    system = SYSTEM + f"
-Today is {today}: use this literal date instead of CURRENT_DATE or now(). Default dip threshold is 0.15."
+    system = SYSTEM + f"\nToday is {today}: use this literal date instead of CURRENT_DATE or now(). Default dip threshold is 0.15."
     try:
         out = converse(get_settings().model_fast, f"<question>{question}</question>", system=system, max_tokens=300,
                        timeout=4.0, temperature=0.0, purpose="staff_sql")
