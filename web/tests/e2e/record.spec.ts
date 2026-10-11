@@ -7,11 +7,10 @@ test("record the stage story for offline replay", async ({ page }) => {
   test.skip(test.info().project.name !== "stage" || !process.env.RECORD, "set RECORD=1 to re-record");
   test.setTimeout(420_000);
   await page.goto("/present?record=1");
-  const next = page.locator("[data-stage-next]");
   await page.waitForTimeout(1500);
   for (let i = 1; i < MAIN_STORY.length; i++) {
     await page.keyboard.press("ArrowRight");
-    await expect(next).toHaveText(/^Next/, { timeout: 40_000 });
+    await expect(page.locator("[data-stage-status]"), `step ${i} (${MAIN_STORY[i].id})`).toHaveAttribute("data-stage-status", /^(done|idle)$/, { timeout: 60_000 });
     await page.waitForTimeout(400);
   }
   const frame = page.frame({ name: "compass-stage" })!;

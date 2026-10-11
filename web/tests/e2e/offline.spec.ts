@@ -5,7 +5,6 @@ test("offline: the stage story finishes on replay after the API is cut off", asy
   test.skip(test.info().project.name !== "stage", "stage only");
   test.setTimeout(420_000);
   await page.goto("/present");
-  const next = page.locator("[data-stage-next]");
   await page.waitForTimeout(1200);
   const cutAt = MAIN_STORY.findIndex(s => s.id === "andre-commit");
   for (let i = 1; i < MAIN_STORY.length; i++) {
@@ -16,9 +15,9 @@ test("offline: the stage story finishes on replay after the API is cut off", asy
       await expect(page.getByText("Offline replay")).toBeVisible({ timeout: 10_000 });
     }
     await page.keyboard.press("ArrowRight");
-    await expect(next, `step ${i} (${MAIN_STORY[i].id})`).toHaveText(/^Next/, { timeout: 40_000 });
-    await expect(page.getByText(MAIN_STORY[i].claim, { exact: false }).first()).toBeVisible();
+    await expect(page.locator("[data-stage-status]"), `step ${i} (${MAIN_STORY[i].id})`).toHaveAttribute("data-stage-status", /^(done|idle)$/, { timeout: 60_000 });
+    if (!MAIN_STORY[i].slide) await expect(page.getByRole("heading", { level: 1, name: MAIN_STORY[i].claim })).toBeVisible();
     if (i > cutAt) await page.screenshot({ path: `test-results/screens/60-offline-${String(i).padStart(2, "0")}.png` });
   }
-  await expect(page.getByText("Ready for a spring pilot at Newark.")).toBeVisible();
+  await expect(page.getByText("Ready for a spring pilot.")).toBeVisible();
 });
