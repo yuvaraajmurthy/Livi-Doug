@@ -3,7 +3,6 @@ import time
 from app.db import DB_ERRORS, conn
 from app.models.demo import Health, HealthCheck
 from app.models.loop import VapidKey
-from app.routes._serve import NotLive
 from config.settings import get_settings
 
 
@@ -36,8 +35,27 @@ def vapid_key() -> VapidKey:
 
 
 def subscribe(ctx, body, test):
-    raise NotLive("subscribe")
+    from app import clock
+    from app.loop import push
+    from app.models.loop import SubscriptionResult
+    with conn() as c:
+        now = clock.now(c, ctx.sid)
+        c.execute(
+            """INSERT INTO push_subscriptions (student_id, endpoint, p256dh, auth) VALUES (%s, %s, %s, %s)
+               ON CONFLICT (endpoint) DO UPDATE SET student_id = EXCLUDED.student_id, p256dh = EXCLUDED.p256dh,
+                 auth = EXCLUDED.auth, revoked_at = NULL""",
+            (ctx.student_id, body.endpoint, body.keys.p256dh, body.keys.auth))
+        sent = False
+        if test:
+            sub = c.execute("SELECT id, endpoint, p256dh, auth FROM push_subscriptions WHERE endpoint = %s", (body.endpoint,)).fetchone()
+            sent = push.send_one(c, sub, {"title": "Compass is set up", "body": "You'll get at most 3 nudges a week.", "url": "/"})
+        return SubscriptionResult(synthetic=True, now=now, ok=True, test_sent=sent)
 
 
 def unsubscribe(ctx, endpoint):
-    raise NotLive("unsubscribe")
+    from app import clock
+    from app.models.loop import SubscriptionResult
+    with conn() as c:
+        now = clock.now(c, ctx.sid)
+        c.execute("UPDATE push_subscriptions SET revoked_at = now() WHERE endpoint = %s AND student_id = %s", (endpoint, ctx.student_id))
+        return SubscriptionResult(synthetic=True, now=now, ok=True)

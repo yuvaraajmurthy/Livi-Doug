@@ -4,12 +4,28 @@ from contextlib import contextmanager
 from typing import Iterator
 
 import psycopg
+from zoneinfo import ZoneInfo
+
 from psycopg.rows import dict_row
+from psycopg.types.datetime import TimestamptzLoader
+
+_NY = ZoneInfo("America/New_York")
 from psycopg_pool import ConnectionPool
 
 from config.settings import get_settings
 
 DB_ERRORS = (psycopg.OperationalError, psycopg.InterfaceError, TimeoutError)
+
+
+class _NYTimestamptzLoader(TimestamptzLoader):
+    """Return every timestamptz in America/New_York, whatever the server's TimeZone setting."""
+
+    def load(self, data):
+        v = super().load(data)
+        return v.astimezone(_NY) if v is not None else v
+
+
+psycopg.adapters.register_loader("timestamptz", _NYTimestamptzLoader)
 
 _pool: ConnectionPool | None = None
 
@@ -19,13 +35,18 @@ def _kwargs() -> dict:
     return {"row_factory": dict_row, "prepare_threshold": None}
 
 
+def _reset(c: psycopg.Connection) -> None:
+    """Defence in depth: a connection never goes back to the pool carrying a role (e.g. compass_staff_ro)."""
+    c.execute("RESET ROLE")
+
+
 def pool() -> ConnectionPool:
     global _pool
     if _pool is None:
         s = get_settings()
         _pool = ConnectionPool(
             s.database_url, min_size=1, max_size=10, kwargs=_kwargs(), open=False,
-            timeout=5, name="compass",
+            timeout=5, name="compass", reset=_reset, check=ConnectionPool.check_connection,
         )
         _pool.open(wait=False)
     return _pool

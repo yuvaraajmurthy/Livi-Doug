@@ -35,7 +35,7 @@ def start_workers() -> list[Loop]:
     s = get_settings()
     loops: list[Loop] = []
     if s.run_dispatcher:
-        from app.loop.dispatcher import tick as dispatch_tick
+        from app.loop.notify import tick as dispatch_tick
         loops.append(Loop("dispatcher", s.dispatcher_interval_s, dispatch_tick).start())
     if s.run_wording_worker:
         from app.llm.queue import tick as wording_tick

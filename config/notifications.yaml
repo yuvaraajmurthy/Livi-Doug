@@ -1,0 +1,11 @@
+# Nudges people don't hate (spec 10): few, personal, well-timed, never a third unanswered nudge.
+max_pushes_per_week: 3          # per student, ISO week of the simulated clock
+quiet_hours: {start: "22:00", end: "08:00"}
+reminder_minutes_before: 15
+followup_after_end_minutes: 120  # "2 days later" in the story is a config change: 2880
+followup_untimed_days: 2         # resources without a time: ask after this many days at 17:00
+weekly_pick: {weekday: 0, time: "10:00"}   # Monday 10:00: fresh-start landmark
+retake: {min_days_since_take: 28, min_days_between: 28, max_unanswered: 2}
+fresh_start_extra_dates: ["2026-11-02"]    # week after the (approximate) midterm window
+# Lock-screen safe: these words may never appear in a notification title or body.
+banned_words: [score, scores, lonely, loneliness, sad, depressed, anxious, anxiety, struggling, crisis, suicide, mood, feeling, low, emotional, stress, stressed, isolated, wellness score]

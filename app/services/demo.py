@@ -44,13 +44,16 @@ def start_session(ctx: SessionCtx, start: datetime | None, response: Response) -
 
 
 def set_clock(ctx: SessionCtx, dt: datetime) -> SessionResponse:
+    from app.loop.notify import dispatch_due
     with conn() as c:
         new = clock.set_session(c, ctx.sid, dt)
+        if ctx.student_id:
+            dispatch_due(c, ctx.student_id, new)
     return SessionResponse(synthetic=True, now=new, token=ctx.token, persona=ctx.persona, role=ctx.role, student_id=ctx.student_id)
 
 
 def skip_ahead(ctx: SessionCtx, to: str) -> SkipAheadResponse:
-    from app.loop.dispatcher import skip_ahead as _skip
+    from app.loop.notify import skip_ahead as _skip
     with conn() as c:
         previous = clock.now(c, ctx.sid)
         fired, new_now = _skip(c, ctx, previous, to)
