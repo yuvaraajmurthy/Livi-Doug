@@ -60,6 +60,7 @@ export function Present() {
   const [notes, setNotes] = useState(true);
   const [pair, setPair] = useState(false);
   const [templates, setTemplates] = useState(false);
+  const [offline, setOffline] = useState(false);
   const step = st.step;
   const slide = step.slide;
 
@@ -80,6 +81,10 @@ export function Present() {
         const on = !templates;
         setTemplates(on);
         void st.send([{ kind: "templates", on }]).catch(() => setTemplates(!on));
+      } else if (k === "o" || k === "O") {
+        const on = !offline;
+        setOffline(on);
+        void st.send([{ kind: "replay", on }]).catch(() => setOffline(!on));
       } else if (k === "r" || k === "R") {
         if (window.confirm("Restart the story with fresh students?")) st.restart();
       } else if (/^[1-9]$/.test(k)) {
@@ -89,7 +94,7 @@ export function Present() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [st, templates]);
+  }, [st, templates, offline]);
 
   const chapterIdx = chapters.indexOf(step.chapter);
 
@@ -114,7 +119,9 @@ export function Present() {
           ))}
         </nav>
         <div className="flex items-center gap-3 text-[13px] font-medium">
-          {templates ? (
+          {offline || st.evidence.calls[0]?.source === "replay" ? (
+            <span className="rounded-full bg-amber-tint px-2.5 py-1 text-amber">Offline replay</span>
+          ) : templates ? (
             <span className="rounded-full bg-amber-tint px-2.5 py-1 text-amber">AI off · templates</span>
           ) : (
             <span className="flex items-center gap-1 rounded-full bg-green-tint px-2.5 py-1 text-green">
@@ -140,7 +147,7 @@ export function Present() {
                 ref={frame}
                 name={STAGE_FRAME_NAME}
                 title="Compass on a phone"
-                src="/"
+                src={new URLSearchParams(window.location.search).get("record") === "1" ? "/?record=1" : "/"}
                 className="h-full w-full rounded-[42px] bg-bg"
                 style={{ width: PHONE_W, height: PHONE_H }}
               />
@@ -216,7 +223,7 @@ export function Present() {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <span>→ next · ← back · 1–9 chapter · N notes · A AI on/off · P pair phone · F fullscreen</span>
+          <span>→ next · ← back · 1–9 chapter · N notes · A AI on/off · O offline · P pair · F fullscreen</span>
           <button type="button" onClick={() => setPair(true)} className="inline-flex items-center gap-1 hover:text-ink cursor-pointer">
             <DeviceMobile size={15} aria-hidden /> Pair
           </button>

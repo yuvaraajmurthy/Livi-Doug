@@ -19,10 +19,10 @@ export function ClockPill({ onClick }: { onClick: () => void }) {
       onClick={onClick}
       data-tour="clock-pill"
       aria-label={`${t("clock.open")}: ${now ? clockLabel(now, lang) : ""}`}
-      className="inline-flex h-9 items-center gap-1.5 rounded-full border border-line bg-surface px-3 text-[13px] font-medium text-ink tabular cursor-pointer hover:bg-surface-2"
+      className="inline-flex h-9 items-center gap-1.5 whitespace-nowrap rounded-full border border-line bg-surface px-3 text-[13px] font-medium text-ink tabular cursor-pointer hover:bg-surface-2"
     >
       <Clock size={15} aria-hidden className="text-ink-2" />
-      <span>{now ? clockLabel(now, lang) : "…"}</span>
+      <span>{now ? (flag ? clockLabel(now, lang).replace(/^\w+ /, "") : clockLabel(now, lang)) : "…"}</span>
       {flag ? (
         <span className="ml-0.5 rounded-full bg-amber-tint px-1.5 text-[11px] font-semibold text-amber">{flag}</span>
       ) : null}

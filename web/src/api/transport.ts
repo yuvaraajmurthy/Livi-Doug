@@ -10,6 +10,25 @@ export const DEFAULT_API =
 let kind: "live" | "replay" = "live";
 let opts: Opts = { base: DEFAULT_API, token: () => null };
 let consecutiveFailures = 0;
+let recorder: { method: string; path: string; status: number; body: unknown; persona?: string }[] | null = null;
+const failureListeners = new Set<(n: number) => void>();
+
+/** Record every live response (used once, to capture the stage story for offline replay). */
+export function startRecording() {
+  recorder = [];
+  (globalThis as { __compassRecording?: unknown }).__compassRecording = recorder;
+}
+/** Called with the running count each time a request fails for network/server reasons. */
+export function onFailure(fn: (n: number) => void) {
+  failureListeners.add(fn);
+  return () => {
+    failureListeners.delete(fn);
+  };
+}
+const failed = () => {
+  consecutiveFailures++;
+  for (const fn of failureListeners) fn(consecutiveFailures);
+};
 const kindListeners = new Set<(k: "live" | "replay") => void>();
 
 export function setTransport(k: "live" | "replay", o?: Partial<Opts>) {
@@ -95,6 +114,7 @@ async function once<T>(method: string, path: string, body?: unknown): Promise<{ 
       source: "live",
     };
     inspector.emit({ type: "call", call });
+    recorder?.push({ method, path, status: r.status, body: data, persona: token?.split(".")[1] });
     if (!r.ok) throw new ApiError(messageFor(r.status, data), r.status, data);
     return { data: data as T, call };
   } catch (e) {
@@ -120,14 +140,14 @@ export const transport = {
       return res;
     } catch (e) {
       if (!transient(e)) throw e;
-      consecutiveFailures++;
+      failed();
       if (method !== "GET") throw e;
       try {
         const res = await once<T>(method, path, body);
         consecutiveFailures = 0;
         return res;
       } catch (e2) {
-        if (transient(e2)) consecutiveFailures++;
+        if (transient(e2)) failed();
         throw e2;
       }
     }

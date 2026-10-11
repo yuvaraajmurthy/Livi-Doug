@@ -31,7 +31,8 @@ export type Action =
   | { kind: "session"; persona: Persona; sandbox: boolean }
   | { kind: "templates"; on: boolean }
   | { kind: "key"; key: string }
-  | { kind: "wait"; ms: number };
+  | { kind: "wait"; ms: number }
+  | { kind: "replay"; on: boolean };
 
 export type ProofKind =
   | "fit"

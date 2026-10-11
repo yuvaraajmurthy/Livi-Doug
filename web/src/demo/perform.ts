@@ -110,6 +110,12 @@ export async function perform(actions: Action[], opts: { stage?: boolean } = {})
       case "clock":
         await jumpTime(a.now);
         break;
+      case "replay": {
+        const m = await import("./replay/enable");
+        if (a.on) await m.enableReplay();
+        else m.disableReplay();
+        break;
+      }
       case "templates":
         await api.forceTemplates(a.on);
         dataMode.setTemplates(a.on);

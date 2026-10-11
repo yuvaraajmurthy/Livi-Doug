@@ -26,4 +26,7 @@ export function toParent(msg: DistOmit<FromApp, "source">) {
 }
 
 /** Keys the presenter uses; forwarded from the iframe so a click inside the phone doesn't steal the clicker. */
-export const STAGE_KEYS = new Set(["ArrowRight", "ArrowLeft", "PageDown", "PageUp", " "]);
+export const STAGE_KEYS = new Set([
+  "ArrowRight", "ArrowLeft", "PageDown", "PageUp", " ",
+  "n", "N", "a", "A", "o", "O", "p", "P", "f", "F", "r", "R", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+]);
