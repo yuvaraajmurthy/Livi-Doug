@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useNavigate, useParams } from "react-router";
 import { Entry } from "../features/entry/Entry";
 import { FocusFlow } from "../features/focus/FocusFlow";
 import { Today } from "../features/today/Today";
@@ -14,6 +15,25 @@ import { CardPage } from "../features/card/CardPage";
 import { RequireStudent } from "./RequireStudent";
 import { LiveRegion, ToastHost } from "../ui/Toast";
 import { Shell } from "./Shell";
+import { CoachBar } from "../demo/coach/CoachBar";
+import { TourHome } from "../demo/coach/TourHome";
+import { setNavigator } from "../demo/perform";
+import { startTour } from "../demo/tourStore";
+import type { Persona } from "../demo/types";
+
+function NavBridge() {
+  const nav = useNavigate();
+  useEffect(() => setNavigator(to => nav(to)), [nav]);
+  return null;
+}
+
+function TourDeepLink() {
+  const { persona } = useParams();
+  useEffect(() => {
+    void startTour(persona as Persona);
+  }, [persona]);
+  return null;
+}
 
 const StaffApp = lazy(() => import("../features/staff/StaffApp").then(m => ({ default: m.StaffApp })));
 
@@ -23,6 +43,8 @@ export function AppRouter() {
       <Routes>
         <Route path="/" element={<Entry />} />
         <Route path="/i/:token" element={<InvitePage />} />
+        <Route path="/tour" element={<TourHome />} />
+        <Route path="/tour/:persona" element={<TourDeepLink />} />
         <Route path="/focus" element={<RequireStudent><FocusFlow /></RequireStudent>} />
         <Route element={<Shell />}>
           <Route path="/next" element={<Today />} />
@@ -37,6 +59,8 @@ export function AppRouter() {
         <Route path="/staff/*" element={<Suspense fallback={null}><StaffApp /></Suspense>} />
         <Route path="*" element={<Entry />} />
       </Routes>
+      <NavBridge />
+      <CoachBar />
       <ToastHost />
       <LiveRegion />
     </BrowserRouter>

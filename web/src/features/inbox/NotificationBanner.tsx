@@ -27,7 +27,8 @@ export function NotificationHost() {
     const fresh = items.filter(i => i.id > (seenMax.current ?? 0)).sort((a, b) => a.id - b.id);
     if (fresh.length) {
       seenMax.current = max;
-      setQueue(q => [...q, ...fresh]);
+      // show only the newest: an older reminder is moot once its follow-up has arrived
+      setQueue([fresh[fresh.length - 1]]);
       for (const f of fresh) signal("notification:shown", f);
     }
   }, [inbox.data]);

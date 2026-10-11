@@ -29,7 +29,9 @@ export type Action =
   | { kind: "skip"; to: "next_due" | string }
   | { kind: "clock"; now: string }
   | { kind: "session"; persona: Persona; sandbox: boolean }
-  | { kind: "templates"; on: boolean };
+  | { kind: "templates"; on: boolean }
+  | { kind: "key"; key: string }
+  | { kind: "wait"; ms: number };
 
 export type ProofKind =
   | "fit"
@@ -48,6 +50,15 @@ export type ProofKind =
   | "none";
 
 export type Tag = "Impact" | "Engagement" | "Safety" | "Equity" | "Feasibility" | "Privacy";
+
+export type EngineState = { steps: StoryStep[]; index: number; history: number[] };
+export type EngineEvent =
+  | { type: "next" }
+  | { type: "back" }
+  | { type: "jump"; index: number }
+  | { type: "signal"; name: Signal }
+  | { type: "tap"; target: string }
+  | { type: "restart" };
 
 export type StoryStep = {
   id: string;
