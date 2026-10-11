@@ -36,7 +36,7 @@ class Settings(BaseSettings):
     model_embed: str = "us.cohere.embed-v4:0"
     guardrail_id: str | None = None
     guardrail_version: str = "DRAFT"
-    inline_timeout_s: float = 1.5
+    inline_timeout_s: float = 1.2
     wording_timeout_s: float = 25.0
     force_templates: bool = False
     bedrock_enabled: bool = True

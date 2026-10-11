@@ -11,6 +11,7 @@ barriers:
     label_es: "No conozco a nadie"
     causes: [loneliness]
     prefer: [solo_friendly, structured]
+    best_formats: [games, structured, sports, volunteering]
     target_rung: 2
   money:
     label: "Money is tight"
@@ -21,6 +22,7 @@ barriers:
     label: "Coursework is eating my time"
     label_es: "Las tareas me quitan el tiempo"
     causes: [academic_workload]
+    best_formats: [tutoring]          # tutoring goes at the coursework itself; a quiet room only helps a bit
     root_cause_for: [physical, emotional, intellectual]
   not_my_scene:
     label: "Events aren't really my scene"

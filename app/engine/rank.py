@@ -154,16 +154,18 @@ def barrier_score(ctx: StudentCtx, item: KbItem, walk: int | None, window_score:
     if not ctx.barriers:
         return 0.0, []
     bcfg = barriers_config()["barriers"]
-    hit = []
+    hit, credit = [], 0.0
     for b in ctx.barriers:
         bc = bcfg.get(b, {})
-        if b in item.barriers or (item.causes & set(bc.get("causes", []))):
-            hit.append(b)
-            continue
         prefs = bc.get("prefer", [])
-        if prefs and sum(_prefer_ok(p, item, walk, window_score) for p in prefs) >= max(1, math.ceil(len(prefs) / 2)):
-            hit.append(b)
-    return round(len(hit) / len(ctx.barriers), 3), hit
+        ok = (b in item.barriers or bool(item.causes & set(bc.get("causes", [])))
+              or (prefs and sum(_prefer_ok(p, item, walk, window_score) for p in prefs) >= max(1, math.ceil(len(prefs) / 2))))
+        if not ok:
+            continue
+        hit.append(b)
+        best = set(bc.get("best_formats", []))
+        credit += 1.0 if (not best or best & item.formats) else 0.75
+    return round(credit / len(ctx.barriers), 3), hit
 
 
 def rung_score(ctx: StudentCtx, item: KbItem) -> float:
