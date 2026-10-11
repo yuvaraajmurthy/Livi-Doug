@@ -29,6 +29,10 @@ def main() -> None:
             c.commit()
         print("init done")
         try:
+            from app.ask import retrieval
+            with connect_direct() as c:
+                print("embeddings", retrieval.embed_pending(c))
+                c.commit()
             from app.services.prewarm import run
             print("prewarm", run())
         except Exception as exc:  # wording is optional; templates cover it

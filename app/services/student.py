@@ -306,3 +306,36 @@ def inbox(ctx: SessionCtx) -> InboxResponse:
         return InboxResponse(synthetic=True, now=now, items=[
             InboxItem(id=r["id"], kind=r["kind"], title=r["title"], body=r["body"], deep_link=r["deep_link"], at=r["send_at"],
                       delivered="push" if r["delivered"] == "push" else "in_app") for r in rows])
+
+
+def ask(ctx: SessionCtx, body):
+    """Ask box (P2). Crisis check first; then the scoped answer pipeline."""
+    from app.ask.service import answer
+    from app.models.common import Place
+    from app.models.student import AskItem, AskResponse
+    verdict = check_text(body.question)
+    with conn() as c:
+        now = _now(c, ctx)
+        s = _student(c, ctx.student_id)
+        p = _profile(c, ctx.student_id)
+        lang = p.get("language") or "en"
+        if verdict.label == "crisis":
+            record_event(c, ctx.student_id, "ask_box", verdict, "crisis_card")
+            return crisis.crisis_response(c, s["campus"], lang, now)
+        if verdict.label == "concern":
+            record_event(c, ctx.student_id, "ask_box", verdict, "support_offer")
+        res = answer(c, body.question, s["campus"], now, lang)
+        items = []
+        for r in res["items"]:
+            when = None
+            if r["starts_at"]:
+                st = r["starts_at"]
+                when = f"{st:%a %b} {st.day}, {st.hour % 12 or 12}:{st.minute:02d} {'AM' if st.hour < 12 else 'PM'}"
+            campus = r["campus"] if r["campus"] in ("new_brunswick", "newark", "camden", "online", "community") else "online"
+            items.append(AskItem(id=r["id"], title=r["title"], when_label=when,
+                                 where=Place(venue=r["venue"], address=r["address"], lat=r["lat"], lon=r["lon"], campus=campus),
+                                 url=r["url"], phone=r["phone"], synthetic=r["synthetic"]))
+        text = res["text"]
+        if verdict.label == "concern":
+            text += " If things feel heavy, talking to someone can help: counselling is free for Rutgers students."
+        return AskResponse(synthetic=True, now=now, kind=res["kind"], text=text, items=items, source=res["source"])

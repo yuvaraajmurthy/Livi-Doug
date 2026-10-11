@@ -34,7 +34,9 @@ def main() -> None:
             {"type": "PROMPT_ATTACK", "inputStrength": "HIGH", "outputStrength": "NONE"},
         ]},
         sensitiveInformationPolicyConfig={"piiEntitiesConfig": [
-            {"type": t, "action": "ANONYMIZE"} for t in ("NAME", "EMAIL", "PHONE", "ADDRESS", "US_SOCIAL_SECURITY_NUMBER")
+            # Only email and SSN: resource answers legitimately contain venue names ("Paul Robeson Campus Center"),
+            # phone numbers and street addresses from public listings. Names in student posts are held by wins moderation.
+            {"type": t, "action": "ANONYMIZE"} for t in ("EMAIL", "US_SOCIAL_SECURITY_NUMBER")
         ]},
         blockedInputMessaging="Compass can only help with campus resources and events.",
         blockedOutputsMessaging="Compass can only help with campus resources and events.",

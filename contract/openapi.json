@@ -1000,6 +1000,82 @@
         }
       }
     },
+    "/ask": {
+      "post": {
+        "tags": [
+          "student",
+          "p2"
+        ],
+        "summary": "Ask box: questions about Rutgers resources and events only",
+        "operationId": "ask_ask_post",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Authorization"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AskRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/AskResponse"
+                    },
+                    {
+                      "$ref": "#/components/schemas/CrisisResponse"
+                    }
+                  ],
+                  "discriminator": {
+                    "propertyName": "kind",
+                    "mapping": {
+                      "answer": "#/components/schemas/AskResponse",
+                      "redirect": "#/components/schemas/AskResponse",
+                      "crisis": "#/components/schemas/CrisisResponse"
+                    }
+                  },
+                  "title": "Response Ask Ask Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/commitments": {
       "post": {
         "tags": [
@@ -2276,6 +2352,137 @@
           "message"
         ],
         "title": "ArcStatus"
+      },
+      "AskItem": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "when_label": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "When Label"
+          },
+          "where": {
+            "$ref": "#/components/schemas/Place"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Url"
+          },
+          "phone": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Phone"
+          },
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "where"
+        ],
+        "title": "AskItem"
+      },
+      "AskRequest": {
+        "properties": {
+          "question": {
+            "type": "string",
+            "maxLength": 300,
+            "minLength": 2,
+            "title": "Question"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "question"
+        ],
+        "title": "AskRequest"
+      },
+      "AskResponse": {
+        "properties": {
+          "synthetic": {
+            "type": "boolean",
+            "title": "Synthetic",
+            "description": "True when any data in this response is synthetic or a labelled sample."
+          },
+          "now": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Now",
+            "description": "Simulated 'now' for this session, America/New_York."
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "answer",
+              "redirect"
+            ],
+            "title": "Kind"
+          },
+          "text": {
+            "type": "string",
+            "title": "Text"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/components/schemas/AskItem"
+            },
+            "type": "array",
+            "title": "Items"
+          },
+          "source": {
+            "type": "string",
+            "enum": [
+              "ai",
+              "template",
+              "rule"
+            ],
+            "title": "Source"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "synthetic",
+          "now",
+          "kind",
+          "text",
+          "items",
+          "source"
+        ],
+        "title": "AskResponse"
       },
       "BarrierMeta": {
         "properties": {

@@ -42,6 +42,8 @@ def run_all(snapshot: bool = False) -> None:
         _run(c, "scarlet_sync", lambda: scarlet_sync.ingest(c, snap / "scarlet_sync.json" if snapshot else None))
         _run(c, "geocode", lambda: geocode.apply_to_kb(c))
         _run(c, "ai_tagging", lambda: tagger.tag_pending(c))
+        from app.ask import retrieval
+        _run(c, "embeddings", lambda: retrieval.embed_pending(c))
         if snapshot:
             geocode.export_seed(c)
             export_tags(c)

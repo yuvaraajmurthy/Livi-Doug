@@ -197,3 +197,27 @@ class BarrierOption(Model):
 class BarrierMeta(Model):
     barriers: list[BarrierOption]
     dimensions: dict[Dimension, str]
+
+
+class AskRequest(Model):
+    question: str = Field(min_length=2, max_length=300)
+
+
+class AskItem(Model):
+    id: str
+    title: str
+    when_label: str | None = None
+    where: Place
+    url: str | None = None
+    phone: str | None = None
+    synthetic: bool = False
+
+
+class AskResponse(Envelope):
+    kind: Literal["answer", "redirect"]
+    text: str
+    items: list[AskItem]
+    source: Literal["ai", "template", "rule"]
+
+
+AskResult = Annotated[Union[AskResponse, CrisisResponse], Field(discriminator="kind")]

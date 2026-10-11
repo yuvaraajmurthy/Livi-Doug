@@ -106,7 +106,8 @@ def main() -> None:
         return
     secret = ensure_app_secret()
     tag = a.tag or subprocess.check_output(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, text=True).strip() + f"-{int(time.time()) % 100000}"
-    if not a.skip_base:
+    if not a.skip_base or not a.skip_build:
+        # The image source is an S3 asset of the base stack, so a code change always refreshes the base stack first.
         sh(["cdk", "deploy", "CompassBase", "--require-approval", "never"])
     if not a.skip_build:
         build_image(tag)

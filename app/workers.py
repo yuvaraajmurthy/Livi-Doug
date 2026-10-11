@@ -35,8 +35,19 @@ class Loop:
                 log.warning("worker tick failed", extra={"route_key": self.name, "err": type(exc).__name__})
 
 
+def warm_up() -> None:
+    """Open TLS connections to Bedrock before the first student request, so the first safety check is not a cold
+    start that times out (which would fail safe to 'concern')."""
+    from app.safety.classifier import classify
+    try:
+        classify("warm up: what time is the farmers market?", timeout=10.0)
+    except Exception:
+        pass
+
+
 def start_workers() -> list[Loop]:
     s = get_settings()
+    threading.Thread(target=warm_up, name="warmup", daemon=True).start()
     loops: list[Loop] = []
     if s.run_dispatcher:
         from app.loop.notify import tick as dispatch_tick

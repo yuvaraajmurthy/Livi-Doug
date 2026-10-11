@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends, Response
 from app.auth import SessionCtx, student_session
 from app.models.common import CrisisResponse
 from app.models.student import (
-    BarrierMeta, CardResponse, DeclineRequest, DeleteResult, FocusRequest, FocusResponse,
+    AskRequest, AskResult, BarrierMeta, CardResponse, DeclineRequest, DeleteResult, FocusRequest, FocusResponse,
     InboxResponse, MapResponse, MemoryList, NextResponse,
 )
 from app.routes._serve import serve
@@ -75,3 +75,8 @@ def _looks_crisis_for_fixture(text: str) -> bool:
 
 
 _ = CrisisResponse  # referenced in OpenAPI via FocusResponse
+
+
+@router.post("/ask", response_model=AskResult, tags=["p2"], summary="Ask box: questions about Rutgers resources and events only")
+def ask(body: AskRequest, response: Response, ctx: SessionCtx = Depends(student_session)):
+    return serve(ctx, "ask", response, lambda: svc.ask(ctx, body))
