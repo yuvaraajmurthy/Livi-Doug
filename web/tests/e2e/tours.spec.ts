@@ -12,8 +12,11 @@ async function runTour(page: Page, name: string, shots: number[] = []) {
     if (!label) continue;
     const m = label.match(/Step (\d+) of/);
     if (m && shots.includes(Number(m[1]))) await shoot(page, `40-tour-${name.toLowerCase()}-${m[1]}`, { fullPage: false });
-    const btn = page.locator("[data-coach-primary]");
-    await expect(btn, `stalled at: ${label}`).toBeEnabled({ timeout: 25_000 });
+    // a step waiting on its signal keeps the button busy; the last one ends on the completion screen instead
+    const btn = page.locator("[data-coach-primary]:enabled");
+    const done = page.getByLabel("Tour complete");
+    await expect(btn.or(done), `stalled at: ${label}`).toBeVisible({ timeout: 25_000 });
+    if (await done.count()) break;
     await btn.click();
     await page.waitForTimeout(1200);
   }
