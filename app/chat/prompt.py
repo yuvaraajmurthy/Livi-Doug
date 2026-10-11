@@ -56,8 +56,15 @@ class PromptBundle:
 
 
 def _now_line(now: datetime) -> str:
+    from datetime import timedelta
     h = now.hour % 12 or 12
-    return f"It is {now:%A} {now:%b} {now.day}, {h}:{now.minute:02d} {'AM' if now.hour < 12 else 'PM'} (Rutgers time)."
+    end_week = now + timedelta(days=6 - now.weekday())          # this Sunday
+    nxt_start, nxt_end = end_week + timedelta(days=1), end_week + timedelta(days=7)
+    d = lambda x: f"{x:%a} {x:%b} {x.day}"  # noqa: E731
+    return (f"It is {now:%A} {now:%b} {now.day}, {h}:{now.minute:02d} {'AM' if now.hour < 12 else 'PM'} (Rutgers time). "
+            f"'This week' means today through {d(end_week)}; 'next week' means {d(nxt_start)} to {d(nxt_end)}. "
+            "Each catalog line is tagged [this week], [next week], [later] or [any time]: when the student says this week, "
+            "only use [this week] or [any time] items; if none fit, say so and offer the best [next week] option.")
 
 
 def _profile(conn, ctx: SessionCtx, now: datetime) -> tuple[str, object, str]:

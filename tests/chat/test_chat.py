@@ -51,7 +51,7 @@ def test_catalog_lines_are_compact_and_capped(client, db):
     text = catalog.render(items)
     line = next(l for l in text.splitlines() if l.startswith(LUNCH))
     assert line.count(" | ") == 5
-    assert "Tue Oct 13" in line and "Paul Robeson Campus Center" in line and "free" in line
+    assert "[this week] Tue Oct 13" in line and "Paul Robeson Campus Center" in line and "free" in line
 
 
 def test_prompt_has_snapshot_catalog_and_caps(client, db):

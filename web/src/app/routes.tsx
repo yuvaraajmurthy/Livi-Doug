@@ -38,6 +38,7 @@ function TourDeepLink() {
 }
 
 const Present = lazy(() => import("../demo/present/Present").then(m => ({ default: m.Present })));
+const Notes = lazy(() => import("../demo/present/Notes").then(m => ({ default: m.Notes })));
 const StaffApp = lazy(() => import("../features/staff/StaffApp").then(m => ({ default: m.StaffApp })));
 
 export function AppRouter() {
@@ -49,6 +50,7 @@ export function AppRouter() {
         <Route path="/tour" element={<TourHome />} />
         <Route path="/join" element={<Join />} />
         <Route path="/present" element={<Suspense fallback={null}><Present /></Suspense>} />
+        <Route path="/present/notes" element={<Suspense fallback={null}><Notes /></Suspense>} />
         <Route path="/tour/:persona" element={<TourDeepLink />} />
         <Route path="/focus" element={<RequireStudent><FocusFlow /></RequireStudent>} />
         <Route element={<Shell />}>

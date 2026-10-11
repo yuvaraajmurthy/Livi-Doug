@@ -52,6 +52,9 @@ export type ProofKind =
   | "suppression"
   | "strengths"
   | "care"
+  | "chat"
+  | "card"
+  | "reminder"
   | "none";
 
 export type Tag = "Impact" | "Engagement" | "Safety" | "Equity" | "Feasibility" | "Privacy";
@@ -78,5 +81,5 @@ export type StoryStep = {
   proof?: ProofKind;
   note?: string;
   tag?: Tag;
-  slide?: "cold-open" | "close";
+  slide?: "cold-open" | "numbers" | "close";
 };

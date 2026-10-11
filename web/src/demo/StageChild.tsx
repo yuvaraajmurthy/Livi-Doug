@@ -38,7 +38,9 @@ export function StageChild() {
     };
     const onKey = (e: KeyboardEvent) => {
       const typing = (e.target as HTMLElement | null)?.closest?.("input, textarea, select");
-      if (!typing && STAGE_KEYS.has(e.key)) {
+      // on stage nobody types by hand: navigation keys (and the clicker) always drive the story
+      const nav = ["ArrowRight", "ArrowLeft", "PageDown", "PageUp"].includes(e.key);
+      if ((nav || !typing) && STAGE_KEYS.has(e.key)) {
         e.preventDefault();
         toParent({ kind: "key", key: e.key });
       }

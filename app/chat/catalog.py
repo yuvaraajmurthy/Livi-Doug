@@ -20,6 +20,21 @@ class CatalogItem:
     where: str
     cost: str
     dims: str
+    rel: str = ""
+
+
+def relative(it: KbItem, now: datetime) -> str:
+    """[this week] / [next week] / [later] / [any time]: explicit tags the model follows better than date math."""
+    from datetime import timedelta
+    if not it.starts_at:
+        return "any time"
+    end_week = (now + timedelta(days=6 - now.weekday())).date()
+    d = it.starts_at.date()
+    if d <= end_week:
+        return "this week"
+    if d <= end_week + timedelta(days=7):
+        return "next week"
+    return "later"
 
 
 def _when(it: KbItem) -> str:
@@ -36,7 +51,7 @@ def build(conn, sctx: StudentCtx, now: datetime) -> list[CatalogItem]:
     for it in items[:MAX_ROWS]:
         where = it.venue or ("Online" if it.campus == "online" else present_campus(it.campus))
         dims = ", ".join(sorted(it.dims, key=lambda d: -it.dims[d])[:2])
-        out.append(CatalogItem(item=it, when=_when(it), where=where, cost=it.cost, dims=dims))
+        out.append(CatalogItem(item=it, when=_when(it), where=where, cost=it.cost, dims=dims, rel=relative(it, now)))
     return out
 
 
@@ -45,7 +60,7 @@ def present_campus(campus: str) -> str:
 
 
 def render(items: list[CatalogItem]) -> str:
-    return "\n".join(f"{c.item.id} | {c.item.title} | {c.when} | {c.where} | {c.cost} | {c.dims}" for c in items)
+    return "\n".join(f"{c.item.id} | {c.item.title} | [{c.rel}] {c.when} | {c.where} | {c.cost} | {c.dims}" for c in items)
 
 
 def chip(it: KbItem, lang: str = "en") -> dict:

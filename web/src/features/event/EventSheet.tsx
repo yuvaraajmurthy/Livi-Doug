@@ -69,7 +69,7 @@ export function EventSheet({ eventId, onClose }: { eventId: string | null; onClo
 
           {d.lat != null && d.lon != null ? (
             <Suspense fallback={<Skeleton className="h-[160px] rounded-2xl" />}>
-              <EventMap lat={d.lat} lon={d.lon} label={place || cleanTitle(d.title)} />
+              <EventMap lat={d.lat} lon={d.lon} label={place || cleanTitle(d.title)} href={d.directions_url} />
             </Suspense>
           ) : d.campus === "online" ? (
             <div className="flex h-[72px] items-center gap-3 rounded-2xl bg-surface-2 px-4 text-[15px]">
