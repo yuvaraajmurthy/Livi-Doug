@@ -77,7 +77,8 @@ class BaseStack(Stack):
 
 
 class AppStack(Stack):
-    def __init__(self, scope: Construct, cid: str, *, base: BaseStack, image_tag: str, mode: str, origin_secret: str, **kw):
+    def __init__(self, scope: Construct, cid: str, *, base: BaseStack, image_tag: str, mode: str, origin_secret: str,
+                 guardrail: str = "", **kw):
         super().__init__(scope, cid, **kw)
         vpc = base.vpc
         cluster = ecs.Cluster(self, "Cluster", vpc=vpc, cluster_name="compass")
@@ -109,6 +110,9 @@ class AppStack(Stack):
         }
         env = {"MODE": mode, "ENV": "prod", "AWS_REGION": self.region, "DB_NAME": "compass",
                "CORS_ORIGINS": "*", "IMAGE_TAG": image_tag}
+        if guardrail:
+            gid, _, gver = guardrail.partition(":")
+            env.update({"GUARDRAIL_ID": gid, "GUARDRAIL_VERSION": gver or "DRAFT"})
 
         def task_def(name: str, cpu: int, mem: int) -> ecs.FargateTaskDefinition:
             td = ecs.FargateTaskDefinition(self, name, cpu=cpu, memory_limit_mib=mem, task_role=task_role,

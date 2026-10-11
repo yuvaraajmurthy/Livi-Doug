@@ -27,7 +27,7 @@ sm = boto3.client("secretsmanager", region_name=REGION)
 def sh(cmd: list[str], cwd: Path = INFRA) -> None:
     print("$", " ".join(cmd), flush=True)
     env = {**os.environ, "CDK_DEFAULT_ACCOUNT": boto3.client("sts").get_caller_identity()["Account"]}
-    venv_scripts = str(ROOT / ".venv" / ("Scripts" if os.name == "nt" else "bin"))
+    venv_scripts = str(Path(sys.executable).parent)
     env["PATH"] = venv_scripts + os.pathsep + env["PATH"]
     subprocess.run(cmd, cwd=cwd, env=env, check=True, shell=(os.name == "nt"))
 
@@ -110,8 +110,13 @@ def main() -> None:
         sh(["cdk", "deploy", "CompassBase", "--require-approval", "never"])
     if not a.skip_build:
         build_image(tag)
+    try:
+        guardrail = boto3.client("ssm", region_name=REGION).get_parameter(Name="/compass/guardrail_id")["Parameter"]["Value"]
+    except Exception:
+        guardrail = ""
     sh(["cdk", "deploy", "CompassApp", "--require-approval", "never", "--exclusively",
-        "-c", f"image_tag={tag}", "-c", f"mode={a.mode}", "-c", f"origin_secret={secret['origin_secret']}"])
+        "-c", f"image_tag={tag}", "-c", f"mode={a.mode}", "-c", f"origin_secret={secret['origin_secret']}",
+        "-c", f"guardrail={guardrail}"])
     if a.init_db:
         run_task(["python", "-m", "app.cli", "init"])
     print("API:", outputs("CompassApp").get("ApiUrl"))

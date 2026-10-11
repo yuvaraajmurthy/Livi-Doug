@@ -15,6 +15,7 @@ AppStack(
     image_tag=app.node.try_get_context("image_tag") or "latest",
     mode=app.node.try_get_context("mode") or "fixtures",
     origin_secret=app.node.try_get_context("origin_secret") or "dev-origin-secret",
+    guardrail=app.node.try_get_context("guardrail") or "",
 )
 cdk.Tags.of(app).add("project", "compass")
 app.synth()
