@@ -2,6 +2,16 @@
 
 Frontend: read this before each pull. Additive changes only after v1 unless flagged **BREAKING**.
 
+## v1.3.0 (2026-10-11): additive only
+
+- `POST /chat {message, conversation_id?}` → `text/event-stream` (Strands agent on Claude Haiku 4.5 with tools).
+  Events: `meta`, `status`, `delta`, `events` ({items: EventChip[]}), `plan`, `memory`, `memory_removed`, `support`,
+  `crisis`, `done` ({message_id, source: ai|fallback|rule}), `error`. Crisis text never reaches a model and is not stored.
+- `GET /chat/history?conversation_id=`, `POST /chat/new`.
+- `GET /items/{id}` → ItemDetail (lat/lon for the map, `directions_url`, `calendar_url`); `POST /items/{id}/remind`
+  → CommitResponse (idempotent while planned).
+- `/me/memory` now also lists facts the student told the chat ("You said in chat · Oct 12").
+
 ## v1.2.0 (2026-10-10, late night): additive only
 
 - `POST /demo/session {persona, sandbox: true}` gives the session a private copy of the persona (`student_id` like

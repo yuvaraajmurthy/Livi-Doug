@@ -9,3 +9,4 @@ pyyaml>=6
 httpx>=0.27
 python-dateutil>=2.9
 tzdata
+strands-agents[bidi]==1.59.0
