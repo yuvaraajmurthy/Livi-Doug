@@ -5,6 +5,7 @@
   python -m scripts.deploy --skip-base     # app code change only
   python -m scripts.deploy --init-db       # also run migrate + seed as a one-off ECS task
   python -m scripts.deploy --task reset    # run any app.cli command as a one-off task
+  python -m scripts.deploy --web           # build web/ and deploy it (S3 + CloudFront) only
 """
 import argparse
 import base64
@@ -99,8 +100,12 @@ def main() -> None:
     ap.add_argument("--tag")
     ap.add_argument("--init-db", action="store_true")
     ap.add_argument("--task")
+    ap.add_argument("--web", action="store_true", help="build and deploy the web app only")
     a = ap.parse_args()
 
+    if a.web:
+        deploy_web()
+        return
     if a.task:
         run_task(["python", "-m", "app.cli", *a.task.split()])
         return
@@ -121,6 +126,16 @@ def main() -> None:
     if a.init_db:
         run_task(["python", "-m", "app.cli", "init"])
     print("API:", outputs("CompassApp").get("ApiUrl"))
+
+
+def deploy_web() -> None:
+    api = outputs("CompassApp").get("ApiUrl") or "https://d2fap8zqnl1gn5.cloudfront.net"
+    web = ROOT / "web"
+    env = {**os.environ, "VITE_API_BASE": api}
+    print(f"$ npm run build (VITE_API_BASE={api})", flush=True)
+    subprocess.run(["npm", "run", "build"], cwd=web, env=env, check=True, shell=(os.name == "nt"))
+    sh(["cdk", "deploy", "CompassWeb", "--require-approval", "never", "--exclusively"])
+    print("WEB:", outputs("CompassWeb").get("WebUrl"))
 
 
 if __name__ == "__main__":
