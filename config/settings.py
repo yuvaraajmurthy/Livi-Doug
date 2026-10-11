@@ -34,6 +34,8 @@ class Settings(BaseSettings):
     model_safeguard: str = "openai.gpt-oss-safeguard-20b"
     model_tagging: str = "us.xai.grok-4.7"
     model_embed: str = "us.cohere.embed-v4:0"
+    model_voice: str = "amazon.nova-2-5-sonic"
+    voice_name: str = "tiffany"
     guardrail_id: str | None = None
     guardrail_version: str = "DRAFT"
     inline_timeout_s: float = 1.2

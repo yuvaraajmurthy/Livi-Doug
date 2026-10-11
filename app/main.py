@@ -13,7 +13,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.routes import chat, demo, items, loop, ops, social, staff, student, voice
+from app.routes import chat, demo, items, loop, ops, social, staff, student, voice, voice_ws
 from config.settings import get_settings
 
 
@@ -103,7 +103,7 @@ def create_app() -> FastAPI:
         return JSONResponse({"error": "invalid_request", "message": "; ".join(fields)[:500]}, status_code=422)
 
     for r in (ops.router, demo.router, student.router, loop.router, social.router, staff.router, voice.router, chat.router,
-              items.router):
+              items.router, voice_ws.router):
         app.include_router(r)
     return app
 
