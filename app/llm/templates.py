@@ -53,21 +53,22 @@ def why(f: dict, lang: str = "en") -> str:
 
 
 def plan(f: dict, lang: str = "en") -> str:
-    """If-then plan. f: title, venue, weekday, start_label, window_start_label, kind."""
+    """If-then plan. f: title, venue, weekday(_es), start_label, window_start_label, gap_minutes."""
     es = lang == "es"
     title = f["title"].replace(" (sample)", "")
     venue = f.get("venue")
-    if f.get("weekday") and f.get("window_start_label"):
+    at = (f" en {venue}" if es else f" at {venue}") if venue and venue.lower() not in title.lower() else ""
+    if f.get("weekday") and f.get("window_start_label") and (f.get("gap_minutes") or 0) <= 45:
         if es:
-            return f"Cuando termine mi clase el {f['weekday_es']} a las {f['window_start_label']}, camino a {venue or 'la actividad'} para {title}."
-        return f"When class ends on {f['weekday']} at {f['window_start_label']}, I walk to {venue or 'the event'} for {title}."
+            return f"Cuando termine mi clase el {f['weekday_es']} a las {f['window_start_label']}, camino a {venue or title} para {title}."
+        return f"When class ends on {f['weekday']} at {f['window_start_label']}, I walk to {venue or title} for {title}."
     if f.get("weekday") and f.get("start_label"):
         if es:
-            return f"El {f['weekday_es']} a las {f['start_label']}, voy a {title}{' en ' + venue if venue else ''}."
-        return f"On {f['weekday']} at {f['start_label']}, I head to {title}{' at ' + venue if venue else ''}."
+            return f"Cuando sea el {f['weekday_es']} a las {f['start_label']}, voy a {title}{at}."
+        return f"When it hits {f['start_label']} on {f['weekday']}, I head to {title}{at}."
     if es:
-        return f"Esta semana, después de mi última clase, paso por {title}."
-    return f"This week, after my last class, I stop by {title}."
+        return f"Cuando termine mi última clase esta semana, paso por {title}{at}."
+    return f"When my last class ends this week, I stop by {title}{at}."
 
 
 def reminder(f: dict, care_first: bool = False, lang: str = "en") -> tuple[str, str]:

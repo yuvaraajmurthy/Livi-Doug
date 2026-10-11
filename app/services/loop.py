@@ -52,7 +52,7 @@ def _when(i, lang: str) -> str:
 
 def _plan_facts(i, windows: list[str]) -> dict:
     f = {"title": i.title.replace(" (sample)", ""), "venue": i.venue, "kind": i.kind}
-    if i.starts_at:
+    if i.starts_at and not i.all_day:
         f["weekday"] = i.starts_at.strftime("%A")
         f["weekday_es"] = DAY_ES[i.starts_at.weekday()]
         f["start_label"] = f"{clock_label(i.starts_at)} {'AM' if i.starts_at.hour < 12 else 'PM'}"
@@ -61,6 +61,7 @@ def _plan_facts(i, windows: list[str]) -> dict:
             pw = parse_window(w)
             if pw and pw.weekday == i.starts_at.weekday() and pw.start <= i.starts_at.time() <= pw.end:
                 f["window_start_label"] = f"{pw.start.hour % 12 or 12}:{pw.start.minute:02d}"
+                f["gap_minutes"] = (i.starts_at.hour * 60 + i.starts_at.minute) - (pw.start.hour * 60 + pw.start.minute)
     return f
 
 

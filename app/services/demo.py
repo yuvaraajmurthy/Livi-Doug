@@ -64,6 +64,8 @@ def reset() -> ResetResponse:
     from db.reset import reset_demo
     t = time.perf_counter()
     reset_demo()
+    from app.services.prewarm import run_in_background
+    run_in_background()
     return ResetResponse(synthetic=True, now=clock.default_now(), ok=True, seconds=round(time.perf_counter() - t, 2))
 
 

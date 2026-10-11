@@ -28,6 +28,14 @@ def main() -> None:
             seed_all(c, kb=True)
             c.commit()
         print("init done")
+        try:
+            from app.services.prewarm import run
+            print("prewarm", run())
+        except Exception as exc:  # wording is optional; templates cover it
+            print("prewarm skipped", type(exc).__name__)
+    elif cmd == "prewarm":
+        from app.services.prewarm import run
+        print(run())
     elif cmd == "ingest":
         from ingest.run import run_all
         run_all()

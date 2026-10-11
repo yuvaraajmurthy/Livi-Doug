@@ -63,14 +63,14 @@ def load_kb(conn: psycopg.Connection) -> int:
     conn.execute("UPDATE kb_items SET attribution = 'Compass sample event (synthetic)' WHERE synthetic")
     upsert_pins(conn)
     load_micro_steps(conn)
-    from ingest.geocode import apply_to_kb
-    apply_to_kb(conn, network=False)
-    apply_ai_tags(conn)
-    for item_id, campus in (("res-cmd-002", "camden"),):
-        conn.execute("INSERT INTO kb_tags (item_id, tag_type, tag, tagged_by) VALUES (%s, 'audience', %s, 'staff') ON CONFLICT DO NOTHING", (item_id, campus))
     for extra in ("research_items", "snapshot_items"):
         from ingest import loaders
         getattr(loaders, extra)(conn)
+    apply_ai_tags(conn)
+    for item_id, campus in (("res-cmd-002", "camden"),):
+        conn.execute("INSERT INTO kb_tags (item_id, tag_type, tag, tagged_by) VALUES (%s, 'audience', %s, 'staff') ON CONFLICT DO NOTHING", (item_id, campus))
+    from ingest.geocode import apply_to_kb
+    apply_to_kb(conn, network=False)
     return n
 
 
@@ -136,7 +136,7 @@ def upsert_item(conn: psycopg.Connection, p: dict, tagged_by: str = "keyword") -
     )
     if any(k in p for k in ("dimensions", "causes", "barriers", "formats")):
         conn.execute("DELETE FROM kb_tags WHERE item_id = %s AND tagged_by <> 'staff'", (p["id"],))
-        for tag_type, key in (("dimension", "dimensions"), ("cause", "causes"), ("barrier", "barriers"), ("format", "formats")):
+        for tag_type, key in (("dimension", "dimensions"), ("cause", "causes"), ("barrier", "barriers"), ("format", "formats"), ("audience", "audiences")):
             for t in p.get(key) or []:
                 conf = (p.get("confidence") or {}).get(t, 1.0) if isinstance(p.get("confidence"), dict) else 1.0
                 conn.execute(

@@ -24,12 +24,12 @@ no greeting. Output the sentence only.""",
 universitario por qué este paso le conviene. Usa SOLO los datos del JSON. No agregues horas, días, fechas, números, precios,
 lugares, nombres ni afirmaciones que no estén en los datos. No menciones puntajes, estados de ánimo, problemas ni nada
 clínico. Sin emojis ni comillas. Responde solo con la oración.""",
-    ("plan", "en"): """Write one if-then plan sentence in the first person (at most 30 words) that a student can follow:
-"When <cue from their schedule>, I <go to the step>." Use ONLY the facts in the JSON. Never add times, days, places or
-details not in the facts. No emojis, no quotes. Output the sentence only.""",
-    ("plan", "es"): """Escribe una sola oración de plan "si-entonces" en primera persona (máximo 30 palabras):
-"Cuando <señal de su horario>, yo <voy al paso>." Usa SOLO los datos del JSON. No agregues horas, días, lugares ni detalles
-que no estén en los datos. Sin emojis ni comillas. Responde solo con la oración.""",
+    ("plan", "en"): """Rewrite the draft if-then plan as one natural first-person sentence (at most 30 words) a student would
+actually say to themselves, keeping the "When ..., I ..." shape. Keep every fact from the draft and add nothing: no new times,
+days, places or details. No emojis, no quotes. Output the sentence only.""",
+    ("plan", "es"): """Reescribe el borrador del plan "si-entonces" como una sola oración natural en primera persona (máximo 30
+palabras), con la forma "Cuando ..., yo ...". Conserva todos los datos del borrador y no agregues nada: ni horas, ni días, ni
+lugares, ni detalles nuevos. Sin emojis ni comillas. Responde solo con la oración.""",
 }
 
 
@@ -58,6 +58,8 @@ def get(conn, purpose: str, facts: dict, lang: str = "en", enqueue: bool = True)
 def generate(purpose: str, facts: dict, lang: str) -> tuple[str, str] | None:
     """Try models in order; return (text, model) for the first grounded output, else None."""
     s = get_settings()
+    if purpose == "plan":
+        facts = {**facts, "draft": templates.plan(facts, lang)}
     prompt = "Facts (JSON):\n" + json.dumps(facts, ensure_ascii=False, default=str)
     attempts = [
         (s.model_wording, dict(max_tokens=1500, timeout=s.wording_timeout_s, temperature=None, extra={"reasoning": {"effort": "low"}})),

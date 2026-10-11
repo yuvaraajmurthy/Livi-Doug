@@ -9,6 +9,8 @@ from config.settings import get_settings
 
 log = logging.getLogger("compass.workers")
 
+PAUSE = threading.Event()  # set while a demo reset rewrites the tables
+
 
 class Loop:
     def __init__(self, name: str, interval: float, fn):
@@ -25,6 +27,8 @@ class Loop:
 
     def _run(self) -> None:
         while not self._stop.wait(self.interval):
+            if PAUSE.is_set():
+                continue
             try:
                 self.fn()
             except Exception as exc:  # a loop must never die

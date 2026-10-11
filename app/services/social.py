@@ -40,6 +40,10 @@ def pulse(ctx: SessionCtx) -> PulseResponse:
 
 def post_win(ctx: SessionCtx, body: WinRequest):
     """Pipeline: crisis check -> rules -> model -> publish. A crisis post is never published."""
+    # Moderation runs in parallel with the crisis check; its result is used only if the check says 'none'.
+    from app.safety.check import POOL as _POOL
+    from app.safety.lexicon import scan
+    mod_future = None if scan(body.text).label == "crisis" else _POOL.submit(moderate, body.text)
     verdict = check_text(body.text)
     with conn() as c:
         now = clock.now(c, ctx.sid)
@@ -56,7 +60,12 @@ def post_win(ctx: SessionCtx, body: WinRequest):
                       (wid, ctx.student_id, s["campus"], body.dimension, body.text, now))
             return WinAccepted(synthetic=True, now=now, kind="held", win_id=wid,
                                message="Thanks. A person will look at this before it goes up.")
-        decision, code = moderate(body.text)
+        try:
+            decision, code = mod_future.result(timeout=2.0)  # type: ignore[union-attr]
+        except Exception:
+            from app.safety.moderation import rules
+            decision, code = rules(body.text)
+            decision = "hold" if decision == "approve" else decision  # model unavailable and unchecked: a person looks first
         status = {"approve": "approved", "hold": "held", "reject": "rejected"}[decision]
         c.execute("INSERT INTO wins (id, student_id, campus, dimension, text, status, moderation_code, created_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)",
                   (wid, ctx.student_id, s["campus"], body.dimension, body.text, status, code, now))

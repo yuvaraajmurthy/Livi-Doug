@@ -8,6 +8,10 @@ from app.safety.lexicon import scan
 
 log = logging.getLogger("compass.safety")
 
+from concurrent.futures import ThreadPoolExecutor  # noqa: E402
+
+POOL = ThreadPoolExecutor(max_workers=8, thread_name_prefix="safety")
+
 Source = Literal["barrier_text", "wins_post", "ask_box", "voice", "plan_text"]
 
 

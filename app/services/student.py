@@ -107,9 +107,15 @@ def set_focus(ctx: SessionCtx, body: FocusRequest):
     verdict = None
     mapped: tuple[list[str], list[str], str] = ([], [], "none")
     if text:
-        # Safety check first. Barrier mapping runs in parallel but its result is discarded unless the verdict is 'none'.
-        fut_map = _EXEC.submit(map_text, text)
-        verdict = check_text(text)
+        # Stage-1 code check runs before any model sees the text. Only if it passes do the stage-2 labellers and the
+        # barrier mapper run (in parallel); the mapping is discarded unless the final verdict is 'none'.
+        from app.safety.lexicon import scan
+        if scan(text).label == "crisis":
+            verdict = check_text(text, use_classifier=False)
+            fut_map = None
+        else:
+            fut_map = _EXEC.submit(map_text, text)
+            verdict = check_text(text)
         if verdict.label == "none":
             try:
                 mapped = fut_map.result(timeout=2.0)
@@ -117,7 +123,7 @@ def set_focus(ctx: SessionCtx, body: FocusRequest):
                 from app.safety.barrier_map import keyword_map
                 b, cc = keyword_map(text)
                 mapped = (b, cc, "keyword")
-        else:
+        elif fut_map is not None:
             fut_map.cancel()
     with conn() as c:
         now = _now(c, ctx)

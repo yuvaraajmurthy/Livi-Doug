@@ -1,0 +1,430 @@
+# Rutgers–Newark and Rutgers–Camden resources, researched 2026-10-10 from official Rutgers pages.
+# Rules: only published hours go in open_hours; anything uncertain goes in hours_text with a "confirm" note.
+# Conflicts between sources are recorded in `note`. Tags are staff-curated (tagged_by=staff, never overwritten).
+# open_hours: {mon: [["HH:MM","HH:MM"]], ...}
+
+# ------------------------------------------------------------------ NEWARK
+- id: res-nwk-001
+  kind: resource
+  title: Rutgers–Newark Counseling Center
+  campus: newark
+  venue: Blumenthal Hall, Room 101
+  address: 249 University Ave, Newark, NJ 07102
+  phone: "973-353-5805"
+  hours_text: "Mon–Fri 8:30 am–4:30 pm. After hours: Uwill crisis line 833-646-1526"
+  open_hours: {mon: [["08:30","16:30"]], tue: [["08:30","16:30"]], wed: [["08:30","16:30"]], thu: [["08:30","16:30"]], fri: [["08:30","16:30"]]}
+  url: https://studentaffairs.newark.rutgers.edu/health-wellness/counseling-center
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [emotional]
+  causes: [stress, loneliness]
+  formats: [counseling]
+- id: res-nwk-health
+  kind: resource
+  title: Rutgers–Newark Student Health Services
+  campus: newark
+  venue: Blumenthal Hall, Room 104
+  address: 249 University Ave, Newark, NJ 07102
+  phone: "973-353-5232"
+  hours_text: "Weekdays (one page says 9 am–5 pm, another 8:30 am–4:30 pm: confirm). 24-hour nurse line 866-221-9674"
+  open_hours: {mon: [["09:00","16:30"]], tue: [["09:00","16:30"]], wed: [["09:00","16:30"]], thu: [["09:00","16:30"]], fri: [["09:00","16:30"]]}
+  url: https://studentaffairs.newark.rutgers.edu/health-wellness/medical-care
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [physical]
+  causes: [sleep_habits]
+  formats: [health_service]
+- id: res-nwk-002
+  kind: resource
+  title: Pantry+ at RU-N (free food pantry)
+  summary: Free food and essentials for any Rutgers–Newark student, staff or faculty. No eligibility process. Order online, pick up at the Campus Center or from refrigerated lockers outside Smith Hall.
+  campus: newark
+  venue: Paul Robeson Campus Center, Room 226
+  address: 350 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+  phone: "973-353-0256"
+  hours_text: "Fall 2026: Mon 11–3, Tue 11–3, Wed 1–6, Thu 11–3, Fri closed. Locker pickup Mon–Fri. Once a week."
+  open_hours: {mon: [["11:00","15:00"]], tue: [["11:00","15:00"]], wed: [["13:00","18:00"]], thu: [["11:00","15:00"]]}
+  url: https://studentaffairs.newark.rutgers.edu/health-wellness/pantryrun
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [financial, physical]
+  causes: [money, food]
+  formats: [drop_in, food]
+- id: res-nwk-learning-center
+  kind: resource
+  title: Rutgers–Newark Learning Center (tutoring)
+  summary: Free tutoring. Virtual tutoring after 5 pm and on weekends.
+  campus: newark
+  venue: 110 Warren Street, Room 140
+  address: 110 Warren St, Newark, NJ 07102
+  phone: "973-353-5608"
+  hours_text: "Mon–Thu 9 am–5 pm in person; virtual after 5 pm and weekends"
+  open_hours: {mon: [["09:00","17:00"]], tue: [["09:00","17:00"]], wed: [["09:00","17:00"]], thu: [["09:00","17:00"]]}
+  url: https://myrun.newark.rutgers.edu/node/726
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [intellectual]
+  causes: [academic_workload]
+  formats: [tutoring, drop_in]
+- id: res-nwk-writing
+  kind: resource
+  title: Rutgers–Newark Writing Center
+  campus: newark
+  venue: Hahne Building, Suite 245
+  address: 54 Halsey St, Newark, NJ 07102
+  phone: "973-353-5847"
+  hours_text: "Mon–Fri; see the website for the fall schedule. Book through RU-N4Success"
+  url: https://myrun.newark.rutgers.edu/node/726
+  verified_on: 2026-10-10
+  note: "Older catalogs list 126 Conklin Hall; current pages list Hahne 245."
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [intellectual]
+  causes: [academic_workload]
+  formats: [tutoring]
+- id: res-nwk-career
+  kind: resource
+  title: Rutgers–Newark Career Resources & Exploration
+  campus: newark
+  venue: Engelhard Hall, Suite 101
+  address: 190 University Ave, Newark, NJ 07102
+  phone: "973-353-5311"
+  hours_text: "Mon–Fri 8:30 am–5 pm; appointments and drop-ins via Handshake"
+  open_hours: {mon: [["08:30","17:00"]], tue: [["08:30","17:00"]], wed: [["08:30","17:00"]], thu: [["08:30","17:00"]], fri: [["08:30","17:00"]]}
+  url: https://careers.newark.rutgers.edu/about/
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [occupational]
+  causes: [career]
+  formats: [counseling, drop_in]
+- id: res-nwk-hpd
+  kind: resource
+  title: Rutgers–Newark Health Promotion Division
+  summary: Wellness workshops, peer education and health promotion programs.
+  campus: newark
+  venue: Blumenthal Hall, Room 201
+  address: 249 University Ave, Newark, NJ 07102
+  phone: "973-353-1256"
+  hours_text: "Mon–Thu 9 am–5 pm; Fri 1–9 pm"
+  open_hours: {mon: [["09:00","17:00"]], tue: [["09:00","17:00"]], wed: [["09:00","17:00"]], thu: [["09:00","17:00"]], fri: [["13:00","21:00"]]}
+  url: https://studentaffairs.newark.rutgers.edu/health-wellness/health-promotion-division
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [physical, emotional]
+  causes: [stress, sleep_habits]
+  formats: [workshop, drop_in]
+- id: res-nwk-prcc
+  kind: place
+  title: Paul Robeson Campus Center
+  summary: "The Newark student hub: lounges, food, student organizations and events."
+  campus: newark
+  venue: Paul Robeson Campus Center
+  address: 350 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+  phone: "973-353-5568"
+  hours_text: "Mon–Thu 8 am–10 pm; Fri–Sun 8 am–9 pm"
+  open_hours: {mon: [["08:00","22:00"]], tue: [["08:00","22:00"]], wed: [["08:00","22:00"]], thu: [["08:00","22:00"]], fri: [["08:00","21:00"]], sat: [["08:00","21:00"]], sun: [["08:00","21:00"]]}
+  url: https://myrun.newark.rutgers.edu/node/726
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [social]
+  causes: [belonging]
+  formats: [drop_in, quiet]
+- id: res-nwk-ssl
+  kind: resource
+  title: Rutgers–Newark Student Life & Leadership (clubs and organizations)
+  summary: Find one of 100+ student organizations. Meetings by appointment.
+  campus: newark
+  venue: Paul Robeson Campus Center, Room 352
+  address: 350 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+  phone: "973-353-5300"
+  hours_text: "9 am–5 pm, meetings by appointment"
+  url: https://studentaffairs.newark.rutgers.edu/
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 3
+  solo_friendly: false
+  dimensions: [social]
+  causes: [loneliness, belonging]
+  formats: [mixer]
+- id: res-nwk-irc
+  kind: resource
+  title: Rutgers–Newark Intercultural Resource Center
+  campus: newark
+  phone: "973-353-2796"
+  hours_text: "8:30 am–5 pm, meetings by appointment"
+  url: https://myrun.newark.rutgers.edu/node/726
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 2
+  solo_friendly: true
+  dimensions: [social, spiritual]
+  causes: [belonging]
+  formats: [talk]
+- id: res-nwk-golden-dome
+  kind: place
+  title: Golden Dome Athletic Center (fitness center and pool)
+  summary: Fitness center, 25-yard pool, racquetball courts and a dance/exercise studio.
+  campus: newark
+  venue: Golden Dome Athletic Center
+  address: 42 Warren St, Newark, NJ 07102
+  hours_text: "Hours not published on the pages we checked: confirm with Athletics & Recreation"
+  url: https://www.newark.rutgers.edu/summer-fun-golden-dome
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [physical]
+  causes: [inactivity, stress]
+  formats: [active, sports, drop_in]
+- id: res-nwk-ods
+  kind: resource
+  title: Rutgers–Newark Office of Disability Services
+  campus: newark
+  venue: Paul Robeson Campus Center, Room 219
+  address: 350 Dr Martin Luther King Jr Blvd, Newark, NJ 07102
+  phone: "973-353-5375"
+  hours_text: "Mon–Fri 8:30 am–4:30 pm"
+  open_hours: {mon: [["08:30","16:30"]], tue: [["08:30","16:30"]], wed: [["08:30","16:30"]], thu: [["08:30","16:30"]], fri: [["08:30","16:30"]]}
+  url: https://studentaffairs.newark.rutgers.edu/health-wellness/disability-services
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [intellectual]
+  causes: [academic_workload]
+  formats: [counseling]
+- id: res-nwk-veterans
+  kind: resource
+  title: Rutgers–Newark Office of Veteran Affairs
+  campus: newark
+  venue: Conklin Hall, Rooms 213–214
+  address: 175 University Ave, Newark, NJ 07102
+  phone: "973-353-5515"
+  hours_text: "Mon–Fri: appointments 8 am–12 pm, walk-ins 12–5 pm"
+  open_hours: {mon: [["12:00","17:00"]], tue: [["12:00","17:00"]], wed: [["12:00","17:00"]], thu: [["12:00","17:00"]], fri: [["12:00","17:00"]]}
+  url: https://myrun.newark.rutgers.edu/node/726
+  verified_on: 2026-10-10
+  note: "Conklin Hall street address from campus maps; confirm."
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [occupational, social]
+  causes: [belonging]
+  formats: [drop_in]
+- id: res-nwk-onestop
+  kind: resource
+  title: Rutgers–Newark One Stop Student Services (financial aid, billing)
+  campus: newark
+  phone: "973-353-1766"
+  hours_text: "See the One Stop contact page for current hours"
+  url: https://myrun.newark.rutgers.edu/funding-your-education
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [financial]
+  causes: [money]
+  formats: [counseling]
+
+# ------------------------------------------------------------------ CAMDEN
+- id: res-cmd-001
+  kind: resource
+  title: Rutgers–Camden Student Wellness Center (counseling and medical)
+  campus: camden
+  venue: Campus Center, 2nd floor
+  address: 326 Penn St, Camden, NJ 08102
+  phone: "856-225-6005"
+  hours_text: "Mon–Fri 8:30 am–4:30 pm; some evening appointments to 6 pm (Tue virtual, Wed in person). After hours: Uwill 833-646-1526, nurse line 1-800-424-5090"
+  open_hours: {mon: [["08:30","16:30"]], tue: [["08:30","18:00"]], wed: [["08:30","18:00"]], thu: [["08:30","16:30"]], fri: [["08:30","16:30"]]}
+  url: https://wellnesscenter.camden.rutgers.edu/
+  verified_on: 2026-10-10
+  note: "Page lists both 'Monday and Wednesday extended to 6 pm' and 'Wednesday 4:30-6 pm'; confirm."
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [emotional, physical]
+  causes: [stress, sleep_habits]
+  formats: [counseling, health_service]
+- id: res-cmd-004
+  kind: resource
+  title: Scarlet Raptor's Nest (Rutgers–Camden food pantry)
+  summary: Free food for students with a Rutgers ID, once a week, by appointment through PantrySoft (choose Rutgers University-Camden).
+  campus: camden
+  venue: Student Wellness Center, Campus Center 2nd floor
+  address: 326 Penn St, Camden, NJ 08102
+  phone: "856-225-6005"
+  hours_text: "Fall: Tue and Thu 1:00–3:45 pm, by appointment (no walk-ins)"
+  open_hours: {tue: [["13:00","15:45"]], thu: [["13:00","15:45"]]}
+  url: https://wellnesscenter.camden.rutgers.edu/
+  verified_on: 2026-10-10
+  note: "A third-party listing gives 215 N 3rd St; the university page says the Wellness Center. Using the university page."
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [financial, physical]
+  causes: [money, food]
+  formats: [food]
+- id: res-cmd-learning-center
+  kind: resource
+  title: Rutgers–Camden Learning Center (tutoring, CLASS)
+  summary: Free tutoring. Book through Navigate.
+  campus: camden
+  venue: Armitage Hall, Room 231
+  address: 311 N 5th St, Camden, NJ 08102
+  phone: "856-225-6442"
+  hours_text: "Current hours not published on the pages we checked: book in Navigate or call"
+  url: https://class.camden.rutgers.edu/
+  verified_on: 2026-10-10
+  note: "A spring 2026 tutoring sheet lists 856-225-6441 for CLASS questions."
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [intellectual]
+  causes: [academic_workload]
+  formats: [tutoring]
+- id: res-cmd-wdl
+  kind: resource
+  title: Rutgers–Camden Writing and Design Lab
+  campus: camden
+  venue: Digital Commons (Johnson Park)
+  address: 101 Cooper St, Camden, NJ 08102
+  hours_text: "Walk-ins and appointments weekdays around midday; online evenings by appointment (fall 2025 schedule: confirm current)"
+  url: https://wdl.camden.rutgers.edu/appointments
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [intellectual]
+  causes: [academic_workload]
+  formats: [tutoring, drop_in]
+- id: res-cmd-career
+  kind: resource
+  title: Rutgers–Camden Career Advancement Center
+  campus: camden
+  venue: Campus Center, Lower Level, Room 006
+  address: 326 Penn St, Camden, NJ 08102
+  phone: "856-225-6046"
+  hours_text: "Book appointments in Navigate"
+  url: https://careercenter.camden.rutgers.edu/aboutcareercenter
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [occupational]
+  causes: [career]
+  formats: [counseling]
+- id: res-cmd-afc
+  kind: place
+  title: Rutgers–Camden Athletic and Fitness Center
+  summary: Fitness floor, pool, basketball and volleyball courts, intramurals.
+  campus: camden
+  venue: Athletic and Fitness Center
+  address: 301 Linden St, Camden, NJ 08102
+  phone: "856-225-2740"
+  hours_text: "Hours change by term (spring 2026: weekdays 7 am–10 pm, weekends 10 am–6 pm): confirm fall hours"
+  url: https://camden.rutgers.edu/student-experience/recreation-athletics
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [physical]
+  causes: [inactivity, stress]
+  formats: [active, sports, drop_in]
+- id: res-cmd-onestop
+  kind: resource
+  title: Rutgers–Camden One Stop (financial aid, billing, registrar)
+  summary: Walk-in help with financial aid, bills and registration. No appointment needed.
+  campus: camden
+  venue: Armitage Hall, 1st floor
+  address: 311 N 5th St, Camden, NJ 08102
+  hours_text: "Mon–Fri 8:30 am–4:30 pm, walk-in"
+  open_hours: {mon: [["08:30","16:30"]], tue: [["08:30","16:30"]], wed: [["08:30","16:30"]], thu: [["08:30","16:30"]], fri: [["08:30","16:30"]]}
+  url: https://camden.rutgers.edu/osssc
+  verified_on: 2026-10-10
+  note: "A 2017 handout lists 856-225-6039 for Financial Aid; not confirmed current, so not shown."
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [financial]
+  causes: [money]
+  formats: [counseling, drop_in]
+- id: res-cmd-osi
+  kind: resource
+  title: Rutgers–Camden Office of Student Involvement (clubs)
+  summary: Find a club or student organization; full list on engage.camden.rutgers.edu.
+  campus: camden
+  venue: Campus Center, Lower Level
+  address: 326 Penn St, Camden, NJ 08102
+  phone: "856-225-6163"
+  url: https://camden.rutgers.edu/office-student-involvement/about-us
+  verified_on: 2026-10-10
+  note: "Another page lists 856-225-6013."
+  cost: free
+  social_level: 3
+  solo_friendly: false
+  dimensions: [social]
+  causes: [loneliness, belonging]
+  formats: [mixer]
+- id: res-cmd-civic
+  kind: resource
+  title: Rutgers–Camden Office of Civic Engagement (volunteering)
+  campus: camden
+  venue: 303 Cooper Street
+  address: 303 Cooper St, Camden, NJ 08102
+  phone: "856-225-6754"
+  url: https://www.camden.rutgers.edu/civic-engagement
+  verified_on: 2026-10-10
+  note: "Phone from an older listing; confirm."
+  cost: free
+  social_level: 2
+  solo_friendly: true
+  dimensions: [social, spiritual]
+  causes: [purpose, belonging]
+  formats: [volunteering, structured]
+- id: res-cmd-campus-center
+  kind: place
+  title: Rutgers–Camden Campus Center
+  summary: Student hub with lounges, food and the offices above.
+  campus: camden
+  venue: Campus Center
+  address: 326 Penn St, Camden, NJ 08102
+  hours_text: "Building hours not published on the pages we checked"
+  url: https://camden.rutgers.edu/student-affairs
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [social]
+  causes: [belonging]
+  formats: [drop_in, quiet]
+- id: res-cmd-nurse-line
+  kind: online
+  title: 24-hour nurse line (Rutgers–Camden students)
+  summary: Talk to a nurse any time when the Wellness Center is closed.
+  campus: online
+  phone: "1-800-424-5090"
+  hours_text: "24/7"
+  url: https://wellnesscenter.camden.rutgers.edu/emergency-after-hours/
+  verified_on: 2026-10-10
+  cost: free
+  social_level: 1
+  solo_friendly: true
+  dimensions: [physical]
+  causes: [sleep_habits]
+  formats: [health_service, online]
+  audiences: [camden]

@@ -10,8 +10,28 @@ from db.seed import seed_all
 
 
 def reset_demo(full: bool = False) -> None:
-    with pool().connection() as c:
-        seed_all(c, kb=full)
+    """Pause background workers, then reload with a lock timeout and a few retries (never deadlock the demo)."""
+    import time
+
+    import psycopg
+
+    from app.workers import PAUSE
+    PAUSE.set()
+    try:
+        time.sleep(0.5)
+        for attempt in range(4):
+            try:
+                with pool().connection() as c:
+                    c.execute("SET lock_timeout = '8s'")
+                    seed_all(c, kb=full)
+                    c.execute("RESET lock_timeout")
+                return
+            except (psycopg.errors.DeadlockDetected, psycopg.errors.LockNotAvailable):
+                if attempt == 3:
+                    raise
+                time.sleep(1.0 + attempt)
+    finally:
+        PAUSE.clear()
 
 
 if __name__ == "__main__":
