@@ -76,7 +76,7 @@ export const MAIN_STORY: StoryStep[] = [
     perform: [{ kind: "tap", target: "why-open" }],
     claim: "Code picks the step from fixed weights a staffer can read. AI only writes the sentence.",
     proof: "fit",
-    note: "Every reason is inspectable: the checks it passed, five weighted factors, and 72% of 36 Newark commuters who rated it 4+.",
+    note: "Every reason is inspectable: the checks it passed, five weighted factors, and how Newark commuters like him rated it.",
     tag: "Feasibility",
   },
   {
@@ -210,7 +210,7 @@ export const MAIN_STORY: StoryStep[] = [
     waitFor: "crisis:shown",
     claim: "Crisis language is caught by code before any AI sees it. A fixed card, real numbers.",
     proof: "safety",
-    note: "107 of 107 test phrases caught by the code check alone, with AI switched off. Nothing she typed is stored.",
+    note: "All 61 crisis test phrases are caught by the code check alone, with AI switched off, and none of 27 look-alikes trip it. Nothing she typed is stored.",
     tag: "Safety",
   },
   {

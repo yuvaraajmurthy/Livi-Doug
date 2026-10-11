@@ -16,6 +16,8 @@ import { RequireStudent } from "./RequireStudent";
 import { LiveRegion, ToastHost } from "../ui/Toast";
 import { Shell } from "./Shell";
 import { CoachBar } from "../demo/coach/CoachBar";
+import { StageChild } from "../demo/StageChild";
+import { Join } from "../demo/Join";
 import { TourHome } from "../demo/coach/TourHome";
 import { setNavigator } from "../demo/perform";
 import { startTour } from "../demo/tourStore";
@@ -35,6 +37,7 @@ function TourDeepLink() {
   return null;
 }
 
+const Present = lazy(() => import("../demo/present/Present").then(m => ({ default: m.Present })));
 const StaffApp = lazy(() => import("../features/staff/StaffApp").then(m => ({ default: m.StaffApp })));
 
 export function AppRouter() {
@@ -44,6 +47,8 @@ export function AppRouter() {
         <Route path="/" element={<Entry />} />
         <Route path="/i/:token" element={<InvitePage />} />
         <Route path="/tour" element={<TourHome />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/present" element={<Suspense fallback={null}><Present /></Suspense>} />
         <Route path="/tour/:persona" element={<TourDeepLink />} />
         <Route path="/focus" element={<RequireStudent><FocusFlow /></RequireStudent>} />
         <Route element={<Shell />}>
@@ -60,6 +65,7 @@ export function AppRouter() {
         <Route path="*" element={<Entry />} />
       </Routes>
       <NavBridge />
+      <StageChild />
       <CoachBar />
       <ToastHost />
       <LiveRegion />
