@@ -6,19 +6,13 @@ import { PlanView } from "../features/plan/PlanView";
 import { InvitePage } from "../features/invite/InvitePage";
 import { Followup } from "../features/followup/Followup";
 import { Inbox } from "../features/inbox/Inbox";
+import { MapPage } from "../features/map/MapPage";
+import { YouPage } from "../features/you/YouPage";
+import { CampusPage } from "../features/campus/CampusPage";
+import { CardPage } from "../features/card/CardPage";
 import { RequireStudent } from "./RequireStudent";
 import { LiveRegion, ToastHost } from "../ui/Toast";
 import { Shell } from "./Shell";
-
-function Placeholder({ name }: { name: string }) {
-  return (
-    <section>
-      <h1 tabIndex={-1} className="text-[30px] font-semibold tracking-tight outline-none">
-        {name}
-      </h1>
-    </section>
-  );
-}
 
 export function AppRouter() {
   return (
@@ -30,9 +24,10 @@ export function AppRouter() {
         <Route element={<Shell />}>
           <Route path="/next" element={<Today />} />
           <Route path="/plan/:id" element={<PlanView />} />
-          <Route path="/map" element={<Placeholder name="Map" />} />
-          <Route path="/campus" element={<Placeholder name="Campus" />} />
-          <Route path="/you" element={<Placeholder name="You" />} />
+          <Route path="/map" element={<MapPage />} />
+          <Route path="/campus" element={<CampusPage />} />
+          <Route path="/you" element={<YouPage />} />
+          <Route path="/card" element={<CardPage />} />
           <Route path="/inbox" element={<Inbox />} />
           <Route path="/followup/:id" element={<Followup />} />
         </Route>

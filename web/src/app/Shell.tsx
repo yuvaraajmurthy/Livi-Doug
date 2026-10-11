@@ -6,7 +6,7 @@ import { signal } from "../api/inspector";
 import { countUnread, lastSeen } from "../features/inbox/seen";
 import { TimeSheet } from "../features/time/TimeSheet";
 import { NotificationHost } from "../features/inbox/NotificationBanner";
-import { language } from "../i18n/useT";
+import { useMap } from "../features/map/useMap";
 import { useSession } from "../session/session";
 import { TabBar } from "../ui/TabBar";
 import { TopBar } from "../ui/TopBar";
@@ -17,13 +17,8 @@ export function Shell() {
   const loc = useLocation();
   const [timeOpen, setTimeOpen] = useState(false);
   const student = s?.role === "student";
-  const map = useQuery({ queryKey: ["map"], queryFn: api.map, enabled: student });
+  useMap(student);
   const inbox = useQuery({ queryKey: ["inbox"], queryFn: api.inbox, enabled: student });
-
-  useEffect(() => {
-    const l = map.data?.student.language;
-    if (l === "en" || l === "es") language.set(l);
-  }, [map.data?.student.language]);
 
   useEffect(() => {
     signal("route:changed", loc.pathname);

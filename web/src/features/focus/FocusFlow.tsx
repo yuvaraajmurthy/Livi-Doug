@@ -3,6 +3,7 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
+import { useMap } from "../map/useMap";
 import { api, DIMENSIONS, isCrisis, type CrisisResponse, type Dimension, type MapResponse } from "../../api/client";
 import { inspector, signal } from "../../api/inspector";
 import { useLang, useT } from "../../i18n/useT";
@@ -24,7 +25,7 @@ const slide = {
 export function FocusFlow() {
   const t = useT();
   const nav = useNavigate();
-  const map = useQuery({ queryKey: ["map"], queryFn: api.map });
+  const map = useMap();
   const [step, setStep] = useState<Step>(0);
   const [dimension, setDimension] = useState<Dimension | null>(null);
   const [barriers, setBarriers] = useState<string[]>([]);

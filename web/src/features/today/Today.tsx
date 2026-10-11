@@ -3,6 +3,7 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router";
+import { useMap } from "../map/useMap";
 import { api, type NextResponse, type Suggestion } from "../../api/client";
 import { signal } from "../../api/inspector";
 import { useT, useLang } from "../../i18n/useT";
@@ -29,7 +30,7 @@ export function Today() {
   const qc = useQueryClient();
   const s = useSession();
   const now = useClock();
-  const map = useQuery({ queryKey: ["map"], queryFn: api.map });
+  const map = useMap();
   const next = useQuery({ queryKey: ["next"], queryFn: api.next, enabled: !!map.data?.profile.focus || map.data?.care_first });
   const [heroIdx, setHeroIdx] = useState(0);
   const [whyOpen, setWhyOpen] = useState(false);

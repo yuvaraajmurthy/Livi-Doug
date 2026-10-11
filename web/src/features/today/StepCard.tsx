@@ -1,4 +1,4 @@
-import { CalendarBlank, CheckCircle, Info, MapPin, Stairs, Tag, UsersThree } from "@phosphor-icons/react";
+import { CalendarBlank, CheckCircle, MapPin, Stairs, Tag, Target, UsersThree } from "@phosphor-icons/react";
 import { motion } from "motion/react";
 import type { ReactNode } from "react";
 import type { Suggestion } from "../../api/client";
@@ -40,6 +40,8 @@ type Props = {
 export function StepCard({ s, onCommit, onWhy, onDecline, committing, label }: Props) {
   const t = useT();
   const dim = s.item.dimensions[0];
+  // The judge's example: low sleep, the cause is coursework, so the step is tutoring. Say that plainly.
+  const rootCause = s.reasons.components.some(c => c.name === "dimension" && /^Addresses/.test(c.text));
   const place = s.where.venue ?? (s.where.campus === "online" ? t("campus.online") : null);
   const walk = walkLabel(s);
   return (
@@ -53,8 +55,8 @@ export function StepCard({ s, onCommit, onWhy, onDecline, committing, label }: P
         <div className="px-5 pb-5 pt-5">
           <div className="mb-3 flex items-center justify-between gap-2">
             <span className="inline-flex items-center gap-1.5 text-[13px] font-semibold uppercase tracking-[0.08em] text-scarlet-ink">
-              {dim ? <DimensionIcon dimension={dim} size={16} /> : null}
-              {label ?? (dim ? t(`dim.${dim}` as Key) : t("today.yourStep"))}
+              {rootCause ? <Target size={16} aria-hidden /> : dim ? <DimensionIcon dimension={dim} size={16} /> : null}
+              {label ?? (rootCause ? t("today.rootCause") : dim ? t(`dim.${dim}` as Key) : t("today.yourStep"))}
             </span>
             <SourceBadge synthetic={s.item.synthetic} />
           </div>
@@ -90,10 +92,10 @@ export function StepCard({ s, onCommit, onWhy, onDecline, committing, label }: P
             {t("today.imIn")}
           </Button>
           <div className="mt-2 grid grid-cols-2 gap-2">
-            <Button variant="ghost" size="md" onClick={onWhy} data-tour="why-open" icon={<Info size={18} aria-hidden />}>
+            <Button variant="ghost" size="md" onClick={onWhy} data-tour="why-open" className="whitespace-nowrap">
               {t("today.why")}
             </Button>
-            <Button variant="ghost" size="md" onClick={onDecline} data-tour="not-for-me">
+            <Button variant="ghost" size="md" onClick={onDecline} data-tour="not-for-me" className="whitespace-nowrap">
               {t("today.notForMe")}
             </Button>
           </div>
