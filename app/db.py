@@ -10,11 +10,11 @@ from psycopg.rows import dict_row
 from psycopg.types.datetime import TimestamptzLoader
 
 _NY = ZoneInfo("America/New_York")
-from psycopg_pool import ConnectionPool
+from psycopg_pool import ConnectionPool, PoolTimeout
 
 from config.settings import get_settings
 
-DB_ERRORS = (psycopg.OperationalError, psycopg.InterfaceError, TimeoutError)
+DB_ERRORS = (psycopg.OperationalError, psycopg.InterfaceError, TimeoutError, PoolTimeout)
 
 
 class _NYTimestamptzLoader(TimestamptzLoader):

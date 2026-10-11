@@ -23,7 +23,7 @@ WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", 
 MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november",
           "december", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
           "noviembre", "diciembre"]
-_NUM = re.compile(r"\b\d+(?::\d{2})?\b")
+_NUM = re.compile(r"(?<![\d:])\d+(?::\d{2})?")
 _PRICE = re.compile(r"\$\s?\d+")
 _TIMEWORD = re.compile(r"\b(\d{1,2})\s?(am|pm|a\.m\.|p\.m\.)\b", re.I)
 
@@ -50,8 +50,9 @@ def check(text: str, facts: dict, lang: str = "en", max_words: int = 40) -> list
     for b in (BANNED | BANNED_ES):
         if re.search(r"(?<![\w])" + re.escape(b), low) and b not in ft:
             issues.append(f"banned:{b}")
+    fact_numbers = set(_NUM.findall(ft))
     for n in _NUM.findall(low):
-        if n not in ft:
+        if n not in fact_numbers:
             issues.append(f"number:{n}")
     for p in _PRICE.findall(low):
         issues.append(f"price:{p}")
