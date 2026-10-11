@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>myRutgers (Localhost)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  <div class="sidebar">
+    <a class="active" href="#"><i class="fa-solid fa-table-columns"></i></a>
+    <a href="#"><i class="fa-solid fa-border-all"></i></a>
+    <a href="#"><i class="fa-solid fa-user-group"></i></a>
+    <a href="#"><i class="fa-solid fa-list-check"></i></a>
+    <a href="#"><i class="fa-solid fa-bus"></i></a>
+    <a href="#"><i class="fa-solid fa-gear"></i></a>
+  </div>
+
+  <div class="topbar">
+    <div class="logo-r">R</div>
+    <div class="logo-line"></div>
+    <div class="logo-text">my<br><b>RUTGERS</b></div>
+  </div>
+
+  <div class="main">
+
+    
+    <div class="card">
+      <div class="card-title">ScarletWell</div>
+
+      <div class="tabs">
+        <button id="eventsTab" class="tab active" onclick="showTab('events')">Events</button>
+        <button id="checkinTab" class="tab" onclick="showTab('checkin')">Check-in</button>
+        <button id="DougTab" class="tab" onclick="showTab('Tab')">Doug</button>
+      </div>
+
+      
+      <div id="events" class="panel show">
+        <div class="search-row">
+          <i class="fa-regular fa-calendar-days red-icon"></i>
+          <div class="search-box">
+            <input type="text" placeholder="Search Events">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <i class="fa-solid fa-filter red-icon"></i>
+        </div>
+
+        <div class="event">
+          <div class="event-pic"><i class="fa-regular fa-image"></i></div>
+          <h3>Sample</h3>
+          <p><i class="fa-regular fa-calendar"></i> October 10 @ 8:00 AM - 12:00 PM</p>
+        </div>
+
+        <div class="event">
+          <div class="event-pic"><i class="fa-regular fa-image"></i></div>
+          <h3>Sample </h3>
+          <p><i class="fa-regular fa-calendar"></i> October 12 @ 6:00 PM - 7:00 PM</p>
+        </div>
+      </div>
+
+
+      <div id="checkin" class="panel">
+
+        
+        <div class="banner">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+            <rect width="300" height="100" fill="#4f5e42"/>
+            <polygon points="0,100 105,38 195,38 300,100" fill="#8d8f8f"/>
+            <polygon points="147,100 149,38 151,38 153,100" fill="white"/>
+          </svg>
+        </div>
+
+        <div class="box">
+          <h2>Hello Student!</h2>
+          <p id="checkinMessage">Have you checked in yet this week?</p>
+          <button id="checkinButton" class="button" onclick="checkIn()">Check-in</button>
+        </div>
+
+        <div class="box">
+          <h3>Wellness Engagement Score</h3>
+
+          <div class="icons">
+            <button class="icon-btn active" onclick="pickCategory(this, 'Physical')"><i class="fa-solid fa-dumbbell"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Mental')"><i class="fa-solid fa-brain"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Environmental')"><i class="fa-solid fa-leaf"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Spiritual')"><i class="fa-solid fa-om"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Emotional')"><i class="fa-solid fa-heart"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Financial')"><i class="fa-solid fa-piggy-bank"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Social')"><i class="fa-solid fa-user-group"></i></button>
+            <button class="icon-btn" onclick="pickCategory(this, 'Occupational')"><i class="fa-solid fa-briefcase"></i></button>
+          </div>
+
+          <div class="score-row">
+            <span id="categoryName" class="big">Physical:</span>
+            <span id="score" class="score">4.00</span>
+          </div>
+
+          <div class="score-row more">
+            <span>More information about <b id="categoryLower">physical</b> wellness</span>
+            <button class="button small" onclick="learnMore()">Learn more</button>
+          </div>
+          <p id="learnNote" class="note"></p>
+        </div>
+
+        <button class="button" onclick="totalScore()">View Total Score</button>
+        <p id="totalNote" class="note"></p>
+      </div>
+    </div>
+    <div id="dough" class="panel">
+      
+</div>
+
+    <div class="card profile">
+      <div class="profile-top">
+        <div class="avatar"><i class="fa-solid fa-user"></i></div>
+        <b>Your Name</b>
+
+        <div class="ids">
+          <p>NetID: 1234</p>
+          <p>RUID: 123456789</p>
+          <p>Email: example@rutgers.edu</p>
+        </div>
+
+        <div class="role">STUDENT</div>
+
+        <div class="actions">
+          <button><i class="fa-solid fa-lock-open"></i>Change<br>Password</button>
+          <button><i class="fa-solid fa-lock"></i>Directory<br>Privacy</button>
+          <button><i class="fa-solid fa-address-book"></i>Emergency<br>Contacts</button>
+          <button><i class="fa-solid fa-user-tag"></i>Name<br>Change</button>
+          <button><i class="fa-solid fa-mobile-screen"></i>Update<br>Phone</button>
+          <button><i class="fa-solid fa-id-card"></i>ID Card</button>
+        </div>
+      </div>
+      <div class="profile-bottom">Student</div>
+    </div>
+
+  </div>
+
+  <script>
+    
+    var SCORE = "4.00";
+
+    
+    function showTab(name) {
+      document.getElementById("events").classList.remove("show");
+      document.getElementById("checkin").classList.remove("show");
+      document.getElementById("eventsTab").classList.remove("active");
+      document.getElementById("checkinTab").classList.remove("active");
+
+      document.getElementById(name).classList.add("show");
+      document.getElementById(name + "Tab").classList.add("active");
+    }
+
+  
+    function checkIn() {
+      var button = document.getElementById("checkinButton");
+      button.textContent = "Checked In";
+      button.classList.add("done");
+      document.getElementById("checkinMessage").textContent = "Successfully checked in for this week!";
+    }
+
+    
+    function pickCategory(button, name) {
+      var all = document.getElementsByClassName("icon-btn");
+      for (var i = 0; i < all.length; i++) {
+        all[i].classList.remove("active");
+      }
+      button.classList.add("active");
+
+      document.getElementById("categoryName").textContent = name + ":";
+      document.getElementById("categoryLower").textContent = name.toLowerCase();
+      document.getElementById("score").textContent = SCORE;
+      document.getElementById("learnNote").textContent = "";
+    }
+
+    function learnMore() {
+      var name = document.getElementById("categoryLower").textContent;
+      document.getElementById("learnNote").textContent = "Details about " + name + " wellness will go here.";
+    }
+
+    function totalScore() {
+      document.getElementById("totalNote").textContent = "Total score: " + SCORE;
+    }
+
+    document.getElementById("score").textContent = SCORE;
+  </script>
+
+</body>
+</html>
